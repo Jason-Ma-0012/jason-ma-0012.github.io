@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Mooa Toon',
-  tagline: 'Amazing Toon Rendering in UE5',
+  tagline: 'The Ultimate Solution for UE5 Cinematic Toon Rendering',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -102,7 +102,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/DDU8CQZjCh',
+                href: 'https://discord.gg/rHmhgdtGfn',
               },
               {
                 label: 'Twitter',
