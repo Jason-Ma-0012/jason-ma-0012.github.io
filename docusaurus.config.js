@@ -43,15 +43,16 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
+        // {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -73,11 +74,21 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getting-started',
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/About', label: 'About', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
+          {
+            href: 'https://elysium.jason-ma.com',
+            label: 'Blog',
+            position: 'right',
+          },
           {
             href: 'https://github.com/JasonMa0012/MooaToon',
             label: 'GitHub',
@@ -131,11 +142,20 @@ const config = {
             ],
           },
           {
+            title: 'License',
+            items: [
+              {
+                label: 'License',
+                to: 'https://elysium.jason-ma.com',
+              },
+            ],
+          },
+          {
             title: 'More',
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://elysium.jason-ma.com',
               },
               {
                 label: 'GitHub',
@@ -149,6 +169,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
       },
     }),
 };

@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
+import Translate, { translate } from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -13,12 +14,20 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          <Translate
+            id='homepage.subtitle'>
+            UE5影视级卡通渲染的终极解决方案
+          </Translate>
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/getting-started">
+            <Translate
+              id='homepage.gettingStarted'>
+              开始使用
+            </Translate>
           </Link>
         </div>
       </div>
@@ -30,7 +39,11 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={
+        translate({
+          id: 'homepage.homepage',
+          message: '首页'
+        })}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
