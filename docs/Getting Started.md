@@ -58,9 +58,20 @@ title: 开始使用
 7. 运行`_4_0_Build_And_Run_MooaToon.bat`
 
 #### Setup_Unreal_Engine期间的网络问题
+
+![image-20230212142104841](./assets/image-20230212142104841.png)
+
 ![](./assets/image-20230211002416094.png)
-这个问题已知只在UE 5.1出现, 由于Epic服务器问题可能会导致网络错误, 这通常不是必须解决的问题, 因为不是所有文件都是编译所必须的.
-你可以多次尝试Setup, 若持续遇到该问题则跳过这一步, 继续编译引擎.
+由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败. 此时你可以从以下任意一个云盘手动下载:
+
+- https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
+- https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
+
+下载后, 你应该得到如下分卷压缩文件:![image-20230212142605626](./assets/image-20230212142605626.png)
+
+使用解压软件打开`ue4-gitdeps.zip`, 将其内容解压到类似`MooaToon-Engine\.git\ue-gitdeps`的文件夹, 然后再次运行`_2_3_Setup_Unreal_Engine.bat`, 现在你应该以相当快的速度完成.
+
+然后运行`_4_0_Build_And_Run_MooaToon.bat`以构建并启动项目.
 
 ### 检查项目
 启动项目后, 请耐心等待Shader编译完成, 随后你应该看到类似以下界面:
@@ -94,15 +105,15 @@ title: 开始使用
 - 你可以Play以查看动态天气效果:															![image-20230211012840797](./assets/image-20230211012840797.png)
 - 你可以使用快捷键`G`预览Play模式的显示设置
 - 有关`Ultra Dynamic Sky`的详细用法可以在其商店页面找到
-## Tips
+## 已知问题
 
 -  **请尽可能_复制_而不是更改MooaToon资源, 否则可能会因为更新而产生冲突**
--  官方 5.1 BUG: 有时角色RT阴影消失, Play或隐藏/显示角色后OK 
--  官方 5.1 BUG: TSR和`Ultra Dynamic Sky`同时开会crash 
--  官方 5.1 BUG: RT阴影获得的ShadingModelID永远是DefaultLit, 这意味着如Subsurface Transmission之类的效果不生效 
--  官方 5.1 BUG: 材质预览场景地板在开启RT Skylight时是黑的 
--  官方 5.1 BUG: OIT会导致半透明Add混合失效 
--  **官方 长期 BUG: 调整Layer材质相当容易Crash, 使用时记得经常保存**
+-  UE 5.1 BUG: 有时角色的Ray Tracing Shadow会消失, Play或隐藏/显示角色后再次显示 
+-  UE 5.1 BUG: TSR和`Ultra Dynamic Sky`同时开会Crash
+-  UE 5.1 BUG: Ray Tracing Shadow获得的ShadingModelID永远是DefaultLit, 这意味着如Subsurface Transmission之类的效果不生效
+-  UE 5.1 BUG: 材质预览窗口的地板在开启Ray Tracing Skylight时是黑的 
+-  UE 5.1 BUG: OIT会导致半透明混合模式Add失效
+-  **UE 长期 BUG: 调整Layer材质相当容易Crash, 使用时记得经常保存**
 
 
 
