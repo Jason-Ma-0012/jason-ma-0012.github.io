@@ -62,7 +62,11 @@ title: 开始使用
 ![image-20230212142104841](./assets/image-20230212142104841.png)
 
 ![](./assets/image-20230211002416094.png)
-由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败. 此时你可以从以下任意一个云盘手动下载:
+由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败. 
+
+你首先应该尝试开关全局代理, 或者切换代理服务器.
+
+若仍然无法解决, 你可以从以下任意一个云盘手动下载:
 
 - https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
 - https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
