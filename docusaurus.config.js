@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Mooa Toon',
   tagline: 'The Ultimate Solution for UE5 Cinematic Toon Rendering',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/MooaToon.png',
 
   // Set the production url of your site here
   url: 'https://mooatoon.com',
@@ -69,7 +69,7 @@ const config = {
         title: 'Mooa Toon',
         logo: {
           alt: 'Mooa Toon Logo',
-          src: 'img/logo.svg',
+          src: 'img/MooaToon.png',
         },
         items: [
           {
