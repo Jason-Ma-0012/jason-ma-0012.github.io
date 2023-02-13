@@ -31,52 +31,6 @@ title: 开始使用
 5. `_2_0_Install_And_Run_MooaToon.bat`按照提示登录Github账号, 等待下载和编译完成, 这可能需要2到5小时
 6. 完成后, 项目将自动打开
 
-#### Install_MooaToon_Engine/Project期间的网络问题
-可以尝试以下解决方法:
-###### 自动获取最快的Github IP
-通常,中国大陆用户访问Github网速很慢, 要解决这个问题请运行以下脚本:
-
-- `_2_4_Fetch_Fastest_Github_IPs.bat`
-
-该脚本在运行`_2_0_Install_And_Run_MooaToon.bat`时会自动执行, 其原理是通过第三方网站查询当前网络中最快的Github服务器IP, 并写入Host文件, 实现加速下载.
-###### 手动设置Git代理
-如果你有更快的代理服务器, 也可以手动为Git设置代理, `Win + R`输入以下命令(请将代理端口替换为你自己的代理端口):
-
-- Socks5: `git config --global http.proxy socks5://127.0.0.1:10808`
-- Http: `git config --global http.proxy http://127.0.0.1:10808`
-
-取消Git代理: `git config --global --unset http.proxy`
-###### 手动下载Zip
-您也可以选择不使用Git而是直接下载Zip, 这种方式下载可能更稳定, 并且可以使用迅雷加速下载和断点续传, 但每次更新都需要手动下载整个引擎和项目.
-
-1. 你可以前往https://github.com/Jason-Ma-0012/MooaToon-Engine下载Zip:					![](./assets/image-20230211002346396.png)
-2. 如图所示, 左侧选择的`5.1`为引擎分支, 点击右侧`Code > Download ZIP`开始下载引擎.
-3. 完成后请切换到`5.1_MooaToonProject`分支下载项目.
-4. 下载完成后回到MooaToon主目录, 将引擎解压到`MooaToon\MooaToon-Engine`目录内:			![](./assets/image-20230211002402855.png)
-5. 将项目解压到`MooaToon\MooaToon-Project`目录内:							![](./assets/image-20230211002410545.png)
-6. 运行`_2_3_Setup_Unreal_Engine.bat`, 注意, 这仍需要从Epic的服务器下载大量文件, 这一步目前无法绕过
-7. 运行`_4_0_Build_And_Run_MooaToon.bat`
-
-#### Setup_Unreal_Engine期间的网络问题
-
-![image-20230212142104841](./assets/image-20230212142104841.png)
-
-![](./assets/image-20230211002416094.png)
-由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败. 
-
-你首先应该尝试开关全局代理, 或者切换代理服务器.
-
-若仍然无法解决, 你可以从以下任意一个云盘手动下载:
-
-- https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
-- https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
-
-下载后, 你应该得到如下分卷压缩文件:![image-20230212142605626](./assets/image-20230212142605626.png)
-
-使用解压软件打开`ue4-gitdeps.zip`, 将其内容解压到类似`MooaToon-Engine\.git\ue-gitdeps`的文件夹, 然后再次运行`_2_3_Setup_Unreal_Engine.bat`, 现在你应该以相当快的速度完成.
-
-然后运行`_4_0_Build_And_Run_MooaToon.bat`以构建并启动项目.
-
 ### 检查项目
 启动项目后, 请耐心等待Shader编译完成, 随后你应该看到类似以下界面:
 ![image-20230211012812909](./assets/image-20230211012812909.png)
@@ -118,6 +72,54 @@ title: 开始使用
 -  UE 5.1 BUG: 材质预览窗口的地板在开启Ray Tracing Skylight时是黑的 
 -  UE 5.1 BUG: OIT会导致半透明混合模式Add失效
 -  **UE 长期 BUG: 调整Layer材质相当容易Crash, 使用时记得经常保存**
+
+
+### Install_MooaToon_Engine/Project期间的网络问题
+可以尝试以下解决方法:
+##### 自动获取最快的Github IP
+通常,中国大陆用户访问Github网速很慢, 要解决这个问题请运行以下脚本:
+
+- `_2_4_Fetch_Fastest_Github_IPs.bat`
+
+该脚本在运行`_2_0_Install_And_Run_MooaToon.bat`时会自动执行, 其原理是通过第三方网站查询当前网络中最快的Github服务器IP, 并写入Host文件, 实现加速下载.
+##### 手动设置Git代理
+如果你有更快的代理服务器, 也可以手动为Git设置代理, `Win + R`输入以下命令(请将代理端口替换为你自己的代理端口):
+
+- Socks5: `git config --global http.proxy socks5://127.0.0.1:10808`
+- Http: `git config --global http.proxy http://127.0.0.1:10808`
+
+取消Git代理: `git config --global --unset http.proxy`
+##### 手动下载Zip
+您也可以选择不使用Git而是直接下载Zip, 这种方式下载可能更稳定, 并且可以使用迅雷加速下载和断点续传, 但每次更新都需要手动下载整个引擎和项目.
+
+1. 你可以前往https://github.com/Jason-Ma-0012/MooaToon-Engine下载Zip:					![](./assets/image-20230211002346396.png)
+2. 如图所示, 左侧选择的`5.1`为引擎分支, 点击右侧`Code > Download ZIP`开始下载引擎.
+3. 完成后请切换到`5.1_MooaToonProject`分支下载项目.
+4. 下载完成后回到MooaToon主目录, 将引擎解压到`MooaToon\MooaToon-Engine`目录内:			![](./assets/image-20230211002402855.png)
+5. 将项目解压到`MooaToon\MooaToon-Project`目录内:							![](./assets/image-20230211002410545.png)
+6. 运行`_2_3_Setup_Unreal_Engine.bat`, 注意, 这仍需要从Epic的服务器下载大量文件, 这一步目前无法绕过
+7. 运行`_4_0_Build_And_Run_MooaToon.bat`
+
+### Setup_Unreal_Engine期间的网络问题
+
+![image-20230212142104841](./assets/image-20230212142104841.png)
+
+![](./assets/image-20230211002416094.png)
+由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败. 
+
+你首先应该尝试开关全局代理, 或者切换代理服务器.
+
+若仍然无法解决, 你可以从以下任意一个云盘手动下载:
+
+- https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
+- https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
+
+下载后, 你应该得到如下分卷压缩文件:![image-20230212142605626](./assets/image-20230212142605626.png)
+
+使用解压软件打开`ue4-gitdeps.zip`, 将其内容解压到类似`MooaToon-Engine\.git\ue-gitdeps`的文件夹, 然后再次运行`_2_3_Setup_Unreal_Engine.bat`, 现在你应该以相当快的速度完成.
+
+然后运行`_4_0_Build_And_Run_MooaToon.bat`以构建并启动项目.
+
 
 
 
