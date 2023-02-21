@@ -57,21 +57,23 @@ title: 开始使用
 类似`L_TimeOfDay_Require_UltraDynamicSky`的关卡需要您自行购买并安装`Ultra Dynamic Sky`插件:
 
 - 购买:[https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
-- 在Epic启动器的保管库中, 将`Ultra Dynamic Sky`安装到`MooaToon-Project` (如果未找到项目, 你可能需要先打开一次项目):			![image-20230211012826670](./assets/image-20230211012826670.png)
+- 在Epic启动器的保管库中, 将`Ultra Dynamic Sky`安装到`MooaToon-Project` (如果未找到项目, 你可能需要先打开一次项目):![image-20230211012826670](./assets/image-20230211012826670.png)
 - 重启UE5
-- 再次打开`L_TimeOfDay_Require_UltraDynamicSky`, 你应该能够看到:						![](./assets/image-20230211002455202.png)
-- 你可以Play以查看动态天气效果:															![image-20230211012840797](./assets/image-20230211012840797.png)
+- 再次打开`L_TimeOfDay_Require_UltraDynamicSky`, 你应该能够看到:![](./assets/image-20230211002455202.png)
+- 你可以Play以查看动态天气效果:![image-20230211012840797](./assets/image-20230211012840797.png)
 - 你可以使用快捷键`G`预览Play模式的显示设置
 - 有关`Ultra Dynamic Sky`的详细用法可以在其商店页面找到
 ## 已知问题
 
 -  **请尽可能_复制_而不是更改MooaToon资源, 否则可能会因为更新而产生冲突**
--  UE 5.1 BUG: 有时角色的Ray Tracing Shadow会消失, Play或隐藏/显示角色后再次显示 
--  UE 5.1 BUG: TSR和`Ultra Dynamic Sky`同时开会Crash
--  UE 5.1 BUG: Ray Tracing Shadow获得的ShadingModelID永远是DefaultLit, 这意味着如Subsurface Transmission之类的效果不生效
--  UE 5.1 BUG: 材质预览窗口的地板在开启Ray Tracing Skylight时是黑的 
--  UE 5.1 BUG: OIT会导致半透明混合模式Add失效
--  **UE 长期 BUG: 调整Layer材质相当容易Crash, 使用时记得经常保存**
+-  UE 5.1 已知的官方BUG:
+   -  有时角色的光线追踪阴影会消失, 运行游戏或隐藏/显示角色后再次显示
+   -  光线追踪阴影获得的ShadingModelID永远是DefaultLit, 这意味着如次表面透射之类的效果不生效
+   -  材质预览窗口的地面在开启光线追踪天光时是黑的
+   -  OIT (排序无关半透明) 会导致半透明混合模式添加失效
+   -  **调整层材质相当容易崩溃, 使用时记得经常保存**
+   -  **层材质的参数描述经常会消失, 查看完整的参数描述请打层材质后在参数面板上查看**
+
 
 
 ### Install_MooaToon_Engine/Project期间的网络问题
@@ -105,7 +107,7 @@ title: 开始使用
 ![image-20230212142104841](./assets/image-20230212142104841.png)
 
 ![](./assets/image-20230211002416094.png)
-由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败. 
+由于Epic服务器问题, Setup期间可能卡在某一个文件, 或者下载失败.
 
 你首先应该尝试开关全局代理, 或者切换代理服务器.
 
@@ -116,10 +118,9 @@ title: 开始使用
 
 下载后, 你应该得到如下分卷压缩文件:![image-20230212142605626](./assets/image-20230212142605626.png)
 
-使用解压软件打开`ue4-gitdeps.zip`, 将其内容解压到类似`MooaToon-Engine\.git\ue-gitdeps`的文件夹, 然后再次运行`_2_3_Setup_Unreal_Engine.bat`, 现在你应该以相当快的速度完成.
+使用解压软件打开`ue-gitdeps.zip`, 将其内容解压到`MooaToon-Engine\.git\ue-gitdeps`文件夹, 然后再次运行`_2_3_Setup_Unreal_Engine.bat`, 现在你应该以相当快的速度完成.
 
 然后运行`_4_0_Build_And_Run_MooaToon.bat`以构建并启动项目.
-
 
 
 
