@@ -1,3 +1,37 @@
+function GenerateMySidebarItems(items) {
+
+  // // Get current layer docs
+  // var docs = new Array();
+  // for (let index = 0; index < items.length; index++) {
+  //   const item = items[index];
+  //   if (item.type === 'doc') {
+  //     docs.push({item: item, index: index});
+  //   }
+  // }
+
+  // // If doc and category use the same label, merge doc and category
+  // docs.map((doc) => {
+  //   var IndexOfCategoryWidthSameLabel = items.findIndex((item) => {
+  //     return (item.type === 'category' && item.label === doc.item.id);
+  //   });
+  //   if (IndexOfCategoryWidthSameLabel > -1) {
+  //     items[IndexOfCategoryWidthSameLabel].link = { type: 'doc', id: doc.item.id };
+  //     items[IndexOfCategoryWidthSameLabel].label = doc.item.label;
+  //     items.splice(doc.index, 1);
+  //   }
+  // });
+  
+  
+  // const result = items.map((item) => {
+  //   if (item.type === 'category') {
+  //     return {...item, items: GenerateMySidebarItems(item.items)};
+  //   }
+  //   return item;
+  // });
+
+  return items;
+}
+
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -6,7 +40,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mooa Toon',
+  title: 'MooaToon',
   tagline: '',
   favicon: 'img/MooaToonLogo_32.png',
 
@@ -66,7 +100,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Mooa Toon',
+        title: 'MooaToon',
         logo: {
           alt: 'MooaToonLogo_64',
           src: 'img/MooaToonLogo_64.png',
@@ -74,12 +108,12 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'getting-started',
+            docId: 'GettingStarted/GettingStarted',
             position: 'left',
             label: 'Docs',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
-          // {to: '/About', label: 'About', position: 'left'},
+          {to: '/License', label: 'License', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'left',
@@ -104,7 +138,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/getting-started',
+                to: '/docs/GettingStarted',
               },
             ],
           },
@@ -164,7 +198,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Mooa Toon, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MooaToon, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -179,6 +213,17 @@ const config = {
           hideable: true,
         },
       },
+      plugins: [
+        [
+          '@docusaurus/plugin-content-docs',
+          {
+            async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+              const sidebarItems = await defaultSidebarItemsGenerator(args);
+              return GenerateMySidebarItems(sidebarItems);
+            },
+          },
+        ],
+      ],
     }),
 };
 
