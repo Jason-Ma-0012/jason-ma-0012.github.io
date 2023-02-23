@@ -1,10 +1,10 @@
 ---
 id: BuildEnginefromSourceCode
-title: 从源码编译引擎
+title: Build Engine from Source Code
 sidebar_position: 0
 ---
 
-# 从源码编译引擎
+# Build Engine from Source Code
 
 根据你的网络和CPU, 整个安装过程可能需要3~8个小时, 请稍安勿躁, 如果过程中有无法解决的问题可以提交[Issues](https://github.com/JasonMa0012/MooaToon/issues/new).
 

@@ -1,9 +1,9 @@
 ---
 id: GettingStarted
-title: 开始使用
+title: Getting Started
 sidebar_position: 0
 ---
-# 开始使用
+# Getting Started
 
 ## 体验可执行的Demo
 
