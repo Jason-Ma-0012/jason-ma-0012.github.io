@@ -29,3 +29,9 @@
   --ifm-background-color: #2e2b29;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Limit images max height */
+img {
+  max-height:500px;
+  width: auto;
+}
