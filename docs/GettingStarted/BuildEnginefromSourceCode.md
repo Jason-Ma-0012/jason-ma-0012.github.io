@@ -37,7 +37,8 @@ sidebar_position: 0
 ### 检查项目
 启动项目后, 请耐心等待Shader编译完成, 随后你应该看到类似以下界面:
 ![image-20230211012812909](./assets/image-20230211012812909.png)
-在`Content\MooaToon\Maps`目录可以找到所有示例关卡:
+
+在`Content\MooaToonSamples\Maps`目录可以找到所有示例关卡:
 ![image-20230211002432647](./assets/image-20230211002432647.png)
 
 随意探索一下吧.
@@ -54,6 +55,7 @@ sidebar_position: 0
 ## - 开发者用户
 
 如何从源码编译引擎: [https://docs.unrealengine.com/5.1/zh-CN/building-unreal-engine-from-source/](https://docs.unrealengine.com/5.1/zh-CN/building-unreal-engine-from-source/)
+
 前往: [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine)
 拉取`5.1`分支以编译引擎, 拉取`5.1_MooaToonProject`分支以启动项目, Enjoy it!
 
@@ -65,9 +67,7 @@ sidebar_position: 0
 
 #### 自动获取最快的Github IP
 
-通常,中国大陆用户访问Github网速很慢, 要解决这个问题请运行以下脚本:
-
-- `_2_4_Fetch_Fastest_Github_IPs.bat`
+通常,中国大陆用户访问Github网速很慢, 要解决这个问题请运行脚本: `_2_4_Fetch_Fastest_Github_IPs.bat`
 
 该脚本在运行`_2_0_Install_And_Run_MooaToon.bat`时会自动执行, 其原理是通过第三方网站查询当前网络中最快的Github服务器IP, 并写入Host文件, 实现加速下载.
 #### 手动设置Git代理

@@ -5,35 +5,35 @@ sidebar_position: 0
 ---
 # Getting Started
 
-## 体验可执行的Demo
+## Experience an executable demo
 
 TODO
 
-## 选择你想要安装的引擎版本
+## Select the engine version that you want to install
 
 
 
-### 安装预编译版引擎
+### Install the precompiled version of the engine
 
 TODO
 
-### 从源码编译引擎
+### Compile the engine from source code
 
-[从源码编译引擎](BuildEnginefromSourceCode.md)
+[Compile the engine from source code](BuildEnginefromSourceCode.md)
 
 
 
-## (可选) 安装Ultra Dynamic Sky
+## (Optional) Install Ultra Dynamic Sky
 
-类似`L_TimeOfDay_Require_UltraDynamicSky`的关卡需要您自行购买并安装`Ultra Dynamic Sky`插件以获得对动态天气系统的支持:
+Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and install `Ultra Dynamic Sky` plugin to support the dynamic weather system:
 
-- 购买:[https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
-- 在Epic启动器的保管库中, 将`Ultra Dynamic Sky`安装到`MooaToon-Project` (如果未找到项目, 你可能需要先打开一次项目):![image-20230211012826670](./assets/image-20230211012826670.png)
-- 重启引擎
-- 再次打开`L_TimeOfDay_Require_UltraDynamicSky`, 你应该能够看到:![](./assets/image-20230211002455202.png)
-- 你可以运行游戏以查看动态天气效果:![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png)
-- 有关`Ultra Dynamic Sky`的详细用法可以在其商店页面找到
+- Purchase:[https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
+- In the Epic Launcher Library, install `Ultra Dynamic Sky` into `MooaToon-Project` (if you don't find a project, you may need to open it once):![image-20230211012826670](./assets/image-20230211012826670.png)
+- Restart the engine
+- Open `L_TimeOfDay_Require_UltraDynamicSky` again, and you should be able to see:![](./assets/image-20230211002455202.png)
+- You can run the game to see dynamic weather effects:![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png)![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true)
+- Detailed usage of `Ultra Dynamic Sky` can be found on its store page
 
-## 文件目录结构
+## File directory structure
 
 TODO

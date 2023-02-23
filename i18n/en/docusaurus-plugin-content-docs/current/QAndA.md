@@ -5,16 +5,16 @@ sidebar_position: 10
 ---
 # Q and A
 
-## 已知问题
+## Known issues
 
--  **请尽可能_复制_而不是更改MooaToon资源, 否则可能会因为更新而产生冲突**
--  UE 5.1 已知的官方BUG:
-   -  有时角色的光线追踪阴影会消失, 运行游戏或隐藏/显示角色后再次显示
-   -  光线追踪阴影获得的ShadingModelID永远是DefaultLit, 这意味着如次表面透射之类的效果不生效
-   -  材质预览窗口的地面在开启光线追踪天光时是黑的
-   -  OIT (排序无关半透明) 会导致半透明混合模式添加失效
-   -  **调整层材质相当容易崩溃, 使用时记得经常保存**
-   -  **层材质的参数描述经常会消失, 查看完整的参数描述请打层材质后在参数面板上查看**
+-  **Please *copy* rather than change MooaToon resources whenever possible, otherwise conflicts may arise due to updates**
+-  Known official BUGs in UE 5.1:
+   - Sometimes the Ray Tracing Shadow of the character disappears, shows it again after running the game or hide / show the character
+   - The ShadingModelID obtained Ray Tracing Shadow is always DefaultLit, which means that effects such as Subsurface Transmission do not work
+   - The floor of the material preview window is black when Ray Tracing Skylight is enabled
+   - OIT (Order Independent Transparency) causes translucent Blending Mode Add to become invalid
+   - **Adjusting the Material Layer is quite easy to crash, remember to save it often when using it**
+   - **The parameter descriptions of the Material Layer often disappears, please view the complete parameter description on the Parameters Panel after opening the material editor**
 
 
 
