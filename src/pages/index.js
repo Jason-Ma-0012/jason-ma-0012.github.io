@@ -8,24 +8,34 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 
+const style_header_bg = {
+  backgroundImage: 'url(img/HomeHeaderBG.png)',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+}
 
+const style_title = {
+  color: 'var(--ifm-color-secondary-lightest)',
+  textShadow: '0px 0px 10px var(--ifm-color-secondary-lightest)',
+}
+
+const style_button_text = {
+  color: 'var(--ifm-color-secondary-lightest)',
+  textShadow: '0px 0px 20px var(--ifm-color-secondary-lightest)',
+}
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header
       className={clsx('hero hero--primary', styles.heroBanner)}
-      style={{
-        backgroundImage: 'url(img/HomeHeaderBG.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      style={style_header_bg}
     >
       <div className="container"
       >
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">
+        <h1 className="hero__title" style={style_title}> {siteConfig.title} </h1>
+        <p className="hero__subtitle" style={style_title}>
           <Translate
             id='homepage.subtitle'>
             UE5影视级卡通渲染的终极解决方案
@@ -33,7 +43,8 @@ function HomepageHeader() {
         </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
+            style={style_button_text}
             to="/docs/GettingStarted">
             <Translate
               id='homepage.gettingStarted'>
