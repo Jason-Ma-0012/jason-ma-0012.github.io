@@ -8,11 +8,22 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 
+
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
+    <header
+      className={clsx('hero hero--primary', styles.heroBanner)}
+      style={{
+        backgroundImage: 'url(img/HomeHeaderBG.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="container"
+      >
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">
           <Translate

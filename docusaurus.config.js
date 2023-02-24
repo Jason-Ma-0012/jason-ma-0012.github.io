@@ -1,37 +1,3 @@
-function GenerateMySidebarItems(items) {
-
-  // // Get current layer docs
-  // var docs = new Array();
-  // for (let index = 0; index < items.length; index++) {
-  //   const item = items[index];
-  //   if (item.type === 'doc') {
-  //     docs.push({item: item, index: index});
-  //   }
-  // }
-
-  // // If doc and category use the same label, merge doc and category
-  // docs.map((doc) => {
-  //   var IndexOfCategoryWidthSameLabel = items.findIndex((item) => {
-  //     return (item.type === 'category' && item.label === doc.item.id);
-  //   });
-  //   if (IndexOfCategoryWidthSameLabel > -1) {
-  //     items[IndexOfCategoryWidthSameLabel].link = { type: 'doc', id: doc.item.id };
-  //     items[IndexOfCategoryWidthSameLabel].label = doc.item.label;
-  //     items.splice(doc.index, 1);
-  //   }
-  // });
-  
-  
-  // const result = items.map((item) => {
-  //   if (item.type === 'category') {
-  //     return {...item, items: GenerateMySidebarItems(item.items)};
-  //   }
-  //   return item;
-  // });
-
-  return items;
-}
-
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -116,7 +82,7 @@ const config = {
           {to: '/License', label: 'License', position: 'left'},
           {
             type: 'localeDropdown',
-            position: 'left',
+            position: 'right',
           },
           {
             href: 'https://elysium.jason-ma.com',
@@ -158,20 +124,20 @@ const config = {
                 href: 'https://www.youtube.com/@jasonma0012',
               },
               {
-                label: 'QQ频道',
-                href: 'https://pd.qq.com/s/hahevtmwc',
-              },
-              {
-                label: 'QQ群',
-                href: 'https://jq.qq.com/?_wv=1027&k=dn0yom7z',
+                label: 'Bilibili',
+                href: 'https://space.bilibili.com/42463206',
               },
               {
                 label: '知乎',
                 href: 'https://www.zhihu.com/people/blackcat1312',
               },
               {
-                label: 'Bilibili',
-                href: 'https://space.bilibili.com/42463206',
+                label: 'QQ群',
+                href: 'https://jq.qq.com/?_wv=1027&k=dn0yom7z',
+              },
+              {
+                label: 'QQ频道',
+                href: 'https://pd.qq.com/s/hahevtmwc',
               },
             ],
           },
@@ -181,6 +147,23 @@ const config = {
               {
                 label: 'License',
                 to: 'https://elysium.jason-ma.com',
+              },
+            ],
+          },
+          {
+            title: 'References',
+            items: [
+              {
+                label: 'Unity-Chan (UTJ)',
+                href: 'https://unity-chan.com/',
+              },
+              {
+                label: 'VRM4U (ruyo)',
+                href: 'https://github.com/ruyo/VRM4U',
+              },
+              {
+                label: 'Ultra Dynamic Sky',
+                href: 'https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky',
               },
             ],
           },
@@ -213,17 +196,6 @@ const config = {
           hideable: true,
         },
       },
-      plugins: [
-        [
-          '@docusaurus/plugin-content-docs',
-          {
-            async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
-              const sidebarItems = await defaultSidebarItemsGenerator(args);
-              return GenerateMySidebarItems(sidebarItems);
-            },
-          },
-        ],
-      ],
     }),
 };
 
