@@ -18,7 +18,7 @@ sidebar_position: 20
 - 实现指定的新功能
 - ...
 
-请咨询邮箱: jasonma0012@foxmail.com
+请咨询邮箱: jasonma@mooatoon.com
 
 ## 正文
 

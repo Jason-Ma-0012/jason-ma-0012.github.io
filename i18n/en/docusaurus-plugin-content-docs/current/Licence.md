@@ -18,7 +18,7 @@ If you need:
 - Implements the specified new functionality
 - ...
 
-Please contact email: [jasonma0012@foxmail.com](mailto:jasonma0012@foxmail.com)
+Please contact email: [jasonma@mooatoon.com](mailto:jasonma@mooatoon.com)
 
 ## Body
 

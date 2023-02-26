@@ -107,7 +107,7 @@ const config = {
           {
             title: 'Contect Us',
             items: [
-              { label: 'Email',           href: 'mailto:jasonma0012@foxmail.com',},
+              { label: 'Email',           href: 'mailto:jasonma@mooatoon.com',},
               { label: 'Report Issues',   href: 'https://github.com/JasonMa0012/MooaToon/issues/new',},
             ],
           },
