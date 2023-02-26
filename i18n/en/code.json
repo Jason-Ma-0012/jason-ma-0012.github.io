@@ -278,5 +278,29 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.feature.title.0": {
+    "message": "Realtime"
+  },
+  "homepage.feature.description.0a": {
+    "message": "Realtime Environment Interaction: Lights, Shadows, Global Illumination, etc. just like UE Native Materials."
+  },
+  "homepage.feature.description.0b": {
+    "message": "Dynamic Character Effects, Excellent Controllability, meet the needs of Cinematics and Games at the same time."
+  },
+  "homepage.demo.0": {
+    "message": "https://www.youtube.com/embed/Or9OXqIU328"
+  },
+  "homepage.features": {
+    "message": "Features"
+  },
+  "homepage.demos": {
+    "message": "Demos"
+  },
+  "homepage.downloadDemo": {
+    "message": "Download the Runnable Demo (TODO)"
+  },
+  "homepage.cooperationProjects": {
+    "message": "Cooperation Projects"
   }
 }

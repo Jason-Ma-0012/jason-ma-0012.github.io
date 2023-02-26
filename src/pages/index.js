@@ -17,12 +17,12 @@ const style_header_bg = {
 
 const style_title = {
   color: 'var(--ifm-color-secondary-lightest)',
-  textShadow: '0px 0px 10px var(--ifm-color-secondary-lightest)',
+  textShadow: '0px 0px 15px var(--ifm-color-primary-lighter)',
 }
 
 const style_button_text = {
   color: 'var(--ifm-color-secondary-lightest)',
-  textShadow: '0px 0px 20px var(--ifm-color-secondary-lightest)',
+  textShadow: '0px 0px 20px var(--ifm-color-secondary)',
 }
 
 function HomepageHeader() {
@@ -66,7 +66,7 @@ export default function Home() {
           id: 'homepage.homepage',
           message: '首页'
         })}
-      description="Description will go into a meta tag in <head />">
+      description="The Ultimate Solution for Cinematic Toon Rendering in UE5">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

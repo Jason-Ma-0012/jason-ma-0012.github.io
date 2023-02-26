@@ -36,9 +36,11 @@ sidebar_position: 0
 
 ### 检查项目
 启动项目后, 请耐心等待Shader编译完成, 随后你应该看到类似以下界面:
+
 ![image-20230211012812909](./assets/image-20230211012812909.png)
 
 在`Content\MooaToonSamples\Maps`目录可以找到所有示例关卡:
+
 ![image-20230211002432647](./assets/image-20230211002432647.png)
 
 随意探索一下吧.
@@ -80,12 +82,24 @@ sidebar_position: 0
 #### 手动下载Zip
 您也可以选择不使用Git而是直接下载Zip, 这种方式下载可能更稳定, 并且可以使用迅雷加速下载和断点续传, 但每次更新都需要手动下载整个引擎和项目.
 
-1. 你可以前往https://github.com/Jason-Ma-0012/MooaToon-Engine下载Zip:					![](./assets/image-20230211002346396.png)
+1. 你可以前往https://github.com/Jason-Ma-0012/MooaToon-Engine下载Zip:
+
+  ![](./assets/image-20230211002346396.png)
+
 2. 如图所示, 左侧选择的`5.1`为引擎分支, 点击右侧`Code > Download ZIP`开始下载引擎.
+
 3. 完成后请切换到`5.1_MooaToonProject`分支下载项目.
-4. 下载完成后回到MooaToon主目录, 将引擎解压到`MooaToon\MooaToon-Engine`目录内:			![](./assets/image-20230211002402855.png)
-5. 将项目解压到`MooaToon\MooaToon-Project`目录内:							![](./assets/image-20230211002410545.png)
+
+4. 下载完成后回到MooaToon主目录, 将引擎解压到`MooaToon\MooaToon-Engine`目录内:
+
+   ![](./assets/image-20230211002402855.png)
+
+5. 将项目解压到`MooaToon\MooaToon-Project`目录内:
+
+  ![](./assets/image-20230211002410545.png)
+
 6. 运行`_2_3_Setup_Unreal_Engine.bat`, 注意, 这仍需要从Epic的服务器下载大量文件, 这一步目前无法绕过
+
 7. 运行`_4_0_Build_And_Run_MooaToon.bat`
 
 ### Setup_Unreal_Engine期间的网络问题
@@ -102,7 +116,9 @@ sidebar_position: 0
 - https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
 - https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
 
-下载后, 你应该得到如下分卷压缩文件:![image-20230212142605626](./assets/image-20230212142605626.png)
+下载后, 你应该得到如下分卷压缩文件:
+
+![image-20230212142605626](./assets/image-20230212142605626.png)
 
 使用解压软件打开`ue-gitdeps.zip`, 将其内容解压到`MooaToon-Engine\.git\ue-gitdeps`文件夹, 然后再次运行`_2_3_Setup_Unreal_Engine.bat`, 现在你应该以相当快的速度完成.
 

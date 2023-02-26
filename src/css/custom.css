@@ -32,6 +32,6 @@
 
 /* Limit images max height */
 img {
-  max-height:500px;
+  max-height:250px;
   width: auto;
 }

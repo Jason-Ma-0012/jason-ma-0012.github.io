@@ -72,14 +72,10 @@ const config = {
           src: 'img/MooaToonLogo_64.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'GettingStarted/GettingStarted',
-            position: 'left',
-            label: 'Docs',
-          },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/License', label: 'License', position: 'left'},
+          { to: '/docs/GettingStarted',   label: 'Docs',      position: 'left' },
+          // { to: '/docs/History',          label: 'History',   position: 'left' },
+          { to: '/docs/Licence',          label: 'Licence',   position: 'left' },
+          { to: '/docs/QAndA',            label: 'Q&A',       position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -102,52 +98,29 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Docs',
-                to: '/docs/GettingStarted',
-              },
+              { to: '/docs/GettingStarted',   label: 'Getting Started',   },
+              { to: '/docs/History',          label: 'History',           },
+              { to: '/docs/Licence',          label: 'Licence',           },
+              { to: '/docs/QAndA',            label: 'Q&A',               },
+            ],
+          },
+          {
+            title: 'Contect Us',
+            items: [
+              { label: 'Email',           href: 'mailto:jasonma0012@foxmail.com',},
+              { label: 'Report Issues',   href: 'https://github.com/JasonMa0012/MooaToon/issues/new',},
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/rHmhgdtGfn',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/JasonMa0012',
-              },
-              {
-                label: 'Youtube',
-                href: 'https://www.youtube.com/@jasonma0012',
-              },
-              {
-                label: 'Bilibili',
-                href: 'https://space.bilibili.com/42463206',
-              },
-              {
-                label: '知乎',
-                href: 'https://www.zhihu.com/people/blackcat1312',
-              },
-              {
-                label: 'QQ群',
-                href: 'https://jq.qq.com/?_wv=1027&k=dn0yom7z',
-              },
-              {
-                label: 'QQ频道',
-                href: 'https://pd.qq.com/s/hahevtmwc',
-              },
-            ],
-          },
-          {
-            title: 'License',
-            items: [
-              {
-                label: 'License',
-                to: 'https://elysium.jason-ma.com',
-              },
+              { label: 'Discord',     href: 'https://discord.gg/rHmhgdtGfn',},
+              { label: 'Twitter',     href: 'https://twitter.com/JasonMa0012',},
+              { label: 'Youtube',     href: 'https://www.youtube.com/@jasonma0012',},
+              { label: 'Bilibili',    href: 'https://space.bilibili.com/42463206',},
+              { label: '知乎',   href: 'https://www.zhihu.com/people/blackcat1312',},
+              { label: 'QQ频道', href: 'https://pd.qq.com/s/hahevtmwc',},
+              // { label: 'QQ群', href: 'https://jq.qq.com/?_wv=1027&k=dn0yom7z',},
             ],
           },
           {
@@ -196,7 +169,20 @@ const config = {
           hideable: true,
         },
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(27, 27, 29)'
+        },
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        config: {}
+      },
     }),
+  
+  plugins: [
+    require.resolve('docusaurus-plugin-image-zoom')
+  ],
 };
 
 module.exports = config;

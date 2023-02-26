@@ -35,12 +35,14 @@ In turn:
 5. `_2_0_Install_And_Run_MooaToon.bat` follow the prompts to log in to your Github account and wait for the download and compilation to complete, which may take 2 to 5 hours
 6. When finished, the project will open automatically
 
-### Check the item
+### Check the project
 
 After starting the project, wait patiently for Shader to compile, and then you should see something similar to the following:
+
 ![image-20230211012812909](./assets/image-20230211012812909.png)
 
 All sample levels can be found in the `Content\MooaToonSamples\Maps` directory:
+
 ![image-20230211002432647](./assets/image-20230211002432647.png)
 
 Feel free to explore it.
@@ -82,12 +84,24 @@ Undo the Git proxy: `git config --global --unset http.proxy`
 
 You can also choose not to use Git but download Zip directly, this way of downloading may be more stable, and you can use other downloaders to speed up the download and resumption download, but each update requires manual download of the entire engine and project.
 
-1. You can go to [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine)  to download Zip:![](./assets/image-20230211002346396.png)
+1. You can go to [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine)  to download Zip:
+
+   ![](./assets/image-20230211002346396.png)
+
 2. As shown in the figure, select `5.1` as the engine branch on the left, click `Code > Download ZIP` on the right to start downloading the engine.
+
 3. When you're done, switch to `5.1_MooaToonProject` branch to download the project.
-4. After the download is complete, return to the MooaToon home directory and extract the engine to the MooaToon`MooaToon\MooaToon-Engine` directory:			![](./assets/image-20230211002402855.png)
-5. Extract the project to the MooaToon`MooaToon\MooaToon-Project` directory:							![](./assets/image-20230211002410545.png)
+
+4. After the download is complete, return to the MooaToon home directory and extract the engine to the MooaToon`MooaToon\MooaToon-Engine` directory:
+
+   ![](./assets/image-20230211002402855.png)
+
+5. Extract the project to the MooaToon`MooaToon\MooaToon-Project` directory:
+
+   ![](./assets/image-20230211002410545.png)
+
 6. Run `_2_3_Setup_Unreal_Engine.bat`, note that this still requires downloading a large number of files from Epic's servers, a step that cannot be bypassed at this time
+
 7. Run `_4_0_Build_And_Run_MooaToon.bat`
 
 ### Network issues during Setup_Unreal_Engine
@@ -104,7 +118,9 @@ If you still can't solve the problem, you can manually download it from any of t
 - https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
 - https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
 
-After downloading, you should get the following volume zip file:![image-20230212142605626](./assets/image-20230212142605626.png)
+After downloading, you should get the following volume zip file:
+
+![image-20230212142605626](./assets/image-20230212142605626.png)
 
 Open the `ue-gitdeps.zip` using the unzip software, extract its contents to the `MooaToon-Engine\.git\ue-gitdeps` folder, and run `_2_3_Setup_Unreal_Engine.bat` again, now you should finish it quite quickly.
 

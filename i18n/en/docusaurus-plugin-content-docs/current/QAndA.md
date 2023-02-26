@@ -1,9 +1,9 @@
 ---
 id: QAndA
-title: Q and A
-sidebar_position: 10
+title: Q&A
+sidebar_position: 30
 ---
-# Q and A
+# Q&A
 
 ## Things to know
 
