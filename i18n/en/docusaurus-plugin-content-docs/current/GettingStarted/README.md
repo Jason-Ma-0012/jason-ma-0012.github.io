@@ -11,7 +11,7 @@ TODO
 
 ## Select the engine version that you want to install
 
-MooaToon is essentially a custom version of UE, and currently does not support mobile platforms, so you cannot package games to mobile platforms.
+MooaToon is essentially a plugin that require modifications to the engine code, and currently does not support mobile platforms, so you cannot package games to mobile platforms.
 
 ### Install the precompiled version of the engine
 

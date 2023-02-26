@@ -28,7 +28,7 @@ sidebar_position: 20
 
 MooaToon的作者是Jason Ma (以下称为"作者"), 并且由以下部分组成:
 
-1. “引擎改动”: 指由Epic Games创建, 由作者进行修改的部分文件, 即通过和[Epic Games仓库](https://github.com/EpicGames/UnrealEngine)进行[分支对比](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1)得出的有内容修改的文件
+1. “引擎改动”: 指由作者在Epic Games的基础上进行修改的部分, 即通过和[Epic Games仓库](https://github.com/EpicGames/UnrealEngine)进行[分支对比](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1)得出的修改内容
 2. “插件内容”: 指由作者创建的文件, 包括但不限于:
    1. 引擎分支: [Engine/Plugins/MooaToon](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1/Engine/Plugins/MooaToon)
    2. 引擎分支其他非第三方新增文件 (如[ToonShadingCommon.ush](https://github.com/Jason-Ma-0012/MooaToon-Engine/blob/5.1/Engine/Shaders/Private/ToonShadingCommon.ush))
@@ -48,5 +48,4 @@ MooaToon的作者是Jason Ma (以下称为"作者"), 并且由以下部分组成
 **您可以任意修改MooaToon, 但MooaToon的所有权利依旧属于作者**. 
 
 同时也禁止在几乎不改变渲染技术的情况下, 改变引擎改动或插件内容以试图绕过此协议的行为.
-
 

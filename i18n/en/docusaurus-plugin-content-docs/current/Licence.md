@@ -5,37 +5,37 @@ sidebar_position: 20
 ---
 # Licence
 
-## 前言
+## Preface
 
-**简单来说, 你可以将MooaToon用于任何非商业用途. 但在进行商业行为之前, 你必须取得我们的商业授权.**
+**In simple terms, you can use MooaToon for any non-commercial use. But before conducting business activities, you must obtain our commercial authorization.**
 
-如果你需要:
+If you need:
 
-- 商业授权
-- 为角色设置最佳渲染效果
-- 优先技术支持
-- 优先Bug修复
-- 实现指定的新功能
+- Commercial Licensing
+- Set the best rendering for the character
+- Priority technical support
+- Priority bug fixes
+- Implements the specified new functionality
 - ...
 
-请咨询邮箱: jasonma0012@foxmail.com
+Please contact email: [jasonma0012@foxmail.com](mailto:jasonma0012@foxmail.com)
 
-## 正文
+## Body
 
-以下是一份用户许可协议 (以下称为“”协议“”), 协议随时可能更新, 请[Watch](https://github.com/JasonMa0012/MooaToon)此仓库以获取更新通知. 如果不同语言版本的协议出现了冲突, 则以中文版本为准.
+Below is a user license agreement (hereinafter referred to as the "Agreement"), which may be updated at any time, please [Watch](https://github.com/JasonMa0012/MooaToon) this repository for update notice. In the event of a conflict between different language versions of the Agreement, the Chinese version shall prevail.
 
-如果您继续使用MooaToon则视为已了解且同意该协议, 如果您使用且违反了本协议的条款, 我们保留随时向您追责的权利.
+If you continue to use MooaToon, you are deemed to have understood and agreed to this Agreement, and if you use and violate the terms of this Agreement, we reserve the right to pursue liability to you at any time.
 
-MooaToon的作者是Jason Ma (以下称为"作者"), 并且由以下部分组成:
+MooaToon is written by Jason Ma (hereinafter referred to as the "Author") and consists of the following parts:
 
-1. “引擎改动”: 指由Epic Games创建, 由作者进行修改的部分文件, 即通过和[Epic Games仓库](https://github.com/EpicGames/UnrealEngine)进行[分支对比](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1)得出的有内容修改的文件
-2. “插件内容”: 指由作者创建的文件, 包括但不限于:
-   1. 引擎分支: [Engine/Plugins/MooaToon](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1/Engine/Plugins/MooaToon)
-   2. 引擎分支其他非第三方新增文件 (如[ToonShadingCommon.ush](https://github.com/Jason-Ma-0012/MooaToon-Engine/blob/5.1/Engine/Shaders/Private/ToonShadingCommon.ush))
-   3. [Project分支](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1_MooaToonProject)内的非第三方内容
-3. “渲染技术”: 指由作者设计, 并以此为指导完成“引擎改动”和“插件内容”的技术概念
+1. "Engine Changes": refers to the partial content created by Epic Games and modified by the Author, i.e. files with content modifications that are compared to [the](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1) [Epic Games repository](https://github.com/EpicGames/UnrealEngine)
+2. "Plug-in Content": means files created by the author, including but not limited to:
+   1. Engine branch: [Engine/Plugins/MooaToon](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1/Engine/Plugins/MooaToon)
+   2. Engine branch other non-third-party additions (e.g. [ToonShadingCommon.ush](https://github.com/Jason-Ma-0012/MooaToon-Engine/blob/5.1/Engine/Shaders/Private/ToonShadingCommon.ush).))
+   3. Non-third-party content within [the Project branch](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1_MooaToonProject)
+3. "Rendering Technology": refers to the technical concept designed by the author and guided by the completion of "engine changes" and "plug-in content"
 
-对于引擎改动, 我们遵循”[Epic协议](https://www.unrealengine.com/en-US/eula/unreal)”, 对于插件内容和渲染技术, 我们在Epic协议的基础上有以下限制:
+For engine changes, we follow the "Epic Agreement", and for plugin content and rendering technology, we have the following restrictions on the [Epic Agreement](https://www.unrealengine.com/en-US/eula/unreal):
 
 ### 商业行为
 
