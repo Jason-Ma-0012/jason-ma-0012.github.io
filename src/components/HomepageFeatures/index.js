@@ -61,7 +61,7 @@ function ShowImageOrVideo({ imagePath, videoPath, mediaWidth, mediaHeight }) {
 function Feature({imagePath, videoPath, mediaWidth='8', mediaHeight='500', textWidth='3', title, description}) {
   return (
     <div className="row margin-vert--lg"
-      style={{ alignItems: 'center', justifyContent: 'center'}}>
+      style={{ alignItems: 'center', justifyContent: 'center', }}>
       <ShowImageOrVideo {...{imagePath, videoPath, mediaWidth, mediaHeight}} />
       <div className={"col col--" + textWidth + " padding--lg"}
         style={{ textAlign: 'center', }}>
@@ -91,7 +91,6 @@ export default function HomepageFeatures() {
         maxWidth: '1200px',
         textAlign: 'center',
         justifyContent: 'center',
-        display: 'flex !important',
         alignItems: 'center',
       }}>
       
