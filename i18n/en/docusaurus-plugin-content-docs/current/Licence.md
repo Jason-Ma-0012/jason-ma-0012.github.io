@@ -28,24 +28,24 @@ If you continue to use MooaToon, you are deemed to have understood and agreed to
 
 MooaToon is written by Jason Ma (hereinafter referred to as the "Author") and consists of the following parts:
 
-1. "Engine Changes": refers to the partial content created by Epic Games and modified by the Author, i.e. files with content modifications that are compared to [the](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1) [Epic Games repository](https://github.com/EpicGames/UnrealEngine)
-2. "Plug-in Content": means files created by the author, including but not limited to:
+1. "Engine Changes": means the parts modified by the Author based on Epic Games, i.e., the changes that are compared to [the Epic](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1) [Games repository](https://github.com/EpicGames/UnrealEngine)
+2. "Plugin Content": means files created by the Author, including but not limited to:
    1. Engine branch: [Engine/Plugins/MooaToon](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1/Engine/Plugins/MooaToon)
    2. Engine branch other non-third-party additions (e.g. [ToonShadingCommon.ush](https://github.com/Jason-Ma-0012/MooaToon-Engine/blob/5.1/Engine/Shaders/Private/ToonShadingCommon.ush).))
    3. Non-third-party content within [the Project branch](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1_MooaToonProject)
-3. "Rendering Technology": refers to the technical concept designed by the author and guided by the completion of "engine changes" and "plug-in content"
+3. "Rendering Technology": refers to the technical concept designed by the Author and guided by the completion of "Engine Changes" and "Plugin Content"
 
-For engine changes, we follow the "Epic Agreement", and for plugin content and rendering technology, we have the following restrictions on the [Epic Agreement](https://www.unrealengine.com/en-US/eula/unreal):
+For Engine Changes, we follow the "[Epic Agreement](https://www.unrealengine.com/en-US/eula/unreal)", and for plugin content and rendering technology, we have the following restrictions on the Epic Agreement:
 
-### 商业行为
+### Business Practices
 
-**在您获得我们的特别许可之前, 禁止您使用MooaToon进行一切商业行为.**
+**You are prohibited from using MooaToon for all commercial purposes until you have obtained our commercial authorization.**
 
-此外, 您可以使用MooaToon进行任何商业目的以外的行为, 但是**您需要自行承担一切行为后果**.
+In addition, you may use MooaToon for any conduct other than commercial purposes, but **you are responsible for all consequences of your actions**.
 
-### 修改
+### Modification
 
-**您可以任意修改MooaToon, 但MooaToon的所有权利依旧属于作者**. 
+**You can modify MooaToon as much as you like, but all rights to MooaToon remain with the Author**.
 
-同时也禁止在几乎不改变渲染技术的情况下, 改变引擎改动或插件内容以试图绕过此协议的行为.
+It is also forbidden to modify Engine Changes or Plugin Content in an attempt to circumvent this Agreement without changing the Rendering Technology.
 
