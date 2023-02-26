@@ -16,6 +16,10 @@ If you need:
 - Priority technical support
 - Priority bug fixes
 - Implements the specified new functionality
+- Read access to the development branch
+
+  - Experience the latest features
+  - More test cases
 - ...
 
 Please contact email: [jasonma@mooatoon.com](mailto:jasonma@mooatoon.com)

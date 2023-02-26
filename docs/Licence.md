@@ -16,6 +16,10 @@ sidebar_position: 20
 - 优先技术支持
 - 优先Bug修复
 - 实现指定的新功能
+- 开发分支的读取权限
+  - 体验最新的功能
+  - 更多的测试案例
+
 - ...
 
 请咨询邮箱: jasonma@mooatoon.com
