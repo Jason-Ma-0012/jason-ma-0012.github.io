@@ -53,7 +53,7 @@ You can check the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-En
 
 #### Resolve conflicts
 
-If you modify the MooaToon file, you will be prompted when updating, and if the modified file conflicts with the update, an error will be reported. It is recommended to manually back up and delete the files that caused the merge failure, and then update them again. If you want to discard all modified files, run `_3_4_Force_Update_MooaToon_X.bat`.
+If you modify the MooaToon file, you will be prompted when updating, and if the modified file conflicts with the update, an error will be reported. It is recommended to manually back up that caused the merge failure, and then update them again after run `_3_X_Clean_MooaToon_X`.
 
 ## - Developer users
 
