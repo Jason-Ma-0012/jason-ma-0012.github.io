@@ -113,7 +113,7 @@ Due to Epic server or network speed issues, a file may get stuck during Setup or
 
 You should first try toggling the global proxy, or switching the proxy server.
 
-If you still can't solve the problem, you can manually download it from any of the following cloud disks:
+If you still can't solve the problem, you can manually download it from any of the following NetDisk:
 
 - https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
 - https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2

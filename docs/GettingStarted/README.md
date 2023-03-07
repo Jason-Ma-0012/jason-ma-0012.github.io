@@ -15,9 +15,22 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 ### 安装预编译版引擎
 
-TODO
+如果你是美术师, 只是想要试用MooaToon, 预编译版本是一个不错的选择.
+
+预编译版本的优点是开箱即用, 无需等待引擎编译, 并且下载的内容最少, 运行的性能也最佳.
+
+预编译版本的缺点是无法打包C++游戏, 不含调试信息, 并且每次微小的更新都需要重新下载整个包体.
+
+你可以从以下两个网盘之一下载预编译版本:
+
+- https://mega.nz/folder/QiZnHBwQ#JmrsHFPpdtgKCAyrKueb7Q
+- https://pan.baidu.com/s/1bUuziyZ2_-ks3q0NWVv9ng?pwd=pdq8
+
+解压后, 使用引擎:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe`打开项目:`MooaToon-Project\MooaToon_Project.uproject`即可.
 
 ### 从源码编译引擎
+
+如果你想获得完整的引擎功能, 以及更快的更新速度, 请参考:
 
 [从源码编译引擎](BuildEnginefromSourceCode.md)
 

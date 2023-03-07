@@ -15,13 +15,24 @@ MooaToon is essentially a plugin that require modifications to the engine code, 
 
 ### Install the precompiled version of the engine
 
-TODO
+If you are an artist and just want to try out MooaToon, the precompiled version is a good choice.
+
+The advantage of the precompiled version is that it can be used out of the box without waiting for the engine to be compiled, and the downloaded content is the least, and the running performance is the best.
+
+The disadvantage of the precompiled version is that it cannot package C++ games, does not contain debugging information, and needs to re-download the entire package every time a small update is made.
+
+You can download the precompiled version from one of the following two NetDisk:
+
+- https://mega.nz/folder/QiZnHBwQ#JmrsHFPpdtgKCAyrKueb7Q
+- https://pan.baidu.com/s/1bUuziyZ2_-ks3q0NWVv9ng?pwd=pdq8
+
+After unzip, use the Engine:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe` to open the Project:`MooaToon-Project\MooaToon_Project.uproject`.
 
 ### Compile the engine from source code
 
+If you want to get full engine functionality and faster update speed, please refer to:
+
 [Compile the engine from source code](BuildEnginefromSourceCode.md)
-
-
 
 ## (Optional) Install Ultra Dynamic Sky
 
