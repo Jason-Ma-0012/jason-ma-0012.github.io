@@ -81,7 +81,7 @@ sidebar_position: 0
 #### 手动下载Zip
 您也可以选择不使用Git而是直接下载Zip, 这种方式下载可能更稳定, 并且可以使用迅雷加速下载和断点续传, 但每次更新都需要手动下载整个引擎和项目.
 
-1. 前往https://github.com/Jason-Ma-0012/MooaToon-Engine:
+1. 前往[https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine):
 
   ![](./assets/image-20230211002346396.png)
 
