@@ -5,19 +5,39 @@ sidebar_position: 30
 ---
 # 疑难解答
 
-## 须知
+## 限制
 
 ### 文件管理
 
 请尽可能复制而不是更改MooaToon文件, 否则可能会因为更新而产生冲突
 
-## UE 5.1 已知的官方BUG
+### 移动平台
+
+MooaToon暂不支持移动平台, XR和主机平台理论上应该支持但尚未测试
+
+### 全局光照
+
+Toon Material中与全局光照相关的功能默认使用Lumen, 其他方法暂未测试
+
+### 光线追踪
+
+Toon Material中与Shadow有关的功能必须开启Ray Tracing Shadow和Hardware Ray Tracing
+
+### 半透明
+
+半透明的Rim Light需要在后处理中开启High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) 以获取半透明物体深度
+
+## UE 5.1 官方已知的BUG
 
 ### 光线追踪
 
 #### 角色阴影消失
 
 有时角色的光线追踪阴影会消失, 运行游戏或隐藏 / 显示角色后再次显示
+
+#### 描边影响静态网格角色的阴影功能
+
+这是由于Ray Tracing Shadow错误调用了Overlay Material的Hit Shader, Toon Material中的Ray Tracing Shadow相关功能将被描边覆盖.
 
 #### 次表面透射
 

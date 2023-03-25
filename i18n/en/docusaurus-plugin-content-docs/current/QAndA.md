@@ -5,21 +5,39 @@ sidebar_position: 30
 ---
 # Q&A
 
-## Things to know
+## Limitations
 
 ### File management
 
 Please copy and not change the MooaToon file as much as possible, otherwise conflicts may arise due to the update
 
+### Mobile Platform
 
+MooaToon does not support mobile platforms at the moment, XR and console platforms should theoretically support but have not been tested yet
 
-## Known official BUGs in UE 5.1
+### Global Illumination
+
+The functions related to Global Illumination in Toon Material use Lumen by default, other methods have not been tested yet
+
+### Ray  Tracing
+
+The functions related to Shadow in Toon Material must enable Ray Tracing Shadow and Hardware Ray Tracing
+
+### Translucent
+
+Translucent Rim Light needs to enable High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) in Post Processing Volume to obtain the depth of translucent objects
+
+## UE 5.1 Official Known BUGs
 
 ### Ray Tracing
 
 #### Character shadow disappears
 
 Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again
+
+#### Outline affects the shadow function of static mesh characters
+
+This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Overlay Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
 
 #### Subsurface Transmission
 
