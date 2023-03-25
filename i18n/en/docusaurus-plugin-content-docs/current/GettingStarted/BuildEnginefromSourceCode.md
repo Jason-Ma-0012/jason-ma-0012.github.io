@@ -84,7 +84,7 @@ Undo the Git proxy: `git config --global --unset http.proxy`
 
 You can also choose not to use Git but download Zip directly, this way of downloading may be more stable, and you can use other downloaders to speed up the download and resumption download, but each update requires manual download of the entire engine and project.
 
-1. You can go to [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine)  to download Zip:
+1. Go to [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine):
 
    ![](./assets/image-20230211002346396.png)
 
