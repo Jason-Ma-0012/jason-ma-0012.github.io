@@ -154,7 +154,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MooaToon, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jason Ma. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
