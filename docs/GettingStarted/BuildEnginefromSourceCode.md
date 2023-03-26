@@ -31,8 +31,9 @@ sidebar_position: 0
 2. `_1_2_Install_VisualStudio.bat`以默认设置安装Visual Studio
 3. 保存你的工作内容
 4. `_1_3_Restart_Computer.bat`重启电脑
-5. `_2_0_Install_And_Run_MooaToon.bat`按照提示登录Github账号, 等待下载和编译完成, 这可能需要2到5小时
-6. 完成后, 项目将自动打开
+5. (仅适用于位于中国大陆的用户)`_2_4_Fetch_Fastest_Github_IPs.bat`加速Github下载
+6. `_2_0_Install_And_Run_MooaToon.bat`按照提示登录Github账号, 等待下载和编译完成, 这可能需要2到5小时
+7. 完成后, 项目将自动打开
 
 ### 检查项目
 启动项目后, 请耐心等待Shader编译完成, 随后你应该看到类似以下界面:
