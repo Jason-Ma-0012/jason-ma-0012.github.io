@@ -26,7 +26,7 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 - https://mega.nz/folder/QiZnHBwQ#JmrsHFPpdtgKCAyrKueb7Q
 - https://pan.baidu.com/s/1bUuziyZ2_-ks3q0NWVv9ng?pwd=pdq8
 
-解压后, 使用引擎:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe`打开项目:`MooaToon-Project\MooaToon_Project.uproject`即可.
+解压后, 使用引擎:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe`打开项目:`MooaToon_Project.uproject`即可.
 
 ### 从源码编译引擎
 

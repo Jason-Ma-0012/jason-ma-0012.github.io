@@ -6,89 +6,88 @@ sidebar_position: 0
 
 # Import a New Character and Setup the Basic Material
 
-以[Unity Chan](https://unity-chan.com/)为示例角色, 你可以在`MooaToon\MooaToon-Project\Art\Models\SD_unitychan_generic.fbx`找到原始的Unity Chan模型.
+Using [Unity Chan](https://unity-chan.com/) as an example character, you can find the original Unity Chan model at `MooaToon\MooaToon-Project\Art\Models\SD_unitychan_generic.fbx`.
 
-你还可以通过以下网站获取角色模型:
+You can also get character models at:
 
-- 付费
-  - UE 官方商城: https://www.unrealengine.com/marketplace
-  - Unity官方商城: https://assetstore.unity.com/
+- Paid
+  - UE Marketplace: https://www.unrealengine.com/marketplace
+  - Unity Asset Store: https://assetstore.unity.com/
   - BOOTH: https://booth.pm/
   - ...
 
-- 免费
+- Free
   - Mirai Komachi: https://www.miraikomachi.com/download/
   - ネオン: http://airtone-vr.com/
-  - MMD模型: https://bowlroll.net/
-  - VRoid模型: https://hub.vroid.com/
+  - MMD Models: https://bowlroll.net/
+  - VRoid Models: https://hub.vroid.com/
   - ...
 
+For MMD models you need to convert them to FBX models first, [Blender](https://www.blender.org/) and [Cats Blender Plugin](https://github.com/absolute-quantum/cats-blender-plugin) are recommended.
 
-对于MMD模型你需要先将其转换为FBX模型, 推荐使用[Blender](https://www.blender.org/)和[Cats Blender Plugin](https://github.com/absolute-quantum/cats-blender-plugin).
+VRoid can make character models easily and quickly, VRM4U can be used to import VRoid models, VRM4U support is currently planned.
 
-VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型, 目前对于VRM4U的支持已在计划中.
+## Import Characters
 
-## 导入角色
+Character models can be imported by dragging them directly into the Unreal Editor's Content Browser, you may need to adjust the rotation and scaling in the Import Settings due to different export settings for different DCC software.
 
-直接将角色FBX模型拖入虚幻编辑器的内容浏览器即可导入角色模型, 由于不同DCC软件的导出设置不同, 可能需要调整导入设置中的旋转和缩放.
-
-正确导入后角色应正面朝前站在地上, 并大小合适:
+After proper import, the character should stand on the ground facing forward and be the right size:
 
 ![image-20230326003909649](./assets/image-20230326003909649.png)
 
-复制并打开场景`Content/MooaToonSamples/Maps/L_LookDev.umap`, 将角色骨骼网格体放入其中:
+Copy and open the scene `Content/MooaToonSamples/Maps/L_LookDev.umap` and place the Character Skeletal Mesh in it:
 
 ![image-20230326011353744](./assets/image-20230326011353744.png)
 
-## 创建材质
+## Create Materials
 
-在内容浏览器中创建一个材质实例, 父材质选择MI_Toon, 确保筛选器中已选择显示插件内容: 
+Create a Material Instance in the Content Browser, Parent Material selection MI_Toon, make sure Show Plugin Content is selected in the filter:
 
 ![image-20230326004156586](./assets/image-20230326004156586.png)
 
 ![image-20230326004320383](./assets/image-20230326004320383.png)
 
-打开角色的骨骼网格体文件, 将刚刚创建的材质放入材质插槽中:
+Open your character's Skeletal Mesh file and place the Material Instance you just created into the Material Slots:
 
 ![image-20230326004426102](./assets/image-20230326004426102.png)
 
-注意, Unity Chan只有一张贴图所以只创建了一个材质实例, 如果你的模型的多个部位对应不同的贴图, 那么你需要为每个部位分别创建一个材质实例.
+Note that Unity Chan only has one texture so created only one Material Instance, if you have multiple parts of your model corresponding to different textures, then you need to create a Material Instance for each part.
 
-## 材质设置
+## Material Settings
 
-在内容浏览器中导入角色贴图(`MooaToon\MooaToon-Project\Art\Models\Textures\utc_all2.tga`).
+Import character texture (`MooaToon-Project\Art\Models\Textures\utc_all2.tga`) in the Content Browser.
 
-在材质实例中, 将Base Color Map和Shadow Color Map设置为角色贴图:
+Set Base Color Map and Shadow Color Map as character texture in the Material Instance:
 
 ![image-20230326005631424](./assets/image-20230326005631424.png)
 
 ![image-20230326005752003](./assets/image-20230326005752003.png)
 
-## 描边设置
+## Outline Settings
 
-确保角色骨骼网格体的设置中关闭了Recompute Normals/Tangent:
+Make sure Recompute Normals/Tangent is disabled in the settings for the Character Skeletal Mesh:
 
-![image-20230326011805101](./assets/image-20230326011805101.png)
+![image-20230326142520020](./assets/image-20230326142520020.png)
 
-在角色骨骼网格体上右键, 选择`Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
+Right-Click the Character Skeletal Mesh and select `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
 
 ![image-20230326010721883](./assets/image-20230326010721883.png)
 
-在内容浏览器中创建用于描边的材质实例, 父材质选择MI_OverlayOutline, 并设置以下参数:
+Create a Material Instance for Outline in the Content Browser, Parent Material selection MI_OverlayOutline, and set the following parameters:
 
 ![image-20230326010641603](./assets/image-20230326010641603.png)
 
-选中关卡中的角色, 将描边材质设为Overlay Material:
+Select the character in the level and set the Outline Material to Overlay Material:
 
 ![image-20230326012052702](./assets/image-20230326012052702.png)
 
-现在你应该能看到完整的角色描边:
+You should now see the full character outline:
 
 ![image-20230326012126313](./assets/image-20230326012126313.png)
 
-## 视口设置
+## Viewport Settings
 
-你应该注意视口设置, 不同的FOV将对角色透视产生巨大的影响:
+You should pay attention to the Viewport Settings, different FOVs will have a huge impact on character perspective:
 
 ![image-20230326012305572](./assets/image-20230326012305572.png)
 
@@ -96,49 +95,49 @@ VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型
 
 ![image-20230326012439049](./assets/image-20230326012439049.png)
 
-如果你追求日本动画这种平面化的角色外观, 你应该使用尽可能小的FOV, 比如10.
+If you pursue the flattened character look of Japanese Anime, you should use the smallest possible FOV, say 10.
 
-如果你让玩家实时操控视角, 你应该根据你的游戏类型选择合适的FOV, 并保证主角处于屏幕中央, 以减少透视畸变.
+If you let the player control the perspective in Real-Time, you should choose the appropriate FOV according to your game type, and ensure that the protagonist is in the center of the screen to reduce perspective distortion.
 
-## 进阶设置
+## Advanced Settings
 
-不得不承认现在的渲染结果离好看还差得很远:
+I have to admit that the current rendering results are far from good-looking:
 
 ![image-20230326013149341](./assets/image-20230326013149341.png)
 
-仔细观察目前的角色你会发现以下需要改进的地方:
+Take a closer look at the current character and you'll see the following points for improvement:
 
-- 眼白的颜色, 眼周的描边, 头发的阴影
+- The color of the whites of the eyes, the outline around the eyes, the shadows of the hair
 
   ![image-20230326013621139](./assets/image-20230326013621139.png)
 
-- 自阴影的形状
+- Self-Shadow shape
 
   ![image-20230326013718648](./assets/image-20230326013718648.png)
 
-- 头发的描边
+- The outline of the hair
 
   ![image-20230326013743112](./assets/image-20230326013743112.png)
 
-- 手的描边宽度
+- The outline width of the hand
 
   ![image-20230326013835956](./assets/image-20230326013835956.png)
 
-- 头发的高光
+- Highlights of hair
 
-- 皮肤的质感
+- The shading of the skin
 
-- 角色模型和贴图本身的精度
+- The accuracy of the character model and the texture itself
 
-- 动画和表情
+- Animations and emotes
 
-- 环境和后处理
+- Environmental and Post-Processing
 
 - ......
 
-如果你想实时展示你的角色, 还必须经过一系列更加细致的调整, 基本上你花费的时间和最终的渲染质量成正比, 请参阅"为角色添加高级渲染特性".
+If you want to show your character in Real-Time, you also have to go through a series of more detailed adjustments, basically the time you spend is proportional to the final rendering quality, see "Add Advanced Rendering Features to Characters".
 
-如果你只是想离线展示你的角色, 你自然可以利用现在非常强大的AIGC工具弥补这些缺点, 比如Stable Diffusion, 未来我也将尝试对AIGC工具进行集成.
+If you just want to show your character offline, you can naturally use the current very powerful AIGC tools to compensate for these shortcomings, such as Stable Diffusion, and I will also try to integrate AIGC tools in the future.
 
 
 

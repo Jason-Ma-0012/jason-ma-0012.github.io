@@ -25,7 +25,7 @@ Toon Material中与Shadow有关的功能必须开启Ray Tracing Shadow和Hardwar
 
 ### 半透明
 
-半透明的Rim Light需要在后处理中开启High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) 以获取半透明物体深度
+半透明的Rim Light需要在Post Processing Volume中开启High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) 以获取半透明物体深度
 
 ## UE 5.1 官方已知的BUG
 

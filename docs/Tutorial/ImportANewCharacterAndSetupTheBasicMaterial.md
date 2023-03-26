@@ -68,7 +68,7 @@ VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型
 
 确保角色骨骼网格体的设置中关闭了Recompute Normals/Tangent:
 
-![image-20230326011805101](./assets/image-20230326011805101.png)
+![image-20230326142538356](./assets/image-20230326142538356.png)
 
 在角色骨骼网格体上右键, 选择`Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
 

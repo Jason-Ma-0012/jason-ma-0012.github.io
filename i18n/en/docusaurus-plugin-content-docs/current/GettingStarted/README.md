@@ -26,7 +26,7 @@ You can download the precompiled version from one of the following two NetDisk:
 - https://mega.nz/folder/QiZnHBwQ#JmrsHFPpdtgKCAyrKueb7Q
 - https://pan.baidu.com/s/1bUuziyZ2_-ks3q0NWVv9ng?pwd=pdq8
 
-After unzip, use the Engine:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe` to open the Project:`MooaToon-Project\MooaToon_Project.uproject`.
+After unzip, use the Engine:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe` to open the Project:`MooaToon_Project.uproject`.
 
 ### Compile the engine from source code
 
