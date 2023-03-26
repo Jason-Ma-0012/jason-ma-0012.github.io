@@ -22,5 +22,21 @@
   "item.label.License": {
     "message": "License",
     "description": "Navbar item with label License"
+  },
+  "logo.alt": {
+    "message": "MooaToonLogo_64",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Licence": {
+    "message": "Licence",
+    "description": "Navbar item with label Licence"
+  },
+  "item.label.Q&A": {
+    "message": "Q&A",
+    "description": "Navbar item with label Q&A"
+  },
+  "item.label.News": {
+    "message": "News",
+    "description": "Navbar item with label News"
   }
 }
