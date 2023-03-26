@@ -45,14 +45,29 @@ const config = {
           editUrl:
             'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/',
         },
-        blog: false,
-        // {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        blog: {
+          blogTitle: 'News',
+          postsPerPage: 'ALL',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All Posts',
+          showReadingTime: false,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/Jason-Ma-0012/jason-ma-0012.github.io/tree/main/',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Jason Ma.`,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts,//.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          },
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -73,9 +88,9 @@ const config = {
         },
         items: [
           { to: '/docs/GettingStarted',   label: 'Docs',      position: 'left' },
-          // { to: '/docs/History',          label: 'History',   position: 'left' },
           { to: '/docs/Licence',          label: 'Licence',   position: 'left' },
           { to: '/docs/QAndA',            label: 'Q&A',       position: 'left' },
+          { to: '/blog',                  label: 'News',      position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
