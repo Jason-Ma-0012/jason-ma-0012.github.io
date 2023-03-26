@@ -31,7 +31,7 @@ sidebar_position: 0
 2. `_1_2_Install_VisualStudio.bat`以默认设置安装Visual Studio
 3. 保存你的工作内容
 4. `_1_3_Restart_Computer.bat`重启电脑
-5. (仅适用于位于中国大陆的用户)`_2_4_Fetch_Fastest_Github_IPs.bat`加速Github下载
+5. (仅适用于位于中国大陆的用户) 右键并以管理员权限运行`_2_4_Fetch_Fastest_Github_IPs.bat`加速Github下载
 6. `_2_0_Install_And_Run_MooaToon.bat`按照提示登录Github账号, 等待下载和编译完成, 这可能需要2到5小时
 7. 完成后, 项目将自动打开
 
