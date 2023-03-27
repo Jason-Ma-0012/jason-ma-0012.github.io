@@ -166,6 +166,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/JasonMa0012/MooaToon',
               },
+              {
+                label: 'RSS',
+                href: 'https://mooatoon.com/blog/rss.xml ',
+              },
             ],
           },
         ],
