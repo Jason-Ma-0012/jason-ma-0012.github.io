@@ -30,7 +30,12 @@ const FeatureList = [
 
 const DemoList = [
   {
-    videoPath: translate({
+    imagePath: 'img/MooaToonDemo_2023.3.28.png',
+    onlineVideoPath: '',
+  },
+  {
+    imagePath: '',
+    onlineVideoPath: translate({
       id: 'homepage.demo.0',
       message: 'https://player.bilibili.com/player.html?aid=519478588&bvid=BV13g411t7L8&cid=940824948&page=1&high_quality=1&danmaku=0'
     }),
@@ -72,16 +77,25 @@ function Feature({imagePath, videoPath, mediaWidth='8', mediaHeight='500', textW
   );
 }
 
-function Demo({videoPath}) {
-  return (
-    <div className="row margin-vert--lg"
-      style={{ position: 'relative', padding: '21.5%', width: '75%', left: '12.5%' }}>
-      <iframe style={{ position: 'absolute', width: '100%', height: '100%', left: '0', top: '0' }}
-        src={videoPath}
-        border="0" frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-      </iframe>
-    </div>
-  );
+function Demo({ onlineVideoPath, imagePath }) {
+  if (onlineVideoPath) {   
+    return (
+      <div className="row margin-vert--lg" style={{ position: 'relative', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{  padding: '21.5%', }}>
+        <iframe style={{ position: 'absolute', maxWidth:'780px', width: '100%', height: '100%', left: '50%', top: '0', transform: 'translateX(-50%)'}}
+          src={onlineVideoPath}
+          border="0" frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+        </iframe>
+      </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="row margin-vert--lg" style={{ alignItems: 'center', justifyContent: 'center', height: '450px',}}>
+        <img style={{ maxHeight: '100%',}} src={imagePath} alt="Image"/>
+      </div>
+    );
+  }
 }
 
 export default function HomepageFeatures() {
