@@ -95,9 +95,9 @@
     "message": "Licence",
     "description": "The label of footer link with label=Licence linking to /docs/Licence"
   },
-  "link.item.label.Q&A": {
-    "message": "Q&A",
-    "description": "The label of footer link with label=Q&A linking to /docs/QAndA"
+  "link.item.label.FAQ": {
+    "message": "FAQ",
+    "description": "The label of footer link with label=FAQ linking to /docs/FAQ"
   },
   "link.item.label.Email": {
     "message": "Email",

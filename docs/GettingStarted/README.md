@@ -42,7 +42,9 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 - 购买:[https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
 
-- 在Epic启动器的保管库中, 将`Ultra Dynamic Sky`安装到`MooaToon-Project` (如果未找到项目, 你可能需要先打开一次项目):
+- [将MooaToon Project添加到Epic启动器](/docs/FAQ#无法在epic启动器中找到mooatoon-project)
+
+- 在Epic启动器的保管库中, 将Ultra Dynamic Sky安装到MooaToon Project:
 
   ![image-20230211012826670](./assets/image-20230211012826670.png)
 
@@ -56,7 +58,7 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
   ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png)![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true)
 
-- 有关`Ultra Dynamic Sky`的详细用法可以在其商店页面找到
+- 有关Ultra Dynamic Sky的详细用法可以在其商店页面找到
 
 ## 文件目录结构
 

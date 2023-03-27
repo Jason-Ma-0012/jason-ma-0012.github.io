@@ -89,7 +89,7 @@ const config = {
         items: [
           { to: '/docs/GettingStarted',   label: 'Docs',      position: 'left' },
           { to: '/docs/Licence',          label: 'Licence',   position: 'left' },
-          { to: '/docs/QAndA',            label: 'Q&A',       position: 'left' },
+          { to: '/docs/FAQ',              label: 'FAQ',       position: 'left' },
           { to: '/blog',                  label: 'News',      position: 'left' },
           {
             type: 'localeDropdown',
@@ -116,7 +116,7 @@ const config = {
               { to: '/docs/GettingStarted',   label: 'Getting Started',   },
               { to: '/docs/History',          label: 'History',           },
               { to: '/docs/Licence',          label: 'Licence',           },
-              { to: '/docs/QAndA',            label: 'Q&A',               },
+              { to: '/docs/FAQ',            label: 'FAQ',               },
             ],
           },
           {
@@ -192,6 +192,35 @@ const config = {
         },
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         config: {}
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'BO86VI8EYO',
+  
+        // Public API key: it is safe to commit it
+        apiKey: 'b5f0d7a6db7bedd2523a4064a1b24930',
+  
+        indexName: 'mooatoon',
+  
+        // Optional: see doc section below
+        contextualSearch: true,
+  
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // or as RegExp: /\/docs\//
+        //   to: '/',
+        // },
+  
+        // Optional: Algolia search parameters
+        searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+  
+        //... other Algolia params
       },
     }),
   

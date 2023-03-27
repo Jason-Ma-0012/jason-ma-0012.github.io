@@ -17,12 +17,15 @@ Before you begin, you'll need an [**Epic**](https://www.unrealengine.com/) accou
 1.  Then go to that [link](https://www.unrealengine.com/zh-CN/blog/updated-authentication-process-for-connecting-epic-github-accounts) and follow the instructions in this article to link your Github account to your Epic account.
 2.  Go back to Github, head to Your Organizations, and accept Epic's invitation to join the organization:
 
-
 ![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
+
+If EpicGames cannot be found in your Organizations after accepting the invitation, please log out and log in to your GitHub account again.
 
 ### Download the MooaToon installation tool
 
-[Download](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) the Zip of the installation tool, extract it to a location you see fit, and it is highly recommended to reserve at least 150GB of SSD hard disk space. Then you can start the installation process.
+[Download](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) the Zip of the installation tool, unzip to the root directory of the hard disk, such as `D:\MooaToon` (the purpose is to avoid compilation errors caused by too long path), and it is highly recommended to reserve at least 200GB of SSD hard disk space.
+
+Then you can start the installation process.
 
 ### Install automatically with tools
 
@@ -30,8 +33,7 @@ In turn:
 
 1. `_1_1_Install_Git.bat` install Git with default settings
 2. `_1_2_Install_VisualStudio.bat` install Visual Studio with default settings
-3. Save your work
-4. `_1_3_Restart_Computer.bat` restart your PC
+3. Save your work, run `_1_3_Restart_Computer.bat` restart your PC
 5. `_2_0_Install_And_Run_MooaToon.bat` follow the prompts to log in to your Github account and wait for the download and compilation to complete, which may take 2 to 5 hours
 6. When finished, the project will open automatically
 
@@ -61,7 +63,7 @@ How to compile the engine from source: https://docs.unrealengine.com/5.1/zh-CN/b
 
 Go to: https://github.com/Jason-Ma-0012/MooaToon-Engine Pull`5.1` Branch to compile the engine, Pull `5.1_MooaToonProject` branch to start the project, Enjoy it!
 
-## Known issues
+## FAQ
 
 ### Network issues during Install_MooaToon_Engine/project
 

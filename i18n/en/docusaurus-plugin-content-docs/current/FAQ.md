@@ -1,9 +1,9 @@
 ---
-id: QAndA
-title: Q&A
+id: FAQ
+title: FAQ
 sidebar_position: 30
 ---
-# Q&A
+# FAQ
 
 ## Limitations
 
@@ -65,5 +65,22 @@ The description of Material Layer parameters often disappears, please check the 
 
 ![image-20230223225635072](./assets/image-20230223225635072-2aecb461b7167c83e4beeee562f79695.png)
 
+## Can not find MooaToon Project in Epic Launcher
 
+1. Open path in Explorer `%LOCALAPPDATA%\EpicGamesLauncher\Saved\Config\Windows\GameUserSettings.ini`
+
+2. Add or modify the value of `CreatedProjectPaths` under `[Launcher]` to be the parent path of the Project, such as
+
+   ```ini
+   [Launcher]
+   LastActiveDateTime=2023-03-27T00:00:00.000Z
+   LastActiveVersion=14.7.1
+   AutoEnabledStartOnBootVer=14.6.3
+   LastActiveTab=ue
+   VaultCacheDirectories=D:/Epic/VaultCache/
+   DefaultAppInstallLocation=E:\UE
+   CreatedProjectPaths=E:\MooaToon
+   ```
+
+3. Save and restart Epic Launcher
 

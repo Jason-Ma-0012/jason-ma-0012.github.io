@@ -16,12 +16,14 @@ sidebar_position: 0
 1.  然后前往该[链接](https://www.unrealengine.com/zh-CN/blog/updated-authentication-process-for-connecting-epic-github-accounts), 按照文中指示将Github账号关联到Epic账号. 
 2.  返回Github, 前往Your Organizations, 接受Epic的邀请加入组织:
 
-
 ![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
+
+如果接受邀请后无法在组织中找到EpicGames, 请重新登录GitHub账号.
 
 ### 下载MooaToon安装工具
 
-[下载](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip)安装工具的Zip, 解压到你认为合适的位置, 强烈建议至少保留150GB的SSD硬盘空间.
+[下载](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip)安装工具的Zip, 解压到硬盘根目录, 如`D:\MooaToon`(目的是避免路径过长引起编译错误), 强烈建议至少保留200GB的SSD硬盘空间.
+
 然后可以开始安装过程.
 
 ### 使用工具自动安装
@@ -29,11 +31,10 @@ sidebar_position: 0
 
 1. `_1_1_Install_Git.bat`以默认设置安装Git
 2. `_1_2_Install_VisualStudio.bat`以默认设置安装Visual Studio
-3. 保存你的工作内容
-4. `_1_3_Restart_Computer.bat`重启电脑
-5. (仅适用于位于中国大陆的用户) 右键并以管理员权限运行`_2_4_Fetch_Fastest_Github_IPs.bat`加速Github下载
-6. `_2_0_Install_And_Run_MooaToon.bat`按照提示登录Github账号, 等待下载和编译完成, 这可能需要2到5小时
-7. 完成后, 项目将自动打开
+3. 保存你的工作内容, 运行`_1_3_Restart_Computer.bat`重启电脑
+4. (仅适用于位于中国大陆的用户) 右键并以管理员权限运行`_2_4_Fetch_Fastest_Github_IPs.bat`加速Github下载
+5. `_2_0_Install_And_Run_MooaToon.bat`按照提示登录Github账号, 等待下载和编译完成, 这可能需要2到5小时
+6. 完成后, 项目将自动打开
 
 ### 检查项目
 启动项目后, 请耐心等待Shader编译完成, 随后你应该看到类似以下界面:
@@ -61,7 +62,7 @@ sidebar_position: 0
 前往: [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine)
 拉取`5.1`分支以编译引擎, 拉取`5.1_MooaToonProject`分支以启动项目, Enjoy it!
 
-## 已知问题
+## 常见问题
 
 ### Install_MooaToon_Engine/Project期间的网络问题
 

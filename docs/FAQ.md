@@ -1,9 +1,9 @@
 ---
-id: QAndA
-title: 疑难解答
+id: FAQ
+title: 常见问题
 sidebar_position: 30
 ---
-# 疑难解答
+# 常见问题
 
 ## 限制
 
@@ -57,17 +57,32 @@ OIT (排序无关半透明, 提供对多层半透明的正确渲染支持) 会�
 
 调整层材质相当容易崩溃, 使用时记得经常保存
 
-#### 层材质的参数描述
+#### 材质图层的参数描述
 
 ![image-20230223225457143](./assets/image-20230223225457143.png)![image-20230223225748583](./assets/image-20230223225748583.png)
 
-层材质的参数描述经常会消失, 请打材质编辑器后在参数面板上查看完整的参数描述:
+材质图层的参数描述经常会消失, 请打材质编辑器后在参数面板上查看完整的参数描述:
 
 ![image-20230223225635072](./assets/image-20230223225635072.png)
 
+## 无法在Epic启动器中找到MooaToon Project
 
+1. 在资源管理器中打开路径`%LOCALAPPDATA%\EpicGamesLauncher\Saved\Config\Windows\GameUserSettings.ini`
 
+2. 在`[Launcher]`下添加或修改`CreatedProjectPaths`的值为Project的上级路径, 如
 
+   ```ini
+   [Launcher]
+   LastActiveDateTime=2023-03-27T00:00:00.000Z
+   LastActiveVersion=14.7.1
+   AutoEnabledStartOnBootVer=14.6.3
+   LastActiveTab=ue
+   VaultCacheDirectories=D:/Epic/VaultCache/
+   DefaultAppInstallLocation=E:\UE
+   CreatedProjectPaths=E:\MooaToon
+   ```
+
+3. 保存并重启Epic启动器
 
 
 

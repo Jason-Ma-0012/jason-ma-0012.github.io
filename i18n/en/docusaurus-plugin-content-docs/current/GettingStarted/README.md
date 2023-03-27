@@ -40,7 +40,9 @@ Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and
 
 - Purchase:[https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
 
-- In the Epic Launcher Library, install `Ultra Dynamic Sky` into `MooaToon-Project` (if you don't find a project, you may need to open it once):
+- [Add MooaToon Project to Epic Launcher](/docs/FAQ#can-not-find-mooatoon-project-in-epic-launcher)
+
+- In the Epic Launcher Library, install Ultra Dynamic Sky into MooaToon Project:
 
   ![image-20230211012826670](./assets/image-20230211012826670.png)
 
@@ -54,7 +56,7 @@ Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and
 
   ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png)![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true)
 
-- Detailed usage of `Ultra Dynamic Sky` can be found on its store page
+- Detailed usage of Ultra Dynamic Sky can be found on its store page
 
 ## File directory structure
 

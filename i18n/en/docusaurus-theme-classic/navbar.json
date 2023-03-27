@@ -31,9 +31,9 @@
     "message": "Licence",
     "description": "Navbar item with label Licence"
   },
-  "item.label.Q&A": {
-    "message": "Q&A",
-    "description": "Navbar item with label Q&A"
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
   },
   "item.label.News": {
     "message": "News",
