@@ -80,18 +80,16 @@ function Feature({imagePath, videoPath, mediaWidth='8', mediaHeight='500', textW
 function Demo({ onlineVideoPath, imagePath }) {
   if (onlineVideoPath) {   
     return (
-      <div className="row margin-vert--lg" style={{ position: 'relative', alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{  padding: '21.5%', }}>
-        <iframe style={{ position: 'absolute', maxWidth:'780px', width: '100%', height: '100%', left: '50%', top: '0', transform: 'translateX(-50%)'}}
-          src={onlineVideoPath}
-          border="0" frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-        </iframe>
-      </div>
+      <div className="row margin-vert--lg" style={{ alignItems: 'center', justifyContent: 'center', height: '450px', maxWidth: '800px', margin: '0 auto'}}>
+        {/* 等比缩放*/}
+        <div style={{position: 'relative', width: '100%', height: '0', paddingBottom: '56.25%', }}>
+          <iframe style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', overflow: 'hidden'}} src={onlineVideoPath} frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
       </div>
     );
   } else {
     return (
-      <div className="row margin-vert--lg" style={{ alignItems: 'center', justifyContent: 'center', height: '450px',}}>
+      <div className="row margin-vert--lg" style={{ alignItems: 'center', justifyContent: 'center', height: '450px', margin: '0 auto'}}>
         <img style={{ maxHeight: '100%',}} src={imagePath} alt="Image"/>
       </div>
     );
