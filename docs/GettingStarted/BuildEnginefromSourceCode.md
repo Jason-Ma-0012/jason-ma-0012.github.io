@@ -19,7 +19,7 @@ sidebar_position: 0
 
 ![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
 
-:::info
+:::caution
 
 如果接受邀请后无法在组织中找到EpicGames, 请重新登录GitHub账号.
 
