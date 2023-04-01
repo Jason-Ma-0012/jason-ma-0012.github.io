@@ -1,6 +1,7 @@
 ---
 id: ImportANewCharacterAndSetupTheBasicMaterial
 title: 导入新角色并设置基本材质
+description: 设置新角色必读的基础知识
 sidebar_position: 0
 ---
 
@@ -23,10 +24,13 @@ sidebar_position: 0
   - VRoid模型: https://hub.vroid.com/
   - ...
 
+:::info
 
 对于MMD模型你需要先将其转换为FBX模型, 推荐使用[Blender](https://www.blender.org/)和[Cats Blender Plugin](https://github.com/absolute-quantum/cats-blender-plugin).
 
 VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型, 目前对于VRM4U的支持已在计划中.
+
+:::
 
 ## 导入角色
 
@@ -136,7 +140,7 @@ VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型
 
 - ......
 
-如果你想实时展示你的角色, 还必须经过一系列更加细致的调整, 基本上你花费的时间和最终的渲染质量成正比, 请参阅"为角色添加高级渲染特性".
+如果你想实时展示你的角色, 还必须经过一系列更加细致的调整, 基本上你花费的时间和最终的渲染质量成正比, 请参阅[为角色添加高级渲染特性](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/).
 
 如果你只是想离线展示你的角色, 你自然可以利用现在非常强大的AIGC工具弥补这些缺点, 比如Stable Diffusion, 未来我也将尝试对AIGC工具进行集成.
 

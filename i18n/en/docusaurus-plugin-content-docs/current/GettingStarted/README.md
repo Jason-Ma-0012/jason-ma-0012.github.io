@@ -1,6 +1,7 @@
 ---
 id: GettingStarted
 title: Getting Started
+description: Quick Start with MooaToon
 sidebar_position: 0
 ---
 # Getting Started

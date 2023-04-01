@@ -1,6 +1,7 @@
 ---
 id: BuildEnginefromSourceCode
 title: Build Engine from Source Code
+description: Tutorial and FAQ for Building the Engine from Source
 sidebar_position: 0
 ---
 
@@ -19,7 +20,11 @@ Before you begin, you'll need an [**Epic**](https://www.unrealengine.com/) accou
 
 ![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
 
+:::info
+
 If EpicGames cannot be found in your Organizations after accepting the invitation, please log out and log in to your GitHub account again.
+
+:::
 
 ### Download the MooaToon installation tool
 

@@ -1,6 +1,7 @@
 ---
 id: CreateComplexMaterialsUsingMaterialLayer
 title: 使用材质图层创建复杂材质
+description: 请尽早规划好材质的分配, 确定是否使用分层材质
 sidebar_position: 0
 ---
 
@@ -22,9 +23,17 @@ UE的[分层材质](https://docs.unrealengine.com/5.1/zh-CN/layering-materials-i
 
 ![image-20230330232349505](./assets/image-20230330232349505.png)
 
-***注意, 这一步会丢失已经调整过的数值!*** 所以要尽可能早的决定是否使用分层材质.
+:::caution
 
-*这里有一些关于分层材质的[重要提示](/docs/FAQ#材质编辑).*
+**注意, 这一步会丢失已经调整过的数值!** 所以要尽可能早的决定是否使用分层材质.
+
+:::
+
+:::info
+
+这里有一些关于分层材质的[重要提示](/docs/FAQ#材质编辑).
+
+:::
 
 ## 使用材质图层
 
@@ -38,11 +47,7 @@ UE的[分层材质](https://docs.unrealengine.com/5.1/zh-CN/layering-materials-i
 
 你可以看到以下变化:
 
-![image-20230331001544521](./assets/image-20230331001544521.png)
-
-关闭层
-
-![image-20230331002251272](./assets/image-20230331002251272.png)
+![image-20230331001544521](./assets/image-20230331001544521.png '禁用图层')![image-20230331002251272](./assets/image-20230331002251272.png '启用图层')
 
 也就是说使用材质图层添加新的效果, 使用图层混合控制其如何叠加到下面的图层.
 

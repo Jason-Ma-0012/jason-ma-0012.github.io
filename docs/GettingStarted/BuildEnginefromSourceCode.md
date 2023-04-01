@@ -1,6 +1,7 @@
 ---
 id: BuildEnginefromSourceCode
 title: 从源码编译引擎
+description: 从源码编译引擎的教程和常见问题
 sidebar_position: 0
 ---
 
@@ -18,7 +19,11 @@ sidebar_position: 0
 
 ![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
 
+:::info
+
 如果接受邀请后无法在组织中找到EpicGames, 请重新登录GitHub账号.
+
+:::
 
 ### 下载MooaToon安装工具
 

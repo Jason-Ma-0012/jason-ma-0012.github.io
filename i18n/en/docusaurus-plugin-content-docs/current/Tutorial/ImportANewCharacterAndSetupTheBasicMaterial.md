@@ -1,6 +1,7 @@
 ---
 id: ImportANewCharacterAndSetupTheBasicMaterial
 title: Import a New Character and Setup the Basic Material
+description: The basics you must read to set up a new character
 sidebar_position: 0
 ---
 
