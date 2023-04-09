@@ -22,12 +22,20 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 预编译版本的缺点是无法打包C++游戏, 不含调试信息, 并且每次微小的更新都需要重新下载整个包体.
 
-你可以从以下两个网盘之一下载预编译版本:
+依次执行以下脚本即可使用预编译版本:
 
-- https://mega.nz/folder/QiZnHBwQ#JmrsHFPpdtgKCAyrKueb7Q
-- https://pan.baidu.com/s/1bUuziyZ2_-ks3q0NWVv9ng?pwd=pdq8
+1. `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
+2. `_0_1_Run_MooaToon_Precompiled_Project.bat`
 
-解压后, 使用引擎:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe`打开项目:`MooaToon_Project.uproject`即可.
+:::tip
+
+对于中国大陆用户, 如果不使用代理, 建议先运行脚本`_2_4_Fetch_Fastest_Github_IPs.bat`以提高下载速度.
+
+:::
+
+安装后的引擎位于`MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`, 项目位于`MooaToon-Project-Precompiled\MooaToon_Project.uproject`.
+
+你也可以使用脚本`_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`更新MooaToon, **所有已修改的文件都会被覆盖**, 新增的文件如果不和MooaToon文件重名就不会被覆盖.
 
 ### 从源码编译引擎
 

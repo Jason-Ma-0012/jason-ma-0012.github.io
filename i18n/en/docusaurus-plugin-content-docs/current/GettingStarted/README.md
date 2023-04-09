@@ -22,12 +22,14 @@ The advantage of the precompiled version is that it can be used out of the box w
 
 The disadvantage of the precompiled version is that it cannot package C++ games, does not contain debugging information, and needs to re-download the entire package every time a small update is made.
 
-You can download the precompiled version from one of the following two NetDisk:
+Execute the following scripts in sequence to use the precompiled version:
 
-- https://mega.nz/folder/QiZnHBwQ#JmrsHFPpdtgKCAyrKueb7Q
-- https://pan.baidu.com/s/1bUuziyZ2_-ks3q0NWVv9ng?pwd=pdq8
+1. `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
+2. `_0_1_Run_MooaToon_Precompiled_Project.bat`
 
-After unzip, use the Engine:`Engine\Windows\Engine\Binaries\Win64\UnrealEditor.exe` to open the Project:`MooaToon_Project.uproject`.
+The installed engine is located at `MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`, and the project is located at `MooaToon-Project-Precompiled\MooaToon_Project.uproject`.
+
+You can also use the script `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` to update MooaToon, **all modified files will be overwritten**, and new files will not be overwritten if they do not have the same name as the MooaToon files.
 
 ### Compile the engine from source code
 
