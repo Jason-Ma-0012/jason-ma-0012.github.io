@@ -24,8 +24,9 @@ The disadvantage of the precompiled version is that it cannot package C++ games,
 
 Execute the following scripts in sequence to use the precompiled version:
 
-1. `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
-2. `_0_1_Run_MooaToon_Precompiled_Project.bat`
+1. [Download installation tool](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) and unzip
+2. Double click to run: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
+3. Double click to run: `_0_1_Run_MooaToon_Precompiled_Project.bat`
 
 The installed engine is located at `MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`, and the project is located at `MooaToon-Project-Precompiled\MooaToon_Project.uproject`.
 

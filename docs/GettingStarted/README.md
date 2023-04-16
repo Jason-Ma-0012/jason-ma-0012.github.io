@@ -22,10 +22,11 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 预编译版本的缺点是无法打包C++游戏, 不含调试信息, 并且每次微小的更新都需要重新下载整个包体.
 
-依次执行以下脚本即可使用预编译版本:
+依次执行以下步骤使用预编译版本:
 
-1. `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
-2. `_0_1_Run_MooaToon_Precompiled_Project.bat`
+1. [下载安装工具](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip)并解压
+2. 双击运行: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
+3. 双击运行: `_0_1_Run_MooaToon_Precompiled_Project.bat`
 
 :::tip
 
