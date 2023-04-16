@@ -80,7 +80,7 @@ VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型
 
 在内容浏览器中创建用于描边的材质实例, 父材质选择MI_OverlayOutline, 并设置以下参数:
 
-![image-20230326010641603](./assets/image-20230326010641603.png)
+![image-20230416160810799](./assets/image-20230416160810799.png)
 
 选中关卡中的角色, 将描边材质设为Overlay Material:
 

@@ -102,12 +102,34 @@ sidebar_position: 20
 
 然后设置以下材质参数, 你就能看到修改后的结果:
 
-![image-20230416015818976](./assets/image-20230416015818976.png)![image-20230416043932387](./assets/image-20230416043932387.png)
+![image-20230416160254029](./assets/image-20230416160254029.png)
+
+![image-20230416043932387](./assets/image-20230416043932387.png)
 
 
-## 使用Ramp Map控制不同距离下的外描边宽度
+## 使用Curve控制不同距离下的外描边宽度
 
+MooaToon使用Curve控制着描边在不同距离下的宽度:
 
+![image-20230416163226466](./assets/image-20230416163226466.png)
 
+![image-20230416163238786](./assets/image-20230416163238786.png)
 
+曲线的X轴是当前像素在世界空间中的大小, 你可以简单理解为相机和角色的距离, 距离越近X越小反之X越大. Y轴是描边宽度. `Max Distance`控制X等于1时的距离.
+
+得益于这独特的算法, 不同距离的描边宽度在各种复杂环境下都看起来正确, 比如不同的FOV / 长宽比 / 渲染分辨率:
+
+<Video src={require("./assets/rider64_2023_04_16_16_00.webm").default}></Video>
+
+:::caution
+
+新增你自己的曲线时请在`MooaToon/MooaToon-Engine/Engine/Plugins/MooaToon/Content/Assets/CA_OutlineCurves`中复制并重命名一个, 以免更新MooaToon时被覆盖.
+
+如果看不到该文件, 请确保已在内容浏览器中启用`显示引擎内容`:
+
+![image-20230416164527502](./assets/image-20230416164527502.png)
+
+并且更新预编译版MooaToon后, 由于所有重名文件已被覆盖, 你需要在`CA_OutlineCurves`中重新指定你创建的曲线.
+
+:::
 
