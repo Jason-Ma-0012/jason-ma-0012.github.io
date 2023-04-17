@@ -15,9 +15,10 @@ sidebar_position: 0
 在开始之前, 你需要[**Epic账号**](https://www.unrealengine.com/)和[**Github账号**](https://github.com/), 如果没有请前往注册. 然后:
 
 1.  然后前往该[链接](https://www.unrealengine.com/zh-CN/blog/updated-authentication-process-for-connecting-epic-github-accounts), 按照文中指示将Github账号关联到Epic账号. 
-2.  返回Github, 前往Your Organizations, 接受Epic的邀请加入组织:
+2. 返回Github, 前往Your Organizations, 接受Epic的邀请加入组织:
 
-![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
+   | ![image-20230211012706604](./assets/image-20230211012706604.png) | ![image-20230211012747318](./assets/image-20230211012747318.png) |
+   | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 :::caution
 

@@ -58,7 +58,8 @@ Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and
 
 - You can run the game to see dynamic weather effects:
 
-  ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png)![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true)
+  | ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png) | ![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true) |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 - Detailed usage of Ultra Dynamic Sky can be found on its store page
 

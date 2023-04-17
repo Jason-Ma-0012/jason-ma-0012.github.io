@@ -76,7 +76,7 @@ Right-Click the Character Skeletal Mesh and select `Scripted Asset Actions > Moo
 
 Create a Material Instance for Outline in the Content Browser, Parent Material selection MI_OverlayOutline, and set the following parameters:
 
-![image-20230326010641603](./assets/image-20230326010641603.png)
+![image-20230416160810799](./assets/image-20230416160810799.png)
 
 Select the character in the level and set the Outline Material to Overlay Material:
 
@@ -90,11 +90,8 @@ You should now see the full character outline:
 
 You should pay attention to the Viewport Settings, different FOVs will have a huge impact on character perspective:
 
-![image-20230326012305572](./assets/image-20230326012305572.png)
-
-![image-20230326012406403](./assets/image-20230326012406403.png)
-
-![image-20230326012439049](./assets/image-20230326012439049.png)
+| ![image-20230326012305572](./assets/image-20230326012305572.png) | ![image-20230326012406403](./assets/image-20230326012406403.png) | ![image-20230326012439049](./assets/image-20230326012439049.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 If you pursue the flattened character look of Japanese Anime, you should use the smallest possible FOV, say 10.
 

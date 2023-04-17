@@ -18,7 +18,8 @@ Before you begin, you'll need an [**Epic**](https://www.unrealengine.com/) accou
 1.  Then go to that [link](https://www.unrealengine.com/zh-CN/blog/updated-authentication-process-for-connecting-epic-github-accounts) and follow the instructions in this article to link your Github account to your Epic account.
 2.  Go back to Github, head to Your Organizations, and accept Epic's invitation to join the organization:
 
-![image-20230211012706604](./assets/image-20230211012706604.png)![image-20230211012747318](./assets/image-20230211012747318.png)
+   | ![image-20230211012706604](./assets/image-20230211012706604.png) | ![image-20230211012747318](./assets/image-20230211012747318.png) |
+   | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 :::caution
 
