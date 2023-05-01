@@ -329,8 +329,9 @@ Shadow Mask只影响法线阴影, 不会影响其他物体的投影.
 
 ![image-20230408181355855](./assets/image-20230408181355855.png)
 
-在MooaToon中可以将左侧贴图中的静态光照变化拆解为动态的Base Color + Shadow Color + Highlight.
+在MooaToon中可以利用Shadow Mask将左侧贴图中的静态光照变化拆解为动态的Base Color + Shadow Color + Highlight.
 
-请继续阅读后续教程以掌握这些技巧.
 
-TODO
+
+## 自定义阴影颜色
+
