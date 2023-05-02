@@ -1,1 +1,1 @@
-npm run start -- --locale En
+npm run start -- --locale en
