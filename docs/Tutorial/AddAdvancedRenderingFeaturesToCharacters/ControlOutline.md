@@ -89,7 +89,7 @@ sidebar_position: 20
 
 ![image-20230416014146252](./assets/image-20230416014146252.png)<center>左: 调整前; 右: 调整后</center>
 
-经过[之前的教程](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlShadowShape#使用Houdini传递自定义法线)你应该熟悉使用Houdini烘焙顶点数据的流程了, 在`Vertex_Color_Alpha_for_Outline`节点中包含所有描边宽度修改:
+经过[之前的教程](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#使用Houdini传递自定义法线)你应该熟悉使用Houdini烘焙顶点数据的流程了, 在`Vertex_Color_Alpha_for_Outline`节点中包含所有描边宽度修改:
 
 ![image-20230416014711026](./assets/image-20230416014711026.png)
 ![image-20230416015057232](./assets/image-20230416015057232.png)

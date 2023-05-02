@@ -1,54 +1,54 @@
 ---
 id: CreateComplexMaterialsUsingMaterialLayer
-title: 使用材质图层创建复杂材质
-description: 请尽早规划好材质的分配, 确定是否使用分层材质
+title: Create Complex Materials Using Material Layer
+description: Please plan the allocation of materials as early as possible to determine whether to use layered materials
 sidebar_position: 0
 ---
 
-# 使用材质图层创建复杂材质
+# Create Complex Materials Using Material Layer
 
-MI_Toon是普通材质, 其有着简单且固定的输入, 可以用于制作简单效果.
+`MI_Toon`  is a normal material, which has a simple and fixed input, which can be used to create simple effects.
 
-但如果你要为头发各向异性高光, 或叠加不同类型的材质或花纹到原有材质, 你需要使用分层材质.
+But if you want to give anisotropic highlights to your hair, or overlay different types of materials or patterns to the original material, you need to use layered materials.
 
-UE的[分层材质](https://docs.unrealengine.com/5.1/zh-CN/layering-materials-in-unreal-engine/)可以让你自由组合不同类型的[材质图层](https://docs.unrealengine.com/5.1/zh-CN/using-material-layers-in-unreal-engine/), 调整顺序和混合模式.
+UE's [layered materials](https://docs.unrealengine.com/5.1/zh-CN/layering-materials-in-unreal-engine/) let you freely combine different [types of material layers](https://docs.unrealengine.com/5.1/zh-CN/using-material-layers-in-unreal-engine/), adjust the order and blend modes.
 
-## 将材质转换为分层材质
+## Convert a material to a layered material
 
-在材质编辑器中将父材质替换为MI_ToonLayer:
+Replace the parent material with `MI_ToonLayer`  in the Material Editor:
 
 ![image-20230330232210816](./assets/image-20230330232210816.png)
 
-然后你可以在图层参数中找到原有参数:
+You can then find the original parameters in the layer parameters:
 
 ![image-20230330232349505](./assets/image-20230330232349505.png)
 
 :::caution
 
-**注意, 这一步会丢失已经调整过的数值!** 所以要尽可能早的决定是否使用分层材质.
+**Note that this step will lose the values that have already been adjusted!** So decide as early as possible whether to use layered materials.
 
 :::
 
 :::info
 
-这里有一些关于分层材质的[重要提示](/docs/FAQ#材质编辑).
+Here are some [important tips](https://mooatoon.com/en/docs/FAQ#material-editing) for layered materials.
 
 :::
 
-## 使用材质图层
+## Use material layers
 
-现在你可以添加[材质图层](https://docs.unrealengine.com/5.1/zh-CN/using-material-layers-in-unreal-engine/)并创建复杂效果:
+Now you can add [material layers](https://docs.unrealengine.com/5.1/zh-CN/using-material-layers-in-unreal-engine/) and create complex effects:
 
 ![image-20230330235647030](./assets/image-20230330235647030.png)
 
-修改以下参数:
+Modify the following parameters:
 
 ![image-20230331001354610](./assets/image-20230331001354610.png)
 
-你可以看到以下变化:
+You can see the following changes:
 
 | ![image-20230331001544521](./assets/image-20230331001544521.png '禁用图层') | ![image-20230331002251272](./assets/image-20230331002251272.png '启用图层') |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
-也就是说使用材质图层添加新的效果, 使用图层混合控制其如何叠加到下面的图层.
+This means adding new effects using material layers, using layer blending to control how they overlay onto the layers below.
 

@@ -1,5 +1,5 @@
 ---
-id: ControlShadowShape
+id: ControlTheShapeOfShadows
 title: 控制阴影的形状
 description: 精确地控制阴影让你的角色看起来更加干净
 sidebar_position: 10
@@ -121,7 +121,7 @@ MooaToon提供了**光线追踪发影**和**屏幕空间深度测试发影**两�
 
 该方法更加简单, 着色当前像素时向光源方向平移一段距离后采样, 如果为头发则被遮挡.
 
-所以该方法得到的发影的形状受视角影响更大:
+所以该方法获得的发影形状完全取决于头发在当前视角的形状:
 
 <Video src={require("./assets/UnrealEditor_2023_04_02_03_57.webm").default}></Video>
 
@@ -165,7 +165,7 @@ MooaToon提供的Shadow Gradient相关功能足以实现这些效果.
 
 
 
-### Transferring Custom Normals Using Houdini
+### 使用Houdini传递自定义法线
 
 [Houdini](https://www.sidefx.com/products/houdini/)是电影和游戏行业的常用DCC软件, 其强大的节点化工作流和几何功能非常适合用来对角色进行一些程序化的调整, 比如说调整法线, 烘焙AO / Curvature / 任何自定义数据到顶点色和UV, 并且每一步都使用节点表示, 你可以任意修改其顺序和参数而不破坏其他修改.
 
@@ -265,7 +265,7 @@ PATH = C:\GameDevelopmentToolset\bin;$PATH
 
 ![image-20230407212941692](./assets/image-20230407212941692.png)<center>添加Noise到`Shadow Intensity Offset`, 会直接在当前位置控制阴影产生的时机</center>
 
-#### Drawing Shadow Mask
+#### 绘制Shadow Mask
 
 现在你可以绘制Shadow Mask为角色添加固定位置的阴影, 比如脖子下方.
 
@@ -330,8 +330,3 @@ Shadow Mask只影响法线阴影, 不会影响其他物体的投影.
 ![image-20230408181355855](./assets/image-20230408181355855.png)
 
 在MooaToon中可以利用Shadow Mask将左侧贴图中的静态光照变化拆解为动态的Base Color + Shadow Color + Highlight.
-
-
-
-## 自定义阴影颜色
-

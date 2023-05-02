@@ -62,7 +62,7 @@ Kajiya-Kay高光出现的时机依赖视线方向和切线方向, 通过切线�
 
 ## 通过Houdini烘焙自定义的切线控制高光大致范围
 
-经过[之前的教程](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlShadowShape#使用Houdini传递自定义法线)你应该熟悉使用Houdini烘焙顶点数据的流程了.
+经过[之前的教程](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#使用Houdini传递自定义法线)你应该熟悉使用Houdini烘焙顶点数据的流程了.
 
 在`Front_Hair_Highlight_Tangent`节点中, 椭球体的切线被传递给了头发, 用于定义头发高光的形状以及随光照和视角方向的移动轨迹:
 
@@ -99,7 +99,7 @@ Kajiya-Kay高光出现的时机依赖视线方向和切线方向, 通过切线�
 
 ## 绘制Highlight Mask精细控制高光形状
 
-类似于[绘制Shadow Mask](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlShadowShape#绘制shadow-mask), 你可以在`MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`找到Highlight Mask的示例源文件:
+类似于[绘制Shadow Mask](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#绘制shadow-mask), 你可以在`MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`找到Highlight Mask的示例源文件:
 
 ![image-20230501224038999](./assets/image-20230501224038999.png)
 

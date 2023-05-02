@@ -59,7 +59,7 @@ The timing of the Kajiya-Kay highlight appearance depends on the viewing and tan
 
 ## Use Houdini to bake custom tangents to control the approximate range of highlights
 
-After [the previous tutorial](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlShadowShape#TransferringCustomNormalsUsingHoudini), you should be familiar with the process of baking vertex data using Houdini.
+After [the previous tutorial](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#TransferringCustomNormalsUsingHoudini), you should be familiar with the process of baking vertex data using Houdini.
 
 In the `Front_Hair_Highlight_Tangent` node, the tangent of the ellipsoid is transferred to the hair to define the shape of the hair highlights and the trajectory of their movement based on the lighting and viewing angles:
 
@@ -96,7 +96,7 @@ Now, the movement trajectory of the highlights has reached expectations, and you
 
 ## Drawing Highlight Mask for Precise Control of Highlight Shape
 
-Similar to [Drawing Shadow Mask](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlShadowShape#drawing-shadow-mask), you can find an example source file for Highlight Mask at `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
+Similar to [Drawing Shadow Mask](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#drawing-shadow-mask), you can find an example source file for Highlight Mask at `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
 
 ![image-20230501224038999](./assets/image-20230501224038999.png)
 
