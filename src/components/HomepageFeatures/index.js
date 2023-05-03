@@ -33,7 +33,7 @@ const DemoList = [
     imagePath: '',
     onlineVideoPath: translate({
       id: 'homepage.demo.FeaturesOverview',
-      message: 'https://player.bilibili.com/player.html?aid=355653013&bvid=BV1NX4y1U7Zw&cid=1117330787&page=1&high_quality=1&danmaku=0'
+      message: 'https://player.bilibili.com/player.html?aid=519478588&bvid=BV1NX4y1U7Zw&cid=940824948&page=1&high_quality=1&danmaku=0'
     }),
   },
   {
