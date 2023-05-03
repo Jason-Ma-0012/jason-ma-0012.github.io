@@ -1,1 +1,1 @@
-npm run write-translations -- --locale En
+npm run write-translations -- --locale en

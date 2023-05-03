@@ -30,8 +30,11 @@ const FeatureList = [
 
 const DemoList = [
   {
-    imagePath: 'img/MooaToonDemo_2023.3.28.png',
-    onlineVideoPath: '',
+    imagePath: '',
+    onlineVideoPath: translate({
+      id: 'homepage.demo.FeaturesOverview',
+      message: 'https://player.bilibili.com/player.html?aid=519478588&bvid=BV1NX4y1U7Zw&cid=940824948&page=1&high_quality=1&danmaku=0'
+    }),
   },
   {
     imagePath: '',
