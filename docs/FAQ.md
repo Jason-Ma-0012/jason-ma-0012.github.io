@@ -27,37 +27,39 @@ Toon Material中与Shadow有关的功能必须开启Ray Tracing Shadow和Hardwar
 
 半透明的Rim Light需要在Post Processing Volume中开启High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) 以获取半透明物体深度
 
-## UE 5.1 官方已知的BUG
+## 光线追踪
 
-### 光线追踪
+### 角色阴影消失
 
-#### 角色阴影消失
+(5.1) 有时角色的光线追踪阴影会消失, 运行游戏或隐藏 / 显示角色后再次显示
 
-有时角色的光线追踪阴影会消失, 运行游戏或隐藏 / 显示角色后再次显示
+(5.2) 光线追踪阴影在一定距离外被裁剪, 增加Actor的`Bounds Scale`以避免过早被裁剪.
 
-#### 描边影响静态网格角色的阴影功能
+### (5.1) 描边影响静态网格角色的阴影功能
 
 这是由于Ray Tracing Shadow错误调用了Overlay Material的Hit Shader, Toon Material中的Ray Tracing Shadow相关功能将被描边覆盖.
 
-#### 次表面透射
+### 次表面透射
 
 光线追踪阴影获得的ShadingModelID永远是DefaultLit, 这意味着所有物体的投影都会被当作DefaultLit材质处理, 如次表面透射之类的效果会不生效
 
-#### 材质预览
+### 材质预览
 
 材质预览窗口的地面在开启光线追踪天光时是黑的
 
-### 半透明
+## 半透明
+
+### OIT
 
 OIT (排序无关半透明, 提供对多层半透明的正确渲染支持) 会导致半透明混合模式添加失效
 
-### 材质编辑
+## 材质编辑
 
-#### 崩溃
+### 崩溃
 
 调整层材质相当容易崩溃, 使用时记得经常保存
 
-#### 材质图层的参数描述
+### 材质图层的参数描述
 
 ![image-20230223225457143](./assets/image-20230223225457143.png)![image-20230223225748583](./assets/image-20230223225748583.png)
 

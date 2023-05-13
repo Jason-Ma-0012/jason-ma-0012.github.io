@@ -27,37 +27,39 @@ The functions related to Shadow in Toon Material must enable Ray Tracing Shadow 
 
 Translucent Rim Light needs to enable High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) in Post Processing Volume to obtain the depth of translucent objects
 
-## UE 5.1 Official Known BUGs
+## Ray Tracing
 
-### Ray Tracing
+### Character shadow disappears
 
-#### Character shadow disappears
+(5.1) Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again
 
-Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again
+(5.2) Ray Tracing Shadows are clipped at a certain distance, increase the Actor's `Bounds Scale` to avoid clipping prematurely.
 
-#### Outline affects the shadow function of static mesh characters
+### (5.1) Outline affects the shadow function of static mesh characters
 
 This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Overlay Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
 
-#### Subsurface Transmission
+### Subsurface Transmission
 
 The ShadingModelID obtained by Ray Tracing Shadow is always DefaultLit, which means that all shadows of objects will be treated as DefaultLit materials, and effects such as Subsurface Transmission will not take effect
 
-#### Material preview
+### Material preview
 
 The floor of the material preview window is black when Ray Tracing Skylight is enabled
 
-### Translucent
+## Translucent
+
+### OIT
 
 OIT (Order Independent Transparency, which provides support for correct rendering of multiple layers of translucency) causes translucent Blending Mode Add not to work
 
-### Material editing
+## Material editing
 
-#### Crash
+### Crash
 
 Adjusting the Material Layer Parameters is quite easy to crash, remember to save it often when using it
 
-#### Description of Material Layer parameters
+### Description of Material Layer parameters
 
 ![image-20230223225457143](./assets/image-20230223225457143-49d66406c4ca15a0045da74423e64271.png)![image-20230223225748583](./assets/image-20230223225748583-3b15e6c2538602497842714b0c518461.png)
 
