@@ -86,3 +86,6 @@ The description of Material Layer parameters often disappears, please check the 
 
 3. Save and restart Epic Launcher
 
+## Document image error
+
+Due to a bug in Docusaurus, the image loading of this document page may be wrong after refreshing, and it can be restored by switching to other document pages and then switching back.
