@@ -188,6 +188,9 @@ const config = {
           hideable: true,
         },
       },
+
+
+      // 图片缩放插件
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
@@ -197,6 +200,8 @@ const config = {
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         config: {}
       },
+
+      // 搜索插件
       algolia: {
         // The application ID provided by Algolia
         appId: 'BO86VI8EYO',
@@ -226,11 +231,28 @@ const config = {
   
         //... other Algolia params
       },
+
+      // 评论插件
+      giscus: {
+        repo: 'Jason-Ma-0012/jason-ma-0012.github.io',
+        repoId: 'R_kgDOI7WVjg',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOI7WVjs4CW6zl',
+        theme: 'light',
+        darkTheme: 'dark_dimmed',
+      },
     }),
   
   plugins: [
+    // 图片缩放插件
     require.resolve('docusaurus-plugin-image-zoom')
   ],
+
+  clientModules: [
+    // 评论的bug修复: https://www.alanwang.site/posts/blog-guides/docusaurus-comment
+    require.resolve('./src/clientModules/routeModules.ts')
+  ],
 };
+
 
 module.exports = config;
