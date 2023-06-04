@@ -28,9 +28,11 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 2. 双击运行: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
 3. 双击运行: `_0_1_Run_MooaToon_Precompiled_Project.bat`
 
-:::tip
+:::caution
 
-对于中国大陆用户, 如果不使用代理, 建议先运行脚本`_2_4_Fetch_Fastest_Github_IPs.bat`以提高下载速度.
+**由于服务基于Github, 对于中国大陆用户, 强烈推荐开启全局代理, 否则无法保证下载速度和稳定性.**
+
+如果无法用代理, 建议先运行脚本`_2_4_Fetch_Fastest_Github_IPs.bat`以在一定程度上提高下载速度.
 
 :::
 
