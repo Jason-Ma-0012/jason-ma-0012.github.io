@@ -36,8 +36,6 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 :::
 
-安装后的引擎位于`MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`, 项目位于`MooaToon-Project-Precompiled\MooaToon_Project.uproject`.
-
 你也可以使用脚本`_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`更新MooaToon, **所有已修改的文件都会被覆盖**, 新增的文件如果不和MooaToon文件重名就不会被覆盖.
 
 ### 从源码编译引擎
@@ -77,4 +75,109 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 ## 文件目录结构
 
-TODO
+- 预编译版
+
+```
+MooaToon ----------------------------------- 根目录
+ ├-MooaToon-Engine-Precompiled ------------- 引擎安装目录
+ │  ├-Windows\Engine\Plugins\MooaToon ------ MooaToon引擎插件目录
+ │  └-Windows\Engine\Binaries\Win64 -------- 引擎可执行文件目录
+ │    └-UnrealEditor.exe ------------------- 引擎可执行文件
+ ├-MooaToon-Project-Precompiled ------------ 项目安装目录
+ │  ├-Art ---------------------------------- 美术资源文件目录
+ │  ├-Config ------------------------------- 项目设置目录
+ │  ├-Content ------------------------------ 项目内容目录
+ │  │  ├-Global ---------------------------- MooaToonSamples依赖的资源
+ │  │  └-MooaToonSamples ------------------- MooaToon的所有示例, 可以删除
+ │  └-MooaToon_Project.uproject ------------ 项目文件
+ │
+ ...  
+```
+
+- 源码版本
+
+```
+MooaToon ----------------------------------- 根目录
+ ├-MooaToon-Engine ------------------------- 引擎安装目录
+ │  ├-Engine\Plugins\MooaToon -------------- MooaToon引擎插件目录
+ │  └-Engine\Binaries\Win64 ---------------- 引擎可执行文件目录
+ │    └-UnrealEditor.exe ------------------- 引擎可执行文件
+ ├-MooaToon-Project ------------------------ 项目安装目录
+ │  ├-Art ---------------------------------- 美术资源文件目录
+ │  ├-Config ------------------------------- 项目设置目录
+ │  ├-Content ------------------------------ 项目内容目录
+ │  │  ├-Global ---------------------------- MooaToonSamples依赖的资源
+ │  │  └-MooaToonSamples ------------------- MooaToon的所有示例, 可以删除
+ │  └-MooaToon_Project.uproject ------------ 项目文件
+ │
+ ...  
+```
+
+
+## 在现有项目中使用MooaToon
+
+你可以使用MooaToon引擎打开你自己的项目.
+
+### 确认现有项目版本和MooaToon引擎版本
+
+你可以通过MooaToon的[Github仓库](https://github.com/JasonMa0012/MooaToon)分支名称和Release名称判断MooaToon的引擎版本.
+
+如果你的项目使用的引擎版本低于MooaToon引擎版本, 则会被要求升级到MooaToon引擎版本.
+
+如果你的项目使用的引擎版本高于MooaToon引擎版本, 则无法打开.
+
+### 复制MooaToon示例文件到现有项目
+
+复制以下示例文件夹到你的项目的Content目录内:
+
+- 预编译版本
+
+  - `MooaToon\MooaToon-Project-Precompiled\Content\Global`
+  - `MooaToon\MooaToon-Project-Precompiled\Content\MooaToonSamples`
+- 源码版本
+
+  - `MooaToon\MooaToon-Project\Content\Global`
+  - `MooaToon\MooaToon-Project\Content\MooaToonSamples`
+
+### 使用MooaToon引擎打开现有项目
+
+找到并执行引擎可执行文件:
+
+- 预编译版本
+
+  - `MooaToon\MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`
+- 源码版本
+  - `MooaToon\MooaToon-Engine\Engine\Binaries\Win64\UnrealEditor.exe`
+
+:::tip
+
+你可以右键引擎可执行文件并固定到开始菜单, 或创建桌面快捷方式, 这样就不用每次手动查找了.
+
+:::
+
+随后在项目浏览器中打开你自己的项目.
+
+:::caution
+
+如果你的项目依赖了其他引擎插件, 这里需要手动复制这些插件到MooaToon引擎的插件目录:
+
+- 预编译版本
+
+  - `MooaToon\MooaToon-Engine-Precompiled\Windows\Engine\Plugins`
+- 源码版本
+  - `MooaToon\MooaToon-Engine\Engine\Plugins`
+
+:::
+
+### 检查项目设置
+
+如果要使用完整的MooaToon的功能, 以下项目设置必须打开:
+
+- `Renderding > Dynamic Global Illumination Method: Lumen`
+- `Renderding > Ray Traced Shadows`
+
+另外以下命令修复了一些UE的渲染问题, 推荐添加到你的项目的`Config\DefaultEngine.ini`中:
+
+- `r.RayTracing.Shadows.AvoidSelfIntersectionTraceDistance=0.5`
+
+现在你可以检查MooaToon的示例, 并在自己的项目中使用Toon材质了.
