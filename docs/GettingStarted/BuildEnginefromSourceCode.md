@@ -131,5 +131,9 @@ sidebar_position: 0
 
 然后运行`_4_0_Build_And_Run_MooaToon.bat`以构建并启动项目.
 
+### 编译期间的错误
 
+编译期间的错误通常是windows缺少某些运行库导致, 请尝试:
 
+1. 安装最新的[.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+2. [下载工具](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view)并修复DirectX和C++运行库

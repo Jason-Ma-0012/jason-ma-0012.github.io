@@ -134,5 +134,10 @@ Open the `ue-gitdeps.zip` using the unzip software, extract its contents to the 
 
 Then run `_4_0_Build_And_Run_MooaToon.bat` to build and launch the project.
 
+### Errors during compilation
 
+Errors during compilation are usually caused by the lack of some runtime libraries in windows, please try:
+
+1. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+2. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
 

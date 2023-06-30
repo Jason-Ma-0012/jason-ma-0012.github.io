@@ -25,14 +25,22 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 依次执行以下步骤使用预编译版本:
 
 1. [下载安装工具](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip)并解压
-2. 双击运行: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
-3. 双击运行: `_0_1_Run_MooaToon_Precompiled_Project.bat`
+2. 双击运行: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`自动下载并解压
+3. 双击运行: `_0_1_Run_MooaToon_Precompiled_Project.bat`打开项目
 
 :::caution
+
+1. 下载问题
 
 **由于服务基于Github, 对于中国大陆用户, 强烈推荐开启全局代理, 否则无法保证下载速度和稳定性.**
 
 如果无法用代理, 建议先运行脚本`_2_4_Fetch_Fastest_Github_IPs.bat`以在一定程度上提高下载速度.
+
+2. 运行问题
+
+若启动项目时报错, 首先再次运行`_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`确保下载内容的完整性, 然后打开项目.
+
+若问题没有解决, 请[下载并运行修复工具](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view), 重启电脑后再次打开项目.
 
 :::
 

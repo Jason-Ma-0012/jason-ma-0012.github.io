@@ -25,8 +25,24 @@ The disadvantage of the precompiled version is that it cannot package C++ games,
 Execute the following scripts in sequence to use the precompiled version:
 
 1. [Download installation tool](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) and unzip
-2. Double click to run: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`
-3. Double click to run: `_0_1_Run_MooaToon_Precompiled_Project.bat`
+2. Double click to run: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` will automatically download and decompress
+3. Double click to run: `_0_1_Run_MooaToon_Precompiled_Project.bat` to open the project
+
+:::caution
+
+1. Download problem
+
+**Because the service is based on Github, for users in mainland China, it is strongly recommended to enable the global proxy, otherwise the download speed and stability cannot be guaranteed.**
+
+If the proxy cannot be used, it is recommended to run the script `_2_4_Fetch_Fastest_Github_IPs.bat` first to increase the download speed to a certain extent.
+
+2. Running problems
+
+If an error is reported when starting the project, first run `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` again to ensure the integrity of the downloaded content, and then open the project.
+
+If the problem is not resolved, please [download and run the library repair tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view), restart the computer and open the project again.
+
+:::
 
 You can also use the script `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` to update MooaToon, **all modified files will be overwritten**, and new files will not be overwritten if they do not have the same name as the MooaToon files.
 
