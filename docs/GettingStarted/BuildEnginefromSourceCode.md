@@ -53,11 +53,15 @@ sidebar_position: 0
 
 随意探索一下吧.
 
-#### 获取更新
+### 获取更新
 你可以检查[MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine)仓库得知是否有更新, 并通过`_3_0_Update_And_Run_MooaToon.bat`脚本获取更新.
-你也应该时常检查[安装工具](https://github.com/JasonMa0012/MooaToon)的更新情况, 并通过`_3_5_Update_InstallTool.bat`脚本进行更新.
+:::caution
 
-#### 解决冲突
+请勿使用`_2_0_Install_And_Run_MooaToon.bat`获取更新, 该脚本只下载最少的内容, 只适用于第一次安装时使用.
+
+:::
+
+### 解决冲突
 如果你修改了MooaToon的文件, 在更新时会收到提示, 如果已修改的文件和更新产生冲突, 则会有报错.
 建议手动备份导致合并失败的文件, 运行`_3_X_Clean_MooaToon_X`后再次更新.
 

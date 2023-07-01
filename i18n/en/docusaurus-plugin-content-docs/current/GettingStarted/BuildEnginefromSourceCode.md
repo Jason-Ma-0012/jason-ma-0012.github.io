@@ -55,11 +55,17 @@ All sample levels can be found in the `Content\MooaToonSamples\Maps` directory:
 
 Feel free to explore it.
 
-#### Get updates
+### Get updates
 
-You can check the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine) repository for updates, and get them by `_3_0_Update_And_Run_MooaToon.bat` script. You should also check the [installation tool](https://github.com/JasonMa0012/MooaToon) for updates from time to time and update them via `_3_5_Update_InstallTool.bat` scripts.
+You can check the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine) repository for updates, and get them by `_3_0_Update_And_Run_MooaToon.bat` script. 
 
-#### Resolve conflicts
+:::caution
+
+Do not use `_2_0_Install_And_Run_MooaToon.bat` to get updates, this script only downloads the minimum content and is only suitable for the first installation.
+
+:::
+
+### Resolve conflicts
 
 If you modify the MooaToon file, you will be prompted when updating, and if the modified file conflicts with the update, an error will be reported. It is recommended to manually back up that caused the merge failure, and then update them again after run `_3_X_Clean_MooaToon_X`.
 
