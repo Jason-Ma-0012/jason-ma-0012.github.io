@@ -52,6 +52,26 @@ If you want to get full engine functionality and faster update speed, please ref
 
 [Compile the engine from source code](BuildEnginefromSourceCode.md)
 
+### Select UE version
+
+You can edit `_2_5_Settings.bat` to select the UE version you want to install:
+
+1. Right-click `_2_5_Settings.bat`, select Edit
+
+2. Change the UE version in the `engineBranchName` and `projectBranchName` fields to the version you want to install, such as `5.1`:
+``` 
+set engineBranchName=5.1 
+set projectBranchName=5.1_MooaToonProject 
+```
+
+3. Save and execute the installation process again
+
+:::caution
+
+You can choose to use an older version, but the older version may not contain the latest features or fixes.
+
+:::
+
 ## (Optional) Install Ultra Dynamic Sky
 
 Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and install `Ultra Dynamic Sky` plugin to support the dynamic weather system:

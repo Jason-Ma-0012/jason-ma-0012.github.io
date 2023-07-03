@@ -52,7 +52,25 @@ MooaToon本质上是需要修改引擎代码的插件, 且目前未支持移动�
 
 [从源码编译引擎](BuildEnginefromSourceCode.md)
 
+### 选择UE版本
 
+你可以编辑`_2_5_Settings.bat`选择想要安装的UE版本:
+
+1. 右键`_2_5_Settings.bat`, 选择编辑
+
+2. 将`engineBranchName`和`projectBranchName`字段中的UE版本改为你想安装的版本, 比如`5.1`:
+
+   ```
+   set engineBranchName=5.1
+   set projectBranchName=5.1_MooaToonProject
+   ```
+3. 保存并再次执行安装流程
+
+:::caution
+
+你可以选择使用旧版本, 但旧版本可能不会包含最新的功能或修复.
+
+:::
 
 ## (可选) 安装Ultra Dynamic Sky
 
