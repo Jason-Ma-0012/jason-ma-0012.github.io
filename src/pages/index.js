@@ -64,7 +64,7 @@ export default function Home() {
       title={
         translate({
           id: 'homepage.homepage',
-          message: '首页'
+          message: 'UE5影视级卡通渲染的终极解决方案'
         })}
       description="The Ultimate Solution for Cinematic Toon Rendering in UE5">
       <HomepageHeader />
