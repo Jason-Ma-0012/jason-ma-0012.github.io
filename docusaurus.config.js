@@ -245,7 +245,7 @@ const config = {
         repoId: 'R_kgDOI7WVjg',
         category: 'Announcements',
         categoryId: 'DIC_kwDOI7WVjs4CW6zl',
-        mapping: "pathname", // 以路径作为标题进行引用，不兼容不同语言，例如：docs/Licence/，en/docs/Licence/
+        mapping: "title",
         theme: 'light',
         darkTheme: 'dark_dimmed',
       },
