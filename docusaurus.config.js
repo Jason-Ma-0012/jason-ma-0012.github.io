@@ -246,6 +246,8 @@ const config = {
         category: 'Announcements',
         categoryId: 'DIC_kwDOI7WVjs4CW6zl',
         mapping: "pathname", // 以路径作为标题进行引用，可兼容不同语言，例如：docs\Licence
+        theme: 'light',
+        darkTheme: 'dark_dimmed',
       },
     }),
   
