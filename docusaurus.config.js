@@ -1,8 +1,10 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,9 +27,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans', 'en'],
@@ -39,7 +41,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -69,7 +71,7 @@ const config = {
           },
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -175,8 +177,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Jason Ma. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
       tableOfContents: {
         minHeadingLevel: 2,
@@ -231,25 +233,25 @@ const config = {
         //... other Algolia params
       },
 
-      // 评论插件
+      // 评论插件, 此处存储Giscus API所需参数
+      // 组件位于src\components\GiscusComponent\index.js, 调用Giscus API进行渲染
+      // Swizzle的内部组件位于src\theme\DocItem\Layout\index.tsx，在文档底部插入评论栏
+      // Giscus官网：https://giscus.app/zh-CN
+      // 参考：
+      // https://medium.com/@m19v/how-to-add-giscus-comments-to-docusaurus-830fc2416fa3
+      // https://www.alanwang.site/posts/blog-guides/docusaurus-comment
       giscus: {
         repo: 'Jason-Ma-0012/jason-ma-0012.github.io',
         repoId: 'R_kgDOI7WVjg',
         category: 'Announcements',
         categoryId: 'DIC_kwDOI7WVjs4CW6zl',
-        theme: 'light',
-        darkTheme: 'dark_dimmed',
+        mapping: "pathname", // 以路径作为标题进行引用，可兼容不同语言，例如：docs\Licence
       },
     }),
   
   plugins: [
     // 图片缩放插件
     require.resolve('docusaurus-plugin-image-zoom')
-  ],
-
-  clientModules: [
-    // 评论的bug修复: https://www.alanwang.site/posts/blog-guides/docusaurus-comment
-    require.resolve('./src/clientModules/routeModules.ts')
   ],
 };
 

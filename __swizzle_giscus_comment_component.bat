@@ -1,0 +1,1 @@
+npm run swizzle @docusaurus/theme-classic DocItem/Layout -- --eject --typescript

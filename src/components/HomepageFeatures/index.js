@@ -119,7 +119,7 @@ function ShowImageOrVideo({ imagePath, videoPath, onlineVideoPath, mediaWidth, m
         style={{ alignItems: 'center', justifyContent: 'center', maxHeight: mediaHeight + 'px', margin: '0 auto' }}>
         {/* 等比缩放*/}
         <div style={{position: 'relative', width: '100%', height: '0', paddingBottom: '56.25%', }}>
-          <iframe style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', overflow: 'hidden'}} src={onlineVideoPath} frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          <iframe style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', overflow: 'hidden'}} src={onlineVideoPath} frameborder="0" allowfullscreen="true" allow="accelerometer; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
       </div>
     );
@@ -148,7 +148,7 @@ function Demo({ onlineVideoPath, imagePath }) {
       <div className="row margin-vert--lg" style={{ alignItems: 'center', justifyContent: 'center', height: '450px', maxWidth: '800px', margin: '0 auto'}}>
         {/* 等比缩放*/}
         <div style={{position: 'relative', width: '100%', height: '0', paddingBottom: '56.25%', }}>
-          <iframe style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', overflow: 'hidden'}} src={onlineVideoPath} frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          <iframe style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', overflow: 'hidden'}} src={onlineVideoPath} frameborder="0" allowfullscreen="true" allow="accelerometer; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
       </div>
     );
