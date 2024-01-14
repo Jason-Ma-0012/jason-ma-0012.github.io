@@ -134,7 +134,6 @@ const config = {
               { label: 'Youtube',     href: 'https://www.youtube.com/@jasonma0012',},
               { label: 'Bilibili',    href: 'https://space.bilibili.com/42463206',},
               { label: '知乎',        href: 'https://www.zhihu.com/people/blackcat1312',},
-              { label: 'QQ频道',      href: 'https://pd.qq.com/s/hahevtmwc',},
               { label: 'QQ群',        href: 'https://jq.qq.com/?_wv=1027&k=dn0yom7z',},
             ],
           },

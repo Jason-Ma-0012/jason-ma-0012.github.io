@@ -31,10 +31,6 @@
     "message": "Youtube",
     "description": "The label of footer link with label=Youtube linking to https://www.youtube.com/@jasonma0012"
   },
-  "link.item.label.QQ频道": {
-    "message": "QQ频道",
-    "description": "The label of footer link with label=QQ频道 linking to https://pd.qq.com/s/hahevtmwc"
-  },
   "link.item.label.QQ群": {
     "message": "QQ群",
     "description": "The label of footer link with label=QQ群 linking to https://jq.qq.com/?_wv=1027&k=dn0yom7z"
@@ -114,5 +110,9 @@
   "link.item.label.RSS": {
     "message": "RSS",
     "description": "The label of footer link with label=RSS linking to https://mooatoon.com/blog/rss.xml "
+  },
+  "link.title.Contact Us": {
+    "message": "Contact Us",
+    "description": "The title of the footer links column with title=Contact Us in the footer"
   }
 }

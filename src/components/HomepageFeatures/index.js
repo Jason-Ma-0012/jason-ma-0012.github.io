@@ -11,6 +11,7 @@ const FeatureList = [
     }),
     imagePath: '',
     videoPath: 'video/MooaToonDemoVideo.webm',
+    onlineVideoPath: '',
     mediaWidth: '8',
     mediaHeight: '500',
     textWidth: '4',
@@ -25,6 +26,7 @@ const FeatureList = [
         </Translate>
       </>
     ),
+    link: '',
   },
 ];
 
@@ -45,32 +47,92 @@ const DemoList = [
   },
 ];
 
-function ShowImageOrVideo({ imagePath, videoPath, mediaWidth, mediaHeight }) {
+const CooperationProjectList = [
+  {
+    title: 'Project L - Sevika Fan Art',
+    imagePath: 'https://cdnb.artstation.com/p/assets/images/images/066/462/883/large/emmanuel-marenco-sevika-pancho-splash-screen.jpg?1692971017',
+    videoPath: '',
+    onlineVideoPath: '',
+    mediaWidth: '8',
+    mediaHeight: '500',
+    textWidth: '4',
+    description: (
+      <>
+        @Emmanuel Marenco
+      </>
+    ),
+    link: 'https://www.artstation.com/artwork/LRJmDw',
+  },
+  {
+    title: translate({
+      id: 'homepage.cooperation_project.title.0',
+      message: '【自制动画/三渲二】漂流日记-第三集-我们的春天出行计划-02'
+    }),
+    imagePath: '',
+    videoPath: '',
+    onlineVideoPath: translate({
+      id: 'homepage.cooperation_project.onlineVideoPath.0',
+      message: 'https://player.bilibili.com/player.html?aid=270205322&bvid=BV1Jc411H7qB&cid=1101354059&p=1&high_quality=1&danmaku=0'
+    }),
+    mediaWidth: '8',
+    mediaHeight: '500',
+    textWidth: '4',
+    description: (
+      <>
+        @reng reng
+      </>
+    ),
+    link: 'https://www.artstation.com/artwork/LRJmDw',
+  },
+];
+
+function ShowImageOrVideo({ imagePath, videoPath, onlineVideoPath, mediaWidth, mediaHeight, link }) {
+  // 点击事件处理函数
+  const handleClick = () => {
+    // 如果link不为空，则在新标签页中打开链接
+    if (link) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   if (imagePath) {
     return (
       <img className={`col col--${mediaWidth}`}
         src={imagePath} alt="Image"
-        style={{ maxHeight: mediaHeight + 'px', }} />
+        style={{ maxHeight: mediaHeight + 'px', cursor: link ? 'pointer' : 'default' }}
+        onClick={handleClick}
+      />
     );
   } else if (videoPath) {
     return (
       <video className={`col col--${mediaWidth}`}
         src={videoPath}
-        preload="preload" draggable="true"
-        autoplay="autoplay" muted="muted" loop="loop"
-        style={{maxHeight: mediaHeight + 'px',}}
+        preload="auto" draggable="true"
+        autoPlay muted loop
+        style={{ maxHeight: mediaHeight + 'px', cursor: link ? 'pointer' : 'default' }}
+        onClick={handleClick}
       ></video>
+    );
+  } else if (onlineVideoPath) {
+    return (
+      <div className={`col col--${mediaWidth}`}
+        style={{ alignItems: 'center', justifyContent: 'center', maxHeight: mediaHeight + 'px', margin: '0 auto' }}>
+        {/* 等比缩放*/}
+        <div style={{position: 'relative', width: '100%', height: '0', paddingBottom: '56.25%', }}>
+          <iframe style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', overflow: 'hidden'}} src={onlineVideoPath} frameborder="0" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
     );
   } else {
     return null;
   }
 }
 
-function Feature({imagePath, videoPath, mediaWidth='8', mediaHeight='500', textWidth='3', title, description}) {
+function Feature({imagePath, videoPath, onlineVideoPath, mediaWidth='8', mediaHeight='500', textWidth='3', title, description, link}) {
   return (
     <div className="row margin-vert--lg"
       style={{ alignItems: 'center', justifyContent: 'center', }}>
-      <ShowImageOrVideo {...{imagePath, videoPath, mediaWidth, mediaHeight}} />
+      <ShowImageOrVideo {...{imagePath, videoPath, onlineVideoPath, mediaWidth, mediaHeight, link}} />
       <div className={"col col--" + textWidth + " padding--lg"}
         style={{ textAlign: 'center', }}>
         <h3>{title}</h3>
@@ -136,7 +198,11 @@ export default function HomepageFeatures() {
       <h1><Translate id='homepage.cooperationProjects'>
         合作项目
       </Translate></h1>
-      <p>TODO</p>
+
+      {CooperationProjectList.map((props, idx) => (
+        <Feature key={idx} {...props} />
+      ))}
+
 
     </div>
   );

@@ -436,5 +436,11 @@
   "theme.SearchModal.placeholder": {
     "message": "Search docs",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "homepage.cooperation_project.title.0": {
+    "message": "【自主制作アニメ/UE5】 漂流日记-03-UE5 TOON SHADING"
+  },
+  "homepage.cooperation_project.onlineVideoPath.0": {
+    "message": "https://www.youtube.com/embed/WLUFuTH3k0c"
   }
 }
