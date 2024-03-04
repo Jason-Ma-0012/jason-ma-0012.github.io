@@ -7,17 +7,9 @@
     "message": "Community",
     "description": "The title of the footer links column with title=Community in the footer"
   },
-  "link.title.License": {
-    "message": "License",
-    "description": "The title of the footer links column with title=License in the footer"
-  },
   "link.title.More": {
     "message": "More",
     "description": "The title of the footer links column with title=More in the footer"
-  },
-  "link.item.label.Docs": {
-    "message": "Docs",
-    "description": "The label of footer link with label=Docs linking to /docs/GettingStarted"
   },
   "link.item.label.Discord": {
     "message": "Discord",
@@ -43,10 +35,6 @@
     "message": "Bilibili",
     "description": "The label of footer link with label=Bilibili linking to https://space.bilibili.com/42463206"
   },
-  "link.item.label.License": {
-    "message": "License",
-    "description": "The label of footer link with label=License linking to https://elysium.jason-ma.com"
-  },
   "link.item.label.Blog": {
     "message": "Blog",
     "description": "The label of footer link with label=Blog linking to https://elysium.jason-ma.com"
@@ -70,14 +58,6 @@
   "link.item.label.VRM4U (ruyo)": {
     "message": "VRM4U (ruyo)",
     "description": "The label of footer link with label=VRM4U (ruyo) linking to https://github.com/ruyo/VRM4U"
-  },
-  "link.item.label.Ultra Dynamic Sky": {
-    "message": "Ultra Dynamic Sky",
-    "description": "The label of footer link with label=Ultra Dynamic Sky linking to https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky"
-  },
-  "link.title.Contect Us": {
-    "message": "Contect Us",
-    "description": "The title of the footer links column with title=Contect Us in the footer"
   },
   "link.item.label.Getting Started": {
     "message": "Getting Started",

@@ -7,10 +7,6 @@
     "message": "Docs",
     "description": "Navbar item with label Docs"
   },
-  "item.label.About": {
-    "message": "About",
-    "description": "Navbar item with label About"
-  },
   "item.label.Blog": {
     "message": "Blog",
     "description": "Navbar item with label Blog"
@@ -18,10 +14,6 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
-  },
-  "item.label.License": {
-    "message": "License",
-    "description": "Navbar item with label License"
   },
   "logo.alt": {
     "message": "MooaToonLogo_64",

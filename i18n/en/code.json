@@ -1,13 +1,4 @@
 {
-  "homepage.subtitle": {
-    "message": "The Ultimate Solution for Cinematic Toon Rendering in UE5"
-  },
-  "homepage.gettingStarted": {
-    "message": "Getting Started"
-  },
-  "homepage.homepage": {
-    "message": "The Ultimate Solution for Cinematic Toon Rendering in UE5"
-  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -207,10 +198,6 @@
     "message": "Toggle word wrap",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
-  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
-    "description": "The ARIA label to toggle the collapsible sidebar category"
-  },
   "theme.NavBar.navAriaLabel": {
     "message": "Main",
     "description": "The ARIA label for the main navigation"
@@ -278,33 +265,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "homepage.feature.title.0": {
-    "message": "Realtime"
-  },
-  "homepage.feature.description.0a": {
-    "message": "Realtime Environment Interaction: Lights, Shadows, Global Illumination, etc. just like UE Native Materials."
-  },
-  "homepage.feature.description.0b": {
-    "message": "Dynamic Character Effects, Excellent Controllability, meet the needs of Cinematics and Games at the same time."
-  },
-  "homepage.demo.0": {
-    "message": "https://www.youtube.com/embed/Or9OXqIU328"
-  },
-  "homepage.features": {
-    "message": "Features"
-  },
-  "homepage.demos": {
-    "message": "Demos"
-  },
-  "homepage.downloadDemo": {
-    "message": "Download the Runnable Demo (TODO)"
-  },
-  "homepage.cooperationProjects": {
-    "message": "Cooperation Projects"
-  },
-  "homepage.demo.FeaturesOverview": {
-    "message": "https://www.youtube.com/embed/WGOC-0DlZa8"
   },
   "theme.SearchBar.seeAll": {
     "message": "See all {count} results"
@@ -437,10 +397,78 @@
     "message": "Search docs",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "homepage.subtitle": {
+    "message": "The Ultimate Solution for Cinematic Toon Rendering in UE5"
+  },
+  "homepage.gettingStarted": {
+    "message": "Getting Started"
+  },
+  "homepage.homepage": {
+    "message": "The Ultimate Solution for Cinematic Toon Rendering in UE5"
+  },
+  "homepage.feature.title.0": {
+    "message": "Realtime"
+  },
+  "homepage.feature.description.0a": {
+    "message": "Realtime Environment Interaction: Lights, Shadows, Global Illumination, etc. just like UE Native Materials."
+  },
+  "homepage.feature.description.0b": {
+    "message": "Dynamic Character Effects, Excellent Controllability, meet the needs of Cinematics and Games at the same time."
+  },
+  "homepage.demo.0": {
+    "message": "https://www.youtube.com/embed/Or9OXqIU328"
+  },
+  "homepage.features": {
+    "message": "Features"
+  },
+  "homepage.demos": {
+    "message": "Demos"
+  },
+  "homepage.downloadDemo": {
+    "message": "Download the Runnable Demo (TODO)"
+  },
+  "homepage.cooperationProjects": {
+    "message": "Cooperation Projects"
+  },
+  "homepage.demo.FeaturesOverview": {
+    "message": "https://www.youtube.com/embed/WGOC-0DlZa8"
+  },
   "homepage.cooperation_project.title.0": {
     "message": "【自主制作アニメ/UE5】 漂流日记-03-UE5 TOON SHADING"
   },
   "homepage.cooperation_project.onlineVideoPath.0": {
     "message": "https://www.youtube.com/embed/WLUFuTH3k0c"
+  },
+  "homepage.cooperation_project.title.BH3_CS": {
+    "message": "Honkai Impact 3rd Part 2 Cutscene - The sea is singing with a voice of fire."
+  },
+  "homepage.cooperation_project.onlineVideoPath.BH3_CS": {
+    "message": "https://www.youtube.com/embed/5rU31FslD28"
+  },
+  "homepage.cooperation_project.description.BH3_CS": {
+    "message": "The 3D part of this film is rendered using MooaToon, and the high-quality layered output with customizable channels provides ample space for post-processing."
+  },
+  "homepage.cooperation_project.description.miHoYo": {
+    "message": "@HoYoverse"
   }
 }

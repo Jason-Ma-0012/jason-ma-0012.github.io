@@ -35,19 +35,48 @@ const DemoList = [
     imagePath: '',
     onlineVideoPath: translate({
       id: 'homepage.demo.FeaturesOverview',
-      message: 'https://player.bilibili.com/player.html?aid=355653013&bvid=BV1NX4y1U7Zw&cid=1117330787&page=1&high_quality=1&danmaku=0'
+      message: 'https://player.bilibili.com/player.html?aid=355653013&bvid=BV1NX4y1U7Zw&cid=1117330787&page=1&high_quality=1&danmaku=0&autoplay=0'
     }),
   },
   {
     imagePath: '',
     onlineVideoPath: translate({
       id: 'homepage.demo.0',
-      message: 'https://player.bilibili.com/player.html?aid=519478588&bvid=BV13g411t7L8&cid=940824948&page=1&high_quality=1&danmaku=0'
+      message: 'https://player.bilibili.com/player.html?aid=519478588&bvid=BV13g411t7L8&cid=940824948&page=1&high_quality=1&danmaku=0&autoplay=0'
     }),
   },
 ];
 
 const CooperationProjectList = [
+  {
+    title: translate({
+      id: 'homepage.cooperation_project.title.BH3_CS',
+      message: '《崩坏3》第二部过场动画——「海正用火的声音歌唱」'
+    }),
+    imagePath: '',
+    videoPath: '',
+    onlineVideoPath: translate({
+      id: 'homepage.cooperation_project.onlineVideoPath.BH3_CS',
+      message: 'https://player.bilibili.com/player.html?aid=1500174297&bvid=BV1iU421Z7TS&cid=1425464378&p=1&high_quality=1&danmaku=0&autoplay=0'
+    }),
+    mediaWidth: '8',
+    mediaHeight: '500',
+    textWidth: '4',
+    description: (
+      <>
+        {translate({
+          id: 'homepage.cooperation_project.description.BH3_CS',
+          message: '本片3D部分使用MooaToon渲染, 高品质且可自定义通道的分层输出提供了充足的后期处理空间.'
+        })}
+        <br/>
+        {translate({
+          id: 'homepage.cooperation_project.description.miHoYo',
+          message: '@miHoYo'
+        })}
+      </>
+    ),
+    link: 'https://www.artstation.com/artwork/LRJmDw',
+  },
   {
     title: 'Project L - Sevika Fan Art',
     imagePath: 'https://cdnb.artstation.com/p/assets/images/images/066/462/883/large/emmanuel-marenco-sevika-pancho-splash-screen.jpg?1692971017',
@@ -72,7 +101,7 @@ const CooperationProjectList = [
     videoPath: '',
     onlineVideoPath: translate({
       id: 'homepage.cooperation_project.onlineVideoPath.0',
-      message: 'https://player.bilibili.com/player.html?aid=270205322&bvid=BV1Jc411H7qB&cid=1101354059&p=1&high_quality=1&danmaku=0'
+      message: 'https://player.bilibili.com/player.html?aid=270205322&bvid=BV1Jc411H7qB&cid=1101354059&p=1&high_quality=1&danmaku=0&autoplay=0'
     }),
     mediaWidth: '8',
     mediaHeight: '500',
