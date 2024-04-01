@@ -31,19 +31,19 @@ Translucent Rim Light needs to enable High Quality Translucency Reflections (Lum
 
 ### Character shadow disappears
 
-(5.1) Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again
+(Epic 5.1-5.2)
 
-(5.2) Ray Tracing Shadows are clipped at a certain distance, increase the Actor's `Bounds Scale` to avoid clipping prematurely.
+Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again
 
-### (5.1) Outline affects the shadow function of static mesh characters
+### Outline conflicts with shadow functionality for static mesh characters
+
+(Epic 5.1-)
 
 This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Overlay Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
 
-### Subsurface Transmission
-
-The ShadingModelID obtained by Ray Tracing Shadow is always DefaultLit, which means that all shadows of objects will be treated as DefaultLit materials, and effects such as Subsurface Transmission will not take effect
-
 ### Material preview
+
+(5.0-5.1)
 
 The floor of the material preview window is black when Ray Tracing Skylight is enabled
 
@@ -51,21 +51,35 @@ The floor of the material preview window is black when Ray Tracing Skylight is e
 
 ### OIT
 
-OIT (Order Independent Transparency, which provides support for correct rendering of multiple layers of translucency) causes translucent Blending Mode Add not to work
+(Epic 5.0-5.1)
+
+OIT (Order Independent Transparency, which provides support for correct rendering of multiple layers of translucency) causes translucent Blending Mode Add not to work.
 
 ## Material editing
 
 ### Crash
 
-Adjusting the Material Layer Parameters is quite easy to crash, remember to save it often when using it
+(Epic 5.0+)
 
-### Description of Material Layer parameters
+Occasionally it will crash when adjusting layer parameters, remember to save frequently when using it.
+
+
+
+### The parameter description of Layer Parameters disappears
+
+(Epic 5.0+)
 
 ![image-20230223225457143](./assets/image-20230223225457143-49d66406c4ca15a0045da74423e64271.png)![image-20230223225748583](./assets/image-20230223225748583-3b15e6c2538602497842714b0c518461.png)
 
 The description of Material Layer parameters often disappears, please check the full parameter description on the Parameters Panel after opening the Material Editor:
 
 ![image-20230223225635072](./assets/image-20230223225635072-2aecb461b7167c83e4beeee562f79695.png)
+
+### Modifications to Curve Atlas Parameters will not take effect immediately
+
+(Epic 5.0+)
+
+If the current material instance has parameters that are covered by the blueprint, manually modifying the curve atlas parameters will not take effect immediately, and you need to toggle the switch in front of the parameters.
 
 ## Can not find MooaToon Project in Epic Launcher
 
