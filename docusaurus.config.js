@@ -118,7 +118,7 @@ const config = {
               { to: '/docs/GettingStarted',   label: 'Getting Started',   },
               { to: '/docs/History',          label: 'History',           },
               { to: '/docs/Licence',          label: 'Licence',           },
-              { to: '/docs/FAQ',            label: 'FAQ',               },
+              { to: '/docs/FAQ',              label: 'FAQ',               },
             ],
           },
           {
