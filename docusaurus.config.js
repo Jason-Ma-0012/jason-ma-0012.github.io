@@ -92,16 +92,16 @@ const config = {
           { to: '/docs/GettingStarted',   label: 'Docs',      position: 'left' },
           { to: '/docs/Licence',          label: 'Licence',   position: 'left' },
           { to: '/docs/FAQ',              label: 'FAQ',       position: 'left' },
-          { to: '/blog',                  label: 'News',      position: 'left' },
+          // { to: '/blog',                  label: 'News',      position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
           },
-          {
-            href: 'https://elysium.jason-ma.com',
-            label: 'Blog',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://elysium.jason-ma.com',
+          //   label: 'Blog',
+          //   position: 'right',
+          // },
           {
             href: 'https://github.com/JasonMa0012/MooaToon',
             label: 'GitHub',
@@ -122,7 +122,7 @@ const config = {
             ],
           },
           {
-            title: 'Contact Us',
+            title: 'Contact me',
             items: [
               { label: 'Email',           href: 'mailto:jasonma@mooatoon.com',},
               { label: 'Report Issues',   href: 'https://github.com/JasonMa0012/MooaToon/issues/new',},

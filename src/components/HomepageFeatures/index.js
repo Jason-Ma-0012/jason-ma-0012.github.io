@@ -140,7 +140,7 @@ function ShowImageOrVideo({ imagePath, videoPath, onlineVideoPath, mediaWidth, m
         autoPlay muted loop
         style={{ maxHeight: mediaHeight + 'px', cursor: link ? 'pointer' : 'default' }}
         onClick={handleClick}
-      ></video>
+      />
     );
   } else if (onlineVideoPath) {
     return (
