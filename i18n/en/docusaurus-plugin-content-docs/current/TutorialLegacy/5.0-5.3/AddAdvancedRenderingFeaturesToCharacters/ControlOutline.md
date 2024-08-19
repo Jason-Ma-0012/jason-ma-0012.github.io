@@ -87,7 +87,7 @@ But our pursuit of perfection will not change, and using new technologies well, 
 
 ![image-20230416014146252](./assets/image-20230416014146252.png)<center>Left: Before; Right: After</center>
 
-After the [previous tutorial](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#transferring-custom-normals-using-houdini), you should be familiar with the process of baking vertex data using Houdini. The `Vertex_Color_Alpha_for_Outline` node contains all the modifications to the edge width:
+After the [previous tutorial](/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3#transferring-custom-normals-using-houdini), you should be familiar with the process of baking vertex data using Houdini. The `Vertex_Color_Alpha_for_Outline` node contains all the modifications to the edge width:
 
 ![image-20230416014711026](./assets/image-20230416014711026.png)
 ![image-20230416015057232](./assets/image-20230416015057232.png)

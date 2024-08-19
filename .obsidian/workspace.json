@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md"
               }
             }
           }
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,6 +170,38 @@
   },
   "active": "fe0a7c30032a7b85",
   "lastOpenFiles": [
+    "build/en/blog/feed.json",
+    "build/en/blog/atom.xml",
+    "build/en/blog/rss.xml",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3",
+    "build/en/assets/images/image-20240815002842404-cf8175d7e2b79e9741946bb502609c57.png",
+    "build/en/assets/images/image-20240814003003573-644e678768c9e0bbaf6b0bfda072943b.png",
+    "build/en/assets/images/image-20240814001600880-af21e8687bbf56bcb18dc30323d6a415.png",
+    "build/en/assets/images/UnityChang_Line-df4db793eacafd72f3ac155ac20b8702.png",
+    "build/en/assets/images/image-20240810135943329-b497d561b56b09de9e935f8ed97156b0.png",
+    "build/en/assets/images/image-20240814001004788-3ab801eda1d4fe47fdc03bec82145dd7.png",
+    "build/en/assets/images/image-20240809003808154-1dc6795cbceb63dac25eeb80cfdd631b.png",
+    "build/en/assets/images/image-20240809003756931-b62d7ef23b6c87c46e24b4763f30f0d7.png",
+    "build/en/assets/images/image-20240809003817990-0f811e996ab61a2ec3d55644c15eba32.png",
+    "build/en/assets/images/image-20240809003308273-e7bb8b96997fceed7917a166e80aae8c.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+    "docs/Licence.md",
+    "docs/FAQ.md",
+    "docs/TutorialLegacy/README.md",
+    "docs/TutorialLegacy/5.0-5.3/README.md",
+    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
     "docs/Tutorial/AddStylizedHairHighlights.md",
@@ -182,39 +214,7 @@
     "docs/Tutorial/ControlTheShapeOfShadows.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "docs/Tutorial/ImportANewCharacter.md",
-    "docs/Tutorial/README.md",
-    "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
-    "docs/Licence.md",
-    "docs/MigrateToNewVersion/MigrateTo5.4.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/MigrateTo5.4.md",
-    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows.md",
-    "docs/GettingStarted.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/History.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
-    "assets",
-    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225748583.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225635072.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225457143.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225443836.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/assets",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/Pasted image 20240817215556.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/Pasted image 20240817220847.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/Pasted image 20240817214949.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/image-20240817001142805.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/image-20240817001017654.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/image-20240817000311428.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-14 01-04-10-750.mp4",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-14 00-34-38-362.mp4",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-14 00-23-01-549.mp4",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-10 17-19-49-631.webm",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial"
+    "docs/Tutorial/README.md"
   ]
 }

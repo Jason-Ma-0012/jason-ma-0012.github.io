@@ -65,7 +65,7 @@
   },
   "link.item.label.History": {
     "message": "History",
-    "description": "The label of footer link with label=History linking to /docs/History"
+    "description": "The label of footer link with label=History linking to /docs/MigrateToNewVersion/History"
   },
   "link.item.label.Licence": {
     "message": "Licence",

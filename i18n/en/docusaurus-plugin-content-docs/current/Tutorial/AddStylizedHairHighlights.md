@@ -25,7 +25,7 @@ To use this method, custom tangents need to be baked into the model UV. MooaToon
 
 ### Baking Custom Tangents using Houdini 
 
-The nodes used are already included in the [previous tutorial](ControlTheShapeOfShadows#--use-houdini-to-transfer-custom-normals).  
+The nodes used are already included in the [previous tutorial](./ControlTheShapeOfShadows#--use-houdini-to-transfer-custom-normals).  
 
 In the `mooa_highlightTangentTransfer` node, the tangents of the ellipsoid are transferred to the hair:
 
@@ -53,7 +53,7 @@ If you want to use your own model, you need to: 
     
 2. Modify the second input of the `mooa_highlightTangentTransfer` node. You can directly modify the `transform5` node of the ellipsoid to customize the highlight shape, or replace it with new geometry input
 
-Once ready, follow the [previous tutorial](ControlTheShapeOfShadows#import-the-model-into-ue) to export the model to UE, then adjust the hair material as shown in the image below:
+Once ready, follow the [previous tutorial](./ControlTheShapeOfShadows#import-the-model-into-ue) to export the model to UE, then adjust the hair material as shown in the image below:
 
 ![image-20240811181227677](./assets/image-20240811181227677.png)
 
@@ -63,7 +63,7 @@ Next, you can control highlight detail shapes through Masks. 
 
 ### Draw a Specular Mask to Precisely Control highlight Shapes
 
-Similar to [drawing a Shadow Mask Map](ControlTheShapeOfShadows#drawing-mask-map-in-substance-3d-painter), the Highlight Mask example source files are located in the `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
+Similar to [drawing a Shadow Mask Map](./ControlTheShapeOfShadows#drawing-mask-map-in-substance-3d-painter), the Highlight Mask example source files are located in the `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
 
 ![image-20240811181935380](./assets/image-20240811181935380.png)
 
@@ -87,7 +87,7 @@ The sharp angle of the visible highlight has become rounded.
 
 ### Controlling Highlight Transitions with Specular Color Ramp
 
-Similar to [Diffuse Color Ramp](ControlLightShadowColorTransition), Specular Color Ramp can also be used to control the highlight color transition.  
+Similar to [Diffuse Color Ramp](./ControlLightShadowColorTransition), Specular Color Ramp can also be used to control the highlight color transition.  
 
 The values of the RGB channels of the Specular Color Ramp represent the Specular Color, with the x-axis being the relative brightness of PBR Specular:  
 

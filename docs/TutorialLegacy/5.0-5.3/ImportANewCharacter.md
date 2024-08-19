@@ -137,7 +137,7 @@ VRoid可以简单快速地制作角色模型, VRM4U可以用于导入VRoid模型
 
 - ......
 
-如果你想实时展示你的角色, 还必须经过一系列更加细致的调整, 基本上你花费的时间和最终的渲染质量成正比, 请参阅[为角色添加高级渲染特性](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/).
+如果你想实时展示你的角色, 还必须经过一系列更加细致的调整, 基本上你花费的时间和最终的渲染质量成正比, 请参阅[为角色添加高级渲染特性](/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/).
 
 如果你只是想离线展示你的角色, 你自然可以利用现在非常强大的AIGC工具弥补这些缺点, 比如Stable Diffusion, 未来我也将尝试对AIGC工具进行集成.
 

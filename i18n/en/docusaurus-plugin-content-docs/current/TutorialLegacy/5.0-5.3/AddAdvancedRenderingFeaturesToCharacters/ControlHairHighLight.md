@@ -59,7 +59,7 @@ The timing of the Kajiya-Kay highlight appearance depends on the viewing and tan
 
 ## Use Houdini to bake custom tangents to control the approximate range of highlights
 
-After [the previous tutorial](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#TransferringCustomNormalsUsingHoudini), you should be familiar with the process of baking vertex data using Houdini.
+After [the previous tutorial](/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3#transferring-custom-normals-using-houdini), you should be familiar with the process of baking vertex data using Houdini.
 
 In the `Front_Hair_Highlight_Tangent` node, the tangent of the ellipsoid is transferred to the hair to define the shape of the hair highlights and the trajectory of their movement based on the lighting and viewing angles:
 
@@ -83,7 +83,7 @@ You can also use other shapes, but they must have tangent properties, and the ta
 
 Next, the code in the `Bake_HighlightTangent_to_UV23` node bakes the tangent to UV2 and UV3, which usually doesn't need to be modified.
 
-After preparation, export the model to UE following the previous process, and make sure the hair uses [layered materials](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer):
+After preparation, export the model to UE following the previous process, and make sure the hair uses [layered materials](/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3):
 
 ![image-20230501222354840](./assets/image-20230501222354840.png)
 
@@ -96,7 +96,7 @@ Now, the movement trajectory of the highlights has reached expectations, and you
 
 ## Drawing Highlight Mask for Precise Control of Highlight Shape
 
-Similar to [Drawing Shadow Mask](/docs/Tutorial/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows#drawing-shadow-mask), you can find an example source file for Highlight Mask at `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
+Similar to [Drawing Shadow Mask](/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3#drawing-shadow-mask), you can find an example source file for Highlight Mask at `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
 
 ![image-20230501224038999](./assets/image-20230501224038999.png)
 
