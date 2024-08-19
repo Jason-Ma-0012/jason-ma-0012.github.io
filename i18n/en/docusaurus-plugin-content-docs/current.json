@@ -7,12 +7,24 @@
     "message": "Getting Started",
     "description": "The label for category Getting Started in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial": {
-    "message": "Tutorial",
-    "description": "The label for category Tutorial in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Add Advanced Rendering Features to Characters": {
     "message": "Add Advanced Rendering Features to Characters",
     "description": "The label for category Add Advanced Rendering Features to Characters in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Legacy Tutorials": {
+    "message": "Legacy Tutorials",
+    "description": "The label for category Legacy Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.5.0-5.3": {
+    "message": "5.0-5.3",
+    "description": "The label for category 5.0-5.3 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Migrate to New Version": {
+    "message": "Migrate to New Version",
+    "description": "The label for category Migrate to New Version in sidebar tutorialSidebar"
   }
 }

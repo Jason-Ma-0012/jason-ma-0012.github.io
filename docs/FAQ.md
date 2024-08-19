@@ -3,41 +3,43 @@ id: FAQ
 title: 常见问题
 sidebar_position: 30
 ---
-# 常见问题
-
 ## 限制
+
+### 平台限制
+
+暂不支持移动平台, XR和主机平台理论上应该支持但尚未测试.
+
+### Substrate
+
+暂不支持Substrate.
 
 ### 文件管理
 
-请尽可能复制而不是更改MooaToon文件, 否则可能会因为更新而产生冲突
-
-### 移动平台
-
-MooaToon暂不支持移动平台, XR和主机平台理论上应该支持但尚未测试
+请尽可能复制而不是更改MooaToon文件, 否则可能会因为更新而产生冲突.
 
 ### 全局光照
 
-Toon Material中与全局光照相关的功能默认使用Lumen, 其他方法暂未测试
+与全局光照相关的功能默认使用Lumen, 其他方法暂未测试.
 
 ### 光线追踪
 
-Toon Material中与Shadow有关的功能必须开启Ray Tracing Shadow和Hardware Ray Tracing
+与Shadow有关的功能必须启用`Ray Tracing Shadow`和`Hardware Ray Tracing`.
 
 ### 半透明
 
-半透明的Rim Light需要在Post Processing Volume中开启High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) 以获取半透明物体深度
+半透明的边缘光需要在`Post Processing Volume`中启用`High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections)` 以获取半透明物体深度.
 
 ## 光线追踪
 
 ### 角色阴影消失
 
-(Epic 5.1-5.2)
+(Epic 5.1+)
 
-有时角色的光线追踪阴影会消失, 运行游戏或隐藏 / 显示角色后再次显示
+有时角色的光线追踪阴影会消失, 运行游戏或隐藏 / 显示角色后再次显示.
 
 ### 描边与静态网格角色的阴影功能冲突
 
-(Epic 5.1-)
+(Epic 5.0-5.1)
 
 这是由于Ray Tracing Shadow错误调用了Overlay Material的Hit Shader, Toon Material中的Ray Tracing Shadow相关功能将被描边覆盖.
 

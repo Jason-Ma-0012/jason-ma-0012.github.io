@@ -1,10 +1,12 @@
 ---
 id: GettingStarted
 title: Getting Started
-description: Quick Start with MooaToon
+description: Getting Started
 sidebar_position: 0
 ---
-# Getting Started
+:::tip
+NEW: Version 5.4 is now available!
+:::
 
 ## Experience an executable demo
 
@@ -12,9 +14,9 @@ TODO
 
 ## Select the engine version that you want to install
 
-MooaToon is essentially a plugin that require modifications to the engine code, and currently does not support mobile platforms, so you cannot package games to mobile platforms.
+MooaToon is essentially a plugin that requires modifications to the engine code, and you can choose to install either the ***pre-compiled version*** or the ***source version***.
 
-### Install the precompiled version of the engine
+### - Install the precompiled version of the engine
 
 If you are an artist and just want to try out MooaToon, the precompiled version is a good choice.
 
@@ -46,15 +48,15 @@ If the problem is not resolved, please [download and run the library repair tool
 
 You can also use the script `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` to update MooaToon, **all modified files will be overwritten**, and new files will not be overwritten if they do not have the same name as the MooaToon files.
 
-### Compile the engine from source code
+### - Compile the engine from source code
 
 If you want to get full engine functionality and faster update speed, please refer to:
 
 [Compile the engine from source code](BuildEnginefromSourceCode.md)
 
-### Select UE version
+## Installing a specific UE version
 
-You can edit `_2_5_Settings.bat` to select the UE version you want to install:
+You can edit setting file to select the UE version you want to install:
 
 1. Right-click `_2_5_Settings.bat`, select Edit
 
@@ -64,13 +66,58 @@ set engineBranchName=5.1
 set projectBranchName=5.1_MooaToonProject 
 ```
 
-3. Save and execute the installation process again
+3. Save and re-execute the installation process
 
 :::caution
 
 You can choose to use an older version, but the older version may not contain the latest features or fixes.
 
 :::
+
+
+## File directory structure
+
+- Precompiled version
+
+```
+MooaToon ----------------------------------------- Root directory
+ ├-MooaToon-Engine-Precompiled ------------------- Engine Installation Directory
+ │ ├-Windows\Engine\Plugins\MooaToonScripts------- MooaToon Engine Plugins, C++ code included.
+ │ ├-Windows\Engine\Plugins\MooaToonThirdparty---- MooaToon Engine Plugin Dependencies
+ │ └-Windows\Engine\Binaries\Win64 --------------- Engine executable directory
+ │ └-UnrealEditor.exe ---------------------------- Engine executable file
+ ├-MooaToon-Project-Precompiled ------------------ Project installation directory
+ │ ├-Art ----------------------------------------- Art resource file directory
+ │ ├-Config -------------------------------------- Project settings directory
+ │ ├-Content ------------------------------------- Project content directory
+ │ │ ├-Global ------------------------------------ MooaToonSamples dependent resources
+ │ │ └-MooaToonSamples --------------------------- All samples of MooaToon, can be deleted.
+ │ ├-Plugins\MooaToon ---------------------------- Plugins for MooaToon project, including textures and blueprints.
+ │ └-MooaToon_Project.uproject ------------------- Project file
+ │
+ ...
+```
+
+- Source version
+
+```
+MooaToon ----------------------------------------- Root directory
+ ├-MooaToon-Engine ------------------------------- Engine installation directory
+ │ ├-Engine\Plugins\\MooaToonScripts ------------- MooaToon Engine Plugins, including C++ code
+ │ ├-Windows\Engine\Plugins\MooaToonThirdparty---- MooaToon Engine Plugin Dependencies
+ │ └-Engine\Binaries\Win64 ----------------------- Engine executable directory
+ │ └-UnrealEditor.exe ---------------------------- Engine executable file
+ ├-MooaToon-Project ------------------------------ Project installation directory
+ │ ├-Art ----------------------------------------- Art resource files directory
+ │ ├-Config -------------------------------------- Project settings directory
+ │ ├-Content ------------------------------------- Project content directory
+ │ │ ├-Global ------------------------------------ MooaToonSamples dependent resources
+ │ │ └-MooaToonSamples --------------------------- All samples of MooaToon, can be deleted.
+ │ ├-Plugins\MooaToon ---------------------------- Plugins for MooaToon project, including textures and blueprints.
+ │ └-MooaToon_Project.uproject ------------------- Project file
+ │
+ ...
+```
 
 ## (Optional) Install Ultra Dynamic Sky
 
@@ -95,115 +142,4 @@ Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and
   | ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png) | ![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true) |
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
-- Detailed usage of Ultra Dynamic Sky can be found on its store page
-
-## File directory structure
-
-- Precompiled version
-
-```
-MooaToon ------------------------------- root directory
- ├-MooaToon-Engine-Precompiled --------- engine installation directory
- │  ├-Windows\Engine\Plugins\MooaToon -- MooaToon engine plugin directory
- │  └-Windows\Engine\Binaries\Win64 ---- engine Executable file
- │    └-UnrealEditor.exe --------------- engine executable file
- ├-MooaToon-Project-Precompiled -------- project installation directory
- │  ├-Art ------------------------------ art resource file directory
- │  ├-Config --------------------------- project settings directory
- │  ├-Content -------------------------- project content directory
- │  │  ├-Global ------------------------ resources that MooaToonSamples depends on
- │  │  └-MooaToonSamples --------------- all samples of MooaToon, you can delete
- │  └-MooaToon_Project.uproject -------- project file
- │
- ...
-```
-
-- Source version
-
-```
-MooaToon ------------------------- root directory
- ├-MooaToon-Engine --------------- engine installation directory
- │  ├-Engine\Plugins\MooaToon ---- MooaToon engine plugin directory
- │  └-Engine\Binaries\Win64 ------ engine Executable file
- │    └-UnrealEditor.exe --------- engine executable file
- ├-MooaToon-Project -------------- project installation directory
- │  ├-Art ------------------------ art resource file directory
- │  ├-Config --------------------- project settings directory
- │  ├-Content -------------------- project content directory
- │  │  ├-Global ------------------ resources that MooaToonSamples depends on
- │  │  └-MooaToonSamples --------- all samples of MooaToon, you can delete
- │  └-MooaToon_Project.uproject -- project file
- │
- ...
-```
-
-
- ## Using MooaToon in an existing project
-
-You can use the MooaToon engine to open your own projects.
-
- ### Confirm the existing project version and MooaToon engine version
-
-You can judge the engine version of MooaToon by the Branch name and Release name of MooaToon's [Github repository](https://github.com/JasonMa0012/MooaToon).
-
-If your project uses an engine version lower than the MooaToon engine version, it will be required to upgrade to the MooaToon engine version.
-
-If the engine version of your project is higher than the MooaToon engine version, it cannot be opened.
-
- ### Copy MooaToon example files to existing project
-
-Copy the following example folders into your project's Content directory:
-
-- Precompiled version
-  - `MooaToon\MooaToon-Project-Precompiled\Content\Global` 
-  - `MooaToon\MooaToon-Project-Precompiled\Content\MooaToonSamples`
-
-- Source version
-  - `MooaToon\MooaToon-Project\Content\Global` 
-  - `MooaToon\MooaToon-Project\Content\MooaToonSamples`
-
-
- ### Open an existing project using the MooaToon engine
-
-Locate and execute the engine executable:
-
- - Precompiled version 
-   - `MooaToon\MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`
-
- - Source version 
-   - `MooaToon\MooaToon-Engine\Engine\Binaries\Win64\UnrealEditor.exe`
-
-
- :::tip
-
-You can right-click the engine executable file and pin it to the start menu, or create a desktop shortcut, so that you don't have to find it manually every time.
-
- :::
-
-Then open your own project in the project browser.
-
- :::caution
-
-If your project depends on other engine plugins, you need to manually copy these plugins to the plugin directory of the MooaToon engine:
-
- - Precompiled version
-   - `MooaToon\MooaToon-Engine-Precompiled\Windows\Engine\Plugins`
-
- - Source version
-   - `MooaToon\MooaToon-Engine\Engine\Plugins`
-
-
- :::
-
- ### Check project settings
-
-To use the full functionality of MooaToon, the following project settings must be enabled:
-
- - `Rendering > Dynamic Global Illumination Method: Lumen`
- - `Rendering > Ray Traced Shadows`
-
-In addition, the following commands fix some UE rendering problems, and it is recommended to add them to `Config\DefaultEngine.ini` of your project:
-
- - `r.RayTracing.Shadows.AvoidSelfIntersectionTraceDistance=0.5`
-
-Now you can check MooaToon's examples and use Toon materials in your own projects.
+- Detailed usage of Ultra Dynamic Sky can be found on its store page.

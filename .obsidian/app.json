@@ -1,0 +1,16 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./assets",
+  "userIgnoreFilters": [
+    "node_modules/",
+    "art/",
+    "_.github/",
+    "src/"
+  ],
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "showRibbon": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
+}

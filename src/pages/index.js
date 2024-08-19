@@ -36,9 +36,13 @@ function HomepageHeader() {
       >
         <h1 className="hero__title" style={style_title}> {siteConfig.title} </h1>
         <p className="hero__subtitle" style={style_title}>
-          <Translate
-            id='homepage.subtitle'>
+          <Translate id='homepage.subtitle'>
             UE5影视级卡通渲染的终极解决方案
+          </Translate>
+        </p>
+        <p className="hero_desc" style={style_title}>
+          <Translate id='homepage.news'>
+            NEW: 5.4版本现已正式推出!
           </Translate>
         </p>
         <div className={styles.buttons}>
@@ -46,8 +50,7 @@ function HomepageHeader() {
             className="button button--primary button--lg"
             style={style_button_text}
             to="/docs/GettingStarted">
-            <Translate
-              id='homepage.gettingStarted'>
+            <Translate id='homepage.gettingStarted'>
               开始使用
             </Translate>
           </Link>

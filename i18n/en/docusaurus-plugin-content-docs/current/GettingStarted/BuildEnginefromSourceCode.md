@@ -1,14 +1,13 @@
 ---
 id: BuildEnginefromSourceCode
 title: Build Engine from Source Code
-description: Tutorial and FAQ for Building the Engine from Source
+description: Build Engine from Source Code
 sidebar_position: 0
 ---
 
-# Build Engine from Source Code
+Depending on your network bandwidth and CPU performance, the whole installation process will take a few hours, please do not be impatient, if there are unsolvable problems in the process, you can submit [Issues](https://github.com/JasonMa0012/MooaToon/issues/new).
 
-According to your network and CPU, the whole installation process may take 3~8 hours, please be calm, if there are unsolvable problems in the process, you can submit [Issues](https://github.com/JasonMa0012/MooaToon/issues/new).
-
+Please choose the tutorial that corresponds to your experience:
 ## - Regular users
 
 ### Link accounts
@@ -23,13 +22,13 @@ Before you begin, you'll need an [**Epic**](https://www.unrealengine.com/) accou
 
 :::caution
 
-If EpicGames cannot be found in your Organizations after accepting the invitation, please log out and log in to your GitHub account again.
-
+- If you can't find EpicGames in your organization after accepting the invitation, try logging back into your GitHub account.
+- Epic has recently restructured its Github organization, so if you find that the Github project link is inaccessible, check to see if your Github account has been successfully added to the EpicGames organization and try to re-link your account with it. 
 :::
 
 ### Download the MooaToon installation tool
 
-[Download](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) the Zip of the installation tool, unzip to the root directory of the hard disk, such as `D:\MooaToon` (the purpose is to avoid compilation errors caused by too long path), and it is highly recommended to reserve at least 200GB of SSD hard disk space.
+[Download](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) the Zip of the installation tool, unzip to the root directory of the hard disk, such as `D:\MooaToon` (the purpose is to avoid compilation errors caused by too long path), and it is highly recommended to **reserve at least 200GB of SSD hard disk space**.
 
 Then you can start the installation process.
 
@@ -37,11 +36,12 @@ Then you can start the installation process.
 
 In turn:
 
-1. `_1_1_Install_Git.bat` install Git with default settings
-2. `_1_2_Install_VisualStudio.bat` install Visual Studio with default settings
-3. Save your work, run `_1_3_Restart_Computer.bat` restart your PC
-5. `_2_0_Install_And_Run_MooaToon.bat` follow the prompts to log in to your Github account and wait for the download and compilation to complete, which may take 2 to 5 hours
-6. When finished, the project will open automatically
+1. Run `_1_1_Install_Git.bat` to install Git with default settings
+2. Run `_1_2_Install_VisualStudio.bat` to install Visual Studio with default settings
+3. **Save your work**, run `_1_3_Restart_Computer.bat`  to restart your PC
+4. Run `_2_0_Install_And_Run_MooaToon.bat` and follow the prompts to login to your Github account, wait for the download and compilation to complete, this may take 1 to 3 hours.
+   1. Users in mainland China should follow the instructions to enable the global proxy, otherwise you may encounter network problems.
+5. When finished, the project will open automatically
 
 ### Check the project
 
@@ -57,7 +57,7 @@ Feel free to explore it.
 
 ### Get updates
 
-You can check the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine) repository for updates, and get them by `_3_0_Update_And_Run_MooaToon.bat` script. 
+You can subscribe to the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine) repository to find out if there are any updates, and get them via the `_3_0_Update_And_Run_MooaToon.bat` script.
 
 :::caution
 
@@ -73,11 +73,11 @@ If you modify the MooaToon file, you will be prompted when updating, and if the 
 
 How to compile the engine from source: https://docs.unrealengine.com/5.1/zh-CN/building-unreal-engine-from-source/ 
 
-Go to: https://github.com/Jason-Ma-0012/MooaToon-Engine Pull`5.1` Branch to compile the engine, Pull `5.1_MooaToonProject` branch to start the project, Enjoy it!
+Go to: https://github.com/Jason-Ma-0012/MooaToon-Engine Pull`5.x` Branch to compile the engine, Pull `5.x_MooaToonProject` branch to run the project.
 
 ## FAQ
 
-### Network issues during Install_MooaToon_Engine/project
+### Network problems during installation or update
 
 You can try the following workarounds:
 
@@ -86,14 +86,18 @@ You can try the following workarounds:
 Usually, Chinese mainland users have a slow connection to Github, to solve this problem, run the script: `_2_4_Fetch_Fastest_Github_IPs.bat`
 
 The script will be automatically executed when running the `_2_0_Install_And_Run_MooaToon.bat`, and its principle is to query the IP of the fastest Github server in the current network through a third-party website, and write it to the host file to accelerate `_2_0_Install_And_Run_MooaToon.bat` download.
-#### Set up the Git proxy manually
+#### Setting up a global proxy
 
-If you have a faster proxy server, you can also set up a proxy for Git manually, `Win + R` enter the following command (please replace the proxy port with your own proxy port):
+If you have a faster proxy server, please turn on global proxies in your proxy utility software first.
 
-- Socks5: `git config --global http.proxy socks5://127.0.0.1:10808`
-- Http: `git config --global http.proxy http://127.0.0.1:10808`
+Then run this script to enable the proxy:
 
-Undo the Git proxy: `git config --global --unset http.proxy`
+- `_0_2_Set_CMD_And_Git_Proxy.bat`
+
+To cancel the proxy run this script.
+
+- `_0_3_Cancel_CMD_And_Git_Proxy.bat`
+
 #### Download Zip manually
 
 You can also choose not to use Git but download Zip directly, this way of downloading may be more stable, and you can use other downloaders to speed up the download and resumption download, but each update requires manual download of the entire engine and project.
@@ -102,9 +106,9 @@ You can also choose not to use Git but download Zip directly, this way of downlo
 
    ![](./assets/image-20230211002346396.png)
 
-2. As shown in the figure, select `5.1` as the engine branch on the left, click `Code > Download ZIP` on the right to start downloading the engine.
+2. As shown in the figure, select `5.x` as the engine branch on the left, click `Code > Download ZIP` on the right to start downloading the engine.
 
-3. When you're done, switch to `5.1_MooaToonProject` branch to download the project.
+3. When you're done, switch to `5.x_MooaToonProject` branch to download the project.
 
 4. After the download is complete, return to the MooaToon home directory and extract the engine to the MooaToon`MooaToon\MooaToon-Engine` directory:
 
@@ -144,6 +148,7 @@ Then run `_4_0_Build_And_Run_MooaToon.bat` to build and launch the project.
 
 Errors during compilation are usually caused by the lack of some runtime libraries in windows, please try:
 
-1. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
-2. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
+1. Install the [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+2. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+3. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
 

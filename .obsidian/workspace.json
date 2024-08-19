@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "a0a2fdad440bedb1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2c5d4f6a2eb94e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe0a7c30032a7b85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f00069665e2809a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Tutorial/AddStylizedHairHighlights.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "71d80a2a36f1140f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b9c7ea6064a5c74",
+        "type": "tabs",
+        "dimension": 70.62461348175634,
+        "children": [
+          {
+            "id": "ed4408bcbd333312",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "efc7b3e26c04e34e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0c6bda0dabc6c192",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "d4078d0f51621a87",
+        "type": "tabs",
+        "dimension": 29.375386518243662,
+        "children": [
+          {
+            "id": "7e045d35a42b0f2b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 400.5
+  },
+  "right": {
+    "id": "6032dd1ff9d0a44a",
+    "type": "split",
+    "children": [
+      {
+        "id": "70ba1d677fa8b980",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12393d954d2bdf55",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fcc3843517987de6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "09bd1b960cda6f25",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 343.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "open-vscode:VSCode": false
+    }
+  },
+  "active": "fe0a7c30032a7b85",
+  "lastOpenFiles": [
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
+    "docs/Tutorial/AddStylizedHairHighlights.md",
+    "docs/Tutorial/ControlScreenSpaceRimlights.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlScreenSpaceRimlights.md",
+    "docs/Tutorial/ControlLightShadowColorTransition.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+    "docs/Tutorial/ImportANewCharacter.md",
+    "docs/Tutorial/README.md",
+    "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
+    "docs/Licence.md",
+    "docs/MigrateToNewVersion/MigrateTo5.4.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/MigrateTo5.4.md",
+    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows.md",
+    "docs/GettingStarted.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/History.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
+    "assets",
+    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225748583.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225635072.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225457143.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/assets/image-20230223225443836.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/assets",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/Pasted image 20240817215556.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/Pasted image 20240817220847.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/Pasted image 20240817214949.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/image-20240817001142805.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/image-20240817001017654.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets/image-20240817000311428.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/assets",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-14 01-04-10-750.mp4",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-14 00-34-38-362.mp4",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-14 00-23-01-549.mp4",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/bandicam 2024-08-10 17-19-49-631.webm",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial"
+  ]
+}

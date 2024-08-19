@@ -1,9 +1,8 @@
 ---
 id: Tutorial
-title: Tutorial
-description: Tutorials for Artists
+title: Tutorials
+description: Tutorials
 sidebar_position: 2
 ---
-# Tutorial
-
 <DocCardList/>
+

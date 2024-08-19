@@ -3,41 +3,44 @@ id: FAQ
 title: FAQ
 sidebar_position: 30
 ---
-# FAQ
 
 ## Limitations
+### Platform Limitations
+  
+Mobile platforms are not supported at this time, XR and console platforms should theoretically be supported but have not yet been tested.
+
+### Substrate
+
+Substrate is not supported.
 
 ### File management
 
-Please copy and not change the MooaToon file as much as possible, otherwise conflicts may arise due to the update
+Please copy and not change the MooaToon file as much as possible, otherwise conflicts may arise due to the update.
 
-### Mobile Platform
-
-MooaToon does not support mobile platforms at the moment, XR and console platforms should theoretically support but have not been tested yet
 
 ### Global Illumination
 
-The functions related to Global Illumination in Toon Material use Lumen by default, other methods have not been tested yet
+Lumen is used by default for global illumination related functions, other methods have not been tested yet.
 
 ### Ray  Tracing
 
-The functions related to Shadow in Toon Material must enable Ray Tracing Shadow and Hardware Ray Tracing
+Shadow-related features must have `Ray Tracing Shadow` and `Hardware Ray Tracing` enabled.
 
 ### Translucent
 
-Translucent Rim Light needs to enable High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections) in Post Processing Volume to obtain the depth of translucent objects
+Translucent Rimlight requires that `High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections)` be enabled in `Post Processing Volume` in order to get the depth of the translucent object.
 
 ## Ray Tracing
 
 ### Character shadow disappears
 
-(Epic 5.1-5.2)
+(Epic 5.1+)
 
-Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again
+Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again.
 
 ### Outline conflicts with shadow functionality for static mesh characters
 
-(Epic 5.1-)
+(Epic 5.0-5.1)
 
 This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Overlay Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
 
@@ -45,7 +48,7 @@ This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Overlay M
 
 (5.0-5.1)
 
-The floor of the material preview window is black when Ray Tracing Skylight is enabled
+The floor of the material preview window is black when Ray Tracing Skylight is enabled.
 
 ## Translucent
 
@@ -69,11 +72,11 @@ Occasionally it will crash when adjusting layer parameters, remember to save fre
 
 (Epic 5.0+)
 
-![image-20230223225457143](./assets/image-20230223225457143-49d66406c4ca15a0045da74423e64271.png)![image-20230223225748583](./assets/image-20230223225748583-3b15e6c2538602497842714b0c518461.png)
+![image-20230223225457143](./assets/image-20230223225457143.png)![image-20230223225748583](./assets/image-20230223225748583.png)
 
 The description of Material Layer parameters often disappears, please check the full parameter description on the Parameters Panel after opening the Material Editor:
 
-![image-20230223225635072](./assets/image-20230223225635072-2aecb461b7167c83e4beeee562f79695.png)
+![image-20230223225635072](./assets/image-20230223225635072.png)
 
 ### Modifications to Curve Atlas Parameters will not take effect immediately
 
