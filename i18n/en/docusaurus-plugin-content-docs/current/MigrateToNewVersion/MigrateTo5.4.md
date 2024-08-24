@@ -68,7 +68,7 @@ MooaToon now has a built-in [VRM4U](https://github.com/JasonMa0012/VRM4U_MooaTo
 
 ![](assets/Pasted%20image%2020240817214949.png)
 
-The source file is located at: `Mooa\MooaToon-Project\Art\VRMs`
+The source file is located at: `MooaToon\MooaToon-Project\Art\VRMs`
 ![](assets/Pasted%20image%2020240817215556.png)
 
 

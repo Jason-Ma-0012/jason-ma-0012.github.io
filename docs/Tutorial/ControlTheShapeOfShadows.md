@@ -179,7 +179,7 @@ HOUDINI_PATH = C:\GameDevelopmentToolset;&
 PATH = C:\GameDevelopmentToolset\bin;$PATH
 ```
 
-4. 复制一份并打开`Mooa\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`:![image-20240813000759820](./assets/image-20240813000759820.png)
+4. 复制一份并打开`MooaToon\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`:![image-20240813000759820](./assets/image-20240813000759820.png)
 
 
 

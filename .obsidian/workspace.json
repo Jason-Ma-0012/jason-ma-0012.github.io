@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "f2c5d4f6a2eb94e1",
+        "id": "60f71ed9ec3f7c67",
         "type": "tabs",
         "children": [
           {
-            "id": "fe0a7c30032a7b85",
+            "id": "3372d389dcbc69d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9f00069665e2809a",
+            "id": "36fa7c21ca57b796",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Tutorial/AddStylizedHairHighlights.md",
+                "file": "docs/GettingStarted/UseWithOtherPlugins.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md"
               }
             }
           }
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,8 +168,19 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "fe0a7c30032a7b85",
+  "active": "3372d389dcbc69d1",
   "lastOpenFiles": [
+    "docs/GettingStarted/UseWithOtherPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+    "docs/GettingStarted/UseWithExistingProjects.md",
+    "docs/Tutorial/AddStylizedHairHighlights.md",
+    "docs/MigrateToNewVersion/MigrateTo5.4.md",
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/MigrateTo5.4.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "docs/GettingStarted/README.md",
+    "docs/GettingStarted/BuildEnginefromSourceCode.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
     "build/en/blog/feed.json",
     "build/en/blog/atom.xml",
     "build/en/blog/rss.xml",
@@ -180,7 +191,6 @@
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3",
     "build/en/assets/images/image-20240815002842404-cf8175d7e2b79e9741946bb502609c57.png",
     "build/en/assets/images/image-20240814003003573-644e678768c9e0bbaf6b0bfda072943b.png",
     "build/en/assets/images/image-20240814001600880-af21e8687bbf56bcb18dc30323d6a415.png",
@@ -195,7 +205,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
     "docs/Licence.md",
     "docs/FAQ.md",
     "docs/TutorialLegacy/README.md",
@@ -204,17 +213,8 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
-    "docs/Tutorial/AddStylizedHairHighlights.md",
     "docs/Tutorial/ControlScreenSpaceRimlights.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlScreenSpaceRimlights.md",
-    "docs/Tutorial/ControlLightShadowColorTransition.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
-    "docs/Tutorial/ControlTheShapeOfOutlines.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
-    "docs/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
-    "docs/Tutorial/ImportANewCharacter.md",
-    "docs/Tutorial/README.md"
+    "docs/Tutorial/ControlLightShadowColorTransition.md"
   ]
 }

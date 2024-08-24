@@ -65,7 +65,7 @@ MooaToon现在内置了[VRM4U](https://github.com/JasonMa0012/VRM4U_MooaToon)引
 
 ![](assets/Pasted%20image%2020240817214949.png)
 
-源文件位于: `Mooa\MooaToon-Project\Art\VRMs`
+源文件位于: `MooaToon\MooaToon-Project\Art\VRMs`
 ![](assets/Pasted%20image%2020240817215556.png)
 
 

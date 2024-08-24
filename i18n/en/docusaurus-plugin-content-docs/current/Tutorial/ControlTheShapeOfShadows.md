@@ -185,7 +185,7 @@ HOUDINI_PATH = C:\GameDevelopmentToolset;&
 PATH = C:\GameDevelopmentToolset\bin;$PATH
 ```
 
-4. Make a copy and open `Mooa\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`:![image-20240813000759820](./assets/image-20240813000759820.png)
+4. Make a copy and open `MooaToon\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`:![image-20240813000759820](./assets/image-20240813000759820.png)
 
 
 
