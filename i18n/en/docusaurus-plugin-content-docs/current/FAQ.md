@@ -26,6 +26,8 @@ Lumen is used by default for global illumination related functions, other method
 
 Shadow-related features must have `Ray Tracing Shadow` and `Hardware Ray Tracing` enabled.
 
+The ability to control Self-Shadow when Ray Tracing is not enabled will be available in a future version.
+
 ### Translucent
 
 Translucent Rimlight requires that `High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections)` be enabled in `Post Processing Volume` in order to get the depth of the translucent object.
@@ -37,6 +39,20 @@ Translucent Rimlight requires that `High Quality Translucency Reflections (Lumen
 (Epic 5.1+)
 
 Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again.
+
+### Strange Shadows in the Scene
+
+When two triangles are very close to each other, Ray Tracing Shadows can be problematic:
+
+![](assets/Pasted%20image%2020240831154520.png)
+
+The problem can be solved with the following console command:
+
+```
+r.RayTracing.Shadows.AvoidSelfIntersectionTraceDistance 1
+```
+
+You can adjust this value to suit your project.
 
 ### Outline conflicts with shadow functionality for static mesh characters
 
@@ -84,13 +100,22 @@ The description of Material Layer parameters often disappears, please check the 
 
 If the current material instance has parameters that are covered by the blueprint, manually modifying the curve atlas parameters will not take effect immediately, and you need to toggle the switch in front of the parameters.
 
-## Can not find MooaToon Project in Epic Launcher
+
+## Compile
+
+### Compile Errors When Building Engine From Source
+
+[Strict compiler version requirements from UE 5.4 onwards](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can uninstall Visual Studio first, and then use `_1_2_Install_VisualStudio.bat` to automatically install the correct compiler version.
+
+## Others
+
+### Can not find MooaToon Project in Epic Launcher
 
 1. Open path in Explorer `%LOCALAPPDATA%\EpicGamesLauncher\Saved\Config\Windows\GameUserSettings.ini`
 
 2. Add or modify the value of `CreatedProjectPaths` under `[Launcher]` to be the parent path of the Project, such as
 
-   ```ini
+   ```
    [Launcher]
    LastActiveDateTime=2023-03-27T00:00:00.000Z
    LastActiveVersion=14.7.1
@@ -103,6 +128,6 @@ If the current material instance has parameters that are covered by the blueprin
 
 3. Save and restart Epic Launcher
 
-## Document image error
+### Document image error
 
 Due to a bug in Docusaurus, the image loading of this document page may be wrong after refreshing, and it can be restored by switching to other document pages and then switching back.

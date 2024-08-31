@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+                "file": "docs/FAQ.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "36fa7c21ca57b796",
+            "id": "d7a95aa9738b035c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/GettingStarted/UseWithOtherPlugins.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +92,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md"
               }
             }
           }
@@ -115,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,10 +169,14 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "3372d389dcbc69d1",
+  "active": "d7a95aa9738b035c",
   "lastOpenFiles": [
-    "docs/GettingStarted/UseWithOtherPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/assets/Pasted image 20240831154520.png",
+    "docs/assets/Pasted image 20240831154520.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
+    "docs/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+    "docs/GettingStarted/UseWithOtherPlugins.md",
     "docs/GettingStarted/UseWithExistingProjects.md",
     "docs/Tutorial/AddStylizedHairHighlights.md",
     "docs/MigrateToNewVersion/MigrateTo5.4.md",
@@ -200,13 +205,10 @@
     "build/en/assets/images/image-20240809003808154-1dc6795cbceb63dac25eeb80cfdd631b.png",
     "build/en/assets/images/image-20240809003756931-b62d7ef23b6c87c46e24b4763f30f0d7.png",
     "build/en/assets/images/image-20240809003817990-0f811e996ab61a2ec3d55644c15eba32.png",
-    "build/en/assets/images/image-20240809003308273-e7bb8b96997fceed7917a166e80aae8c.png",
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/README.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
     "docs/Licence.md",
-    "docs/FAQ.md",
     "docs/TutorialLegacy/README.md",
     "docs/TutorialLegacy/5.0-5.3/README.md",
     "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
@@ -214,7 +216,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
     "docs/Tutorial/ControlScreenSpaceRimlights.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlScreenSpaceRimlights.md",
-    "docs/Tutorial/ControlLightShadowColorTransition.md"
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlScreenSpaceRimlights.md"
   ]
 }
