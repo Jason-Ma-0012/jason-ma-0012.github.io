@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3372d389dcbc69d1",
+            "id": "d7a95aa9738b035c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/FAQ.md",
+                "file": "docs/Tutorial/ControlTheShapeOfShadows.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d7a95aa9738b035c",
+            "id": "12981e3727766fd0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md"
               }
             }
           }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,20 +169,30 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "d7a95aa9738b035c",
+  "active": "12981e3727766fd0",
   "lastOpenFiles": [
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909003123.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909003041.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909002956.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909002938.png",
+    "docs/Tutorial/assets/Pasted image 20240909003123.png",
+    "docs/Tutorial/assets/Pasted image 20240909003041.png",
+    "docs/Tutorial/assets/Pasted image 20240909002956.png",
+    "docs/Tutorial/assets/Pasted image 20240909002938.png",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlScreenSpaceRimlights.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/assets/Pasted image 20240831154520.png",
     "docs/assets/Pasted image 20240831154520.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
     "docs/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
     "docs/GettingStarted/UseWithOtherPlugins.md",
     "docs/GettingStarted/UseWithExistingProjects.md",
     "docs/Tutorial/AddStylizedHairHighlights.md",
     "docs/MigrateToNewVersion/MigrateTo5.4.md",
-    "docs/Tutorial/ControlTheShapeOfShadows.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/MigrateTo5.4.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
     "docs/GettingStarted/README.md",
     "docs/GettingStarted/BuildEnginefromSourceCode.md",
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
@@ -196,15 +206,6 @@
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3",
-    "build/en/assets/images/image-20240815002842404-cf8175d7e2b79e9741946bb502609c57.png",
-    "build/en/assets/images/image-20240814003003573-644e678768c9e0bbaf6b0bfda072943b.png",
-    "build/en/assets/images/image-20240814001600880-af21e8687bbf56bcb18dc30323d6a415.png",
-    "build/en/assets/images/UnityChang_Line-df4db793eacafd72f3ac155ac20b8702.png",
-    "build/en/assets/images/image-20240810135943329-b497d561b56b09de9e935f8ed97156b0.png",
-    "build/en/assets/images/image-20240814001004788-3ab801eda1d4fe47fdc03bec82145dd7.png",
-    "build/en/assets/images/image-20240809003808154-1dc6795cbceb63dac25eeb80cfdd631b.png",
-    "build/en/assets/images/image-20240809003756931-b62d7ef23b6c87c46e24b4763f30f0d7.png",
-    "build/en/assets/images/image-20240809003817990-0f811e996ab61a2ec3d55644c15eba32.png",
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
@@ -214,8 +215,6 @@
     "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
-    "docs/Tutorial/ControlScreenSpaceRimlights.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlScreenSpaceRimlights.md"
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md"
   ]
 }

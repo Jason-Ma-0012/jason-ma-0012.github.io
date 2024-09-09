@@ -13,7 +13,13 @@ Therefore, the closer the normal and the light direction are to 90 degrees, the 
 
 ![image-20230331023212540](./assets/image-20230331023212540.png)
 
-## Custom ray tracing shadows
+## Custom Shadows From Self or Other Objects
+
+MooaToon offers both **Ray Tracing** and **Shadow Bias** methods to remove cluttered Self-Shadows and shadows casted from the scene.
+
+The Ray Tracing method provides full functionality, and should be used in preference to Ray Tracing when performance allows. Shadow Bias is only an alternative when performance is low or equipment is too old. 
+
+### - Ray Tracing
 
 Thanks to Ray Tracing, specific material information can be obtained, and the behavior of Ray Tracing Shadows can be controlled through material properties.  
 
@@ -28,11 +34,11 @@ With these two functions, you can achieve: 
 
 To use these functions, you first need to set different IDs for different parts of the character.
 
-### Set ID
+#### Set IDs
 
 MooaToon uses IDs to determine whether the material hit by the ray is part of the same part as the material at the starting point of the ray. You can choose one of the following two methods to set the ID:
 
-#### - ID Map
+##### - ID Map
 
 ID Map refers to filling different parts of a character with different solid colors, making it easy to cut out textures during texture creation or post-production. 
 
@@ -52,13 +58,13 @@ The color space of ID Map must be **linear** (uncheck sRGB in texture assets).
 
 :::
 
-#### - Separate materials and set ID Offset
+##### - Separate materials and set ID Offset
 
 There is a simple way, you can set different materials for different parts of the character, and set different `ID Offset` for each material.  
 
 Although this method does not require an ID Map, it will generate more draw calls, slightly increasing rendering performance overhead. Please use it judiciously.
 
-### Disable Self-Shadowing
+#### Disable Self-Shadowing
 
 After setting the ID correctly, you can use `Disable Self Shadow` to disable Self-Shadowing of each part of the character:
 
@@ -67,7 +73,7 @@ After setting the ID correctly, you can use `Disable Self Shadow` to disable S
 
 You can see that the messy Self-Shadowing of each part of the character has disappeared.  
 
-### Disable Shadow Casting to Different IDs
+#### Disable Shadow Casting to Different IDs
 
 Next, enable `Disable Cast Shadow on Toon`:
 
@@ -75,6 +81,30 @@ Next, enable `Disable Cast Shadow on Toon`:
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 Now you can see that all shadows other than normal shadows have disappeared.
+
+
+### - Shadow Bias
+
+As an alternative to Ray Tracing, it is possible to simply offset the pixel depth when depth testing in the light space to remove all shadows at a certain distance.
+
+You can find the `Shadow Bias` parameter at: 
+- `Post Process Volume > MooaToon > Shadow Bias` 
+- `BP_MooaLookDevTool > Post Process > Shadow Bias`
+
+Increasing the Shadow Bias to remove shadows from obstructions at a certain distance. For example, setting the Shadow Bias to 200 means that objects within 200 cm from the surface of the character model will not cast shadows on the character: 
+
+| ![](assets/Pasted%20image%2020240909002938.png) | ![](assets/Pasted%20image%2020240909002956.png) | ![](assets/Pasted%20image%2020240909003041.png) | ![](assets/Pasted%20image%2020240909003123.png) |
+| ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
+| Shadow Bias: 0                                  | Shadow Bias: 10                                 | Shadow Bias: 30                                 | Shadow Bias: 150                                |
+
+:::caution
+
+- Shadow Bias only works without Ray Tracing Shadow.
+- Shadows may suddenly appear beyond the Shadow Bias distance.
+- Due to UE's own algorithmic problems, Shadow Bias may not be consistent for different types of lights and different distances between the light and the camera.
+
+:::
+
 
 ## Set Hair Shadow 
 
