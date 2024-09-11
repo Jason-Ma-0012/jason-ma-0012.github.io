@@ -38,7 +38,7 @@ Kajiya-Kay高光的位置依赖于视线方向和切线方向, 通过切线传�
 4. 按住Alt使用鼠标旋转视角查看高光变化
 5. 使用3D View左下角的滑条调整灯光角度
 
-<Video src={require("./assets/bandicam 2024-08-14 01-04-10-750.mp4").default}/>
+<Video src={require("./assets/bandicam 2024-08-14 01-04-10-750.webm").default}/>
 
 
 

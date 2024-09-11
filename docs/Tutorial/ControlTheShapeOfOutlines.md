@@ -69,7 +69,7 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 ![image-20240814001004788](./assets/image-20240814001004788.png)
 
 5. 按回车键进入绘制模式, 按左上角的说明在模型上绘制Alpha, 注意FG的值: ![image-20240814001600880](./assets/image-20240814001600880.png)
-6. Display `mooa_outlinePreview`节点, 并选中`attributePaint_face_vertexColor_alpha`节点, 然后启用材质显示即可实时绘制并预览描边:![image-20240814003003573](./assets/image-20240814003003573.png)<Video src={require("./assets/bandicam 2024-08-14 00-23-01-549.mp4").default}/>
+6. Display `mooa_outlinePreview`节点, 并选中`attributePaint_face_vertexColor_alpha`节点, 然后启用材质显示即可实时绘制并预览描边:![image-20240814003003573](./assets/image-20240814003003573.png)<Video src={require("./assets/bandicam 2024-08-14 00-23-01-549.webm").default}/>
 
 7. 绘制完成后使用`OUTPUT_FBX`或`OUTPUT_OBJ`节点导出模型, 并导入UE.
 

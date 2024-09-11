@@ -41,7 +41,7 @@ Use the `mooa_highlightPreview2` node to preview the highlight range:
 4. Hold Alt and use the mouse to rotate the view to see changes in highlights 
 5. Adjust the lighting angle using the slider in the bottom left corner of the 3D View
 
-<Video src={require("./assets/bandicam 2024-08-14 01-04-10-750.mp4").default}/>
+<Video src={require("./assets/bandicam 2024-08-14 01-04-10-750.webm").default}/>
 
 
 

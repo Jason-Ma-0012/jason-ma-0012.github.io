@@ -224,7 +224,7 @@ PATH = C:\GameDevelopmentToolset\bin;$PATH
 2. (可选) 在`mooa_setMaterials`节点中输入贴图路径, 然后双击`Load Textures`以加载材质:![image-20240813233325020](./assets/image-20240813233325020.png)
 3. 在`mooa_normalTransfer`节点中选择需要传递法线的Group:![image-20240813233541282](./assets/image-20240813233541282.png)
 4. 打开法线显示, 然后按`D`键打开`Display Options`, 修改`Scale Normal`到合适大小:![image-20240813233933009](./assets/image-20240813233933009.png)
-5. 选中`transform1`节点并将其设为Template, 然后按回车键即可实时调整球体的位置和缩放并观察法线的变化:![image-20240813234211533](./assets/image-20240813234211533.png)<Video src={require("./assets/bandicam 2024-08-14 00-34-38-362.mp4").default}/>
+5. 选中`transform1`节点并将其设为Template, 然后按回车键即可实时调整球体的位置和缩放并观察法线的变化:![image-20240813234211533](./assets/image-20240813234211533.png)<Video src={require("./assets/bandicam 2024-08-14 00-34-38-362.webm").default}/>
 6. 使用左下角的滑条实时调整光照角度:![image-20240813234819509](./assets/image-20240813234819509.png)
 7. 暂时禁用无关节点:![image-20240813235054402](./assets/image-20240813235054402.png)
 8. 使用`OUTPUT_FBX`或`OUTPUT_OBJ`节点导出模型 (免费的Houdini 学徒版本只支持导出OBJ格式):![image-20240813235212726](./assets/image-20240813235212726.png)

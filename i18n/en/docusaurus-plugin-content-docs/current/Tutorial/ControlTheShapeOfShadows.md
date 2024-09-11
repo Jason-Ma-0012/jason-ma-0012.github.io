@@ -231,7 +231,7 @@ If you are new to Houdini, there are some [_tutorials_](https://www.youtube.com
 2. (Optional) Enter the texture path in the `mooa_setMaterials` node, then double-click `Load Textures` to load the materials:![image-20240813233325020](./assets/image-20240813233325020.png)
 3. Select the Group that needs to transfer normals in the `mooa_normalTransfer` node:![image-20240813233541282](./assets/image-20240813233541282.png)
 4. Enable normal display, then press the `D` key to open `Display Options`, adjust `Scale Normal` to a suitable size:![image-20240813233933009](./assets/image-20240813233933009.png)
-5. Select the `transform1` node and set it as a Template, then press Enter to adjust the position and scale of the sphere in real-time and observe the changes in normals:![image-20240813234211533](./assets/image-20240813234211533.png)<Video src={require("./assets/bandicam 2024-08-14 00-34-38-362.mp4").default}/>
+5. Select the `transform1` node and set it as a Template, then press Enter to adjust the position and scale of the sphere in real-time and observe the changes in normals:![image-20240813234211533](./assets/image-20240813234211533.png)<Video src={require("./assets/bandicam 2024-08-14 00-34-38-362.webm").default}/>
 6. Use the slider in the bottom left corner to adjust the lighting angle in real-time:![image-20240813234819509](./assets/image-20240813234819509.png)
 7. Temporarily disable irrelevant nodes:![image-20240813235054402](./assets/image-20240813235054402.png)
 8. Export the model using the `OUTPUT_FBX` or `OUTPUT_OBJ` node (the free Houdini Apprentice version only supports exporting OBJ format):![image-20240813235212726](./assets/image-20240813235212726.png)

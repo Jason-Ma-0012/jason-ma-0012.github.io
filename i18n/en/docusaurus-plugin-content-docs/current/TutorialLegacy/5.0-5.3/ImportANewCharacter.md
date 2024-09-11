@@ -68,7 +68,7 @@ Set Base Color Map and Shadow Color Map as character texture in the Material Ins
 
 Make sure Recompute Normals/Tangent is disabled in the settings for the Character Skeletal Mesh:
 
-![image-20230326142520020](./assets/image-20230326142520020.png)
+![image-20230326142538356](./assets/image-20230326142538356.png)
 
 Right-Click the Character Skeletal Mesh and select `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
 
