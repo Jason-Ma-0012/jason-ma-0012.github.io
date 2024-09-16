@@ -88,7 +88,7 @@ Then enable `Use Vertex Color A as Outline Width` in the outline material, and
 The principle of this outline is to extrude the mesh outwards and render only the back face as the outline.  
 
 The following reasons may lead to bad outline shapes:
-- Incorrect Normals/Tangents/UVs, or missing these data. Solutions:  
+- Incorrect Normals/UVs, or missing these data. Solutions:  
     - Ensure that the `mooa_bakeSmoothedNormalToUV34` node is connected before the `mooa_dataInit` node.  
     - Ensure the input mesh has correct Normals and UVs. 
     - You can check all geometric properties in the Geometry Spreadsheet panel.  

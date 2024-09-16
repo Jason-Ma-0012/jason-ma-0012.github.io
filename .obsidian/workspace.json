@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfOutlines.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md"
               }
             }
           }
@@ -116,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,10 +168,10 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "12981e3727766fd0",
+  "active": "d7a95aa9738b035c",
   "lastOpenFiles": [
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Tutorial/ControlTheShapeOfShadows.md",
     "docs/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
