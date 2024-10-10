@@ -100,13 +100,6 @@ The description of Material Layer parameters often disappears, please check the 
 
 If the current material instance has parameters that are covered by the blueprint, manually modifying the curve atlas parameters will not take effect immediately, and you need to toggle the switch in front of the parameters.
 
-
-## Compile
-
-### Compile Errors When Building Engine From Source
-
-[Strict compiler version requirements from UE 5.4 onwards](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can [uninstall Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022) first, and then use `_1_2_Install_VisualStudio.bat` to automatically install the correct compiler version.
-
 ## Others
 
 ### Can not find MooaToon Project in Epic Launcher

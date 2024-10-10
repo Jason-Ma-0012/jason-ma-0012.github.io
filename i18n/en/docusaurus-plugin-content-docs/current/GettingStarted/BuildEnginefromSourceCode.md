@@ -146,7 +146,13 @@ Then run `_4_0_Build_And_Run_MooaToon.bat` to build and launch the project.
 
 ### Errors during compilation
 
-Errors during compilation are usually caused by the lack of some runtime libraries in windows, please try:
+#### Incorrect Compiler Version
+
+[Strict compiler version requirements from UE 5.4 onwards](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can [uninstall Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022) first, and then use `_1_2_Install_VisualStudio.bat` to automatically install the correct compiler version.
+
+#### Missing Runtime Libraries
+
+Compilation errors can also be caused by Windows missing some libraries, try:
 
 1. Install the [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 2. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)

@@ -150,7 +150,13 @@ sidebar_position: 0
 
 ### 编译期间的错误
 
-编译期间的错误通常是Windows缺少某些运行库导致, 请尝试:
+#### 编译器版本错误
+
+[从UE 5.4开始对编译器版本有严格要求](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), 你可以先[卸载Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022), 然后使用`_1_2_Install_VisualStudio.bat`自动安装正确的编译器版本.
+
+#### 运行库缺失
+
+编译报错也可能是Windows缺少某些运行库导致, 请尝试:
 
 1. 安装[Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 2. 安装最新的[.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
