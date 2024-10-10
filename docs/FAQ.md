@@ -104,7 +104,7 @@ OIT (排序无关半透明, 提供对多层半透明的正确渲染支持) 会�
 
 ### 源码版引擎编译报错
 
-[从UE 5.4开始对编译器版本有严格要求](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), 你可以先卸载Visual Studio, 然后使用`_1_2_Install_VisualStudio.bat`自动安装正确的编译器版本.
+[从UE 5.4开始对编译器版本有严格要求](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), 你可以先[卸载Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022), 然后使用`_1_2_Install_VisualStudio.bat`自动安装正确的编译器版本.
 
 ## 其他
 ### 无法在Epic启动器中找到MooaToon Project

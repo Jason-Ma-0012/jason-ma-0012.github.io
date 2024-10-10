@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md"
               }
             }
           }
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,8 +170,9 @@
   },
   "active": "d7a95aa9738b035c",
   "lastOpenFiles": [
-    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Tutorial/ControlTheShapeOfShadows.md",
     "docs/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
@@ -187,7 +188,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/assets/Pasted image 20240831154520.png",
     "docs/assets/Pasted image 20240831154520.png",
-    "docs/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
     "docs/GettingStarted/UseWithOtherPlugins.md",
     "docs/GettingStarted/UseWithExistingProjects.md",
