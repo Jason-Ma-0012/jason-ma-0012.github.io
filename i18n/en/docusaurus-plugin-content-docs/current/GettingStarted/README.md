@@ -72,6 +72,8 @@ set projectBranchName=5.1_MooaToonProject
 
 You can choose to use an older version, but the older version may not contain the latest features or fixes.
 
+Since development and maintenance across multiple UE versions is extremely tedious, MooaToon is like Epic in that it only maintains the latest version, and maintenance of older versions is a paid service.
+
 :::
 
 
