@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md"
               }
             }
           }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,11 +171,12 @@
   },
   "active": "bd4119386c4f2696",
   "lastOpenFiles": [
+    "docs/GettingStarted/BuildEnginefromSourceCode.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
     "docs/GettingStarted/README.md",
     "docs/Tutorial/ControlTheShapeOfShadows.md",
     "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
-    "docs/GettingStarted/BuildEnginefromSourceCode.md",
     "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
     "docs/FAQ.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
@@ -215,7 +216,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
     "docs/Licence.md",
     "docs/TutorialLegacy/README.md",
-    "docs/TutorialLegacy/5.0-5.3/README.md",
-    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md"
+    "docs/TutorialLegacy/5.0-5.3/README.md"
   ]
 }

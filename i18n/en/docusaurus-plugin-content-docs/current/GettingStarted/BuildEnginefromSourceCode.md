@@ -148,13 +148,12 @@ Then run `_4_0_Build_And_Run_MooaToon.bat` to build and launch the project.
 
 #### Incorrect Compiler Version
 
-[Strict compiler version requirements from UE 5.4 onwards](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can [uninstall Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022) first, and then use `_1_2_Install_VisualStudio.bat` to automatically install the correct compiler version.
+[UE has certain compiler version requirements](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can run `_1_2_Install_VisualStudio.bat` to install the correct compiler version automatically, MooaToon will prioritize the correct compiler version when compiling.
 
 #### Missing Runtime Libraries
 
 Compilation errors can also be caused by Windows missing some libraries, try:
 
-1. Install the [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
-2. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
-3. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
+1. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+2. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
 
