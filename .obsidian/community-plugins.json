@@ -6,7 +6,9 @@
   "obsidian-react-components",
   "cm-chs-patch",
   "quick-explorer",
-  "copy-url-in-preview",
   "global-search-and-replace",
-  "open-vscode"
+  "open-vscode",
+  "obsidian-git",
+  "enhanced-image",
+  "editor-width-slider"
 ]

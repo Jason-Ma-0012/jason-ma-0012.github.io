@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "60f71ed9ec3f7c67",
+        "id": "cd0e54f662230125",
         "type": "tabs",
         "children": [
           {
-            "id": "d7a95aa9738b035c",
+            "id": "1241bc4b603a636b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/GettingStarted/BuildEnginefromSourceCode.md",
+                "file": "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "bd4119386c4f2696",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "ControlOutline"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -53,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -68,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -76,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -92,8 +87,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md"
-              }
+                "file": "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ControlOutline"
             }
           }
         ]
@@ -116,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
+                "file": "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +121,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ControlOutline"
             }
           },
           {
@@ -133,10 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
+                "file": "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ControlOutline"
             }
           },
           {
@@ -146,16 +147,28 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": false
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "468eae19eea68aa6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
+    "width": 404.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -166,56 +179,56 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "open-vscode:VSCode": false
+      "open-vscode:VSCode": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd4119386c4f2696",
+  "active": "1241bc4b603a636b",
   "lastOpenFiles": [
-    "docs/GettingStarted/BuildEnginefromSourceCode.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
-    "docs/GettingStarted/README.md",
-    "docs/Tutorial/ControlTheShapeOfShadows.md",
-    "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
-    "docs/FAQ.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
-    "docs/Tutorial/ControlTheShapeOfOutlines.md",
-    "docs/Tutorial/ImportANewCharacter.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909003123.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909003041.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909002956.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20240909002938.png",
-    "docs/Tutorial/assets/Pasted image 20240909003123.png",
-    "docs/Tutorial/assets/Pasted image 20240909003041.png",
-    "docs/Tutorial/assets/Pasted image 20240909002956.png",
-    "docs/Tutorial/assets/Pasted image 20240909002938.png",
-    "docs/Tutorial/ControlScreenSpaceRimlights.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/assets/Pasted image 20240831154520.png",
-    "docs/assets/Pasted image 20240831154520.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
-    "docs/GettingStarted/UseWithOtherPlugins.md",
-    "docs/GettingStarted/UseWithExistingProjects.md",
-    "docs/Tutorial/AddStylizedHairHighlights.md",
-    "docs/MigrateToNewVersion/MigrateTo5.4.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/MigrateTo5.4.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
+    "build/assets/images/WithOutMatCap-67cca3dfdfdce707ce5b6e01e05a2068.gif",
+    "build/assets/images/WithMatCap-5b6266249cea55cda89d10fe6c040e8f.gif",
+    "build/assets/images/rectangle_large_type_2_3a698e638c88fd2074eec09fefad74c0-bfed92b28a3c780f6ad70dc7b3712c09.png",
+    "build/assets/images/UnityChang_Line-a6470f457ee3d5a13b8ea4891992b554.png",
+    "build/assets/images/Pasted image 20241130190616-c764d3e4ebf04b50ca30df1a00f9ac79.png",
+    "build/assets/images/screenshot_comparison-42649935be814ab92c13c8d50bcae6bf.png",
+    "build/assets/images/Pasted image 20241130190657-369e0b2b5192faf24e32e97d748895fc.png",
+    "build/assets/images/Pasted image 20241130190552-e8086b1fe649349c81bd7e0fc51002f6.png",
+    "build/assets/images/Pasted image 20241130163758-2134db09b5539316428958a945247164.png",
+    "build/assets/images/Pasted image 20241130163822-8169ea64903051e67c9a7021ad7eab5a.png",
+    "build/assets/images",
+    "build/en/img/favicon.ico",
+    "build/en/img",
     "build/en/blog/feed.json",
     "build/en/blog/atom.xml",
     "build/en/blog/rss.xml",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3/index.html",
+    "build/en/sitemap.xml",
+    "build/en/opensearch.xml",
+    "build/en/404.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/README.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/README.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
-    "docs/Licence.md",
-    "docs/TutorialLegacy/README.md",
-    "docs/TutorialLegacy/5.0-5.3/README.md"
+    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows.md",
+    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
+    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
+    "docs/Tutorial/ControlLightShadowColorTransition.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuiltinPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+    "docs/GettingStarted/BuiltinPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
+    "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "docs/Tutorial/AddStylizedHairHighlights.md",
+    "docs/MigrateToNewVersion/5.4.md",
+    "node_modules/send/node_modules/encodeurl/HISTORY.md",
+    "node_modules/send/node_modules/encodeurl/README.md",
+    "node_modules/postcss-color-functional-notation/CHANGELOG.md",
+    "node_modules/postcss-custom-properties/CHANGELOG.md",
+    "node_modules/postcss-color-rebeccapurple/CHANGELOG.md",
+    "node_modules/postcss-color-hex-alpha/CHANGELOG.md",
+    "node_modules/postcss-custom-media/CHANGELOG.md",
+    "node_modules/postcss-overflow-shorthand/CHANGELOG.md",
+    "node_modules/postcss-place/CHANGELOG.md",
+    "node_modules/figures/node_modules/escape-string-regexp/readme.md"
   ]
 }

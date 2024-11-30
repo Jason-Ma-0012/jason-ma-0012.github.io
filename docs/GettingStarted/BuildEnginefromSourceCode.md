@@ -154,6 +154,8 @@ sidebar_position: 0
 
 [UE对编译器版本有一定要求](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), 你可以运行`_1_2_Install_VisualStudio.bat`自动安装正确的编译器版本, MooaToon编译时会优先选择正确的编译器版本.
 
+如果持续出现编译问题, 你可以[彻底卸载VS](https://learn.microsoft.com/zh-cn/visualstudio/install/uninstall-visual-studio?view=vs-2022)并重启电脑后重试上述步骤.
+
 #### 运行库缺失
 
 编译报错也可能是Windows缺少某些运行库导致, 请尝试:

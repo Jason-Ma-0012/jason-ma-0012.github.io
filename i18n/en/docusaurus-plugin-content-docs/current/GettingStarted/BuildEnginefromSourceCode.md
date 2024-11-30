@@ -150,6 +150,8 @@ Then run `_4_0_Build_And_Run_MooaToon.bat` to build and launch the project.
 
 [UE has certain compiler version requirements](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can run `_1_2_Install_VisualStudio.bat` to install the correct compiler version automatically, MooaToon will prioritize the correct compiler version when compiling.
 
+If the compilation problem persists, you can [uninstall VS completely](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022) and reboot your computer and retry the above steps.
+
 #### Missing Runtime Libraries
 
 Compilation errors can also be caused by Windows missing some libraries, try:

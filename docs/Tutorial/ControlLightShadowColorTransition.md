@@ -4,13 +4,13 @@ title: 控制明暗颜色过渡
 description: 控制明暗颜色过渡
 sidebar_position: 14
 ---
+
 MooaToon使用Ramp Map来表示亮面到暗面之间的颜色过渡:
 
-
-| 默认Ramp + 单光源<br/>普通二值化阴影过渡        | ![image-20240808231641482](./assets/image-20240808231641482.png) |
-| ------------------------------------------------- | ------------------------------------------------------------------ |
+| 默认Ramp + 单光源<br/>普通二值化阴影过渡         | ![image-20240808231641482](./assets/image-20240808231641482.png) |
+| ---------------------------------- | ---------------------------------------------------------------- |
 | 3Levels Ramp + 单光源<br/>阴影过渡现在有3个色阶 | ![image-20240808230642858](./assets/image-20240808230642858.png) |
-| 3Levels Ramp + 多光源                           | ![image-20240808230839624](./assets/image-20240808230839624.png) |
+| 3Levels Ramp + 多光源                 | ![image-20240808230839624](./assets/image-20240808230839624.png) |
 
 Ramp是一种1D查找表(LUT), 其中存储着用户预定义的Curve, 在UE中表示为Color Curve:
 
@@ -24,17 +24,19 @@ Ramp是一种1D查找表(LUT), 其中存储着用户预定义的Curve, 在UE中�
 
 ## 选择使用哪个Ramp
 
-先在项目设置中找到`Global Diffuse Color Ramp Atlas`以浏览所有可用的Ramp: `Project Settings > Engine > MooaToon > Global Diffuse Color Ramp Atlas`.
+先在项目设置中找到`Global Diffuse Color Ramp Atlas`以浏览所有可用的Ramp:  
+`Project Settings > Engine > MooaToon > Global Diffuse Color Ramp Atlas`.
 
 然后记住你要使用的Ramp的序号, 比如`CC_DiffuseColorRamp_012_3Levels2`的序号是12, 然后将序号填入Toon材质的`Diffuse Color Ramp Index`:
 
 ![image-20240808233617823](./assets/image-20240808233617823.png)
 
-## 添加新的Ramp
+## 添加新的Ramp和Ramp Atlas
 
-为了不产生文件冲突, 请不要直接修改MooaToon内置Ramp. 而是直接添加新的Ramp.
+为了不产生文件冲突, 请不要直接修改MooaToon内置Ramp或Ramp Atlas. 而是直接添加新的Ramp和Ramp Atlas.
 
-首先将目前的`Global Diffuse Color Ramp` (默认为`CA_GlobalDiffuseColorRampAtlas`) 复制一份, 然后放到你自己的目录中.
+首先将目前的`Global Diffuse Color Ramp`   (默认为`MooaToon-Project/Plugins/MooaToon/Content/Assets/DiffuseColorRamps/CA_GlobalDiffuseColorRampAtlas.uasset`)  
+复制一份到你自己的目录中.
 
 然后将刚刚复制的RampAtlas文件设置给`Global Diffuse Color Ramp Atlas`.
 
@@ -42,25 +44,31 @@ Ramp是一种1D查找表(LUT), 其中存储着用户预定义的Curve, 在UE中�
 
 ## Diffuse Color Ramp各通道详解
 
-Diffuse Color Ramp的A通道横轴为法线方向与光照方向的角度(N dot L), 0为背光面, 1为正光面. 值为Shadow Gradient.
+| PBR兰伯特漫反射                                       | 二值化Ramp光照                                       | 3色阶Ramp光照                                       | 皮肤Ramp光照                                        |
+| ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
+| ![](assets/Pasted%20image%2020241128002402.png) | ![](assets/Pasted%20image%2020241128002409.png) | ![](assets/Pasted%20image%2020241128002418.png) | ![](assets/Pasted%20image%2020241128002421.png) |
+| ![](assets/Pasted%20image%2020241128003810.png) | ![](assets/Pasted%20image%2020241128003348.png) | ![](assets/Pasted%20image%2020241128003158.png) | ![](assets/Pasted%20image%2020241128003255.png) |
 
-RGB通道的横轴为Shadow Gradient, 值为颜色.
+Diffuse Color Ramp的横轴为法线方向与光照方向的角度 (N dot L, 简称NoL), 0为背光面, 1为正光面.   
+Toon材质输入的`Diffuse Color Offset`用于偏移明暗交界线 (`NoL + DiffuseColorOffset`), 而`AO`则用于产生固定位置的阴影 (`min(NoL, AO)`).
+
+RGB通道的值为漫反射颜色.  
+A通道用于区分亮面与暗面, 也就是混合Base Color与Shadow Color, 1为亮面 (Base Color), 0为暗面 (Shadow Color).
 
 :::info
 
-最终的Diffuse颜色计算顺序用伪代码表示如下:
+最终的漫反射颜色计算顺序用伪代码表示如下:
 
 ```c
-1. ShadowGradient = 使用 NdotL + DiffuseColorRampOffset 采样 DiffuseColorRamp.A
-2. ShadowGradient = 最小值(ShadowGradient, 阴影衰减/*光线追踪阴影/虚拟阴影贴图*/, 材质AO)
-3. DiffuseColor   = 使用ShadowGradient 混合 ShadowColor 和 BaseColor // 1为`Base Color`, 0为`Shadow Color`
-4. Output         = DiffuseColor 正片叠底 使用最小值(NdotL, ShadowGrdient)采样 DiffuseColorRamp.RGB
+1. DiffuseColorRampU = 最小值(NoL + DiffuseColorRampUVOffset, AO, 阴影/*光线追踪阴影/虚拟阴影贴图/头发阴影*/)
+2. DiffuseColorRamp  = 用 DiffuseColorRampU 采样 GlobalDiffuseColorRampAtlas
+3. DiffuseColor      = 使用 DiffuseColorRamp.a 混合 ShadowColor 和 BaseColor
+4. Output            = DiffuseColor * DiffuseColorRamp.rgb * 灯光颜色
 ```
 
 :::
 
-直观表示如下:
-
+更多示例如下:
 
 | ![image-20240809000548763](./assets/image-20240809000548763.png) | +   | ![image-20240809000145398](./assets/image-20240809000145398.png) | =   | ![image-20240809000224379](./assets/image-20240809000224379.png) |
 | :--------------------------------------------------------------- | --- | ---------------------------------------------------------------- | --- | ---------------------------------------------------------------- |

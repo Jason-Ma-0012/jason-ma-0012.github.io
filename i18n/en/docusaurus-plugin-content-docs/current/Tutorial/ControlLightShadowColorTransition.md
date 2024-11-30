@@ -24,17 +24,18 @@ Starting from MooaToon 5.4, use Global Diffuse Color Ramp and Global Specular Co
 
 ## Choose Which Ramp to Use
 
-First find `Global Diffuse Color Ramp Atlas` in Project Settings to browse all available Ramps: `Project Settings > Engine > MooaToon > Global Diffuse Color Ramp Atlas`.
+First find `Global Diffuse Color Ramp Atlas` in Project Settings to browse all available Ramps:  
+`Project Settings > Engine > MooaToon > Global Diffuse Color Ramp Atlas`.
 
 Then remember the index of the Ramp you want to use, for example, the index of `CC_DiffuseColorRamp_012_3Levels2` is 12, then fill in the index into the `Diffuse Color Ramp Index` of the Toon material:
 
 ![image-20240808233617823](./assets/image-20240808233617823.png)
 
-## Add a New Ramp
+## Add New Ramps and Ramp Atlas
 
-To avoid file conflicts, please do not directly modify the built-in Ramps of MooaToon. Instead, add new Ramps directly.  
+To avoid file conflicts, please do not directly modify the built-in Ramps or Ramp Atlas of MooaToon. Instead, directly add new Ramps and Ramp Atlas.
 
-First, duplicate the current `Global Diffuse Color Ramp` (default is `CA_GlobalDiffuseColorRampAtlas`), then place it in your own directory.  
+First, duplicate the current `Global Diffuse Color Ramp` (default is `MooaToon-Project/Plugins/MooaToon/Content/Assets/DiffuseColorRamps/CA_GlobalDiffuseColorRampAtlas`), then to your own directory.  
 
 Then set the duplicated RampAtlas file to `Global Diffuse Color Ramp Atlas`.  
 
@@ -42,26 +43,33 @@ Now you can edit your own Ramp Atlas, you can directly create new Color Curves o
 
 ## Detailed Explanation of Diffuse Color Ramp Channels 
 
-The A channel of Diffuse Color Ramp has the angle between the normal direction and the lighting direction (N dot L) on the horizontal axis, 0 for backlit, 1 for frontlit. 
-And the value is Shadow Gradient.  
 
-The RGB channels have Shadow Gradient on the horizontal axis, and the value is color.
+| PBR Lambertian Diffuse                          | Binary Ramp Lighting                            | 3 Levels Ramp Lighting                          | Skin Ramp Lighting                              |
+| ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
+| ![](assets/Pasted%20image%2020241128002402.png) | ![](assets/Pasted%20image%2020241128002409.png) | ![](assets/Pasted%20image%2020241128002418.png) | ![](assets/Pasted%20image%2020241128002421.png) |
+| ![](assets/Pasted%20image%2020241128003810.png) | ![](assets/Pasted%20image%2020241128003348.png) | ![](assets/Pasted%20image%2020241128003158.png) | ![](assets/Pasted%20image%2020241128003255.png) |
+
+The horizontal axis of the Diffuse Color Ramp represents the angle between the normal direction and the light direction (N dot L, abbreviated as NoL), where 0 is the backlit side and 1 is the frontlit side.  
+
+The `Diffuse Color Offset` input of the Toon Material is used to offset the light-dark boundary (`NoL + DiffuseColorOffset`), while `AO` is used to create fixed-position shadows (`min(NoL, AO)`).  
+
+The value of the RGB channel is Diffuse Color.     
+The A channel is used to distinguish between light and dark areas, which means blending Base Color and Shadow Color, where 1 represents light (Base Color) and 0 represents dark (Shadow Color).
 
 :::info
 
 The final calculation order of Diffuse color is represented in pseudo code as follows:
 
 ```c
-1. ShadowGradient = Sample DiffuseColorRamp.A by NdotL + DiffuseColorRampOffset
-2. ShadowGradient = minimal(ShadowGradient, ShadowAttenuate/*RT Shadow or Virtual Shadow Map*/, MaterialAO)
-3. DiffuseColor   = Blend ShadowColor and BaseColor with ShadowGradient // 1=Base Color, 0=Shadow Color
-4. Output         = DiffuseColor Multiply (Sample DiffuseColorRamp.RGB by minimal(NdotL, ShadowGrdient))
+1. DiffuseColorRampU = min(NoL + DiffuseColorRampUVOffset, AO, Shadow/*Ray Tracing Shadows / Virtual Shadow Maps / Hair Shadows*/)
+2. DiffuseColorRamp  = Sample GlobalDiffuseColorRampAtlas by DiffuseColorRampU 
+3. DiffuseColor      = Blend ShadowColor and BaseColor with DiffuseColorRamp.a
+4. Output            = DiffuseColor * DiffuseColorRamp.rgb * Light Color
 ```
 
 :::
 
-直观表示如下:
-
+More examples are as follows:
 
 | ![image-20240809000548763](./assets/image-20240809000548763.png)       | +   | ![image-20240809000145398](./assets/image-20240809000145398.png) | =   | ![image-20240809000224379](./assets/image-20240809000224379.png)                                                                                           |
 | :--------------------------------------------------------------------- | --- | ---------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
