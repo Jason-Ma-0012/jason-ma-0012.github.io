@@ -460,7 +460,7 @@
     "message": "@HoYoverse"
   },
   "homepage.news": {
-    "message": "NEW: Version 5.4 is now available!"
+    "message": "NEW: Version 5.5 is now available!"
   },
   "theme.blog.author.pageTitle": {
     "message": "{authorName} - {nPosts}",

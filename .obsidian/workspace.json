@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "ControlOutline"
+              "title": "README"
             }
           }
         ]
@@ -87,10 +87,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of ControlOutline"
+              "title": "Outline of README"
             }
           }
         ]
@@ -185,6 +185,10 @@
   },
   "active": "1241bc4b603a636b",
   "lastOpenFiles": [
+    "docs/GettingStarted/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+    "docs/GettingStarted/assets/Pasted image 20241201175718.png",
+    "docs/GettingStarted/assets/Pasted image 20241201175614.png",
     "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
     "build/assets/images/WithOutMatCap-67cca3dfdfdce707ce5b6e01e05a2068.gif",
     "build/assets/images/WithMatCap-5b6266249cea55cda89d10fe6c040e8f.gif",
@@ -194,8 +198,6 @@
     "build/assets/images/screenshot_comparison-42649935be814ab92c13c8d50bcae6bf.png",
     "build/assets/images/Pasted image 20241130190657-369e0b2b5192faf24e32e97d748895fc.png",
     "build/assets/images/Pasted image 20241130190552-e8086b1fe649349c81bd7e0fc51002f6.png",
-    "build/assets/images/Pasted image 20241130163758-2134db09b5539316428958a945247164.png",
-    "build/assets/images/Pasted image 20241130163822-8169ea64903051e67c9a7021ad7eab5a.png",
     "build/assets/images",
     "build/en/img/favicon.ico",
     "build/en/img",
@@ -213,7 +215,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/ControlLightShadowColorTransition.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuiltinPlugins.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
     "docs/GettingStarted/BuiltinPlugins.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
     "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",

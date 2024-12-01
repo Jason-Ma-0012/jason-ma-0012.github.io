@@ -56,6 +56,15 @@ If you want to get full engine functionality and faster update speed, please ref
 
 ## Installing a specific UE version
 
+
+### Download the Installation Tool for a Specific Branch
+
+You can switch to the previous branch at [Installation Tool's Github page](https://github.com/JasonMa0012/MooaToon), then `Code > Download Zip` on the right to download the previous version of the Installation Tool.
+
+![](assets/Pasted%20image%2020241201175614.png)![](assets/Pasted%20image%2020241201175718.png)
+
+### (Versions Prior to 5.4) Edit Config File
+
 You can edit setting file to select the UE version you want to install:
 
 1. Right-click `_2_5_Settings.bat`, select Edit
