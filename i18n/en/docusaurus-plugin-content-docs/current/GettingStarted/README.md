@@ -44,6 +44,11 @@ If an error is reported when starting the project, first run `_0_0_Install_Lates
 
 If the problem is not resolved, please [download and run the library repair tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view), restart the computer and open the project again.
 
+3. Anti-virus software suggests a virus
+
+For ease of use, the Installation Tool contains exe files compiled from Python scripts, all code is open source, you can rest assured.  
+You will need to temporarily disable your antivirus software, e.g. [Windows Defender](https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960).
+
 :::
 
 You can also use the script `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` to update MooaToon, **all modified files will be overwritten**, and new files will not be overwritten if they do not have the same name as the MooaToon files.

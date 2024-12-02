@@ -15,7 +15,7 @@
               "state": {
                 "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "README"

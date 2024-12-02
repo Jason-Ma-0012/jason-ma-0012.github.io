@@ -44,6 +44,11 @@ MooaToon本质上是需要修改引擎代码的插件, 你可以选择安装***�
 
 若问题没有解决, 请[下载并运行修复工具](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view), 重启电脑后再次打开项目.
 
+3. 杀毒软件提示病毒
+
+为了方便使用, 安装工具中包含由Python脚本编译而成的exe文件, 所有代码都是开源的, 你可以放心.  
+你需要临时禁用杀毒软件, 例如[Windows Defender](https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960).
+
 :::
 
 你也可以使用脚本`_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`更新MooaToon, **所有已修改的文件都会被覆盖**, 新增的文件如果不和MooaToon文件重名就不会被覆盖.
