@@ -83,7 +83,7 @@ Create a material instance for outlining in the content browser, select `MI_Over
 
 ![image-20230416160810799](./assets/image-20230416160810799.png)
 
-Select the character in the level, set the outline material to `Overlay Material`:
+Select the character in the level, set the outline material to `Outline Material`:
 
 ![image-20230326012052702](./assets/image-20230326012052702.png)
 

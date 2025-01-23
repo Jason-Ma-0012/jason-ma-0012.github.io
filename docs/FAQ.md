@@ -57,7 +57,7 @@ r.RayTracing.Shadows.AvoidSelfIntersectionTraceDistance 1
 
 (Epic 5.0-5.1)
 
-这是由于Ray Tracing Shadow错误调用了Overlay Material的Hit Shader, Toon Material中的Ray Tracing Shadow相关功能将被描边覆盖.
+这是由于Ray Tracing Shadow错误调用了Outline Material的Hit Shader, Toon Material中的Ray Tracing Shadow相关功能将被描边覆盖.
 
 ### 材质预览
 

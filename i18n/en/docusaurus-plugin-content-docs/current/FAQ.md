@@ -58,7 +58,7 @@ You can adjust this value to suit your project.
 
 (Epic 5.0-5.1)
 
-This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Overlay Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
+This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Outline Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
 
 ### Material preview
 
