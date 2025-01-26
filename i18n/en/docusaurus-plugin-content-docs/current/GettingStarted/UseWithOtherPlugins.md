@@ -4,7 +4,8 @@ title: Use With Other Plugins
 description: Use With Other Plugins
 sidebar_position: 2
 ---
-If you need to use other plugins simultaneously, you may encounter some installation issues. This article will explain how to resolve the installation problems of other plugins.  
+Because MooaToon directly modifies the UE source code, you may encounter **installation errors** or **crashes** when using third-party C++ plugins.  
+This article will explain how to resolve issues with third-party plugins.
 
 UE plugins are divided into: 
 

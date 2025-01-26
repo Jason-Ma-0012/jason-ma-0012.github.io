@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/MigrateToNewVersion/5.5.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/MigrateToNewVersion/5.5.md"
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md"
               }
             }
           }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MigrateToNewVersion/5.5.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MigrateToNewVersion/5.5.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,6 +166,8 @@
   },
   "active": "a038472527e13f05",
   "lastOpenFiles": [
+    "docs/GettingStarted/UseWithOtherPlugins.md",
+    "docs/MigrateToNewVersion/5.5.md",
     "build/en/blog/atom.xml",
     "build/en/blog/feed.json",
     "build/en/blog/rss.xml",
@@ -176,7 +178,6 @@
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3/index.html",
     "build/en/assets/images/WithOutMatCap-67cca3dfdfdce707ce5b6e01e05a2068.gif",
     "build/en/assets/images/WithMatCap-5b6266249cea55cda89d10fe6c040e8f.gif",
     "build/en/assets/images/UnityChang_Line-a6470f457ee3d5a13b8ea4891992b554.png",
@@ -188,7 +189,6 @@
     "build/en/assets/images/Pasted image 20241130190657-369e0b2b5192faf24e32e97d748895fc.png",
     "build/en/assets/images/Pasted image 20241130190616-c764d3e4ebf04b50ca30df1a00f9ac79.png",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.5.md",
-    "docs/MigrateToNewVersion/5.5.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.4.md",
     "docs/MigrateToNewVersion/5.4.md",
     "docs/MigrateToNewVersion/History.md",
