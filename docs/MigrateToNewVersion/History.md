@@ -1,7 +1,7 @@
 ---
 id: History
 title: 更新历史记录
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 [Installation Tool](https://github.com/JasonMa0012/MooaToon/commits)

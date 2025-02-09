@@ -1,7 +1,7 @@
 ---
-id: "5.5"
+id: Latest
 title: "5.5"
-sidebar_position: 100
+sidebar_position: 2
 ---
 ## 升级现有项目到5.5
 
@@ -17,3 +17,7 @@ sidebar_position: 100
 3. 升级角色Actor. 在角色Actor上将描边材质从`Overlay Material`移动到`Mooa Outline Material`:
 
 ![](assets/Pasted%20image%2020250123221154.png)
+
+## 用户协议更新
+
+明确并放宽了关于再分发的条款, 现在允许以非商业目的公开再分发, 点击[这里](./../Licence.md)查看.

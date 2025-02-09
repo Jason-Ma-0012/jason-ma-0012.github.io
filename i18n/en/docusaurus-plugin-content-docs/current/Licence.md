@@ -62,6 +62,15 @@ Additionally, you can use MooaToon for any purposes other than commercial, but 
 
 At the same time, it is also prohibited to change engine modifications or plugin content in an attempt to circumvent this agreement without significantly altering rendering techniques.
 
-### Repost 
+### Redistribution
 
-You are not allowed to publicly republish MooaToon's repository and related websites.
+You may only redistribute MooaToon **publicly** for non-commercial purposes, and you **must retain the original attribution and author information** during redistribution.
+
+For example, the following redistributions are permitted:
+- Forking and modifying MooaToon-related repositories on GitHub for non-commercial purposes
+- Publicly uploading copies of MooaToon to cloud storage to facilitate downloads by others for non-commercial purposes
+- Distributing modified versions of MooaToon **within a team** after purchasing a commercial license
+
+The following redistributions are prohibited:
+- **Public** redistribution for commercial purposes, regardless of whether a commercial license has been purchased
+- Intentionally altering or removing attribution and author information during redistribution

@@ -89,9 +89,10 @@ const config = {
           src: 'img/MooaToonLogo_64.png',
         },
         items: [
-          { to: '/docs/GettingStarted',   label: 'Docs',      position: 'left' },
-          { to: '/docs/Licence',          label: 'Licence',   position: 'left' },
-          { to: '/docs/FAQ',              label: 'FAQ',       position: 'left' },
+          { to: '/docs/GettingStarted',               label: 'Docs',      position: 'left' },
+          { to: '/docs/Licence',                      label: 'Licence',   position: 'left' },
+          { to: '/docs/FAQ',                          label: 'FAQ',       position: 'left' },
+          { to: '/docs/MigrateToNewVersion/Latest',   label: 'Updates',   position: 'left' },
           // { to: '/blog',                  label: 'News',      position: 'left' },
           {
             type: 'localeDropdown',
@@ -116,9 +117,10 @@ const config = {
             title: 'Docs',
             items: [
               { to: '/docs/GettingStarted',               label: 'Getting Started',   },
-              { to: '/docs/MigrateToNewVersion/History',  label: 'History',           },
               { to: '/docs/Licence',                      label: 'Licence',           },
               { to: '/docs/FAQ',                          label: 'FAQ',               },
+              { to: '/docs/MigrateToNewVersion/History',  label: 'History',           },
+              { to: '/docs/MigrateToNewVersion/Latest',   label: 'Updates',           },
             ],
           },
           {

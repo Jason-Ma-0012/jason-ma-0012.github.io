@@ -1,7 +1,7 @@
 ---
-id: "5.5"
+id: Latest
 title: "5.5"
-sidebar_position: 100
+sidebar_position: 2
 ---
 ## Upgrade Existing Projects to 5.5
 ### Migrate from Overlay Material to Outline Material
@@ -15,3 +15,7 @@ You need to:
 3. Update character Actors: Move the outline material from `Overlay Material` to `Mooa Outline Material` on character Actors:
 
 ![](assets/Pasted%20image%2020250123221154.png)
+
+## License Updates
+
+Clarified and liberalized provisions on redistribution, now allowing public redistribution for non-commercial purposes, click [here](./../Licence.md) to view.
