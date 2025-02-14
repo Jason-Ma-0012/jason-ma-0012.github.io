@@ -1,7 +1,7 @@
 ---
 id: GettingStarted
 title: 开始使用
-description: MooaToon快速入门
+description: 开始使用
 sidebar_position: 0
 ---
 :::tip

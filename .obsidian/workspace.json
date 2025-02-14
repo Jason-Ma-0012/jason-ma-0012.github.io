@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e0d8e7599d113df3",
+        "id": "0a0e1fe2992bb168",
         "type": "tabs",
         "children": [
           {
-            "id": "b42bd946445fbaa0",
+            "id": "c057d6a78ed34160",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md",
+                "file": "docs/GettingStarted/UseWithExistingProjects.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "a0d09e6a00e64d6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "UseWithExistingProjects"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -52,8 +41,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -68,7 +60,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -76,7 +70,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -92,8 +88,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md"
-              }
+                "file": "docs/GettingStarted/UseWithExistingProjects.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of UseWithExistingProjects"
             }
           }
         ]
@@ -116,7 +117,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -133,10 +135,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -146,8 +149,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
-              }
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -155,7 +162,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -177,8 +186,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0d09e6a00e64d6a",
+  "active": "c057d6a78ed34160",
   "lastOpenFiles": [
+    "docs/GettingStarted/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithExistingProjects.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuiltinPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
+    "docs/GettingStarted/UseWithOtherPlugins.md",
+    "docs/GettingStarted/UseWithExistingProjects.md",
+    "docs/GettingStarted/BuiltinPlugins.md",
+    "docs/GettingStarted/BuildEnginefromSourceCode.md",
     "build/en/blog/atom.xml",
     "build/en/blog/feed.json",
     "build/en/blog/rss.xml",
@@ -189,7 +208,6 @@
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3/index.html",
     "build/en/assets/images/Pasted image 20241130190552-e8086b1fe649349c81bd7e0fc51002f6.png",
     "build/en/assets/images/UnityChang_Line-a6470f457ee3d5a13b8ea4891992b554.png",
     "build/en/assets/images/Pasted image 20241201175718-c2d7d09d97812b798d7a68a15a1c8d9f.png",
@@ -211,19 +229,10 @@
     "docs/MigrateToNewVersion/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
     "docs/FAQ.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
-    "docs/GettingStarted/UseWithOtherPlugins.md",
     "docs/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md",
-    "docs/TutorialLegacy/5.0-5.3/ImportANewCharacter.md",
-    "src/pages/markdown-page.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
-    "docs/GettingStarted/README.md",
-    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline.md",
-    "docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows.md",
-    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md"
+    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md"
   ]
 }

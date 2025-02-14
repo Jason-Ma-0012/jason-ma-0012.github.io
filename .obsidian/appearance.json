@@ -4,5 +4,6 @@
   "monospaceFontFamily": "JetBrains Mono",
   "baseFontSize": 17,
   "baseFontSizeAction": true,
-  "accentColor": "#ff8ac8"
+  "accentColor": "#ff8ac8",
+  "showRibbon": true
 }

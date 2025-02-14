@@ -10,7 +10,6 @@
   ],
   "promptDelete": false,
   "strictLineBreaks": true,
-  "showRibbon": true,
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true

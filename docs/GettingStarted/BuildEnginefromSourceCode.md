@@ -1,7 +1,7 @@
 ---
 id: BuildEnginefromSourceCode
 title: 从源码编译引擎
-description: 从源码编译引擎的教程和常见问题
+description: 从源码编译引擎
 sidebar_position: 0
 ---
 
