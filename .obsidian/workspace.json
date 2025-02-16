@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/GettingStarted/UseWithExistingProjects.md",
+                "file": "docs/Tutorial/ControlLightShadowColorTransition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UseWithExistingProjects"
+              "title": "ControlLightShadowColorTransition"
+            }
+          },
+          {
+            "id": "0d32a6fd60a3f149",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ControlLightShadowColorTransition"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,13 +103,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/GettingStarted/UseWithExistingProjects.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of UseWithExistingProjects"
+              "title": "Outline of ControlLightShadowColorTransition"
             }
           }
         ]
@@ -186,8 +201,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c057d6a78ed34160",
+  "active": "0d32a6fd60a3f149",
   "lastOpenFiles": [
+    "docs/Tutorial/ControlLightShadowColorTransition.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250215192659.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250215192550.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250215192411.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "docs/Tutorial/assets/Pasted image 20250215192659.png",
+    "docs/Tutorial/assets/Pasted image 20250215192550.png",
+    "docs/Tutorial/assets/Pasted image 20250215192411.png",
+    "docs/Tutorial/assets/Pasted image 20250215192148.png",
+    "docs/GettingStarted/UseWithExistingProjects.md",
     "docs/GettingStarted/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithExistingProjects.md",
@@ -195,7 +221,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuiltinPlugins.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
     "docs/GettingStarted/UseWithOtherPlugins.md",
-    "docs/GettingStarted/UseWithExistingProjects.md",
     "docs/GettingStarted/BuiltinPlugins.md",
     "docs/GettingStarted/BuildEnginefromSourceCode.md",
     "build/en/blog/atom.xml",
@@ -211,13 +236,6 @@
     "build/en/assets/images/Pasted image 20241130190552-e8086b1fe649349c81bd7e0fc51002f6.png",
     "build/en/assets/images/UnityChang_Line-a6470f457ee3d5a13b8ea4891992b554.png",
     "build/en/assets/images/Pasted image 20241201175718-c2d7d09d97812b798d7a68a15a1c8d9f.png",
-    "build/en/assets/images/Pasted image 20241201175614-bd99f7a7b1dc9daf25469ecb9eb969a4.png",
-    "build/en/assets/images/Pasted image 20240831154520-dbe106f4cff2984c1332f7ba8e31f6c5.png",
-    "build/en/assets/images/image-20240814003003573-86d6bddadca7802b2ba7b606ee31ee98.png",
-    "build/en/assets/images/image-20240814001600880-2fa4fc92224cd260e7544453c6e86471.png",
-    "build/en/assets/images/image-20240814001004788-ab63f5e1612d1576b2a3560d4425a4ac.png",
-    "build/en/assets/images/image-20240808232600442-783ec97906c58651e5f3c1b706ba2f9b.png",
-    "build/en/assets/images/image-20240808231641482-6e055ade9c76033b1660dffaf3d3dda0.png",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/README.md",
     "docs/MigrateToNewVersion/Latest.md",
     "docs/Licence.md",
@@ -230,9 +248,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
     "docs/FAQ.md",
     "docs/Tutorial/ImportANewCharacter.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/5.0-5.3/ImportANewCharacter.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/FAQ.md"
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md"
   ]
 }

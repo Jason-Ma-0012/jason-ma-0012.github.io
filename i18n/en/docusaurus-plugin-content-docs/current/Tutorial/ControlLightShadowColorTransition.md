@@ -90,3 +90,24 @@ More examples are as follows:
 | Ramp A: Gradient of 4 color levels                                     |     | Noise Map as Diffuse Ramp Offset                                 |     | Diffuse Ramp A channel is offset,<br/>Meaning the position of the light-shadow boundary is offset                                                          |
 |                                                                        |     | ![image-20240809002215913](./assets/image-20240809002215913.png) | =   | ![image-20240809002226413](./assets/image-20240809002226413.png)                                                                                           |
 | Ramp remains unchanged                                                 |     | Noise Map as AO                                                  |     | - Areas where Noise is less than 1 gradually transition to shadows,<br/>- No offset at the light-shadow boundary,<br/>- Can create soft shadow transitions |
+## Console Variables
+
+
+### r.Mooa.DiffuseColorRamp.EnablePostRampShadow
+
+Shadows from other objects will by default participate in the sampling of the Diffuse Color Ramp as one of the UVs, which is intuitive in most cases.    
+However, for some large area low-intensity shadows (such as cloud shadows), this can cause characters to appear to receive shadows at times and not at others.  
+
+By setting `r.Mooa.DiffuseColorRamp.EnablePostRampShadow` to 1, shadows can be calculated after Ramp Lighting, making the shadow performance of characters and scenes consistent, as shown in the figure below:
+
+| Diffuse Color Ramp                              | EnablePostRampShadow = 0                        | EnablePostRampShadow = 1                        |
+| ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
+| ![](assets/Pasted%20image%2020250215192659.png) | ![](assets/Pasted%20image%2020250215192550.png) | ![](assets/Pasted%20image%2020250215192411.png) |
+
+### r.Mooa.DiffuseColorRamp.UVOffsetMaxRange
+
+Maximum range of UV Offset. Note: Limited by the GBuffer bit depth, if this value is too large, it may lead to insufficient precision.
+
+### r.Mooa.SpecularColorRamp.UVOffsetMaxRange
+
+Maximum range of UV Offset. Note: Limited by the GBuffer bit depth, if this value is too large, it may lead to insufficient precision.
