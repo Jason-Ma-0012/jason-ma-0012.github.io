@@ -99,7 +99,7 @@ ID Map的颜色空间必须是**线性**(在贴图资产中取消勾选sRGB).
 
 :::
 
-## 设置发影
+## 头发阴影
 
 绘画作品中的发影通常和头发轮廓一致, MooaToon提供了**屏幕空间深度测试发影**可以程序化实现接近手绘的发影, 而无需修改美术资产.
 
@@ -113,11 +113,11 @@ ID Map的颜色空间必须是**线性**(在贴图资产中取消勾选sRGB).
 
 如果脸和头发使用不同材质, 那么可以直接通过材质参数指定脸和头发, 否则需要使用ID Map.
 
-###### - 通过材质参数指定脸和头发
+###### - 材质参数
 
 在脸的材质上启用`Is Face`, 在头发的材质上启用`Is Hair`即可.
 
-###### - 通过ID Map指定脸和头发
+###### - ID Map
 
 使用DCC软件打开你的ID Map, 记下脸和头发的ID对应`ID Channel`的值:
 
@@ -146,7 +146,7 @@ ID Map的颜色空间必须是**线性**(在贴图资产中取消勾选sRGB).
 <Video src={require("./assets/UnrealEditor_2023_04_02_03_57.webm").default}/>
 
 
-### - 使用半透明模型作为发影
+### - 半透明模型
 
 
 这种方法无需引擎支持, 由美术师制作一个单独的半透明模型放在头发下方作为阴影, 形状则由美术师完全可控.
@@ -165,7 +165,7 @@ MooaToon中可以使用以下方式修改法线阴影的形状:
 
 你可以选择以下不同的方法来改善法线阴影:
 
-#### - 使用Houdini传递自定义法线
+#### - Houdini法线传递
 
 该方法使用简单模型的法线替换原有模型的法线, 用低成本实现了可控且足够好的结果, 可以满足大部分情况的需求.
 
@@ -245,7 +245,7 @@ PATH = C:\GameDevelopmentToolset\bin;$PATH
 右侧模型的阴影形状已经干净多了.
 
 
-#### - 使用Blender生成干净的法线
+#### - Blender法线传递
 
 ![image-20240804214407083](./assets/image-20240804214407083.png)
 
@@ -253,7 +253,7 @@ PATH = C:\GameDevelopmentToolset\bin;$PATH
 
 如果你更熟悉Blender, 那么该方法成本更低, 并且免费.
 
-#### - 绘制法线贴图
+#### - 手动绘制法线贴图
 
 ![見出し画像](./assets/rectangle_large_type_2_3a698e638c88fd2074eec09fefad74c0.png)
 
@@ -326,11 +326,11 @@ MooaToon的着色器利用Shadow Gradient作为UV采样Diffuse Color Ramp (之�
 
 :::
 
-#### 在Substance 3D Painter中绘制Mask Map
+#### 绘制Mask Map
 
 现在你可以绘制Shadow Mask为角色添加AO, 比如脖子下方.
 
-首先根据[此教程](https://www.youtube.com/watch?v=LsV7CkaBWoM)将模型导入SP.
+首先根据[此教程](https://www.youtube.com/watch?v=LsV7CkaBWoM)将模型导入Substance 3D Painter.
 
 然后在固有色通道以白色为背景绘制AO:
 
@@ -350,17 +350,18 @@ MooaToon的着色器利用Shadow Gradient作为UV采样Diffuse Color Ramp (之�
 
 ![image-20240806223649243](./assets/image-20240806223649243.png)
 
-### 使用距离场脸影直接控制阴影形状
+### 距离场脸影
 
 距离场脸影是指将特定方向的脸部阴影形状直接绘制为贴图, 然后将多个贴图烘焙为一张SDF贴图, 从而在各个光照角度下获得完全自定义形状的脸影.
 
-请参考[该开源项目](https://github.com/akasaki1211/sdf_shadow_threshold_map)以生成SDF贴图, 然后设置到脸部材质中即可:
+请参考[该开源项目](https://github.com/akasaki1211/sdf_shadow_threshold_map)以生成SDF贴图, 然后设置到脸部材质中:
 
-![image-20240806224723596](./assets/image-20240806224723596.png)
+![image-20240806224723596](./assets/image-20240806224723596.png)  
 
+最后你需要确保你的角色面朝+Y轴, 并在Skeletal Mesh上右键: `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`, 如下图所示:
+![](assets/Pasted%20image%2020250302171728.png)  
 
-
-## 将光照变化从固有色迁移到Mask Map
+## 将光照从固有色迁移到Mask Map
 
 一些旧工作流会将光照变化直接画到固有色贴图中, 这不利于表现干净的画面, 也不适用于动态的阴影和全局光照, [这篇文章](https://muro.fanbox.cc/posts/1657633)介绍了如何将其重绘为干净的贴图:
 

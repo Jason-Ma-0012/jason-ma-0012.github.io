@@ -57,7 +57,7 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
 ![image-20230416014146252](./assets/image-20230416014146252.png)<center>左: 调整前; 右: 调整后</center>
 
-经过[之前的教程](ControlTheShapeOfShadows#--使用houdini传递自定义法线)你应该熟悉使用Houdini烘焙顶点数据的流程了.
+经过[之前的教程](ControlTheShapeOfShadows#--houdini法线传递)你应该熟悉使用Houdini烘焙顶点数据的流程了.
 
 要为你自己的模型添加宽度可控的描边:
 

@@ -1,0 +1,1 @@
+npm run swizzle @docusaurus/theme-classic DocRoot/Layout/Sidebar -- --eject --typescript

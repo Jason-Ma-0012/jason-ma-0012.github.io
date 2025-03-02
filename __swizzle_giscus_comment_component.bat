@@ -1,1 +1,1 @@
-npm run swizzle @docusaurus/theme-classic DocItem/Layout -- --eject --typescript
+npm run swizzle @docusaurus/theme-classic DocItem/Footer -- --wrap --typescript

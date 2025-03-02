@@ -57,7 +57,7 @@ You can also draw vertex colors in DCC software such as [_Blender_](https://www
 
 ![image-20230416014146252](./assets/image-20230416014146252.png)<center>Left: Before adjustment; Right: After adjustment</center>
 
-After the [previous tutorial](ControlTheShapeOfShadows#--use-houdini-to-transfer-custom-normals), you should be familiar with the process of baking vertex data in Houdini.  
+After the [previous tutorial](ControlTheShapeOfShadows#--houdini-normal-transfer), you should be familiar with the process of baking vertex data in Houdini.  
 
 To add width-controllable outlines to your own model: 
 

@@ -58,7 +58,7 @@ The color space of ID Map must be **linear** (uncheck sRGB in texture assets).
 
 :::
 
-##### - Separate materials and set ID Offset
+##### - Separate Materials and Set ID Offset
 
 There is a simple way, you can set different materials for different parts of the character, and set different `ID Offset` for each material.  
 
@@ -106,25 +106,25 @@ Increasing the Shadow Bias to remove shadows from obstructions at a certain dist
 :::
 
 
-## Set Hair Shadow 
+## Hair Shadow 
 
 The hair shadow in the artwork usually matches the hair outline. MooaToon provides **Screen Space Depth Test Hair Shadow** to achieve hand-drawn hair shadow programmatically without modifying art assets.  
 
 You can also choose to use a translucent model as the hair shadow, which can be customized in shape but requires modifying artistic assets.
 
-### - Screen space hair shadow 
+### - Screen Space Hair Shadow 
 
 First, you need to correctly set the IDs for the face and hair: 
 
-##### Set IDs for the face and hair 
+##### Set IDs for the Face and the Hair 
 
 If the face and hair use different materials, you can directly specify the face and hair through material parameters; otherwise, you need to use an ID Map.  
 
-###### - Specify the face and hair through material parameters 
+###### - Material Parameters 
 
 Enable `Is Face` on the face material, and enable `Is Hair` on the hair material.  
 
-###### - Specify the face and hair through ID Map. 
+###### - ID Map
 
 Open your ID Map in DCC software, note the values of the ID channel corresponding to the face and hair IDs:
 
@@ -134,7 +134,7 @@ Set `Face ID` and `Hair ID` to the corresponding values:
 
 ![image-20230402014412616](./assets/image-20230402014412616.png)
 
-##### Set hair shadow parameters. 
+##### Set Hair Shadow Parameters
 
 After correctly setting the IDs for the face and hair, enable `Use Screen Space Depth Test Hair Shadow` on the **face material**:
 
@@ -153,7 +153,7 @@ Therefore, the shape of the hair shadow depends entirely on the shape of the hai
 <Video src={require("./assets/UnrealEditor_2023_04_02_03_57.webm").default}/>
 
 
-### - Use a Translucent Model as the Hair Shadow
+### - Translucent Model
 
 This method does not require engine support. an artist creates a separate translucent model placed under the hair for shadow, allowing full control over the shape.  
 
@@ -171,7 +171,7 @@ Modifying vertex normals is the most direct way to avoid ugly shadows and is app
 
 You can choose different methods to improve normal shadows: 
 
-#### - Use Houdini to Transfer Custom Normals
+#### - Houdini Normal Transfer
 
 This method replaces the normals of the original model with those of a simple model, achieving controlled and good results at a low cost, suitable for most scenarios.  
 
@@ -252,7 +252,7 @@ Set up materials for it and place it in the scene to check the effect:
 The shadow shape of the model on the right side is much cleaner now.
 
 
-#### - Generate Clean Normals using Blender
+#### - Blender Normal Transfer
 
 ![image-20240804214407083](./assets/image-20240804214407083.png)
 
@@ -260,7 +260,7 @@ The shadow shape of the model on the right side is much cleaner now.
 
 If you are more familiar with Blender, this method is lower cost and free.
 
-#### - Draw normal maps
+#### - Manually Draw Normal Maps
 
 ![見出し画像](./assets/rectangle_large_type_2_3a698e638c88fd2074eec09fefad74c0.png)
 
@@ -272,7 +272,7 @@ The downside is limited by the resolution and compression accuracy of normal map
 
 
 
-#### - Manually edit vertex normals 
+#### - Manually Edit Vertex Normals 
 
 Manually editing vertex normals on high-polygon models can provide the highest precision results at any viewing distance, but the cost is that there are no smooth transitions between shadow shapes, and the artistic cost is very high, requiring a long time of experience accumulation to flexibly apply this technique.  
 
@@ -333,11 +333,11 @@ You can also create textures in other DCC software, such as [_Blender_](https:/
 
 :::
 
-#### Drawing Mask Map in Substance 3D Painter
+#### Draw Mask Maps
 
 Now you can draw a Shadow Mask to add AO to characters, such as under the neck.  
 
-First, import the model into SP according to [this tutorial](https://www.youtube.com/watch?v=LsV7CkaBWoM).  
+First, import the model into Substance 3D Painter according to [this tutorial](https://www.youtube.com/watch?v=LsV7CkaBWoM).  
 
 Then draw AO in the intrinsic color channel with white as the background:
 
@@ -357,7 +357,7 @@ Then set the texture as Global Mask Map, now there is AO near the neck.
 
 ![image-20240806223649243](./assets/image-20240806223649243.png)
 
-### Directly Control the Shape of Shadows on the Face using Distance Field Facial Shadow. 
+### Distance Field Facial Shadow 
 
 Distance Field Facial Shadow refers to directly rendering the shadow shape of the face in a specific direction as a texture map, and then baking multiple texture maps into an SDF texture, thereby obtaining a completely custom shape of the face shadow at various lighting angles.  
 
@@ -365,9 +365,10 @@ Please refer to [this open-source project](https://github.com/akasaki1211/sdf_s
 
 ![image-20240806224723596](./assets/image-20240806224723596.png)
 
+Finally you need to make sure your character is facing +Y axis, and right click on the Skeletal Mesh: `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`, as shown below:
+![](assets/Pasted%20image%2020250302171728.png)  
 
-
-## Migrate Lighting Changes from Base Color to Mask Map
+## Migrate Lighting from Base Color to Mask Map
 
 Some old workflows directly paint lighting changes into the base color map, which is not conducive to clean visuals and is not suitable for dynamic shadows and global illumination. [This article](https://muro.fanbox.cc/posts/1657633) explains how to repaint it into a clean texture:
 

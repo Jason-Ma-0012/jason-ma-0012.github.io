@@ -25,7 +25,7 @@ To use this method, custom tangents need to be baked into the model UV. MooaToon
 
 ### Baking Custom Tangents using Houdini 
 
-The nodes used are already included in the [previous tutorial](./ControlTheShapeOfShadows#--use-houdini-to-transfer-custom-normals).  
+The nodes used are already included in the [previous tutorial](./ControlTheShapeOfShadows#--houdini-normal-transfer).  
 
 In the `mooa_highlightTangentTransfer` node, the tangents of the ellipsoid are transferred to the hair:
 
@@ -63,7 +63,7 @@ Next, you can control highlight detail shapes through Masks. 
 
 ### Draw a Specular Mask to Precisely Control highlight Shapes
 
-Similar to [drawing a Shadow Mask Map](./ControlTheShapeOfShadows#drawing-mask-map-in-substance-3d-painter), the Highlight Mask example source files are located in the `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
+Similar to [drawing a Shadow Mask Map](./ControlTheShapeOfShadows#draw-mask-maps), the Highlight Mask example source files are located in the `MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
 
 ![image-20240811181935380](./assets/image-20240811181935380.png)
 

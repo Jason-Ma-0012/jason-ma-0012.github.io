@@ -25,7 +25,7 @@ Kajiya-Kay高光的位置依赖于视线方向和切线方向, 通过切线传�
 
 ### 使用Houdini烘焙自定义切线
 
-用到的节点已经包含在[之前的教程](ControlTheShapeOfShadows#--使用houdini传递自定义法线)中.
+用到的节点已经包含在[之前的教程](ControlTheShapeOfShadows#--houdini法线传递)中.
 
 在`mooa_highlightTangentTransfer`节点中, 椭球体的切线被传递给了头发:
 
@@ -59,7 +59,7 @@ Kajiya-Kay高光的位置依赖于视线方向和切线方向, 通过切线传�
 
 ### 绘制Specular Mask精确控制高光形状
 
-类似于[绘制Shadow Mask Map](ControlTheShapeOfShadows#在substance-3d-painter中绘制mask-map), Highlight Mask的示例源文件位于`MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
+类似于[绘制Shadow Mask Map](ControlTheShapeOfShadows#绘制mask-map), Highlight Mask的示例源文件位于`MooaToon\MooaToon-Project\Art\Models\NewTextures\HairHighlightMaskMap.spp`:
 
 ![image-20240811181935380](./assets/image-20240811181935380.png)
 
