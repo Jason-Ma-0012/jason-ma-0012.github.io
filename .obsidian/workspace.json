@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "docs/Reference/MeshImportSettings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
+              "title": "MeshImportSettings"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "ControlTheShapeOfShadows"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Alembic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,13 +102,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "docs/Reference/MeshImportSettings.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ControlTheShapeOfShadows"
+              "title": "Outline of MeshImportSettings"
             }
           }
         ]
@@ -187,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.5,
-    "collapsed": true
+    "width": 404.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,52 +200,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "032a4eba07b5b65a",
+  "active": "0d32a6fd60a3f149",
   "lastOpenFiles": [
-    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "build/en/docs/GettingStarted/index.html",
+    "build/en/docs/Licence/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/CreateComplexMaterialsUsingMaterialLayer-5.3",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/index.html",
+    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline-5.3",
+    "build/en/assets/images/image-20240808221949108-df2c73c9bcce84074e1b17554257a332.png",
+    "build/en/assets/images/image-20240808230642858-c57dd705517cebaf4bdfa8f2d21d5647.png",
+    "build/en/assets/images/image-20240808230839624-10996f7106523998f2e07b188ffeda5e.png",
+    "build/en/assets/images/WithOutMatCap-67cca3dfdfdce707ce5b6e01e05a2068.gif",
+    "build/en/assets/images/WithMatCap-5b6266249cea55cda89d10fe6c040e8f.gif",
+    "build/en/assets/images/UnityChang_Line-a6470f457ee3d5a13b8ea4891992b554.png",
+    "build/en/assets/images/screenshot_comparison-42649935be814ab92c13c8d50bcae6bf.png",
+    "build/en/assets/images/Pasted image 20250302175943-a249898c7ef823cecd25116e8a92790f.png",
+    "build/en/assets/images/Pasted image 20241201175718-c2d7d09d97812b798d7a68a15a1c8d9f.png",
+    "build/en/assets/images/Pasted image 20241201175614-bd99f7a7b1dc9daf25469ecb9eb969a4.png",
+    "docs/Reference/MeshImportSettings.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Reference/MeshImportSettings.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithExistingProjects.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
-    "docs/Tutorial/ControlTheShapeOfOutlines.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250302175438.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250302175943.png",
-    "docs/Tutorial/assets/Pasted image 20250302175943.png",
-    "docs/Tutorial/assets/Pasted image 20250302175438.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Reference/BuiltinPlugins.md",
+    "docs/Reference/BuiltinPlugins.md",
+    "docs/Reference/ConsoleVariables.md",
     "docs/Tutorial/ControlLightShadowColorTransition.md",
-    "build/blog/atom.xml",
-    "build/blog/feed.json",
-    "build/blog/rss.xml",
-    "build/sitemap.xml",
-    "build/search/index.html",
-    "build/search",
-    "build/markdown-page/index.html",
-    "build/markdown-page",
-    "build/video/MooaToonDemoVideo.webm",
-    "build/video",
-    "build/img/undraw_docusaurus_tree.svg",
-    "build/img/undraw_docusaurus_react.svg",
-    "build/img/undraw_docusaurus_mountain.svg",
-    "build/img/MooaToonSocialCard.png",
-    "build/img/MooaToonLogo_64.png",
-    "build/img/MooaToonLogo_32.png",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
-    "docs/Tutorial/ControlScreenSpaceRimlights.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
+    "docs/Tutorial/AddStylizedHairHighlights.md",
     "docs/GettingStarted/UseWithExistingProjects.md",
     "docs/GettingStarted/README.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithExistingProjects.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/README.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuiltinPlugins.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
-    "docs/GettingStarted/UseWithOtherPlugins.md",
-    "docs/GettingStarted/BuiltinPlugins.md",
     "docs/GettingStarted/BuildEnginefromSourceCode.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/README.md",
-    "docs/MigrateToNewVersion/Latest.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Reference/ConsoleVariables.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Reference/README.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/TutorialLegacy/README.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "docs/Reference/README.md",
+    "docs/TutorialLegacy/README.md",
     "docs/Licence.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.4.md",
-    "docs/MigrateToNewVersion/5.4.md"
+    "docs/FAQ.md"
   ]
 }

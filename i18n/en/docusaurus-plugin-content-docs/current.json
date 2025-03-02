@@ -26,5 +26,9 @@
   "sidebar.tutorialSidebar.category.Migrate to New Version": {
     "message": "Migrate to New Version",
     "description": "The label for category Migrate to New Version in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category Reference in sidebar tutorialSidebar"
   }
 }
