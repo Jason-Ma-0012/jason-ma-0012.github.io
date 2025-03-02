@@ -364,7 +364,7 @@ Some old workflows directly paint lighting changes into the base color map, whic
 
 In MooaToon, you can use Mask Map to split the static lighting in the left image into dynamic Base Color + Shadow Color + Specular Color.
 
-## 模型导入设置
+## Mesh Import Settings
 
 ### Recompute Normals/Tangents
 If you use an external DCC to bake model data, these two options need to be disabled. Otherwise, it may cause the baked data to be inaccurate.
