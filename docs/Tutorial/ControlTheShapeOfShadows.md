@@ -197,20 +197,10 @@ Maya: [https://www.youtube.com/watch?v=6LdtlJ71000](https://www.youtube.com/watc
 
 ##### 安装Houdini
 
-首先你需要确保已经安装了`19.5.493`以上版本的Houdini, 然后你需要安装[GameDevelopmentToolset](https://github.com/sideeffects/GameDevelopmentToolset):
-
-1. [下载GameDevelopmentToolset](https://github.com/sideeffects/GameDevelopmentToolset/archive/refs/heads/Development.zip), 并解压到你觉得合适的目录.
-2. 使用文本编辑器打开`C:\Users\YOUR USER NAME\Documents\houdini19.5\houdini.env`
-3. 像这样设置`HOUDINI_PATH`和`PATH`的值为安装目录:
-
-```
-HOUDINI_PATH = C:\GameDevelopmentToolset;&
-PATH = C:\GameDevelopmentToolset\bin;$PATH
-```
-
-4. 复制一份并打开`MooaToon\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`:![image-20240813000759820](./assets/image-20240813000759820.png)
-
-
+1. [下载](https://www.sidefx.com/download/daily-builds/?production=true&python3=true&win=true)并安装最新的Houdini 19.5, 安装过程需要勾选`SideFX Labs`:  ![](assets/Pasted%20image%2020250302175438.png)
+2. 激活Houdini. 你可以免费试用Houdini Apprentice, 但[无法导出FBX等文件](https://www.sidefx.com/products/compare/).
+3. 复制一份并打开`MooaToon\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`.
+4. 在右下角显示设置中, 启用: `Optimize > Remove Backfaces`以显示描边: ![](assets/Pasted%20image%2020250302175943.png)![image-20240813000759820](./assets/image-20240813000759820.png)
 
 ##### 传递法线并导出模型
 
@@ -227,9 +217,7 @@ PATH = C:\GameDevelopmentToolset\bin;$PATH
 5. 选中`transform1`节点并将其设为Template, 然后按回车键即可实时调整球体的位置和缩放并观察法线的变化:![image-20240813234211533](./assets/image-20240813234211533.png)<Video src={require("./assets/bandicam 2024-08-14 00-34-38-362.webm").default}/>
 6. 使用左下角的滑条实时调整光照角度:![image-20240813234819509](./assets/image-20240813234819509.png)
 7. 暂时禁用无关节点:![image-20240813235054402](./assets/image-20240813235054402.png)
-8. 使用`OUTPUT_FBX`或`OUTPUT_OBJ`节点导出模型 (免费的Houdini 学徒版本只支持导出OBJ格式):![image-20240813235212726](./assets/image-20240813235212726.png)
-
-
+8. 使用`OUTPUT_FBX`或`OUTPUT_OBJ`节点导出模型 (Houdini Apprentice版本只支持导出OBJ格式, 无法包含法线以外的顶点数据):![image-20240813235212726](./assets/image-20240813235212726.png)
 
 ##### 将模型导入UE
 

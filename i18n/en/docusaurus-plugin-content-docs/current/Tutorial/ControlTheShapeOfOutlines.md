@@ -70,7 +70,8 @@ To add width-controllable outlines to your own model: 
 ![image-20240814001004788](./assets/image-20240814001004788.png)
 
 5. Press Enter to enter drawing mode, follow the instructions in the upper left corner to draw Alpha on the model, pay attention to the value of FG: ![image-20240814001600880](./assets/image-20240814001600880.png)
-6. Display the `mooa_outlinePreview` node, select the `attributePaint_face_vertexColor_alpha` node, then enable material display to draw and preview the stroke in real time:![image-20240814003003573](./assets/image-20240814003003573.png)<Video src={require("./assets/bandicam 2024-08-14 00-23-01-549.webm").default}/>
+6. In the bottom-right corner display settings, make sure enabled: `Optimize > Remove Backfaces`: ![](assets/Pasted%20image%2020250302175943.png)
+7. Display the `mooa_outlinePreview` node, select the `attributePaint_face_vertexColor_alpha` node, then enable material display to draw and preview the stroke in real time:![image-20240814003003573](./assets/image-20240814003003573.png)<Video src={require("./assets/bandicam 2024-08-14 00-23-01-549.webm").default}/>
 
 7. After drawing is complete, export the model using the `OUTPUT_FBX` or `OUTPUT_OBJ` node, and import it into UE.
 

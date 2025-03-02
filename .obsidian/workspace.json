@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c057d6a78ed34160",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfShadows.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
-            }
-          },
-          {
             "id": "0d32a6fd60a3f149",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "docs/Tutorial/ControlTheShapeOfOutlines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
+              "title": "ControlTheShapeOfOutlines"
+            }
+          },
+          {
+            "id": "032a4eba07b5b65a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ControlTheShapeOfOutlines"
             }
           }
         ],
@@ -103,13 +103,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ControlTheShapeOfShadows"
+              "title": "Outline of ControlTheShapeOfOutlines"
             }
           }
         ]
@@ -187,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 404.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,8 +202,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0d32a6fd60a3f149",
+  "active": "032a4eba07b5b65a",
   "lastOpenFiles": [
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250302175438.png",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250302175943.png",
+    "docs/Tutorial/assets/Pasted image 20250302175943.png",
+    "docs/Tutorial/assets/Pasted image 20250302175438.png",
+    "docs/Tutorial/ControlLightShadowColorTransition.md",
     "build/blog/atom.xml",
     "build/blog/feed.json",
     "build/blog/rss.xml",
@@ -219,15 +229,7 @@
     "build/img/MooaToonSocialCard.png",
     "build/img/MooaToonLogo_64.png",
     "build/img/MooaToonLogo_32.png",
-    "build/img/MooaToonLogo_128.png",
-    "build/img/MooaToonDemo_2023.3.28.png",
-    "build/img/MooaToon.png",
-    "build/img/logo.svg",
-    "build/img/favicon.ico",
-    "docs/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
-    "docs/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "docs/Tutorial/ControlScreenSpaceRimlights.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
@@ -246,8 +248,6 @@
     "docs/Licence.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/Latest.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.4.md",
-    "docs/MigrateToNewVersion/5.4.md",
-    "docs/MigrateToNewVersion/History.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/History.md"
+    "docs/MigrateToNewVersion/5.4.md"
   ]
 }

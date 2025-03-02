@@ -203,21 +203,11 @@ Maya: [https://www.youtube.com/watch?v=6LdtlJ71000](https://www.youtube.com/wat
 
 ##### Install Houdini
 
-First, make sure you have installed Houdini version `19.5.493` or above, then install [GameDevelopmentToolset](https://github.com/sideeffects/GameDevelopmentToolset):  
-
-1. [Download GameDevelopmentToolset](https://github.com/sideeffects/GameDevelopmentToolset/archive/refs/heads/Development.zip), and extract it to a directory you find suitable.  
-    
-2. Use a text editor to open `C:\Users\YOUR USER NAME\Documents\houdini19.5\houdini.env`
-3. Set the values of `HOUDINI_PATH` and `PATH` to the installation directory like this:
-
-```
-HOUDINI_PATH = C:\GameDevelopmentToolset;&
-PATH = C:\GameDevelopmentToolset\bin;$PATH
-```
-
-4. Make a copy and open `MooaToon\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`:![image-20240813000759820](./assets/image-20240813000759820.png)
-
-
+1. [Download](https://www.sidefx.com/download/daily-builds/?production=true&python3=true&win=true) and install the latest Houdini 19.5, make sure to check `SideFX Labs` during the installation process.![](assets/Pasted%20image%2020250302175438.png)
+2. Activate Houdini. You can try Houdini Apprentice for free, but [cannot export FBX files](https://www.sidefx.com/products/compare/).
+3. Copy one and open `MooaToon\MooaToon-Project\Art\Models\MooaToonHoudiniPipelineSample.hip`
+4. In the bottom-right corner display settings, enable: `Optimize > Remove Backfaces` to display outlines:![](assets/Pasted%20image%2020250302175943.png)
+![image-20240813000759820](./assets/image-20240813000759820.png)
 
 ##### Transfer Normals and Export Models 
 
@@ -234,9 +224,7 @@ If you are new to Houdini, there are some [_tutorials_](https://www.youtube.com
 5. Select the `transform1` node and set it as a Template, then press Enter to adjust the position and scale of the sphere in real-time and observe the changes in normals:![image-20240813234211533](./assets/image-20240813234211533.png)<Video src={require("./assets/bandicam 2024-08-14 00-34-38-362.webm").default}/>
 6. Use the slider in the bottom left corner to adjust the lighting angle in real-time:![image-20240813234819509](./assets/image-20240813234819509.png)
 7. Temporarily disable irrelevant nodes:![image-20240813235054402](./assets/image-20240813235054402.png)
-8. Export the model using the `OUTPUT_FBX` or `OUTPUT_OBJ` node (the free Houdini Apprentice version only supports exporting OBJ format):![image-20240813235212726](./assets/image-20240813235212726.png)
-
-
+8. Export the model using the `OUTPUT_FBX` or `OUTPUT_OBJ` node (Houdini Apprentice version only supports exporting OBJ format, cannot include vertex data other than normal):![image-20240813235212726](./assets/image-20240813235212726.png)
 
 ##### Import the Model Into UE 
 
