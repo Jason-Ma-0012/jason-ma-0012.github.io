@@ -106,7 +106,7 @@ Increasing the Shadow Bias to remove shadows from obstructions at a certain dist
 :::
 
 
-## Hair Shadow 
+## Custom Hair Shadow
 
 The hair shadow in the artwork usually matches the hair outline. MooaToon provides **Screen Space Depth Test Hair Shadow** to achieve hand-drawn hair shadow programmatically without modifying art assets.  
 
@@ -363,3 +363,18 @@ Some old workflows directly paint lighting changes into the base color map, whic
 ![image-20230408181355855](./assets/image-20230408181355855.png)
 
 In MooaToon, you can use Mask Map to split the static lighting in the left image into dynamic Base Color + Shadow Color + Specular Color.
+
+## 模型导入设置
+
+### Recompute Normals/Tangents
+If you use an external DCC to bake model data, these two options need to be disabled. Otherwise, it may cause the baked data to be inaccurate.
+
+If your model does not include normal/tangent data, UE will automatically enable these two options when you reimport the mesh.
+
+### Use Full Precision UVs
+If you find that the data baked by the DCC is inaccurate or lacks precision, please try enabling this option.
+
+### Mooa Morph Targets Normal Intensity
+Setting it to 0 can prevent Morph Target (or Blend Shape) from affecting the normals.
+
+Character expressions are usually created using Morph Targets. If you modify the face normals, they should be set to 0 to prevent the expression from affecting the normals.

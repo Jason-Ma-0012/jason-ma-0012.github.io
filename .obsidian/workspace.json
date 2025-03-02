@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "docs/Tutorial/ControlTheShapeOfShadows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfOutlines"
+              "title": "ControlTheShapeOfShadows"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfOutlines"
+              "title": "ControlTheShapeOfShadows"
             }
           }
         ],
@@ -103,13 +103,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ControlTheShapeOfOutlines"
+              "title": "Outline of ControlTheShapeOfShadows"
             }
           }
         ]
@@ -204,10 +204,10 @@
   },
   "active": "032a4eba07b5b65a",
   "lastOpenFiles": [
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
-    "docs/Tutorial/ControlTheShapeOfOutlines.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250302175438.png",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250302175943.png",
     "docs/Tutorial/assets/Pasted image 20250302175943.png",

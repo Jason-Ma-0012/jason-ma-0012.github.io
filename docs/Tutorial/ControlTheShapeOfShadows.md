@@ -99,7 +99,7 @@ ID Map的颜色空间必须是**线性**(在贴图资产中取消勾选sRGB).
 
 :::
 
-## 头发阴影
+## 自定义头发阴影
 
 绘画作品中的发影通常和头发轮廓一致, MooaToon提供了**屏幕空间深度测试发影**可以程序化实现接近手绘的发影, 而无需修改美术资产.
 
@@ -356,3 +356,19 @@ MooaToon的着色器利用Shadow Gradient作为UV采样Diffuse Color Ramp (之�
 ![image-20230408181355855](./assets/image-20230408181355855.png)
 
 在MooaToon中可以利用Mask Map将左图中的静态光照拆分为动态的固有色 + 阴影 + 高光色.
+
+## 模型导入设置
+
+### Recompute Normals/Tangents
+如果你使用外部DCC烘焙模型数据, 那么这两个选项需要禁用, 否则可能导致烘焙的数据不准确.
+
+如果你的模型没有包含法线/切线数据, 那么在Reimport Mesh的时候UE会自动启用这两个选项.
+
+### Use Full Precision UVs
+如果你发现DCC烘焙的数据不准确, 或者精度不够, 请尝试启用此选项.
+
+### Mooa Morph Targets Normal Intensity
+设为0可以使Morph Target (又名Blend Shape)不影响法线.
+
+角色表情通常使用Morph Target制作, 如果你修改了脸部法线, 那么应该设为0以避免表情影响法线.
+
