@@ -204,6 +204,7 @@
   },
   "active": "032a4eba07b5b65a",
   "lastOpenFiles": [
+    "node_modules/fsevents",
     "build/en/sitemap.xml",
     "build/en/opensearch.xml",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlOutline-5.3/index.html",
@@ -214,7 +215,6 @@
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/ImportANewCharacter-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlHairHighLight-5.3",
     "build/en/img/undraw_docusaurus_tree.svg",
     "build/en/img/undraw_docusaurus_react.svg",
     "build/en/img/undraw_docusaurus_mountain.svg",
