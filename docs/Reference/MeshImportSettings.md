@@ -10,7 +10,7 @@ sidebar_position: 30
 
 如果你的模型没有包含法线/切线数据, 那么在Reimport Mesh的时候UE会自动启用这两个选项.
 
-### Use Full Precision UVs
+### Use Full Precision UVs / High Precision Tangent Basis
 如果你发现DCC烘焙的数据不准确, 或者精度不够, 请尝试启用此选项.
 
 ### Mooa Morph Targets Normal Intensity

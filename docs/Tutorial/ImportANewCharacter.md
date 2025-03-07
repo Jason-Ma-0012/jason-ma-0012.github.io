@@ -34,7 +34,7 @@ sidebar_position: 0
 
 直接将角色模型拖入虚幻编辑器的内容浏览器即可导入角色模型, 由于不同DCC软件的导出设置不同, 可能需要调整导入设置中的旋转和缩放.
 
-正确导入后角色应正面朝前站在地上, 并大小合适:
+正确导入后角色应面朝前方(+Y轴), 大小合适:
 
 ![image-20230326003909649](./assets/image-20230326003909649.png)
 
@@ -42,7 +42,15 @@ sidebar_position: 0
 
 ![image-20230326011353744](./assets/image-20230326011353744.png)
 
-## 创建材质
+## 创建并分配材质实例
+
+### - 导入时自动创建
+
+可以在导入时直接选择创建材质实例(***确保筛选器中已选择显示插件内容***):
+
+![](assets/Pasted%20image%2020250307214723.png)
+
+### - 手动创建
 
 在内容浏览器中创建一个材质实例, 父材质选择`MI_Toon`, ***确保筛选器中已选择显示插件内容***: 
 
@@ -68,23 +76,17 @@ sidebar_position: 0
 
 ## 描边设置
 
-首先确保角色骨骼网格体的设置中禁用了`Recompute Normals/Tangent`:
-
-![image-20230326142538356](./assets/image-20230326142538356.png)
-
-然后在角色骨骼网格体上右键:
-
-1. `Reimport`
-2. `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
-
-![image-20230326010721883](./assets/image-20230326010721883.png)
-
+1. 保存所有修改
+2. 在角色骨骼网格体上右键`Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
+![](assets/Pasted%20image%2020250307215258.png)
+:::caution
+烘焙某些特定模型时UE可能会崩溃, 请提前保存所有修改!  
+如果发生崩溃, 请尝试在重启UE后立即烘焙.
+:::
 在内容浏览器中创建用于描边的材质实例, 父材质选择`MI_Outline`, 并设置以下参数:
-
-![image-20230416160810799](./assets/image-20230416160810799.png)
+![](assets/Pasted%20image%2020250307215455.png)
 
 选中关卡中的角色, 将描边材质设为`Outline Material`:
-
 ![image-20230326012052702](./assets/image-20230326012052702.png)
 
 现在你应该能看到完整的角色描边:

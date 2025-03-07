@@ -221,9 +221,10 @@ Maya: [https://www.youtube.com/watch?v=6LdtlJ71000](https://www.youtube.com/watc
 
 ##### 将模型导入UE
 
-导入刚刚的模型到UE, `Normal Import Method`必须为`Import Normals and Tangents`, 以下是我使用的导入设置:
-
-![image-20230408165025665](./assets/image-20230408165025665.png)
+导入刚刚的模型到UE, 为了确保烘焙的数据不被破坏, 必须手动调整以下设置:
+- 禁用`Recompute Normals/Tangents`
+- 启用`Use High Precision Tangent Basis/Full Precision UVs`
+![](assets/Pasted%20image%2020250307220041.png)
 
 为其设置材质后放到场景中检查效果:
 
@@ -342,13 +343,30 @@ MooaToon的着色器利用Shadow Gradient作为UV采样Diffuse Color Ramp (之�
 
 距离场脸影是指将特定方向的脸部阴影形状直接绘制为贴图, 然后将多个贴图烘焙为一张SDF贴图, 从而在各个光照角度下获得完全自定义形状的脸影.
 
-请参考[该开源项目](https://github.com/akasaki1211/sdf_shadow_threshold_map)以生成SDF贴图, 然后设置到脸部材质中:
+首先你需要烘焙网格数据并初步设置材质, 步骤如下:
+1. 保存所有修改
+2. 在骨骼网格体上右键`Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`![](assets/Pasted%20image%2020250307220621.png)  
+:::caution
+烘焙某些特定模型时UE可能会崩溃, 请提前保存所有修改!  
+如果发生崩溃, 请尝试在重启UE后立即烘焙.
+:::
+3. 在脸材质上启用`Enable Feature Distance Field Facial Shadow`
+4. 如果烘焙的数据正确, 那么你可以在`Debug View`中看到脸部的`World Tangent`显示为纯色:![](assets/Pasted%20image%2020250307221502.png)
+5. 你也可以用Lookdev Tool检查烘焙的数据, 颜色代表方向, 例如+X方向表示为`(255, 128, 128)`, -X方向表示为`(0, 128, 128)`:![](assets/Pasted%20image%2020250307222333.png)
 
-![image-20240806224723596](./assets/image-20240806224723596.png)  
+接下来你需要生成SDF贴图, 请参考[该开源项目](https://github.com/akasaki1211/sdf_shadow_threshold_map), 步骤如下:  
+1. 将画好的Shadow Mask放到`MooaToon-Project\Art\DistanceFieldFacialShadowSamples\InputShadowMasks`目录:![](assets/Pasted%20image%2020250307225057.png)
+2. 返回上级目录, 将`InputShadowMasks`目录拖拽到`gen.bat`上:  
 
-最后你需要确保你的角色面朝+Y轴, 并在Skeletal Mesh上右键: `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`, 如下图所示:
-![](assets/Pasted%20image%2020250302171728.png)  
+| ![](assets/Pasted%20image%2020250307225142.png) | ![](assets/Pasted%20image%2020250307225243.png) |
+| ----------------------------------------------- | ----------------------------------------------- |
 
+3. 在`output`目录中可以看到结果:![](assets/Pasted%20image%2020250307225311.png)
+4. 将SDF贴图导入UE, 将压缩格式设为`Half Float (R16F)`, Mip Gen设置为`No Mipmaps`:![](assets/Pasted%20image%2020250307225455.png)
+5. 在脸部材质中将SDF贴图设为`Distance Field Shadow Map`, 然后旋转灯光就能看到结果:  
+<Video src={require("./assets/bandicam 2025-03-07 23-01-12-401.mp4").default}/>
+4. 支持多光源交互:  
+<Video src={require("./assets/bandicam 2025-03-07 23-19-01-688.mp4").default}/>
 ## 将光照从固有色迁移到Mask Map
 
 一些旧工作流会将光照变化直接画到固有色贴图中, 这不利于表现干净的画面, 也不适用于动态的阴影和全局光照, [这篇文章](https://muro.fanbox.cc/posts/1657633)介绍了如何将其重绘为干净的贴图:

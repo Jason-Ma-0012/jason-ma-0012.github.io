@@ -34,27 +34,33 @@ You can also obtain character models through the following website: 
 
 You can directly import character models by dragging them into the Unreal Editor's content browser. Due to different export settings in different DCC software, you may need to adjust the rotation and scale in the import settings.  
 
-After correct import, the character should be facing forward standing on the ground, and the size should be appropriate:
-
+After correct import, the character should face forward (+Y axis) and be of appropriate size:
 ![image-20230326003909649](./assets/image-20230326003909649.png)
 
-Copy and open the scene `Content/MooaToonSamples/Maps/L_LookDev.umap`, place the character Skeletal Mesh in it:
-
+Copy and open the scene `Content/MooaToonSamples/Maps/L_LookDev.umap` , and place the character Skeletal Mesh into it:
 ![image-20230326011353744](./assets/image-20230326011353744.png)
 
-## Create Materials
+## Create and Assign Material Instances
 
-Create a material instance in the content browser, select `MI_Toon` as the parent material, _**make sure to show plugin content in the filter**_:
+### - Automatically Create When Importing
+
+You can directly choose to create Material Instances during import (_**ensure that plugin content is selected in the filter**_):
+
+![](assets/Pasted%20image%2020250307214723.png)
+
+### - Manually Create
+
+Create a Material Instance in the Content Browser, select the parent material as `MI_Toon`, ***ensure that the filter is set to show plugin content***:
 
 ![image-20230326004156586](./assets/image-20230326004156586.png)
 
 ![image-20230326004320383](./assets/image-20230326004320383.png)
 
-Open the character's Skeletal Mesh file, and place the newly created material in the material slot:
+Open the character's Skeletal Mesh file and place the newly created material into the Material Slots:
 
 ![image-20230326004426102](./assets/image-20230326004426102.png)
 
-Note that Unity Chan has only one texture, so only one material instance is created. **If different parts of your model correspond to different textures, then you need to create a material instance for each part separately**.
+Note: Unity Chan only has one texture, so only one material instance was created. **If different parts of your model correspond to different textures, then you need to create a Material Instance for each part separately**.
 
 ## Material Settings
 
@@ -68,20 +74,15 @@ In the material instance, set the `Base Color Map` and `Shadow Color Map` to the
 
 ## Outline Settings
 
-First, make sure to disable `Recompute Normals/Tangent` in the character Skeletal Mesh settings:
-
-![image-20230326142538356](./assets/image-20230326142538356.png)
-
-Then right-click on the character Skeletal Mesh:
-
-1. `Reimport`
-2. `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
-
-![image-20230326010721883](./assets/image-20230326010721883.png)
-
-Create a material instance for outlining in the content browser, select `MI_OverlayOutline` as the parent material, and set the following parameters:
-
-![image-20230416160810799](./assets/image-20230416160810799.png)
+1. Save all changes
+2. Right-click on the character Skeleton Mesh `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature` :
+![](assets/Pasted%20image%2020250307215258.png)
+:::caution
+UE may crash when baking certain specific models, please save all changes in advance!  
+If a crash occurs, try baking immediately after restarting UE.
+:::
+Create a Material Instance for Outline in the Content Browser, select the Parent Material as `MI_Outline`, and set the following parameters:
+![](assets/Pasted%20image%2020250307215455.png)
 
 Select the character in the level, set the outline material to `Outline Material`:
 

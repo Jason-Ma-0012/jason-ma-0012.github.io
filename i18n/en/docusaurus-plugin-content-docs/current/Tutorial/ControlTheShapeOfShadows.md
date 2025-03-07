@@ -228,9 +228,10 @@ If you are new to Houdini, there are some [_tutorials_](https://www.youtube.com
 
 ##### Import the Model Into UE 
 
-Import the model into UE, the `Normal Import Method` must be set to `Import Normals and Tangents`, here are the import settings I used:
-
-![image-20230408165025665](./assets/image-20230408165025665.png)
+Import the model just exported into UE. To ensure the baked data is not corrupted, the following settings must be manually adjusted:  
+- Disable `Recompute Normals/Tangents`  
+- Enable `Use High Precision Tangent Basis/Full Precision UVs`
+![](assets/Pasted%20image%2020250307220041.png)
 
 Set up materials for it and place it in the scene to check the effect:
 
@@ -347,14 +348,32 @@ Then set the texture as Global Mask Map, now there is AO near the neck.
 
 ### Distance Field Facial Shadow 
 
-Distance Field Facial Shadow refers to directly rendering the shadow shape of the face in a specific direction as a texture map, and then baking multiple texture maps into an SDF texture, thereby obtaining a completely custom shape of the face shadow at various lighting angles.  
+Distance Field Facial Shadow refer to directly drawing the shape of facial shadows in a specific direction as a texture, then baking multiple textures into a single SDF texture, achieving fully customizable face shadow shapes under various lighting angles.  
 
-Please refer to [this open-source project](https://github.com/akasaki1211/sdf_shadow_threshold_map) to generate SDF textures, then apply them to the face material:
+First, you need to bake the mesh data and initially set up the material, following these steps:  
+1. Save all changes
+2. Right-click on the Skeletal Mesh `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`![](assets/Pasted%20image%2020250307220621.png)  
+:::caution
+UE may crash when baking certain specific models, please save all changes in advance!  
+If a crash occurs, try baking immediately after restarting UE.
+:::
+3. Enable `Enable Feature Distance Field Facial Shadow` on the face material
+4. If the baked data is correct, you can see the face's `World Tangent` displayed as a solid color in the `Debug View`:![](assets/Pasted%20image%2020250307221502.png)
+5. You can also use the Lookdev Tool to check the baked data, where colors represent directions. For example, the +X direction is represented as `(255, 128, 128)`, and the -X direction is represented as `(0, 128, 128)`:![](assets/Pasted%20image%2020250307222333.png)
 
-![image-20240806224723596](./assets/image-20240806224723596.png)
+Next, you need to generate an SDF map. Please refer to [this open-source project](https://github.com/akasaki1211/sdf_shadow_threshold_map). The steps are as follows:  
+1. Place the drawn Shadow Mask into the `MooaToon-Project\Art\DistanceFieldFacialShadowSamples\InputShadowMasks` directory:![](assets/Pasted%20image%2020250307225057.png)
+2. Return to the parent directory, drag the `InputShadowMasks` folder onto `gen.bat`:
 
-Finally you need to make sure your character is facing +Y axis, and right click on the Skeletal Mesh: `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`, as shown below:
-![](assets/Pasted%20image%2020250302171728.png)  
+| ![](assets/Pasted%20image%2020250307225142.png) | ![](assets/Pasted%20image%2020250307225243.png) |
+| ----------------------------------------------- | ----------------------------------------------- |
+
+3. The result can be seen in the `output` directory:![](assets/Pasted%20image%2020250307225311.png)
+4. Import the SDF map into UE, set the compression format to `Half Float (R16F)`, and set Mip Gen to `No Mipmaps`:![](assets/Pasted%20image%2020250307225455.png)
+5. Set the SDF texture to `Distance Field Shadow Map` in the face material, then rotate the light to see the result:  
+<Video src={require("./assets/bandicam 2025-03-07 23-01-12-401.mp4").default}/>
+6. Supports multi-light interaction:
+<Video src={require("./assets/bandicam 2025-03-07 23-19-01-688.mp4").default}/>
 
 ## Migrate Lighting from Base Color to Mask Map
 

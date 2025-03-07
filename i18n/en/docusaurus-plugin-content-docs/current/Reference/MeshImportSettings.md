@@ -10,7 +10,7 @@ If you use an external DCC to bake model data, these two options need to be disa
 
 If your model does not include normal/tangent data, UE will automatically enable these two options when you reimport the mesh.
 
-### Use Full Precision UVs
+### Use Full Precision UVs / High Precision Tangent Basis
 If you find that the data baked by the DCC is inaccurate or lacks precision, please try enabling this option.
 
 ### Mooa Morph Targets Normal Intensity
