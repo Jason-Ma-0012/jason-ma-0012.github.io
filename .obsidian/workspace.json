@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
+              "title": "ControlLightingOfCharactersAndScenes"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
+              "title": "ControlLightingOfCharactersAndScenes"
             }
           }
         ],
@@ -103,13 +103,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ControlTheShapeOfShadows"
+              "title": "Outline of ControlLightingOfCharactersAndScenes"
             }
           }
         ]
@@ -204,6 +204,10 @@
   },
   "active": "032a4eba07b5b65a",
   "lastOpenFiles": [
+    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "docs/Tutorial/ControlTheShapeOfShadows.md",
     "node_modules/fsevents",
     "build/en/sitemap.xml",
     "build/en/opensearch.xml",
@@ -214,7 +218,6 @@
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlLightShadowTransitionByRampMap-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/AddDepthUsingRimLight-5.3/index.html",
     "build/en/docs/TutorialLegacy/5.0-5.3/ImportANewCharacter-5.3/index.html",
-    "build/en/docs/TutorialLegacy/5.0-5.3/AddAdvancedRenderingFeaturesToCharacters/ControlTheShapeOfShadows-5.3",
     "build/en/img/undraw_docusaurus_tree.svg",
     "build/en/img/undraw_docusaurus_react.svg",
     "build/en/img/undraw_docusaurus_mountain.svg",
@@ -225,8 +228,6 @@
     "build/en/img/MooaToonDemo_2023.3.28.png",
     "build/en/img/MooaToon.png",
     "build/en/img/logo.svg",
-    "docs/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "docs/Tutorial/ImportANewCharacter.md",
     "docs/Reference/MeshImportSettings.md",
@@ -234,7 +235,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Reference/MeshImportSettings.md",
     "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
     "docs/Tutorial/ControlTheShapeOfOutlines.md",
-    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "docs/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/ControlScreenSpaceRimlights.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.4.md",

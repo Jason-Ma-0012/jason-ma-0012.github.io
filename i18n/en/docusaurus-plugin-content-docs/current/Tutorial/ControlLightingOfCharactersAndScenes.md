@@ -143,7 +143,7 @@ Different Lighting Channels are usually set for characters and scenes to achieve
 ![](./assets/Pasted%20image%2020241130163633.png)
 ![](./assets/Pasted%20image%2020241130163645.png)
 
-MooaToon has added `Mooa Cast Shadows to Lighting Channels` on the `Primitive Component` to freely control which Lighting Channel the object casts shadows onto.  
+MooaToon has added a new feature called `Mooa Cast Shadows to Lighting Channels` below the existing `Lighting Channels`, allowing users to freely control which Lighting Channel an object casts shadows onto.
 
 Shadows are cast onto all Lighting Channels by default, allowing for the separation of character and scene lighting but merging shadows.
 

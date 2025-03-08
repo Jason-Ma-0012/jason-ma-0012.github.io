@@ -139,7 +139,7 @@ MooaToon在后处理体积上添加了`Shadow Color Intensity`以控制不同类
 ![](assets/Pasted%20image%2020241130163633.png)
 ![](assets/Pasted%20image%2020241130163645.png)
 
-MooaToon在`Primitive Component`上新增了`Mooa Cast Shadows to Lighting Channels`用于自由控制物体向那个光照通道投射阴影.  
+MooaToon在原有的`Lighting Channels`下方新增了`Mooa Cast Shadows to Lighting Channels`用于自由控制物体向哪个光照通道投射阴影.  
 默认向所有光照通道投射阴影, 可以实现角色和场景的光照分离但是阴影合并.
 
 ![](assets/Pasted%20image%2020241130163711.png)
