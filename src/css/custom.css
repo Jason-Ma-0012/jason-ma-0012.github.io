@@ -81,6 +81,13 @@ img {
   margin: 0 auto;
 }
 
+/* Global video CSS */
+video {
+  max-height: var(--ifm-image-max-height);
+  width: auto;
+  max-width: 100%;
+}
+
 /* Multi Images*/
 /* .imgs {
   display: flex;
