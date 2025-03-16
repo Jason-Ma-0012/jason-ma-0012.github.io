@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Reference/BuiltinPlugins.md",
+                "file": "docs/Tutorial/ControlTheShapeOfOutlines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BuiltinPlugins"
+              "title": "ControlTheShapeOfOutlines"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Reference/BuiltinPlugins.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BuiltinPlugins"
+              "title": "ControlTheShapeOfOutlines"
             }
           }
         ],
@@ -103,13 +103,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Reference/BuiltinPlugins.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of BuiltinPlugins"
+              "title": "Outline of ControlTheShapeOfOutlines"
             }
           }
         ]
@@ -204,12 +204,16 @@
   },
   "active": "032a4eba07b5b65a",
   "lastOpenFiles": [
-    "docs/Reference/BuiltinPlugins.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250316233809.png",
     "i18n/en/docusaurus-plugin-content-docs/current/Reference/BuiltinPlugins.md",
+    "docs/Tutorial/assets/Pasted image 20250316233809.png",
+    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
+    "docs/Reference/BuiltinPlugins.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "www.sidefx.com/unreal.md",
     "www.sidefx.com",
-    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
     "docs/Tutorial/ControlTheShapeOfShadows.md",
     "node_modules/fsevents",
@@ -229,15 +233,12 @@
     "build/en/img/MooaToonLogo_32.png",
     "build/en/img/MooaToonLogo_128.png",
     "build/en/img/MooaToonDemo_2023.3.28.png",
-    "build/en/img/MooaToon.png",
-    "build/en/img/logo.svg",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "docs/Tutorial/ImportANewCharacter.md",
     "docs/Reference/MeshImportSettings.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Reference/MeshImportSettings.md",
     "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
-    "docs/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/ControlScreenSpaceRimlights.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.4.md",
@@ -245,10 +246,8 @@
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/BuildEnginefromSourceCode.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithExistingProjects.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Reference/ConsoleVariables.md",
     "docs/Tutorial/AddStylizedHairHighlights.md",
-    "docs/GettingStarted/UseWithExistingProjects.md",
-    "docs/GettingStarted/README.md"
+    "docs/GettingStarted/UseWithExistingProjects.md"
   ]
 }

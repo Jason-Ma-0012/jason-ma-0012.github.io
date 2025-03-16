@@ -57,6 +57,13 @@ You can also draw vertex colors in DCC software such as [_Blender_](https://www
 
 ![image-20230416014146252](./assets/image-20230416014146252.png)<center>Left: Before adjustment; Right: After adjustment</center>
 
+##### Drawing in UE
+
+You can directly draw Vertex Colors in UE and preview the results in Real Time:
+![](assets/Pasted%20image%2020250316233809.png)
+
+##### Drawing in Houdini
+
 After the [previous tutorial](ControlTheShapeOfShadows#--houdini-normal-transfer), you should be familiar with the process of baking vertex data in Houdini.  
 
 To add width-controllable outlines to your own model: 
@@ -82,27 +89,39 @@ Then enable `Use Vertex Color A as Outline Width` in the outline material, and
 ![image-20230416043932387](./assets/image-20230416043932387.png)
 
 
-#### FAQ
+#### FAQs
 
-##### Bad Outline Shape
+##### Incorrect Outline Shape
 
-The principle of this outline is to extrude the mesh outwards and render only the back face as the outline.  
+The principle of this outline is to extrude the mesh outward and then render only its backside as the outline. Since the extrusion direction is calculated last, it may be difficult to detect issues during the modeling process.  
 
-The following reasons may lead to bad outline shapes:
-- Incorrect Normals/UVs, or missing these data. Solutions:  
-    - Ensure that the `mooa_bakeSmoothedNormalToUV34` node is connected before the `mooa_dataInit` node.  
-    - Ensure the input mesh has correct Normals and UVs. 
-    - You can check all geometric properties in the Geometry Spreadsheet panel.  
-- Single-sided meshes may cause outlines to suddenly break at the mesh boundaries. Solutions:  
-    - Avoid using single-sided meshes. 
-    - Set the outline width to 0 at the boundaries of single-sided meshes. 
-- Complex multi-layer meshes that are very close together, and outlines that are too thick, may cause some outlines to suddenly appear or disappear. Solutions:  
-    - Reduce the outline width in complex structures. 
-    - For structures like cloth that use physical simulation, ensure the outline width is less than the collision radius. otherwise, the outlines may penetrate the mesh.  
-    - Avoid overlapping/crossing complex topologies at close distances. 
-    - Use inner outlines instead of outer outlines in complex structures. 
-- The input mesh contains polygons with more than three edges. When UE imports the mesh, all polygons will be converted to triangles, which may result in inconsistencies with Houdini. Solutions:  
-    - Use the `Divide` node to convert to triangles before processing the mesh.
+The following reasons may all cause incorrect extrusion direction of the outline:
+- Mesh data issue:
+    1. Incorrect or missing normals
+    2. Incorrect or missing UV
+    3. The UV area of a face is 0
+- Mesh topology issue:
+    1. The length of a edge is 0
+    2. The area of a face is 0
+    3. Polygons with more than 4 edges
+    4. Vertices with coincident positions
+    5. More than 2 polygons share the same edge
+    6. When multiple layers of meshes are close together, if the outline width exceeds the gap between the meshes, it will cause clipping  
+    7. Single-sided mesh, the outline will inevitably break at the junction of the front and back faces
+
+Some suggestions:
+1. Before exporting the model, carefully confirm whether the data is correct and whether there are any illegal topologies  
+    1. You can check all geometric attributes in the Geometry Spreadsheet panel in Houdini  
+    2. Ensure that the `mooa_dataInit` node is used in Houdini  
+    3. Houdini's `Clean/PolyDoctor` node can quickly check and repair illegal topology  
+2. Carefully inspect the mesh near the vertices where the outline is incorrect
+3. Avoid adding outlines to single-sided meshes
+    1. Use Inner Outline instead of Outer Outline
+    2. If you must use Outer Outlines, make sure the width at the junction of the front and back sides is 0  
+4. Avoid adding Outer Outlines to complex multi-layered meshes that are very close together
+    1. Use Inner Outline instead of Outer Outline
+    2. Reduce width
+
 ##### Alembic
 
 Although Houdini can export multiple UV channels through `Additional UV Attributes` when exporting Alembic, **UE does not support multiple UV channels when importing Alembic as Geometry Cache**.  
