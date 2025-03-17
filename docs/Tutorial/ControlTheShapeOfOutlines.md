@@ -29,11 +29,40 @@ sidebar_position: 12
 
 MooaToon实现了GUILTY GEAR的[分享](https://www.4gamer.net/games/216/G021678/20140703095/index_2.html)中提到的***外描边***和***内描边***:
 
-### - 外描边
+## - 外描边
 
-外描边指描边在模型的外部, 也就是上图中的"Outline"类型. 是在渲染完角色之后再渲染一次角色背面模型, 同时沿法线方向挤出. 这是最经典的也是使用最广泛的描边技术.
-
+外描边指描边在模型的外部, 也就是上图中的"Outline"类型. 是在渲染完角色之后再渲染一次角色背面模型, 同时沿法线方向挤出. 这是最经典的也是使用最广泛的描边技术.  
 此技术的缺点是挤出用的法线必须是平滑的, 否则描边在硬边处会断开. 并且描边类型单一, 细节不是很多.
+
+由于模型硬边处的法线是断开的, 直接沿着法线挤出会造成描边断开, 所以描边法线需要重新计算:
+### 烘焙描边法线方向
+
+#### - 在UE中烘焙
+
+1. 保存所有修改
+2. 在角色骨骼网格体上右键: `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
+![](assets/Pasted%20image%2020250307215258.png)
+
+#### - 在Houdini中烘焙
+
+1. 使用`mooa_bakeSmoothedNormalToUV34`节点烘焙描边法线
+2. 使用`mooa_outlinePreview`节点预览描边
+3. 确保已启用`Display Option > Optimize > Remove Backfaces`
+
+![](assets/Pasted%20image%2020250317214909.png)
+
+### 在UE中检查烘焙的数据
+
+你可以在UE中检查所有已烘焙的数据:
+1. 确保已正确设置`Outline Material`
+2. 将你的角色Actor设置到`BP_MooaLookDevTool > Character Actors`中
+3. 勾选`Show XXX`以显示对应的烘焙数据
+
+![](assets/Pasted%20image%2020250317221123.png)
+
+颜色`(RGB, 0 - 255)`代表方向`(XYZ, -1 - 1)`, 以`Show Baked Smooth Normal WS`为例, 如果烘焙的数据正确, 颜色应该显示为平滑的世界空间方向, 不应该出现硬边.
+
+### 绘制顶点色控制描边宽度
 
 GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
@@ -47,26 +76,20 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
 示例中的Unity Chan是在Houdini中绘制的顶点色:
 
+![image-20230416014146252](./assets/image-20230416014146252.png)<center>左: 调整前; 右: 调整后</center>
+
 :::tip
 
 你也可以在[*Blender*](https://www.youtube.com/watch?v=khT1Pjx9w-g)或[*Maya*](https://www.youtube.com/watch?v=rREjGwDM5AA)等DCC软件中绘制顶点色.
 
 :::
 
-#### 绘制顶点色以控制描边宽度
-
-![image-20230416014146252](./assets/image-20230416014146252.png)<center>左: 调整前; 右: 调整后</center>
-
-##### 在UE中绘制
+#### - 在UE中绘制
 
 你可以直接[在UE中绘制顶点色](https://dev.epicgames.com/documentation/en-us/unreal-engine/paint-vertex-colors-tool-in-unreal-engine), 并实时预览结果:
 ![](assets/Pasted%20image%2020250316233809.png)
 
-##### 在Houdini中绘制
-
-经过[之前的教程](ControlTheShapeOfShadows#--houdini法线传递)你应该熟悉使用Houdini烘焙顶点数据的流程了.
-
-要为你自己的模型添加宽度可控的描边:
+#### - 在Houdini中绘制
 
 1. 选择并启用`attributePaint_face_vertexColor_alpha`节点
 2. 点击`Reset All Changes`
@@ -81,15 +104,13 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
 7. 绘制完成后使用`OUTPUT_FBX`或`OUTPUT_OBJ`节点导出模型, 并导入UE.
 
-按照[之前的教程](ImportANewCharacter#描边设置)设置描边.
-
 然后描边材质中启用`Use Vertex Color A as Outline Width`, 你就能看到修改后的结果:
 
 ![image-20230416043932387](./assets/image-20230416043932387.png)
 
-#### 常见问题
+### 常见问题
 
-##### 错误的描边形状
+#### 错误的描边形状
 
 这种描边的原理是将网格向外挤出, 然后仅渲染其背面作为描边. 由于挤出方向是最后计算的, 在建模过程中可能难以发现问题.  
 
@@ -112,21 +133,22 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 	1. 你可以在Houdini的Geometry Spreadsheet面板中检查所有几何属性
 	2. 确保在Houdini中使用了`mooa_dataInit`节点
 	3. Houdini的`Clean/PolyDoctor`节点可以快速检查并修复非法拓扑
-2. 仔细检查描边出错的顶点附近的网格
-3. 避免给单面网格添加外描边
+2. 在UE中使用`BP_MooaLookDevTool`检查烘焙的数据
+3. 仔细检查描边出错的顶点附近的网格
+4. 避免给单面网格添加外描边
 	1. 使用内描边替代外描边
 	2. 如果一定要使用外描边, 务必确保正反面交界处的宽度为0
-4. 避免给距离很近的复杂多层网格添加外描边
+5. 避免给距离很近的复杂多层网格添加外描边
 	1. 使用内描边替代外描边
 	2. 降低宽度
 
-##### Alembic
+#### Alembic
 
 虽然Houdini在导出Alembic时可以通过`Additional UV Attributes`导出多个UV通道, 但是**UE导入Alembic为Geometry Cache时不支持多个UV通道**.
 
 由于Alembic通常只用于离线生产或过场动画, 所以你可以连同`mooa_outlinePreview`节点生成的描边网格一起导出到UE. 并且要确保导入设置中的`Compressed Position Precision`足够小.
 
-### - 内描边
+## - 内描边
 
 与外描边相对, 内描边通常直接画在贴图上. 内描边和外描边相互配合可以实现很漂亮的描边效果.
 
@@ -134,7 +156,7 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
 这些方法可以在不增加贴图分辨率的同时减少模糊和锯齿:
 
-#### - 本村线抗锯齿
+### - 本村线抗锯齿
 
 在GUILTY GEAR中, 本村・C・純也提出了一种叫"本村线"的方法, 通过特殊的UV布局和贴图, 可以不受分辨率限制在任何距离获得完美的内描边:
 
@@ -152,13 +174,13 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
 该方法无需依赖渲染算法即可获得高精度的内描边, 且在不同引擎和渲染器间通用, 但是美术师的工作量非常大.
 
-#### - SDF抗锯齿
+### - SDF抗锯齿
 
 还有一种[方法](https://zhuanlan.zhihu.com/p/113190695)通过将常规方法的内描边贴图转换为SDF贴图以提高精度并且宽度可控, 类似于基于SDF的高精度文字渲染.
 
 MooaToon暂不支持此方法.
 
-### - 后处理描边
+## - 后处理描边
 
 后处理描边是在屏幕空间内对深度/法线/颜色缓冲区做卷积计算得出的描边.
 
@@ -177,13 +199,13 @@ MooaToon暂不支持此方法.
 - [Post Process Hand Draw Outline](https://www.unrealengine.com/marketplace/en-US/product/post-process-hand-draw-outline)
 - [Stylized Post Process Material Pack vol.1](https://www.unrealengine.com/marketplace/en-US/product/stylized-post-process-material-pack-vol-1)
 
-### - Pencil+
+## - Pencil+
 
 [Pencil+](https://www.psoft.co.jp/jp/product/pencil/unity/)是电影行业常用的描边插件, 其代表着行业最高的品质, 可控性和易用性.
 
 但只能用于离线用途, 且目前并无UE版本.
 
-### - 其他前沿技术
+## - 其他前沿技术
 
 近几年学术界出现了一些新技术, 比如[实时的带笔触的描边](https://github.com/JiangWZW/Realtime-GPU-Contour-Curves-from-3D-Mesh), [基于神经网络的描边](https://github.com/DifanLiu/NeuralStrokes)等.
 

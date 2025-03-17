@@ -348,20 +348,31 @@ Then set the texture as Global Mask Map, now there is AO near the neck.
 
 ### Distance Field Facial Shadow 
 
-Distance Field Facial Shadow refer to directly drawing the shape of facial shadows in a specific direction as a texture, then baking multiple textures into a single SDF texture, achieving fully customizable face shadow shapes under various lighting angles.  
+Distance Field Facial Shadow refers to directly drawing the shape of facial shadows in a specific direction as a texture, then merging multiple textures into a Distance Field texture, allowing for fully customizable facial shadow shapes at various lighting angles.  
 
-First, you need to bake the mesh data and initially set up the material, following these steps:  
+First, bake the Face Forward Direction:
+#### - Baking Face Direction in UE
+
 1. Save all changes
-2. Right-click on the Skeletal Mesh `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`![](assets/Pasted%20image%2020250307220621.png)  
+2. Right-click on the Skeletal Mesh: `Scripted Asset Actions > Mooa Toon > Bake Face Forward Direction`![](assets/Pasted%20image%2020250307220621.png)  
 :::caution
 UE may crash when baking certain specific models, please save all changes in advance!  
 If a crash occurs, try baking immediately after restarting UE.
 :::
-3. Enable `Enable Feature Distance Field Facial Shadow` on the face material
-4. If the baked data is correct, you can see the face's `World Tangent` displayed as a solid color in the `Debug View`:![](assets/Pasted%20image%2020250307221502.png)
-5. You can also use the Lookdev Tool to check the baked data, where colors represent directions. For example, the +X direction is represented as `(255, 128, 128)`, and the -X direction is represented as `(0, 128, 128)`:![](assets/Pasted%20image%2020250307222333.png)
 
-Next, you need to generate an SDF map. Please refer to [this open-source project](https://github.com/akasaki1211/sdf_shadow_threshold_map). The steps are as follows:  
+#### - Baking Face Direction in Houdini
+
+Bake using the `mooa_bakeFaceForwardDirToUV23` node.
+
+#### Check Baked Data
+
+1. Check `Enable Feature Distance Field Facial Shadow` on the face material
+2. If the baked data is correct, you can see the face's `World Tangent` displayed as a solid color in the `Debug View`:![](assets/Pasted%20image%2020250307221502.png)
+3. You can also use `BP_MooaLookDevTool` to check the baked data after correctly setting up the `Outline Material`. The colors represent directions, for example, the +X direction is represented as `(255, 128, 128)`, and the -X direction is represented as `(0, 128, 128)`:![](assets/Pasted%20image%2020250307222333.png)
+
+#### Generate Distance Field Texture
+
+Next, you need to generate a Distance Field texture. Please refer to [this open-source project](https://github.com/akasaki1211/sdf_shadow_threshold_map). The steps are as follows:  
 1. Place the drawn Shadow Mask into the `MooaToon-Project\Art\DistanceFieldFacialShadowSamples\InputShadowMasks` directory:![](assets/Pasted%20image%2020250307225057.png)
 2. Return to the parent directory, drag the `InputShadowMasks` folder onto `gen.bat`:
 

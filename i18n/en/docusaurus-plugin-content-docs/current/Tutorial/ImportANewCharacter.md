@@ -75,7 +75,7 @@ In the material instance, set the `Base Color Map` and `Shadow Color Map` to the
 ## Outline Settings
 
 1. Save all changes
-2. Right-click on the character Skeleton Mesh `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature` :
+2. Right-click on the character Skeleton Mesh: `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature` :
 ![](assets/Pasted%20image%2020250307215258.png)
 :::caution
 UE may crash when baking certain specific models, please save all changes in advance!  

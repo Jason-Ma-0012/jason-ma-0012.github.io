@@ -77,7 +77,7 @@ sidebar_position: 0
 ## 描边设置
 
 1. 保存所有修改
-2. 在角色骨骼网格体上右键`Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
+2. 在角色骨骼网格体上右键: `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:
 ![](assets/Pasted%20image%2020250307215258.png)
 :::caution
 烘焙某些特定模型时UE可能会崩溃, 请提前保存所有修改!  

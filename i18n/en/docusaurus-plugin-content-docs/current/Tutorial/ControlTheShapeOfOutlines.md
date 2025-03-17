@@ -29,11 +29,38 @@ Below are some ways to implement outlines and strokes. 
 
 MooaToon implements the _** Outer Outline**_ and _**Inner Outline**_ mentioned in GUILTY GEAR's [sharing](https://www.4gamer.net/games/216/G021678/20140703095/index_2.html) :
 
-### - Outer Outline
+## - Outer Outline
 
 Outer outline refers to the outline on the outside of the model, which is the "Outline" type in the picture above. After rendering the character, the back model of the character is rendered again, and at the same time it is extruded along the normal direction. This is the most classic and also used the most widespread outline technique.  
+The disadvantage of this technique is that the normals used for extrusion must be smooth, otherwise the outline will be broken at the hard edge. Moreover, the outline type is single and there are not many details.
 
-The disadvantage of this technique is that the normals used for extrusion must be smooth, otherwise the outline will be broken at the hard edge. Moreover, the outline type is single and there are not many details.  
+
+Since the normals at the hard edges of the model are discontinuous, directly extruding along the normals would cause the outline to break. Therefore, the outline normals need to be recalculated:
+### Baking Outline Normal Direction
+
+#### - Baking in UE
+
+1. Save all changes
+2. Right-click on the character Skeleton Mesh: `Scripted Asset Actions > Mooa Toon > Bake Smoothed Normal and Curvature`:![](assets/Pasted%20image%2020250307215258.png)
+
+#### - Baking in Houdini
+
+1. Use the `mooa_bakeSmoothedNormalToUV34` node to bake the outline normals
+2. Use the `mooa_outlinePreview` node to preview the outline
+3. Ensure that `Display Option > Optimize > Remove Backfaces` is enabled
+![](assets/Pasted%20image%2020250317214909.png)
+
+### Check the Baked Data in UE
+
+You can check all the baked data in UE:
+1. Ensure that the `Outline Material` is correctly set
+2. Set your character Actor into `BP_MooaLookDevTool > Character Actors`
+3. Check `Show XXX` to display the corresponding baked data
+![](assets/Pasted%20image%2020250317221123.png)
+
+Color `(RGB, 0 - 255)` represents direction `(XYZ, -1 - 1)`. Taking `Show Baked Smooth Normal WS` as an example, if the baked data is correct, the color should display as smooth world space direction, and no hard edges should appear.  
+
+### Draw Vertex Colors to Control Outline Width
 
 GUILTY GEAR uses the vertex color as the outline width to simulate strokes locally:
 
@@ -47,51 +74,41 @@ GUILTY GEAR uses the vertex color as the outline width to simulate strokes local
 
 The Unity Chan in the example was drawn vertex colors in Houdini:  
 
-:::tip
-
-You can also draw vertex colors in DCC software such as [_Blender_](https://www.youtube.com/watch?v=khT1Pjx9w-g) or [_Maya_](https://www.youtube.com/watch?v=rREjGwDM5AA).  
-
-:::
-
-#### Draw Vertex Colors to Control Outline Width
-
 ![image-20230416014146252](./assets/image-20230416014146252.png)<center>Left: Before adjustment; Right: After adjustment</center>
 
-##### Drawing in UE
+:::tip
+You can also draw vertex colors in DCC software such as [_Blender_](https://www.youtube.com/watch?v=khT1Pjx9w-g) or [_Maya_](https://www.youtube.com/watch?v=rREjGwDM5AA).  
+:::
+
+#### Drawing in UE
 
 You can directly draw Vertex Colors in UE and preview the results in Real Time:
 ![](assets/Pasted%20image%2020250316233809.png)
 
-##### Drawing in Houdini
+#### Drawing in Houdini
 
-After the [previous tutorial](ControlTheShapeOfShadows#--houdini-normal-transfer), you should be familiar with the process of baking vertex data in Houdini.  
-
-To add width-controllable outlines to your own model: 
-
-1. Select and enable the `attributePaint_face_vertexColor_alpha` node.  
-    
+1. Select and enable the `attributePaint_face_vertexColor_alpha` node
 2. Click `Reset All Changes`
 3. Select the Group to draw 
-4. Choose the Lighting Mode you think is appropriate
+4. Choose the lighting mode that you find suitable
 
 ![image-20240814001004788](./assets/image-20240814001004788.png)
 
-5. Press Enter to enter drawing mode, follow the instructions in the upper left corner to draw Alpha on the model, pay attention to the value of FG: ![image-20240814001600880](./assets/image-20240814001600880.png)
+5. Press Enter to enter drawing mode, follow the instructions in the top-left corner to draw Alpha on the model, and pay attention to the FG value:
+![image-20240814001600880](./assets/image-20240814001600880.png)
 6. In the bottom-right corner display settings, make sure enabled: `Optimize > Remove Backfaces`: ![](assets/Pasted%20image%2020250302175943.png)
 7. Display the `mooa_outlinePreview` node, select the `attributePaint_face_vertexColor_alpha` node, then enable material display to draw and preview the stroke in real time:![image-20240814003003573](./assets/image-20240814003003573.png)<Video src={require("./assets/bandicam 2024-08-14 00-23-01-549.webm").default}/>
 
-7. After drawing is complete, export the model using the `OUTPUT_FBX` or `OUTPUT_OBJ` node, and import it into UE.
-
-Set the stroke according to the [previous tutorial](ImportANewCharacter#outline-settings).  
+8. After drawing is complete, export the model using the `OUTPUT_FBX` or `OUTPUT_OBJ` node, and import it into UE.
 
 Then enable `Use Vertex Color A as Outline Width` in the outline material, and you will see the modified result:
 
 ![image-20230416043932387](./assets/image-20230416043932387.png)
 
 
-#### FAQs
+### FAQs
 
-##### Incorrect Outline Shape
+#### Incorrect Outline Shape
 
 The principle of this outline is to extrude the mesh outward and then render only its backside as the outline. Since the extrusion direction is calculated last, it may be difficult to detect issues during the modeling process.  
 
@@ -114,21 +131,22 @@ Some suggestions:
     1. You can check all geometric attributes in the Geometry Spreadsheet panel in Houdini  
     2. Ensure that the `mooa_dataInit` node is used in Houdini  
     3. Houdini's `Clean/PolyDoctor` node can quickly check and repair illegal topology  
-2. Carefully inspect the mesh near the vertices where the outline is incorrect
-3. Avoid adding outlines to single-sided meshes
+2. In UE, use `BP_MooaLookDevTool` to check the baked data
+3. Carefully inspect the mesh near the vertices where the outline is incorrect
+4. Avoid adding outlines to single-sided meshes
     1. Use Inner Outline instead of Outer Outline
     2. If you must use Outer Outlines, make sure the width at the junction of the front and back sides is 0  
-4. Avoid adding Outer Outlines to complex multi-layered meshes that are very close together
+5. Avoid adding Outer Outlines to complex multi-layered meshes that are very close together
     1. Use Inner Outline instead of Outer Outline
     2. Reduce width
 
-##### Alembic
+#### Alembic
 
 Although Houdini can export multiple UV channels through `Additional UV Attributes` when exporting Alembic, **UE does not support multiple UV channels when importing Alembic as Geometry Cache**.  
 
 Since Alembic is usually only used for offline production or cutscenes, you can export the outline mesh generated by the `mooa_outlinePreview` node to UE. Also, ensure that the `Compressed Position Precision` in the import settings is small enough.
 
-### - Inner Outline 
+## - Inner Outline 
 
 In contrast to outer outline, inner outline is usually directly painted on the texture. Inner and outer outline can complement each other to achieve beautiful outline effects.  
 
@@ -136,7 +154,7 @@ The advantage of this method is that it is simple and controllable, but due to t
 
 These methods can reduce blurring and aliasing without increasing the texture resolution:
 
-#### - Homura Style Line
+### - Homura Style Line
 
 In GUILTY GEAR, Honmura C. Junya (本村・C・純也) proposed a method called the "Homura Style Line" which can achieve perfect inner outlines at any distance without resolution limitations through special UV layout and textures:
 
@@ -154,13 +172,13 @@ In GUILTY GEAR, Honmura C. Junya (本村・C・純也) proposed a method called 
 
 This method can achieve high-precision inner outlines without relying on rendering algorithms, is compatible across different engines and renderers, but requires a significant amount of work from artists.
 
-#### - SDF Anti-Aliasing 
+### - SDF Anti-Aliasing 
 
 Another [method](https://zhuanlan.zhihu.com/p/113190695) is to convert the inner outline texture of the conventional method into an SDF texture to improve accuracy and width control, similar to high-precision text rendering based on SDF.  
 
 MooaToon does not currently support this method. 
 
-### - Post-Processing Outlines 
+## - Post-Processing Outlines 
 
 The post-processing outlines is calculated by convolving the Depth/Normal/Color Buffer in screen space.
 
@@ -179,13 +197,13 @@ Currently, you can directly obtain post-processing outlines through plugins, suc
 - [Post Process Hand Draw Outline](https://www.unrealengine.com/marketplace/en-US/product/post-process-hand-draw-outline)
 - [Stylized Post Process Material Pack vol.1](https://www.unrealengine.com/marketplace/en-US/product/stylized-post-process-material-pack-vol-1)
 
-### - Pencil+
+## - Pencil+
 
 [Pencil+](https://www.psoft.co.jp/jp/product/pencil/unity/) is a commonly used outline plugin in the film industry, representing the highest quality, controllability, and ease of use in the industry.  
 
 However, it can only be used for offline purposes and currently has no UE version. 
 
-### - Other Cutting-Edge Technologies 
+## - Other Cutting-Edge Technologies 
 
 In recent years, some new technologies have emerged in academia, such as [real-time stroke with brush](https://github.com/JiangWZW/Realtime-GPU-Contour-Curves-from-3D-Mesh), [neural network-based stroke](https://github.com/DifanLiu/NeuralStrokes), etc.  
 
