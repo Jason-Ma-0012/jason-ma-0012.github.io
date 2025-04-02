@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0d32a6fd60a3f149",
+            "id": "a58a6875cb4d7fdc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
+              "title": "ControlLightingOfCharactersAndScenes"
             }
           },
           {
-            "id": "032a4eba07b5b65a",
+            "id": "c4c4735ff32ab84a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ControlTheShapeOfShadows"
+              "title": "ControlLightingOfCharactersAndScenes"
             }
           }
         ],
@@ -48,7 +48,6 @@
       {
         "id": "8b9c7ea6064a5c74",
         "type": "tabs",
-        "dimension": 70.62461348175634,
         "children": [
           {
             "id": "ed4408bcbd333312",
@@ -57,7 +56,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -69,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cau",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,28 +90,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "d4078d0f51621a87",
-        "type": "tabs",
-        "dimension": 29.375386518243662,
-        "children": [
-          {
-            "id": "7e045d35a42b0f2b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of ControlTheShapeOfShadows"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -126,6 +103,21 @@
         "id": "70ba1d677fa8b980",
         "type": "tabs",
         "children": [
+          {
+            "id": "7e045d35a42b0f2b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ControlLightingOfCharactersAndScenes"
+            }
+          },
           {
             "id": "12393d954d2bdf55",
             "type": "leaf",
@@ -182,13 +174,11 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 404.5,
-    "collapsed": true
+    "width": 283.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,12 +192,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "032a4eba07b5b65a",
+  "active": "c4c4735ff32ab84a",
   "lastOpenFiles": [
+    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "docs/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
     "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ControlScreenSpaceRimlights.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfShadows.md",
+    "Untitled.md",
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlTheShapeOfOutlines.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ImportANewCharacter.md",
     "docs/Tutorial/ImportANewCharacter.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250317221123.png",
@@ -217,7 +210,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/assets/Pasted image 20250316233809.png",
     "i18n/en/docusaurus-plugin-content-docs/current/Reference/BuiltinPlugins.md",
     "docs/Tutorial/assets/Pasted image 20250316233809.png",
-    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "docs/Reference/BuiltinPlugins.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "www.sidefx.com/unreal.md",
@@ -240,7 +232,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Reference/MeshImportSettings.md",
     "docs/Tutorial/CreateComplexMaterialsUsingMaterialLayer.md",
     "docs/Tutorial/ControlLightShadowColorTransition.md",
-    "docs/Tutorial/ControlScreenSpaceRimlights.md",
     "i18n/en/docusaurus-plugin-content-docs/current/MigrateToNewVersion/5.4.md",
     "docs/Tutorial/README.md",
     "i18n/en/docusaurus-plugin-content-docs/current/GettingStarted/UseWithOtherPlugins.md",

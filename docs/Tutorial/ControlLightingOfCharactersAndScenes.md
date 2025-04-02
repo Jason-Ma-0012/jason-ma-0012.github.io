@@ -147,6 +147,12 @@ MooaToon在原有的`Lighting Channels`下方新增了`Mooa Cast Shadows to Ligh
 ![](assets/Pasted%20image%2020241130163804.png)
 ![](assets/Pasted%20image%2020241130163822.png)
 
+:::caution
+
+- 启用"光线追踪阴影"时该功能无效.  
+- 静态网格体的"影响距离场光照"与该功能冲突.  
+
+:::
 ## 角色光照的最佳实践
 
 GI / Ramp / Shadow Color都对角色的背光面颜色有很大影响, 所以如果没有明确的光照规范就很容易陷入混乱.   

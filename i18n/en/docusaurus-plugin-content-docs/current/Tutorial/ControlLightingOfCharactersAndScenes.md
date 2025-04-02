@@ -152,6 +152,13 @@ Shadows are cast onto all Lighting Channels by default, allowing for the separat
 ![](./assets/Pasted%20image%2020241130163804.png)
 ![](./assets/Pasted%20image%2020241130163822.png)
 
+:::caution
+
+- This feature is invalid when "Ray Tracing Shadow" is enabled.  
+- The "Affect Distance Field Lighting" of static meshes conflicts with this feature.
+
+:::
+
 ## Best Practices for Character Lighting
 
 GI / Ramp / Shadow Color all have a significant impact on the color of the character's backlit side, so it can easily lead to confusion if there are no clear lighting guidelines.  
