@@ -148,6 +148,9 @@ GUILTY GEAR中使用顶点色作为描边宽度, 从而在局部模拟笔触:
 
 由于Alembic通常只用于离线生产或过场动画, 所以你可以连同`mooa_outlinePreview`节点生成的描边网格一起导出到UE. 并且要确保导入设置中的`Compressed Position Precision`足够小.
 
+#### Morph Target
+
+如果Morph Target不影响描边, 则需要将`Project Settings > Rendering > Default Skin Cache Behavior`设为`Inclusive`.
 ## - 内描边
 
 与外描边相对, 内描边通常直接画在贴图上. 内描边和外描边相互配合可以实现很漂亮的描边效果.
