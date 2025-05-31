@@ -104,6 +104,14 @@ A通道用于区分亮面与暗面, 也就是混合Base Color与Shadow Color, 1�
 | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
 | ![](assets/Pasted%20image%2020250215192659.png) | ![](assets/Pasted%20image%2020250215192550.png) | ![](assets/Pasted%20image%2020250215192411.png) |
 
+### r.Mooa.DiffuseColorRamp.EnablePostRampMaterialAO
+
+与`r.Mooa.DiffuseColorRamp.EnablePostRampShadow`类似, 启用后材质AO将不会影响Diffuse Color Ramp的采样, 而是与Diffuse Color Ramp的A通道一起影响Diffuse Color与Shadow Color的混合:
+
+| Diffuse Color Ramp                              | AO Value                                        | EnablePostRampMaterialAO = 0 <br>Shadow Color = Black | EnablePostRampMaterialAO = 1 <br>Shadow Color = Black |
+| ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| ![](assets/Pasted%20image%2020250531170132.png) | ![](assets/Pasted%20image%2020250531165840.png) | ![](assets/Pasted%20image%2020250531165904.png)       | ![](assets/Pasted%20image%2020250531165840.png)       |
+
 ### r.Mooa.DiffuseColorRamp.UVOffsetMaxRange
 
 UV Offset的最大范围. 注意: 受限于GBuffer位深有限, 如果该值太大则容易导致精度不足.

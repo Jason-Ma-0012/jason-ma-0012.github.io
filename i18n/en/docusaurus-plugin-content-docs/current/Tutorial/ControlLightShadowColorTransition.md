@@ -104,6 +104,14 @@ By setting `r.Mooa.DiffuseColorRamp.EnablePostRampShadow` to 1, shadows can be
 | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
 | ![](assets/Pasted%20image%2020250215192659.png) | ![](assets/Pasted%20image%2020250215192550.png) | ![](assets/Pasted%20image%2020250215192411.png) |
 
+### r.Mooa.DiffuseColorRamp.EnablePostRampMaterialAO
+
+Similar to `r.Mooa.DiffuseColorRamp.EnablePostRampShadow`, when enabled, Material AO will not affect the sampling of Diffuse Color Ramp, but instead, together with the A channel of Diffuse Color Ramp, influence the blending of Diffuse Color and Shadow Color:
+
+| Diffuse Color Ramp                              | AO Value                                        | EnablePostRampMaterialAO = 0 <br>Shadow Color = Black | EnablePostRampMaterialAO = 1 <br>Shadow Color = Black |
+| ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| ![](assets/Pasted%20image%2020250531170132.png) | ![](assets/Pasted%20image%2020250531165840.png) | ![](assets/Pasted%20image%2020250531165904.png)       | ![](assets/Pasted%20image%2020250531165840.png)       |
+
 ### r.Mooa.DiffuseColorRamp.UVOffsetMaxRange
 
 Maximum range of UV Offset. Note: Limited by the GBuffer bit depth, if this value is too large, it may lead to insufficient precision.
