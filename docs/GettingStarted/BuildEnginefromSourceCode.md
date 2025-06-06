@@ -162,3 +162,7 @@ sidebar_position: 0
 
 1. 安装最新的[.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 2. [下载工具](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view)并修复DirectX和C++运行库
+
+#### 预编译头文件(PCH)相关错误
+
+请根据[官方文档](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/)增加虚拟内存.

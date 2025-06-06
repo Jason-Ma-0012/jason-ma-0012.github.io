@@ -159,3 +159,6 @@ Compilation errors can also be caused by Windows missing some libraries, try:
 1. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 2. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
 
+#### Precompiled Header (PCH) Issues
+
+Please increase the virtual memory according to the [official documentation](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/).
