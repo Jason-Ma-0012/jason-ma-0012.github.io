@@ -5,7 +5,7 @@ description: 开始使用
 sidebar_position: 0
 ---
 :::tip
-NEW: 5.5版本现已正式推出!
+NEW: 5.6版本现已正式推出!
 :::
 
 ## 体验可执行的Demo

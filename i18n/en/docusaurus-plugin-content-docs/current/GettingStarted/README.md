@@ -5,7 +5,7 @@ description: Getting Started
 sidebar_position: 0
 ---
 :::tip
-NEW: Version 5.5 is now available!
+NEW: Version 5.6 is now available!
 :::
 
 ## Experience an executable demo

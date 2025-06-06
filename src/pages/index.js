@@ -42,7 +42,7 @@ function HomepageHeader() {
         </p>
         <p className="hero_desc" style={style_title}>
           <Translate id='homepage.news'>
-            NEW: 5.5版本现已正式推出!
+            NEW: 5.6版本现已正式推出!
           </Translate>
         </p>
         <div className={styles.buttons}>
