@@ -22,7 +22,7 @@ Please copy and not change the MooaToon file as much as possible, otherwise conf
 
 Lumen is used by default for global illumination related functions, other methods have not been tested yet.
 
-### Ray  Tracing
+### Ray Tracing
 
 Shadow-related features must have `Ray Tracing Shadow` and `Hardware Ray Tracing` enabled.
 
@@ -74,7 +74,7 @@ The floor of the material preview window is black when Ray Tracing Skylight is e
 
 OIT (Order Independent Transparency, which provides support for correct rendering of multiple layers of translucency) causes translucent Blending Mode Add not to work.
 
-## Material editing
+## Material Editing
 
 ### Crash
 
@@ -121,6 +121,10 @@ If the current material instance has parameters that are covered by the blueprin
 
 3. Save and restart Epic Launcher
 
-### Document image error
+### Can not find Fab
+
+It is known that Fab may not be available in versions 5.4 and earlier. It is recommended to install the official version of UE, download assets via Fab, and then copy them to the MooaToon project.
+
+### Document image errors
 
 Due to a bug in Docusaurus, the image loading of this document page may be wrong after refreshing, and it can be restored by switching to other document pages and then switching back.

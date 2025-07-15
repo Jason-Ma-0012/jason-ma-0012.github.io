@@ -75,7 +75,6 @@ const CooperationProjectList = [
         })}
       </>
     ),
-    link: 'https://www.artstation.com/artwork/LRJmDw',
   },
   {
     title: 'Project L - Sevika Fan Art',
@@ -111,7 +110,20 @@ const CooperationProjectList = [
         @reng reng
       </>
     ),
-    link: 'https://www.artstation.com/artwork/LRJmDw',
+  },
+  {
+    title: "[ENG LYRICS] ISEGYE IDOL (이세계아이돌) - 'STARGAZERS' Official MV",
+    imagePath: '',
+    videoPath: '',
+    onlineVideoPath: "https://www.youtube.com/embed/nz2_gNQDiVM",
+    mediaWidth: '8',
+    mediaHeight: '500',
+    textWidth: '4',
+    description: (
+      <>
+        @waktaverse
+      </>
+    ),
   },
 ];
 

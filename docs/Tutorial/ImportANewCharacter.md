@@ -83,6 +83,9 @@ sidebar_position: 0
 烘焙某些特定模型时UE可能会崩溃, 请提前保存所有修改!  
 如果发生崩溃, 请尝试在重启UE后立即烘焙.
 :::
+:::info
+如果你在自己的项目中使用MooaToon, 请确保`Project Settings > Engine > General Settings > Maximum Loop Iteration Count`足够大, 否则在处理三角形较多的模型时可能会报错.
+:::
 在内容浏览器中创建用于描边的材质实例, 父材质选择`MI_Outline`, 并设置以下参数:
 ![](assets/Pasted%20image%2020250307215455.png)
 

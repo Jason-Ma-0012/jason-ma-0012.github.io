@@ -81,6 +81,9 @@ In the material instance, set the `Base Color Map` and `Shadow Color Map` to the
 UE may crash when baking certain specific models, please save all changes in advance!  
 If a crash occurs, try baking immediately after restarting UE.
 :::
+:::info
+If you are using MooaToon in your own project, make sure `Project Settings > Engine > General Settings > Maximum Loop Iteration Count` is large enough, otherwise it may report an error when processing models with many triangles.
+:::
 Create a Material Instance for Outline in the Content Browser, select the Parent Material as `MI_Outline`, and set the following parameters:
 ![](assets/Pasted%20image%2020250307215455.png)
 
