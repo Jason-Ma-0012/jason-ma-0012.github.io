@@ -5,13 +5,13 @@ sidebar_position: 20
 ---
 ## Preface
 
-**Simply put, you can use MooaToon for any non-commercial purposes. However, before engaging in commercial activities, you must obtain a commercial license.**
+**In short, you may use MooaToon for any non-commercial purpose. But before engaging in commercial activities, you must obtain a commercial license.**
 
-If you need to obtain a commercial license, or have any other questions, please inquire via email: jasonma@mooatoon.com
+For commercial licensing or other inquiries, please contact us by email: jasonma@mooatoon.com
 
 ## Main Text
 
-Here is a user license agreement (referred to as the "Agreement"), the agreement may be updated at any time, please [Watch](https://github.com/JasonMa0012/MooaToon) this repository for update notifications. In case of conflicts between different language versions of the agreement, the Chinese version shall prevail.
+The following is a User License Agreement (hereinafter referred to as the "Agreement"). The Agreement may be updated at any time. Please [Watch](https://github.com/JasonMa0012/MooaToon) this repository for update notifications. If different language versions of the Agreement conflict, the Chinese version shall prevail.
 
 If you continue to use MooaToon, it is deemed that you have understood and agreed to this agreement. If you use and violate the terms of this agreement, we reserve the right to hold you accountable at any time.
 
@@ -48,9 +48,18 @@ _**Excluding indirect monetary gains, or indirect use of MooaToon**_, for exampl
 - Using MooaToon to render images or videos, but not directly benefiting from it, and not constituting a primary component of a commercial work  
     
 
-In particular, _**if the purpose of your work is to promote MooaToon, you do not need to obtain a commercial license!**_ For example:  
+Specifically, _**if your work's purpose is to promote MooaToon, you do not need to obtain a commercial license!**_ For example:  
 
 - Selling tutorials on how to use MooaToon
+
+For some situations involving **multiple parties**, which party needs to purchase a commercial license is determined by **the copyright of the work**, for example:  
+
+- A company pays an individual to make a video, and the video is published on the individual's account.  
+    In this case the work's copyright belongs to the individual, and the individual needs to purchase the commercial license.
+- A company pays an individual to make a video (or the individual is an employee of the company), and the video is published on the company's account.  
+    In this case the copyright of the work belongs to the company, and the company needs to purchase a commercial license.
+- For special situations such as copyright transfer or multiple parties sharing copyright,  
+    the party with the largest income and scale needs to purchase a commercial license.
 
 :::
 
