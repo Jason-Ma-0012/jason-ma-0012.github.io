@@ -2,9 +2,9 @@
 id: MeshImportSettings
 title: Mesh Import Settings
 description: Mesh Import Settings
-sidebar_position: 30
+sidebar_position: 40
 ---
-
+The following are the Mesh Import Settings related to MooaToon:
 ### Recompute Normals/Tangents
 If you use an external DCC to bake model data, these two options need to be disabled. Otherwise, it may cause the baked data to be inaccurate.
 

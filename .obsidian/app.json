@@ -12,5 +12,6 @@
   "strictLineBreaks": true,
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "focusNewTab": false
 }

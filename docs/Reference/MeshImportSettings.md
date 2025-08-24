@@ -2,8 +2,9 @@
 id: MeshImportSettings
 title: 网格导入设置
 description: 网格导入设置
-sidebar_position: 30
+sidebar_position: 40
 ---
+以下为与MooaToon相关的网格导入设置: 
 
 ### Recompute Normals/Tangents
 如果你使用外部DCC烘焙模型数据, 那么这两个选项需要禁用, 否则可能导致烘焙的数据不准确.
