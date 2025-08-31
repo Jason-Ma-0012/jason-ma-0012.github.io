@@ -66,7 +66,7 @@ If the compilation fails, you need to recompile these plugins using the source c
 
 :::
 
-### Inspection item settings 
+### Check Project Settings
 
 Finally, you need to check whether the current [Project Settings](../Reference/ProjectAndEditorSettings) and [Console Variables](../Reference/ConsoleVariables) conflict with MooaToon, incorrect settings may cause some features to not work properly.  
 
