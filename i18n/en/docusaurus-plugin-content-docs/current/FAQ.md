@@ -6,65 +6,65 @@ sidebar_position: 30
 
 ## Limitations
 ### Platform Limitations
-  
-Mobile platforms are not supported at this time, XR and console platforms should theoretically be supported but have not yet been tested.
+
+Mobile platforms are not currently supported. XR and console platforms should theoretically be supported but have not been tested yet.
 
 ### Substrate
 
-Substrate is not supported.
+Substrate is not currently supported.
 
-### File management
+### File Management
 
-Please copy and not change the MooaToon file as much as possible, otherwise conflicts may arise due to the update.
+Please copy rather than modify MooaToon files whenever possible to avoid potential conflicts during updates.
 
 
 ### Global Illumination
 
-Lumen is used by default for global illumination related functions, other methods have not been tested yet.
+Global Illumination-related features use Lumen by default. Other methods have not been tested yet.
 
 ### Ray Tracing
 
-Shadow-related features must have `Ray Tracing Shadow` and `Hardware Ray Tracing` enabled.
+Shadow-related features require both `Ray Tracing Shadow` and `Hardware Ray Tracing` to be enabled.
 
-The ability to control Self-Shadow when Ray Tracing is not enabled will be available in a future version.
+The ability to control Self-Shadows without Ray Tracing will be available in a future version.
 
 ### Translucent
 
-Translucent Rimlight requires that `High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections)` be enabled in `Post Processing Volume` in order to get the depth of the translucent object.
+Translucent Rimlight requires `High Quality Translucency Reflections (Lumen Front Layer Translucency Reflections)` to be enabled in the `Post Processing Volume` to obtain the depth of translucent objects.
 
 ## Ray Tracing
 
-### Character shadow disappears
+### Character Shadow Disappears
 
 (Epic 5.1+)
 
-Sometimes the character's Ray Tracing Shadow disappears, runs the game or Hide / Show the character and then shows it again.
+Sometimes the character's Ray Traced Shadow may disappear. Running the game or hiding/showing the character will restore the shadow.
 
 ### Strange Shadows in the Scene
 
-When two triangles are very close to each other, Ray Tracing Shadows can be problematic:
+When two triangles are very close together, Ray Traced Shadows may exhibit issues:
 
 ![](assets/Pasted%20image%2020240831154520.png)
 
-The problem can be solved with the following console command:
+This can be resolved using the following console command:
 
 ```
 r.RayTracing.Shadows.AvoidSelfIntersectionTraceDistance 1
 ```
 
-You can adjust this value to suit your project.
+You can adjust this value according to your project's needs.
 
-### Outline conflicts with shadow functionality for static mesh characters
+### Outline Conflicts with Shadow Functionality for Static Mesh Characters
 
 (Epic 5.0-5.1)
 
-This is because Ray Tracing Shadow incorrectly calls the Hit Shader of Outline Material, and the related functions of Ray Tracing Shadow in Toon Material will be covered by the Outline.
+This occurs because Ray Tracing Shadow incorrectly calls the Hit Shader of the Outline Material, causing the Ray Tracing Shadow functionality in Toon Material to be overridden by the Outline.
 
-### Material preview
+### Material Preview
 
 (5.0-5.1)
 
-The floor of the material preview window is black when Ray Tracing Skylight is enabled.
+The floor in the material preview window appears black when Ray Tracing Skylight is enabled.
 
 ## Translucent
 
@@ -72,41 +72,41 @@ The floor of the material preview window is black when Ray Tracing Skylight is e
 
 (Epic 5.0-5.1)
 
-OIT (Order Independent Transparency, which provides support for correct rendering of multiple layers of translucency) causes translucent Blending Mode Add not to work.
+OIT (Order Independent Transparency, which provides correct rendering support for multiple layers of translucency) causes the Translucent Blending Mode Add to stop working.
 
 ## Material Editing
 
-### Crash
+### Crashes
 
 (Epic 5.0+)
 
-Occasionally it will crash when adjusting layer parameters, remember to save frequently when using it.
+The editor may occasionally crash when adjusting layer parameters. Remember to save your work frequently while making changes.
 
 
 
-### The parameter description of Layer Parameters disappears
+### Layer Parameter Descriptions Disappear
 
 (Epic 5.0+)
 
 ![image-20230223225457143](./assets/image-20230223225457143.png)![image-20230223225748583](./assets/image-20230223225748583.png)
 
-The description of Material Layer parameters often disappears, please check the full parameter description on the Parameters Panel after opening the Material Editor:
+Material Layer parameter descriptions often disappear. To view the complete parameter descriptions, open the Material Editor and check the Parameters Panel:
 
 ![image-20230223225635072](./assets/image-20230223225635072.png)
 
-### Modifications to Curve Atlas Parameters will not take effect immediately
+### Curve Atlas Parameter Changes Not Immediately Applied
 
 (Epic 5.0+)
 
-If the current material instance has parameters that are covered by the blueprint, manually modifying the curve atlas parameters will not take effect immediately, and you need to toggle the switch in front of the parameters.
+When the current material instance has parameters overridden by Blueprint, manual changes to curve atlas parameters will not take effect immediately. You need to toggle the switch in front of the parameters to apply the changes.
 
 ## Others
 
-### Can not find MooaToon Project in Epic Launcher
+### Cannot Find MooaToon Project in Epic Launcher
 
-1. Open path in Explorer `%LOCALAPPDATA%\EpicGamesLauncher\Saved\Config\Windows\GameUserSettings.ini`
+1. Open the following path in Explorer: `%LOCALAPPDATA%\EpicGamesLauncher\Saved\Config\Windows\GameUserSettings.ini`
 
-2. Add or modify the value of `CreatedProjectPaths` under `[Launcher]` to be the parent path of the Project, such as
+2. Under the `[Launcher]` section, add or modify the `CreatedProjectPaths` value to point to the parent directory of your Project, for example:
 
    ```
    [Launcher]
@@ -119,12 +119,12 @@ If the current material instance has parameters that are covered by the blueprin
    CreatedProjectPaths=E:\MooaToon
    ```
 
-3. Save and restart Epic Launcher
+3. Save the file and restart the Epic Launcher
 
-### Can not find Fab
+### Cannot Find Fab
 
-It is known that Fab may not be available in versions 5.4 and earlier. It is recommended to install the official version of UE, download assets via Fab, and then copy them to the MooaToon project.
+Fab may not be available in versions 5.4 and earlier. It is recommended to install the official UE version, download assets through Fab, and then copy them to your MooaToon project.
 
-### Document image errors
+### Document Image Loading Issues
 
-Due to a bug in Docusaurus, the image loading of this document page may be wrong after refreshing, and it can be restored by switching to other document pages and then switching back.
+Due to a Docusaurus bug, images on this documentation page may fail to load after refreshing. To resolve this, navigate to another documentation page and then return to this page.

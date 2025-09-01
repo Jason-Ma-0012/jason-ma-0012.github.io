@@ -5,160 +5,199 @@ description: Build Engine from Source Code
 sidebar_position: 0
 ---
 
-Depending on your network bandwidth and CPU performance, the whole installation process will take a few hours, please do not be impatient, if there are unsolvable problems in the process, you can submit [Issues](https://github.com/JasonMa0012/MooaToon/issues/new).
+The complete installation process may take several hours, depending on your network bandwidth and CPU performance. If you encounter any issues that you cannot resolve, please submit them to our [Issues](https://github.com/JasonMa0012/MooaToon/issues/new) page.
 
-Please choose the tutorial that corresponds to your experience:
-## - Regular users
+Choose the appropriate guide based on your experience level:
 
-### Link accounts
+## - Regular Users
 
-Before you begin, you'll need an [**Epic**](https://www.unrealengine.com/) account and a [**Github**](https://github.com/) account, if not, go to Sign Up. And then:
+### Account Setup
 
-1.  Then go to that [link](https://www.unrealengine.com/zh-CN/blog/updated-authentication-process-for-connecting-epic-github-accounts) and follow the instructions in this article to link your Github account to your Epic account.
-2.  Go back to Github, head to Your Organizations, and accept Epic's invitation to join the organization:
+Before you begin, you'll need:
+- An [**Epic Games**](https://www.unrealengine.com/) account
+- A [**GitHub**](https://github.com/) account
+
+If you don't have either account, please register first. Then:
+
+1. Visit the [Epic Games documentation](https://www.unrealengine.com/en-US/blog/updated-authentication-process-for-connecting-epic-github-accounts) and follow the instructions to link your GitHub account to your Epic Games account.
+2. Return to GitHub, navigate to "Your Organizations", and accept Epic's invitation to join their organization:
 
    | ![image-20230211012706604](./assets/image-20230211012706604.png) | ![image-20230211012747318](./assets/image-20230211012747318.png) |
    | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 :::caution
-
-- If you can't find EpicGames in your organization after accepting the invitation, try logging back into your GitHub account.
-- Epic has recently restructured its Github organization, so if you find that the Github project link is inaccessible, check to see if your Github account has been successfully added to the EpicGames organization and try to re-link your account with it. 
+Important Notes:
+- If you cannot find EpicGames in your organizations after accepting the invitation, try signing out and back into your GitHub account.
+- Epic Games has recently restructured their GitHub organization. If you encounter issues accessing GitHub project links, verify that your GitHub account is properly joined to the EpicGames organization and try re-linking your accounts if necessary.
 :::
 
-### Download the MooaToon installation tool
+### Download MooaToon Installation Tool
 
-[Download](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) the Zip of the installation tool, unzip to the root directory of the hard disk, such as `D:\MooaToon` (the purpose is to avoid compilation errors caused by too long path), and it is highly recommended to **reserve at least 200GB of SSD hard disk space**.
+1. [Download](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) the installation tool ZIP file
+2. Extract it to a root directory on your hard drive (e.g., `D:\MooaToon`)
+   - This helps avoid compilation errors caused by long file paths
+   - **Important:** Ensure you have at least 500GB of free SSD space
 
-Then you can start the installation process.
+### Automated Installation Process
 
-### Install automatically with tools
-
-In turn:
+Follow these steps in order:
 
 1. Run `_1_1_Install_Git.bat` to install Git with default settings
 2. Run `_1_2_Install_VisualStudio.bat` to install Visual Studio with default settings
-3. **Save your work**, run `_1_3_Restart_Computer.bat`  to restart your PC
-4. Run `_2_0_Install_And_Run_MooaToon.bat` and follow the prompts to login to your Github account, wait for the download and compilation to complete, this may take 1 to 3 hours.
-   1. Users in mainland China should follow the instructions to enable the global proxy, otherwise you may encounter network problems.
-5. When finished, the project will open automatically
+3. **Save all your work**, then run `_1_3_Restart_Computer.bat` to restart your computer
+4. Run `_2_0_Install_And_Run_MooaToon.bat` and:
+   - Follow the prompts to log in to your GitHub account
+   - Wait for the download and compilation to complete (typically 1-3 hours)
+   - **Note for Chinese Users:** Enable a global proxy as prompted to avoid network issues
+5. The project will launch automatically once installation is complete
 
-### Check the project
+### Verifying the Installation
 
-After starting the project, wait patiently for Shader to compile, and then you should see something similar to the following:
+When you first launch the project:
+1. Wait for shader compilation to complete
+2. You should see an interface similar to this:
 
 ![image-20230211012812909](./assets/image-20230211012812909.png)
 
-All sample levels can be found in the `Content\MooaToonSamples\Maps` directory:
+All sample levels are located in the `Content\MooaToonSamples\Maps` directory:
 
 ![image-20230211002432647](./assets/image-20230211002432647.png)
 
-Feel free to explore it.
+Feel free to explore these samples to learn about MooaToon's features.
 
-### Get updates
+### Updating MooaToon
 
-You can subscribe to the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine) repository to find out if there are any updates, and get them via the `_3_0_Update_And_Run_MooaToon.bat` script.
+To stay updated:
+1. Subscribe to the [MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine) repository for update notifications
+2. Use the `_3_0_Update_And_Run_MooaToon.bat` script to download updates
 
 :::caution
-
-Do not use `_2_0_Install_And_Run_MooaToon.bat` to get updates, this script only downloads the minimum content and is only suitable for the first installation.
-
+Important: Do not use `_2_0_Install_And_Run_MooaToon.bat` for updates. This script downloads only the minimum required content and is intended for initial installation only.
 :::
 
-### Resolve conflicts
+### Handling Conflicts
 
-If you modify the MooaToon file, you will be prompted when updating, and if the modified file conflicts with the update, an error will be reported. It is recommended to manually back up that caused the merge failure, and then update them again after run `_3_X_Clean_MooaToon_X`.
+When updating MooaToon:
+- You'll be notified if you've modified any MooaToon files
+- If modified files conflict with updates, you'll receive an error
+- Best practice:
+  1. Manually backup any files causing merge conflicts
+  2. Run `_3_X_Clean_MooaToon_X` to clean the workspace
+  3. Attempt the update again
 
-## - Developer users
+## - Developer Guide
 
-How to compile the engine from source: https://docs.unrealengine.com/5.1/zh-CN/building-unreal-engine-from-source/ 
+For developers familiar with Unreal Engine:
 
-Go to: https://github.com/Jason-Ma-0012/MooaToon-Engine Pull`5.x` Branch to compile the engine, Pull `5.x_MooaToonProject` branch to run the project.
+1. Review the [Official UE Documentation](https://docs.unrealengine.com/5.1/en-US/building-unreal-engine-from-source/) on building from source
+2. Visit the [MooaToon-Engine Repository](https://github.com/Jason-Ma-0012/MooaToon-Engine)
+3. Clone and work with these branches:
+   - `5.x` branch for engine compilation
+   - `5.x_MooaToonProject` branch for project development
 
-## FAQ
+## Troubleshooting
 
-### Network problems during installation or update
+### Network Issues During Installation or Updates
 
-You can try the following workarounds:
+Here are several solutions to common network problems:
 
-#### Get the fastest Github IP automatically
+#### Optimize GitHub Connection Speed
 
-Usually, Chinese mainland users have a slow connection to Github, to solve this problem, run the script: `_2_4_Fetch_Fastest_Github_IPs.bat`
+For users experiencing slow GitHub connections (especially in mainland China):
+1. Run `_2_4_Fetch_Fastest_Github_IPs.bat`
+   - This script automatically runs during `_2_0_Install_And_Run_MooaToon.bat`
+   - It finds the fastest GitHub server IPs in your region
+   - Updates your hosts file to improve download speeds
 
-The script will be automatically executed when running the `_2_0_Install_And_Run_MooaToon.bat`, and its principle is to query the IP of the fastest Github server in the current network through a third-party website, and write it to the host file to accelerate `_2_0_Install_And_Run_MooaToon.bat` download.
-#### Setting up a global proxy
+#### Configure Global Proxy
 
-If you have a faster proxy server, please turn on global proxies in your proxy utility software first.
+If you have access to a proxy server:
 
-Then run this script to enable the proxy:
+1. Enable global proxy in your proxy software
+2. Run `_0_2_Set_CMD_And_Git_Proxy.bat` to configure Git and CMD
+3. To disable the proxy later, run `_0_3_Cancel_CMD_And_Git_Proxy.bat`
 
-- `_0_2_Set_CMD_And_Git_Proxy.bat`
+#### Manual ZIP Download Method
 
-To cancel the proxy run this script.
+As an alternative to Git, you can download ZIP files directly. This method may provide:
+- More stable downloads
+- Support for download managers
+- Resume capability for interrupted downloads
 
-- `_0_3_Cancel_CMD_And_Git_Proxy.bat`
+Note: This method requires manually downloading the entire engine and project for each update.
 
-#### Download Zip manually
-
-You can also choose not to use Git but download Zip directly, this way of downloading may be more stable, and you can use other downloaders to speed up the download and resumption download, but each update requires manual download of the entire engine and project.
-
-1. Go to [https://github.com/Jason-Ma-0012/MooaToon-Engine](https://github.com/Jason-Ma-0012/MooaToon-Engine):
-
+Steps:
+1. Visit [MooaToon-Engine Repository](https://github.com/Jason-Ma-0012/MooaToon-Engine):
    ![](./assets/image-20230211002346396.png)
 
-2. As shown in the figure, select `5.x` as the engine branch on the left, click `Code > Download ZIP` on the right to start downloading the engine.
+2. Download the Engine:
+   - Select the `5.x` branch
+   - Click `Code > Download ZIP`
 
-3. When you're done, switch to `5.x_MooaToonProject` branch to download the project.
+3. Download the Project:
+   - Switch to `5.x_MooaToonProject` branch
+   - Download its ZIP file
 
-4. After the download is complete, return to the MooaToon home directory and extract the engine to the MooaToon`MooaToon\MooaToon-Engine` directory:
-
+4. Extract the Engine:
+   - Navigate to your MooaToon directory
+   - Extract engine files to `MooaToon\MooaToon-Engine`:
    ![](./assets/image-20230211002402855.png)
 
-5. Extract the project to the MooaToon`MooaToon\MooaToon-Project` directory:
-
+5. Extract the Project:
+   - Extract project files to `MooaToon\MooaToon-Project`:
    ![](./assets/image-20230211002410545.png)
 
-6. Run `_2_3_Setup_Unreal_Engine.bat`, note that this still requires downloading a large number of files from Epic's servers, a step that cannot be bypassed at this time
+6. Setup and Build:
+   - Run `_2_3_Setup_Unreal_Engine.bat` (requires downloading files from Epic's servers)
+   - Run `_4_0_Build_And_Run_MooaToon.bat`
 
-7. Run `_4_0_Build_And_Run_MooaToon.bat`
+### Setup_Unreal_Engine Network Issues
 
-### Network issues during Setup_Unreal_Engine
+When running the UE setup, you might encounter download issues:
 
 ![image-20230212142104841](./assets/image-20230212142104841.png)
 
 ![](./assets/image-20230211002416094.png)
-Due to Epic server or network speed issues, a file may get stuck during Setup or the download may fail. 
 
-You should first try toggling the global proxy, or switching the proxy server.
+If downloads stall or fail due to Epic server issues:
 
-If you still can't solve the problem, you can manually download it from any of the following NetDisk:
+1. First try:
+   - Toggle your global proxy
+   - Switch to a different proxy server
 
-- https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA
-- https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2
+2. Alternative solution - Manual Download:
+   Download the required files from either:
+   - [MEGA](https://mega.nz/folder/5rZgVR5C#5YjddnKYDcWvLNHBhE58KA)
+   - [Baidu](https://pan.baidu.com/s/1Y8FFDyhvEcuQ53gFziJjvA?pwd=cht2)
 
-After downloading, you should get the following volume zip file:
+   You'll receive a ZIP file like this:
+   ![image-20230212142605626](./assets/image-20230212142605626.png)
 
-![image-20230212142605626](./assets/image-20230212142605626.png)
+3. Installation:
+   - Extract `ue-gitdeps.zip` to `MooaToon-Engine\.git\ue-gitdeps`
+   - Run `_2_3_Setup_Unreal_Engine.bat` again
+   - Finally, run `_4_0_Build_And_Run_MooaToon.bat`
 
-Open the `ue-gitdeps.zip` using the unzip software, extract its contents to the `MooaToon-Engine\.git\ue-gitdeps` folder, and run `_2_3_Setup_Unreal_Engine.bat` again, now you should finish it quite quickly.
+### Compilation Issues
 
-Then run `_4_0_Build_And_Run_MooaToon.bat` to build and launch the project.
+#### Compiler Version Mismatch
 
-### Errors during compilation
+Unreal Engine has [specific compiler requirements](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades).
 
-#### Incorrect Compiler Version
-
-[UE has certain compiler version requirements](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.4-release-notes#platformsdkupgrades), you can run `_1_2_Install_VisualStudio.bat` to install the correct compiler version automatically, MooaToon will prioritize the correct compiler version when compiling.
-
-If the compilation problem persists, you can [uninstall VS completely](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022) and reboot your computer and retry the above steps.
+To resolve:
+1. Run `_1_2_Install_VisualStudio.bat` to automatically install the correct compiler
+2. If issues persist:
+   - [Completely uninstall Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2022)
+   - Restart your computer
+   - Reinstall using the provided script
 
 #### Missing Runtime Libraries
 
-Compilation errors can also be caused by Windows missing some libraries, try:
+If compilation fails due to missing Windows libraries:
 
 1. Install the latest [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
-2. [Download tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) and repair DirectX and C++ runtime libraries
+2. Use our [Library Repair Tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view) to fix DirectX and C++ runtime libraries
 
-#### Precompiled Header (PCH) Issues
+#### PCH (Precompiled Header) Issues
 
-Please increase the virtual memory according to the [official documentation](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/).
+Follow Microsoft's [official guidelines](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/) to increase your system's virtual memory allocation.

@@ -7,42 +7,40 @@ sidebar_position: 1
 
 Follow the tutorial below to open your own project using the MooaToon engine.  
 
-### Confirm the current project engine version and MooaToon engine version 
+### Confirm Engine Version
 
-You can determine the engine version of MooaToon by the branch name and release name of MooaToon's [GitHub repository](https://github.com/JasonMa0012/MooaToon).  
+Check MooaToon's engine version by looking at the branch name and release on MooaToon's [GitHub repository](https://github.com/JasonMa0012/MooaToon).
 
-- The current version of the project is lower than the MooaToon engine version: **it can be upgraded to the MooaToon engine version**.  
-    
-- The current version of the project is higher than the MooaToon engine version: **unable to open the project**.  
-    
+- If your project's engine version is older than MooaToon's engine version: you can upgrade the project to the MooaToon engine version.
+- If your project's engine version is newer than MooaToon's engine version: the project cannot be opened with this MooaToon build.
 
-### Copy the MooaToon project plugin to the existing project 
+### Install the MooaToon Project Plugin
 
-Copy the following plugin directory to the Plugins directory in your project:  
+Copy the MooaToon plugin folder into your project's `Plugins` directory:
 
-- Precompiled Version 
+- Pre-compiled version:
     - `MooaToon\MooaToon-Project-Precompiled\Plugins\MooaToon`
-- Source Code Version 
+- Source version:
     - `MooaToon\MooaToon-Project\Plugins\MooaToon`
 
-### Copy the MooaToon sample file to the existing project 
+### Install MooaToon Sample Content
 
-Copy the following example folder to the Content directory of your project:  
+Copy the sample folders into your project's `Content` directory:
 
-- Precompiled Version 
+- Pre-compiled version:
     - `MooaToon\MooaToon-Project-Precompiled\Content\Global`
     - `MooaToon\MooaToon-Project-Precompiled\Content\MooaToonSamples`
-- Source Code Version 
+- Source version:
     - `MooaToon\MooaToon-Project\Content\Global`
     - `MooaToon\MooaToon-Project\Content\MooaToonSamples`
 
-### Open existing project using MooaToon engine 
+### Open an Existing Project with the MooaToon Engine
 
-Find and execute the engine executable file: 
+Launch the appropriate Unreal Editor executable:
 
-- Precompiled Version 
+- Pre-compiled version:
     - `MooaToon\MooaToon-Engine-Precompiled\Windows\Engine\Binaries\Win64\UnrealEditor.exe`
-- Source Code Version 
+- Source version:
     - `MooaToon\MooaToon-Engine\Engine\Binaries\Win64\UnrealEditor.exe`
 
 :::tip
@@ -55,19 +53,19 @@ Open your own project in the project browser. 
 
 :::caution
 
-If your project depends on other engine plugins, you need to manually copy these plugins to the plugin directory of the MooaToon engine:  
+If your project depends on third-party engine plugins, copy those plugins into the MooaToon engine plugin folder:
 
-- Precompiled Version 
+- Pre-compiled version:
     - `MooaToon\MooaToon-Engine-Precompiled\Windows\Engine\Plugins`
-- Source Code Version 
+- Source version:
     - `MooaToon\MooaToon-Engine\Engine\Plugins`
 
-If the compilation fails, you need to recompile these plugins using the source code version. 
+If compilation fails, recompile the plugins using the Source version of the engine. See [Use With Other Plugins](/docs/GettingStarted/UseWithOtherPlugins) for details.
 
 :::
 
-### Check Project Settings
+### Verify Project Settings
 
-Finally, you need to check whether the current [Project Settings](../Reference/ProjectAndEditorSettings) and [Console Variables](../Reference/ConsoleVariables) conflict with MooaToon, incorrect settings may cause some features to not work properly.  
+Check your [Project Settings](../Reference/ProjectAndEditorSettings) and [Console Variables](../Reference/ConsoleVariables) for conflicts with MooaToon. Incorrect settings may cause features to malfunction.
 
-Once everything is done, you can examine MooaToon's examples and use the Toon materials in your own project.
+After verification, open MooaToon's sample maps and start using the Toon materials in your project.

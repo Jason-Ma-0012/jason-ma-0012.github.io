@@ -4,25 +4,22 @@ title: Use With Other Plugins
 description: Use With Other Plugins
 sidebar_position: 2
 ---
-Because MooaToon directly modifies the UE source code, you may encounter **installation errors** or **crashes** when using third-party C++ plugins.  
-This article will explain how to resolve issues with third-party plugins.
+MooaToon modifies parts of the Unreal Engine source code. As a result, third‑party C++ plugins may cause **installation errors** or **runtime crashes**. This page explains how to handle common plugin compatibility issues.
 
-UE plugins are divided into: 
+Unreal Engine plugin types:
 
-- Blueprint Plugins: Do not contain C++ code, do not need to be compiled, can be installed normally.  
-    
-- C++ Plugins: Contain C++ code, must be compiled before use and after modification. The compilation results are stored in the **Binaries** and **Intermediate** folders. It may be necessary to install and compile in the MooaToon source version.  
-    
-- Binary Plugins: Usually **precompiled closed-source C++ plugins**, released together with the compilation results (**Binaries** and **Intermediate** folders), **cannot be modified**. Since they are generally compiled for the official UE version, installing them directly in MooaToon will result in an error.  
-    
+- Blueprint Plugins: No C++ code. They do not require compilation and can usually be installed without issues.
+- C++ Plugins: Contain C++ code and must be compiled before use and after modification. Compilation outputs are stored in the **Binaries** and **Intermediate** folders. These plugins may need to be installed and compiled against the MooaToon Source engine.
+- Binary Plugins: Precompiled, often closed‑source C++ plugins distributed with their compiled outputs (**Binaries** and **Intermediate**). They cannot be modified. Because they are typically built for the official UE engine, installing them directly into MooaToon can produce compatibility errors.
 
-Installation directory for UE plugins: 
+Plugin installation locations:
 
-- Engine directory: `MooaToon\MooaToon-Engine(-Precompiled)\Engine\Plugins`, plugins installed here are compiled with the engine, can be used across different projects, and can be enabled by default.  
-    
-- Project directory: `MooaToon\MooaToon-Project(-Precompiled)\Plugins`, plugins installed here are only compiled when enabled, and must be reinstalled when used across different projects.  
-    
-- Project content directory: `MooaToon\MooaToon-Project(-Precompiled)\Content`, some blueprint plugins or plugins that only contain art assets will be directly installed in the content directory. These plugins are relatively simple and only need to ensure the installation directory is correct.
+- Engine directory: `MooaToon\MooaToon-Engine(-Precompiled)\Engine\Plugins`
+	- Plugins here are compiled with the engine and are available across projects. They can be enabled by default.
+- Project directory: `MooaToon\MooaToon-Project(-Precompiled)\Plugins`
+	- Plugins here are compiled per-project when enabled. If you move them between projects, you may need to reinstall or recompile.
+- Project Content directory: `MooaToon\MooaToon-Project(-Precompiled)\Content`
+	- Some Blueprint-only plugins or asset‑only plugins are installed directly into Content. These require only the correct installation path.
 
 ## Install C++ Plugins
 
@@ -65,33 +62,35 @@ Although skipping the `BuildId` check allows you to use the plugin, if the eng
 
 1. Install the binary plugin to the engine directory 
 2. Open `MooaToon\MooaToon-Engine\Engine\Plugins\MooaToonScripts\Binaries\Win64\UnrealEditor.modules` with a text editor  
-    
-3. Copy `BuildId`, for example `91f79c3d-aa70-4c80-8f55-ae4616e6d70e`  
-    
-4. Find and open the plugin's `UnrealEditor.modules` file, for example `MooaToon\MooaToon-Engine\Engine\Plugins\XXXXXX\Binaries\Win64\UnrealEditor.modules`  
-    
-5. Paste `BuildId` and save  
-    
-6. Run `MooaToon\MooaToon-Engine\GenerateProjectFiles.bat`  
-    
-7. Recompile the engine 
-8. Start the project 
+3. Copy the `BuildId`, for example: `91f79c3d-aa70-4c80-8f55-ae4616e6d70e`
+
+4. Find and open the plugin's `UnrealEditor.modules` file, for example:
+	`MooaToon\MooaToon-Engine\Engine\Plugins\XXXXXX\Binaries\Win64\UnrealEditor.modules`
+
+5. Paste the `BuildId` value into the plugin's `.modules` file and save it.
+
+6. Run `MooaToon\MooaToon-Engine\GenerateProjectFiles.bat`
+
+7. Recompile the engine.
+
+8. Start the project.
 
 ### - Install to the Project Directory
 
 1. Install the binary plugin to the project directory 
 2. Open `MooaToon\MooaToon-Engine\Engine\Plugins\MooaToonScripts\Binaries\Win64\UnrealEditor.modules` with a text editor  
-    
-3. Copy `BuildId`, for example `91f79c3d-aa70-4c80-8f55-ae4616e6d70e`  
-    
-4. Find and open the plugin's `UnrealEditor.modules` file, for example `MooaToon\MooaToon-Project\Plugins\XXXXXX\Binaries\Win64\UnrealEditor.modules`  
-    
-5. Paste `BuildId` and save  
-    
-6. Start the project
+3. Copy the `BuildId` from the engine's `.modules` file (example: `91f79c3d-aa70-4c80-8f55-ae4616e6d70e`).
+
+4. Open the plugin's `UnrealEditor.modules` file in your project plugin directory, for example:
+	`MooaToon\MooaToon-Project\Plugins\XXXXXX\Binaries\Win64\UnrealEditor.modules`
+
+5. Paste the `BuildId` and save the file.
+
+6. Start the project.
 
 :::caution
 
 Currently, when installing the binary plugin to the project directory, `BuildId` will not be updated automatically; you need to manually synchronize `BuildId` after each engine compilation.
 
 :::
+

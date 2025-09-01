@@ -12,150 +12,156 @@ NEW: Version 5.6 is now available!
 
 TODO
 
-## Select the engine version that you want to install
+## Choose Your Engine Version
 
-MooaToon is essentially a plugin that requires modifications to the engine code, and you can choose to install either the ***pre-compiled version*** or the ***source version***.
+MooaToon is a plugin that requires engine code modifications. You can choose to install either the ***Pre-compiled Version*** or the ***Source Version***.
 
-### - Install the precompiled version of the engine
+### - Install the Pre-compiled Engine Version
 
-If you are an artist and just want to try out MooaToon, the precompiled version is a good choice.
+If you're an artist who wants to try out MooaToon, the pre-compiled version is the recommended choice.
 
-The advantage of the precompiled version is that it can be used out of the box without waiting for the engine to be compiled, and the downloaded content is the least, and the running performance is the best.
+The pre-compiled version offers several advantages:
+- Ready to use out of the box
+- No engine compilation required
+- Minimal download size
+- Optimal runtime performance
 
-The disadvantage of the precompiled version is that it cannot package C++ games, does not contain debugging information, and needs to re-download the entire package every time a small update is made.
+However, it also has some limitations:
+- Cannot package C++ games
+- No debugging information available
+- Requires full package re-download for minor updates
 
-Execute the following scripts in sequence to use the precompiled version:
+Follow these steps to install the pre-compiled version:
 
-1. [Download installation tool](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) and unzip
-2. Double click to run: `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` will automatically download and decompress
-3. Double click to run: `_0_1_Run_MooaToon_Precompiled_Project.bat` to open the project
+1. [Download the Installation Tool](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip) and extract it
+2. Double-click `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` to automatically download and extract the required files
+3. Double-click `_0_1_Run_MooaToon_Precompiled_Project.bat` to launch the project
 
 :::caution
 
-1. Download problem
+1. Download Issues
 
-**Because the service is based on Github, for users in mainland China, it is strongly recommended to enable the global proxy, otherwise the download speed and stability cannot be guaranteed.**
+**As the service is hosted on GitHub, users in mainland China are strongly recommended to use a global proxy to ensure reliable download speeds and stability.**
 
-If the proxy cannot be used, it is recommended to run the script `_2_4_Fetch_Fastest_Github_IPs.bat` first to increase the download speed to a certain extent.
+If you cannot use a proxy, run the `_2_4_Fetch_Fastest_Github_IPs.bat` script first to improve download speeds.
 
-2. Running problems
+2. Startup Issues
 
-If an error is reported when starting the project, first run `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` again to ensure the integrity of the downloaded content, and then open the project.
+If you encounter errors when launching the project:
+- First, run `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` again to ensure all files are downloaded correctly
+- If the issue persists, [download and run the Library Repair Tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view), restart your computer, and try launching the project again
 
-If the problem is not resolved, please [download and run the library repair tool](https://drive.google.com/file/d/1DR80HhJu5iZ15RA71AO757_UgzG-_qig/view), restart the computer and open the project again.
+3. Antivirus Warnings
 
-3. Anti-virus software suggests a virus
-
-For ease of use, the Installation Tool contains exe files compiled from Python scripts, all code is open source, you can rest assured.  
-You will need to temporarily disable your antivirus software, e.g. [Windows Defender](https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960).
+The Installation Tool includes executable files compiled from Python scripts. All code is open-source and safe to use.
+You may need to temporarily disable your antivirus software, such as [Windows Defender](https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960).
 
 :::
 
-You can also use the script `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat` to update MooaToon, **all modified files will be overwritten**, and new files will not be overwritten if they do not have the same name as the MooaToon files.
+To update MooaToon, run `_0_0_Install_Latest_MooaToon_Precompiled_And_Override_All_Modified_Files.bat`. **Note that all modified files will be overwritten**. New files that don't share names with MooaToon files will remain unchanged.
 
-### - Compile the engine from source code
+### - Build the Engine from Source
 
-If you want to get full engine functionality and faster update speed, please refer to:
+If you need full engine functionality and faster updates, refer to:
 
-[Compile the engine from source code](BuildEnginefromSourceCode.md)
+[Build the Engine from Source Code](BuildEnginefromSourceCode.md)
 
-## Installing a specific UE version
-
+## Installing a Specific UE Version
 
 ### Download the Installation Tool for a Specific Branch
 
-You can switch to the previous branch at [Installation Tool's Github page](https://github.com/JasonMa0012/MooaToon), then `Code > Download Zip` on the right to download the previous version of the Installation Tool.
+Visit the [Installation Tool's GitHub Page](https://github.com/JasonMa0012/MooaToon), switch to the desired branch, then click `Code > Download ZIP` to download that version of the Installation Tool.
 
 ![](assets/Pasted%20image%2020241201175614.png)![](assets/Pasted%20image%2020241201175718.png)
 
-### (Versions Prior to 5.4) Edit Config File
+### (For Versions Prior to 5.4) Edit Configuration File
 
-You can edit setting file to select the UE version you want to install:
+To select a specific UE version for installation:
 
-1. Right-click `_2_5_Settings.bat`, select Edit
+1. Right-click `_2_5_Settings.bat` and select Edit
 
-2. Change the UE version in the `engineBranchName` and `projectBranchName` fields to the version you want to install, such as `5.1`:
-``` 
-set engineBranchName=5.1 
-set projectBranchName=5.1_MooaToonProject 
+2. Modify the `engineBranchName` and `projectBranchName` fields to your desired version (e.g., `5.1`):
+```
+set engineBranchName=5.1
+set projectBranchName=5.1_MooaToonProject
 ```
 
-3. Save and re-execute the installation process
+3. Save the file and run the installation process again
 
 :::caution
 
-You can choose to use an older version, but the older version may not contain the latest features or fixes.
+While you can use older versions, they may lack the latest features and fixes.
 
-Since development and maintenance across multiple UE versions is extremely tedious, MooaToon is like Epic in that it only maintains the latest version, and maintenance of older versions is a paid service.
+Like Epic Games, MooaToon primarily maintains the latest version since supporting multiple UE versions requires significant resources. Maintenance for older versions is available as a paid service.
 
 :::
 
 
-## File directory structure
+## Directory Structure
 
-- Precompiled version
+### Pre-compiled Version
 
 ```
-MooaToon ----------------------------------------- Root directory
+MooaToon ----------------------------------------- Root Directory
  ├-MooaToon-Engine-Precompiled ------------------- Engine Installation Directory
- │ ├-Windows\Engine\Plugins\MooaToonScripts------- MooaToon Engine Plugins, C++ code included.
- │ ├-Windows\Engine\Plugins\MooaToonThirdparty---- MooaToon Engine Plugin Dependencies
- │ └-Windows\Engine\Binaries\Win64 --------------- Engine executable directory
- │ └-UnrealEditor.exe ---------------------------- Engine executable file
- ├-MooaToon-Project-Precompiled ------------------ Project installation directory
- │ ├-Art ----------------------------------------- Art resource file directory
- │ ├-Config -------------------------------------- Project settings directory
- │ ├-Content ------------------------------------- Project content directory
- │ │ ├-Global ------------------------------------ MooaToonSamples dependent resources
- │ │ └-MooaToonSamples --------------------------- All samples of MooaToon, can be deleted.
- │ ├-Plugins\MooaToon ---------------------------- Plugins for MooaToon project, including textures and blueprints.
- │ └-MooaToon_Project.uproject ------------------- Project file
+ │ ├-Windows\Engine\Plugins\MooaToonScripts------- MooaToon Engine Plugin (C++ Code)
+ │ ├-Windows\Engine\Plugins\MooaToonThirdparty---- MooaToon Engine Dependencies
+ │ └-Windows\Engine\Binaries\Win64 --------------- Engine Binaries Directory
+ │   └-UnrealEditor.exe -------------------------- Engine Executable
+ ├-MooaToon-Project-Precompiled ------------------ Project Installation Directory
+ │ ├-Art ----------------------------------------- Art Assets Directory
+ │ ├-Config -------------------------------------- Project Settings
+ │ ├-Content ------------------------------------- Project Content
+ │ │ ├-Global ------------------------------------ MooaToonSamples Dependencies
+ │ │ └-MooaToonSamples --------------------------- MooaToon Examples (Optional)
+ │ ├-Plugins\MooaToon ---------------------------- Project Plugin (Materials & Blueprints)
+ │ └-MooaToon_Project.uproject ------------------- Project File
  │
  ...
 ```
 
-- Source version
+### Source Version
 
 ```
-MooaToon ----------------------------------------- Root directory
- ├-MooaToon-Engine ------------------------------- Engine installation directory
- │ ├-Engine\Plugins\\MooaToonScripts ------------- MooaToon Engine Plugins, including C++ code
- │ ├-Windows\Engine\Plugins\MooaToonThirdparty---- MooaToon Engine Plugin Dependencies
- │ └-Engine\Binaries\Win64 ----------------------- Engine executable directory
- │ └-UnrealEditor.exe ---------------------------- Engine executable file
- ├-MooaToon-Project ------------------------------ Project installation directory
- │ ├-Art ----------------------------------------- Art resource files directory
- │ ├-Config -------------------------------------- Project settings directory
- │ ├-Content ------------------------------------- Project content directory
- │ │ ├-Global ------------------------------------ MooaToonSamples dependent resources
- │ │ └-MooaToonSamples --------------------------- All samples of MooaToon, can be deleted.
- │ ├-Plugins\MooaToon ---------------------------- Plugins for MooaToon project, including textures and blueprints.
- │ └-MooaToon_Project.uproject ------------------- Project file
+MooaToon ----------------------------------------- Root Directory
+ ├-MooaToon-Engine ------------------------------- Engine Installation Directory
+ │ ├-Engine\Plugins\MooaToonScripts -------------- MooaToon Engine Plugin (C++ Code)
+ │ ├-Windows\Engine\Plugins\MooaToonThirdparty---- MooaToon Engine Dependencies
+ │ └-Engine\Binaries\Win64 ----------------------- Engine Binaries Directory
+ │   └-UnrealEditor.exe -------------------------- Engine Executable
+ ├-MooaToon-Project ------------------------------ Project Installation Directory
+ │ ├-Art ----------------------------------------- Art Assets Directory
+ │ ├-Config -------------------------------------- Project Settings
+ │ ├-Content ------------------------------------- Project Content
+ │ │ ├-Global ------------------------------------ MooaToonSamples Dependencies
+ │ │ └-MooaToonSamples --------------------------- MooaToon Examples (Optional)
+ │ ├-Plugins\MooaToon ---------------------------- Project Plugin (Materials & Blueprints)
+ │ └-MooaToon_Project.uproject ------------------- Project File
  │
  ...
 ```
 
-## (Optional) Install Ultra Dynamic Sky
+## (Optional) Installing Ultra Dynamic Sky
 
-Similar `L_TimeOfDay_Require_UltraDynamicSky` levels require you to purchase and install `Ultra Dynamic Sky` plugin to support the dynamic weather system:
+To use levels like `L_TimeOfDay_Require_UltraDynamicSky`, you'll need to purchase and install the `Ultra Dynamic Sky` plugin for dynamic weather system support:
 
-- Purchase:[https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
+1. Purchase the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/zh-CN/product/ultra-dynamic-sky)
 
-- [Add MooaToon Project to Epic Launcher](/docs/FAQ#can-not-find-mooatoon-project-in-epic-launcher)
+2. [Add MooaToon Project to Epic Launcher](/docs/FAQ#cannot-find-mooatoon-project-in-epic-launcher)
 
-- In the Epic Launcher Library, install Ultra Dynamic Sky into MooaToon Project:
+3. Install Ultra Dynamic Sky to your MooaToon Project through the Epic Launcher Library:
 
-  ![image-20230211012826670](./assets/image-20230211012826670.png)
+   ![image-20230211012826670](./assets/image-20230211012826670.png)
 
-- Restart the engine
+4. Restart the Unreal Editor
 
-- Open `L_TimeOfDay_Require_UltraDynamicSky` again, and you should be able to see:
+5. Open `L_TimeOfDay_Require_UltraDynamicSky` and you should see:
 
-  ![](./assets/image-20230211002455202.png)
+   ![](./assets/image-20230211002455202.png)
 
-- You can run the game to see dynamic weather effects:
+6. Play the level to experience the dynamic weather system:
 
-  | ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png) | ![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true) |
-  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+   | ![image-20230211012840797](./assets/image-20230211012840797-1676996483716-3.png) | ![](https://github.com/JasonMa0012/MooaToon/blob/main/README.assets/Mooa_gif.gif?raw=true) |
+   | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
-- Detailed usage of Ultra Dynamic Sky can be found on its store page.
+For detailed information about Ultra Dynamic Sky features and usage, please refer to its marketplace page.

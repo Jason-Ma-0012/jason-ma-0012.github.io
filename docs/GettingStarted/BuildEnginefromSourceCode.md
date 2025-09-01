@@ -30,7 +30,10 @@ sidebar_position: 0
 
 ### 下载MooaToon安装工具
 
-[下载](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip)安装工具的Zip, 解压到硬盘根目录, 如`D:\MooaToon`(目的是避免路径过长引起编译错误), 强烈建议**至少保留200GB的SSD硬盘空间**.
+1. [下载](https://github.com/JasonMa0012/MooaToon/archive/refs/heads/main.zip)安装工具的Zip压缩包
+2. 解压到硬盘根目录, 如`D:\MooaToon`
+	- 目的是避免路径过长引起编译错误
+	- 建议**至少保留500GB的SSD硬盘空间**
 
 然后可以开始安装过程.
 
@@ -68,8 +71,12 @@ sidebar_position: 0
 
 ### 解决冲突
 
-如果你修改了MooaToon的文件, 在更新时会收到提示, 如果已修改的文件和更新产生冲突, 则会有报错.
-建议手动备份导致合并失败的文件, 运行`_3_X_Clean_MooaToon_X`后再次更新.
+在获取更新时:
+- 如果你修改了MooaToon的文件, 则会有提示
+- 如果你的修改和更新内容产生冲突, 则会有报错, 建议:
+	- 手动备份导致合并失败的文件
+	- 运行`_3_X_Clean_MooaToon_X`清除所有修改
+	- 再次更新
 
 ## - 开发者用户
 
