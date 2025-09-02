@@ -14,24 +14,26 @@ The following are Project Settings related to MooaToon:
 
 ##### Global Diffuse/Specular Color Ramp Atlas
 
-Select the Global Diffuse/Specular Color Ramp Atlas to use, see the [documentation](../Tutorial/ControlLightShadowColorTransition) for usage.    
-If you need to modify the Ramp Atlas or add new Ramps, please copy the built-in MooaToon Ramp Atlas first to avoid being overwritten during updates.
+Choose the Global Diffuse/Specular Color Ramp Atlas to use. See the [tutorial](../Tutorial/ControlLightShadowColorTransition) for usage details.
+
+If you modify an existing Ramp Atlas or add new ramps, copy the built-in MooaToon Ramp Atlas first to prevent your changes from being overwritten by updates.
 #### Rendering
 
 ##### Global Illumination - Dynamic Global Illumination Method
 
-It is recommended to use `Lumen` , otherwise MooaToon's GI related functions may not be available.
+We recommend using `Lumen`. MooaToon's Global Illumination features rely on Lumen and may not work with other GI methods.
 
 ##### Direct Lighting - Ray Traced Shadows
 
-It is recommended to enable it, otherwise MooaToon's self-shadow related functions will not work.
+Enable Ray Traced Shadows to ensure MooaToon's self-shadow features function correctly.
 
 ##### Hardware Ray Tracing - Support Hardware Ray Tracing
 
-It is recommended to enable it, otherwise MooaToon's self-shadow related functions will not work.
+Enable Hardware Ray Tracing to support MooaToon's ray tracing dependent features.
 
 ##### Optimization - Velocity Pass
 
-Do not select `Write during Base Pass`!   
-Because MooaToon adds an extra GBuffer, if Velocity is also output during the Base Pass, in some cases the number of simultaneous Render Targets may exceed 8, which can cause a crash.
+Do NOT select `Write during Base Pass`.
+
+MooaToon adds an additional GBuffer. If Velocity is also written during the Base Pass, the number of simultaneously bound Render Targets can exceed the engine limit (8) and may cause a crash.
 

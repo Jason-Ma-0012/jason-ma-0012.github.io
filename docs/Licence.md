@@ -11,13 +11,13 @@ sidebar_position: 20
 
 ## 正文
 
-以下是一份用户许可协议 (以下称为“”协议“”), 协议随时可能更新, 请[Watch](https://github.com/JasonMa0012/MooaToon)此仓库以获取更新通知. 如果不同语言版本的协议出现了冲突, 则以中文版本为准.
+以下是一份用户许可协议 (以下称为"协议"), 协议随时可能更新, 请[Watch](https://github.com/JasonMa0012/MooaToon)此仓库以获取更新通知. 如果不同语言版本的协议出现了冲突, 则以中文版本为准.
 
 如果您继续使用MooaToon则视为已了解且同意该协议, 如果您使用且违反了本协议的条款, 我们保留随时向您追责的权利.
 
 MooaToon的作者是Jason Ma (以下称为"作者"), 并且由以下部分组成:
 
-1. “引擎改动”: 指由作者在Epic Games的基础上进行修改的部分, 即通过和[Epic Games仓库](https://github.com/EpicGames/UnrealEngine)进行[分支对比](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1)得出的修改内容
+1. "引擎改动": 指由作者在Epic Games的基础上进行修改的部分, 即通过和[Epic Games仓库](https://github.com/EpicGames/UnrealEngine)进行[分支对比](https://github.com/EpicGames/UnrealEngine/compare/5.1...Jason-Ma-0012:MooaToon-Engine:5.1)得出的修改内容
 2. “插件内容”: 指由作者创建的文件, 包括但不限于:
    1. 引擎分支: [Engine/Plugins/MooaToon](https://github.com/Jason-Ma-0012/MooaToon-Engine/tree/5.1/Engine/Plugins/MooaToon)
    2. 引擎分支其他非第三方新增文件 (如[ToonShadingCommon.ush](https://github.com/Jason-Ma-0012/MooaToon-Engine/blob/5.1/Engine/Shaders/Private/ToonShadingCommon.ush))

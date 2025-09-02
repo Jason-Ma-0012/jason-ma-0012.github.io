@@ -6,14 +6,14 @@ sidebar_position: 40
 ---
 The following are the Mesh Import Settings related to MooaToon:
 ### Recompute Normals/Tangents
-If you use an external DCC to bake model data, these two options need to be disabled. Otherwise, it may cause the baked data to be inaccurate.
+If you use an external DCC to bake model data, disable these two options to preserve the baked normals/tangents. Leaving them enabled may overwrite or alter the baked data.
 
-If your model does not include normal/tangent data, UE will automatically enable these two options when you reimport the mesh.
+If the mesh asset does not contain normal/tangent data, Unreal Engine will automatically enable Recompute Normals/Tangents when reimporting.
 
 ### Use Full Precision UVs / High Precision Tangent Basis
-If you find that the data baked by the DCC is inaccurate or lacks precision, please try enabling this option.
+If your DCC-baked data appears imprecise, enable "Use Full Precision UVs" and/or "High Precision Tangent Basis" to improve precision.
 
 ### Mooa Morph Targets Normal Intensity
-Setting it to 0 can prevent Morph Target (or Blend Shape) from affecting the normals.
+Set this value to `0` to prevent Morph Targets (blend shapes) from modifying vertex normals.
 
-Character expressions are usually created using Morph Targets. If you modify the face normals, they should be set to 0 to prevent the expression from affecting the normals.
+Character facial expressions are typically driven by Morph Targets. If you have modified face normals for a character, set this value to `0` to avoid unintended normal changes when applying expressions.

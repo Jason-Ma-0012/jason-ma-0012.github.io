@@ -15,9 +15,9 @@ Therefore, the closer the normal and the light direction are to 90 degrees, the 
 
 ## Custom Shadows From Self or Other Objects
 
-MooaToon offers both **Ray Tracing** and **Shadow Bias** methods to remove cluttered Self-Shadows and shadows casted from the scene.
+MooaToon offers both **Ray Tracing** and **Shadow Bias** methods to remove cluttered self-shadows and shadows cast from the scene.
 
-The Ray Tracing method provides full functionality, and should be used in preference to Ray Tracing when performance allows. Shadow Bias is only an alternative when performance is low or equipment is too old. 
+The Ray Tracing method provides full functionality and should be used when performance allows. Shadow Bias is an alternative when performance is limited or hardware is older.
 
 ### - Ray Tracing
 

@@ -12,7 +12,7 @@ MooaToon uses Ramp Map to represent the color transition from light to shadow:
 | 3Levels Ramp + Single Light<br/>Shadow Transition now has 3 color levels | ![image-20240808230642858](./assets/image-20240808230642858.png) |
 | 3Levels Ramp + Multiple Lights                                           | ![image-20240808230839624](./assets/image-20240808230839624.png) |
 
-Ramp is a 1D lookup table (LUT), which stores user-defined Curves, represented as Color Curves in UE:
+A Ramp is a 1D lookup table (LUT) that stores user-defined Curves, represented as Color Curves in UE:
 
 ![image-20240808221949108](./assets/image-20240808221949108.png)
 
@@ -20,7 +20,7 @@ By vertically arranging multiple Color Curves, a Curve Atlas texture can be crea
 
 ![image-20240808232600442](./assets/image-20240808232600442.png)
 
-Starting from MooaToon 5.4, use Global Diffuse Color Ramp and Global Specular Color Ramp, by placing all Ramps in an Atlas, and specifying which Ramp to use in each material, achieving Multi-Light Ramp Lighting.
+Starting from MooaToon 5.4, use Global Diffuse Color Ramp and Global Specular Color Ramp by placing all Ramps in an Atlas and specifying which Ramp to use in each material to achieve Multi-Light Ramp lighting.
 
 ## Choose Which Ramp to Use
 

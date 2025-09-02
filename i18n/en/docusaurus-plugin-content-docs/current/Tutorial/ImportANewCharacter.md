@@ -7,7 +7,7 @@ sidebar_position: 0
 
 Using [Unity Chan](https://unity-chan.com/) as an example character, you can find the original Unity Chan model at `MooaToon\MooaToon-Project\Art\Models\SD_unitychan_generic.fbx`.
 
-You can also obtain character models through the following website: 
+You can also obtain character models through the following websites:
 
 - Paid
   - UE Marketplace: https://www.unrealengine.com/marketplace
@@ -24,9 +24,9 @@ You can also obtain character models through the following website: 
 
 :::info
 
-- Now supports _**direct import of VRoid models**_ (.vrm, with the help of [VRM4U plugin](https://github.com/JasonMa0012/VRM4U_MooaToon)), you can quickly create your own model using [VRoid Studio](https://vroid.com/studio), then import it into the MooaToon project along with textures and materials.  
-    
-- For MMD models, you need to convert them to FBX models first, it is recommended to use [Blender](https://www.blender.org/) and [Cats Blender Plugin](https://github.com/absolute-quantum/cats-blender-plugin).
+- Now supports _**direct import of VRoid models**_ (.vrm) with the help of the [VRM4U plugin](https://github.com/JasonMa0012/VRM4U_MooaToon). You can quickly create your own model using [VRoid Studio](https://vroid.com/studio) and then import it into the MooaToon project along with textures and materials.
+
+- For MMD models, you need to convert them to FBX first; it is recommended to use [Blender](https://www.blender.org/) and the [Cats Blender Plugin](https://github.com/absolute-quantum/cats-blender-plugin).
 
 :::
 
@@ -34,10 +34,10 @@ You can also obtain character models through the following website: 
 
 You can directly import character models by dragging them into the Unreal Editor's content browser. Due to different export settings in different DCC software, you may need to adjust the rotation and scale in the import settings.  
 
-After correct import, the character should face forward (+Y axis) and be of appropriate size:
+After a correct import, the character should face forward (+Y axis) and be of an appropriate size:
 ![image-20230326003909649](./assets/image-20230326003909649.png)
 
-Copy and open the scene `Content/MooaToonSamples/Maps/L_LookDev.umap` , and place the character Skeletal Mesh into it:
+Copy and open the scene `Content/MooaToonSamples/Maps/L_LookDev.umap` , and place the character's Skeletal Mesh into it:
 ![image-20230326011353744](./assets/image-20230326011353744.png)
 
 ## Create and Assign Material Instances
@@ -60,7 +60,7 @@ Open the character's Skeletal Mesh file and place the newly created material int
 
 ![image-20230326004426102](./assets/image-20230326004426102.png)
 
-Note: Unity Chan only has one texture, so only one material instance was created. **If different parts of your model correspond to different textures, then you need to create a Material Instance for each part separately**.
+Note: Unity Chan only has one texture, so only one material instance is created. **If different parts of your model correspond to different textures, you need to create a Material Instance for each part separately**.
 
 ## Material Settings
 

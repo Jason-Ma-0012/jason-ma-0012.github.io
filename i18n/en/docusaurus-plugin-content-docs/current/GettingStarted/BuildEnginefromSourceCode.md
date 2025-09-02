@@ -85,7 +85,7 @@ When updating MooaToon:
   2. Run `_3_X_Clean_MooaToon_X` to clean the workspace
   3. Attempt the update again
 
-## - Developer Guide
+## - Developer Users
 
 For developers familiar with Unreal Engine:
 

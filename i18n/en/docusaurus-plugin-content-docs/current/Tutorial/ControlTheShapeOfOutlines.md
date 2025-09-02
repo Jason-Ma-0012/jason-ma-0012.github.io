@@ -11,7 +11,7 @@ Outlining is an important factor in making a character look hand-drawn:
 
 ![img](./assets/UnityChang_Line.png)
 
-A Stroke is changes in width or color from the beginning to the end of a outline. The physical reason for the formation of Strokes is the change in pressure of the pen tip on the paper:
+A Stroke is changes in width or color from the beginning to the end of an outline. The physical reason for the formation of Strokes is the change in pressure of the pen tip on the paper:
 
 | ![image-20240806231616172](./assets/image-20240806231616172.png) | ![image-20240806231625666](./assets/image-20240806231625666.png) |
 | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -183,7 +183,7 @@ MooaToon does not currently support this method. 
 
 ## - Post-Processing Outlines 
 
-The post-processing outlines is calculated by convolving the Depth/Normal/Color Buffer in screen space.
+Post-processing outlines are calculated by convolving the Depth/Normal/Color buffers in screen space.
 
 The advantage is that it works in full screen, the performance overhead is independent of scene complexity, and it is possible to implement almost any type of outline.
 

@@ -4,20 +4,21 @@ title: Add Stylized Hair Highlights
 description: Add Stylized Hair Highlights
 sidebar_position: 18
 ---
-The highlights of the hair in the illustrations are diverse in form (Author: [おののいもこ 魚介](https://twitter.com/_himehajime)):
+The highlights of hair in illustrations are diverse in form (Author: [おののいもこ 魚介](https://twitter.com/_himehajime)):
 
 
 | ![image-20230418010310888](./assets/image-20230418010310888.png) | ![image-20230418010355314](./assets/image-20230418010355314.png) | ![](./assets/image-20230418010326495.png) |
 | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------- |
 | Annular                                                          | Point-like                                                       | Angel ring                                |
 
-The following provides common methods for achieving hair highlights, the method used in the MooaToon example is the original **Stylized Kajiya-Kay based on Tangent Transfer**:
+The following provides common methods for achieving hair highlights. The method used in the MooaToon example is the original **Stylized Kajiya-Kay based on Tangent Transfer**:
 
 ## - Stylized Kajiya-Kay based on Tangent Transfer
 
 <Video src={require("./assets/bandicam 2024-08-10 17-19-49-631.webm").default}/>
 
-The position of Kajiya-Kay highlights depends on the viewing direction and tangent direction. Custom tangents can be defined through tangent transfer to control the shape and direction of highlights, without being limited by topology.  
+
+The position of Kajiya-Kay highlights depends on the view direction and tangent direction. Custom tangents can be defined through Tangent Transfer to control highlight shape and direction, without being limited by topology.
 
 Further refinement of highlight shape can be achieved by controlling the Specular Gradient, theoretically enabling the realization of all types of highlights.  
 

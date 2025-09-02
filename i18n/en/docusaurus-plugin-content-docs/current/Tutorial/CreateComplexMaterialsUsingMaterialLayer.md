@@ -7,7 +7,7 @@ sidebar_position: 1
 
 MI_Toon is a common material with simple and fixed inputs that can be used to create simple effects.  
 
-But if you want to overlay multiple textures, or mix other custom effects, you need to use layered materials.  
+If you want to overlay multiple textures or mix custom effects, use layered materials.
 
 UE's [layered materials](https://docs.unrealengine.com/5.1/zh-CN/layering-materials-in-unreal-engine/) allow you to freely combine [material layers](https://docs.unrealengine.com/5.1/zh-CN/using-material-layers-in-unreal-engine/), adjust order and blending modes.
 
@@ -23,7 +23,7 @@ Then you can find the original parameters in the layer parameters:
 
 :::caution
 
-_**Attention, this step will lose the adjusted values!**_ So decide as early as possible whether to use layered materials.  
+_**Attention: this step will reset adjusted values!**_ So decide early whether to use layered materials.
 
 When editing layered materials, _**there is a certain probability of causing UE to crash, so save frequently!**_
 
