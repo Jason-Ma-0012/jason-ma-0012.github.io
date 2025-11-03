@@ -1,23 +1,18 @@
 ---
 id: Latest
-title: "5.5"
-sidebar_position: 2
+title: "5.6"
+sidebar_position: 1000
 ---
-## 升级现有项目到5.5
+## Specular Color Ramp优化
+(2025/11/3)  
+Specular Color Ramp的UV和强度已经过优化, 现在结果可能看起来不同:  
 
-### 从Overlay Material迁移到Outline Material
+| Before                                       | After                                        | Specular Color Ramp                             |
+| -------------------------------------------- | -------------------------------------------- | ----------------------------------------------- |
+| ![](assets/Snipaste_2025-11-03_23-20-46.jpg) | ![](assets/Snipaste_2025-11-03_23-13-02.jpg) | ![](assets/Pasted%20image%2020251103233422.png) |
+| ![](assets/Snipaste_2025-11-03_23-20-27.jpg) | ![](assets/Snipaste_2025-11-03_23-14-25.jpg) | ![](assets/Pasted%20image%2020251103233501.png) |
 
-以前的描边使用`Overlay Material`以半透明的方式渲染, 这会造成不必要的性能开销.  
-现在新增了专用于描边的`Mooa Outline Material`, 其工作方式与`Overlay Material`相同, 但通过"Reverse Culling"实现只渲染模型的背面, 同时描边材质也改为不透明, 最终大幅降低了性能开销.
-
-你需要:
-
-1. 由于`M_OverlayOutline`和`MI_OverlayOutline`已重命名为`M_Outline`和`MI_Outline`, 你需要[修复相关引用](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/asset-redirectors-in-unreal-engine). 重定向器将暂时保留, 但未来可能会移除.
-2. 备份然后迁移修改. 如果你修改过`M_OverlayOutline`, 那么你需要备份现有工程, 更新完成后再将修改的部分迁移到`M_Outline`.
-3. 升级角色Actor. 在角色Actor上将描边材质从`Overlay Material`移动到`Mooa Outline Material`:
-
-![](assets/Pasted%20image%2020250123221154.png)
-
-## 用户协议更新
-
-明确并放宽了关于再分发的条款, 现在允许以非商业目的公开再分发, 点击[这里](./../Licence.md)查看.
+优化内容包括:
+- Specular Color Ramp UV分布优化, 使Ramp采样结果更符合预期.
+- Specular强度优化, 现在不会出现极大值, 并使Bloom的结果与PBR Specular更加一致.
+- 内部分内置Specular Color Ramp添加平滑渐变.

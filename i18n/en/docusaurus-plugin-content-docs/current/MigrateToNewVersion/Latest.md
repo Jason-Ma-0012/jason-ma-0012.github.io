@@ -1,21 +1,18 @@
 ---
 id: Latest
-title: "5.5"
-sidebar_position: 2
+title: "5.6"
+sidebar_position: 1000
 ---
-## Upgrade Existing Projects to 5.5
-### Migrate from Overlay Material to Outline Material
-Previously, outlines were rendered using `Overlay Material` in a translucent manner, which caused unnecessary performance overhead.  
-A new `Mooa Outline Material` specifically designed for outlines has been added. It works similarly to `Overlay Material` but implements "Reverse Culling" to render only the backfaces of models. Additionally, the outline material is now opaque, significantly reducing performance costs.
+## Optimization of Specular Color Ramp
+(2025/11/3)  
+The UV and intensity of the Specular Color Ramp have been optimized, and the results may now appear different:  
 
-You need to:
+| Before                                       | After                                        | Specular Color Ramp                             |
+| -------------------------------------------- | -------------------------------------------- | ----------------------------------------------- |
+| ![](assets/Snipaste_2025-11-03_23-20-46.jpg) | ![](assets/Snipaste_2025-11-03_23-13-02.jpg) | ![](assets/Pasted%20image%2020251103233422.png) |
+| ![](assets/Snipaste_2025-11-03_23-20-27.jpg) | ![](assets/Snipaste_2025-11-03_23-14-25.jpg) | ![](assets/Pasted%20image%2020251103233501.png) |
 
-1. [Fix related references](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/asset-redirectors-in-unreal-engine) since `M_OverlayOutline` and `MI_OverlayOutline` have been renamed to `M_Outline` and `MI_Outline`. Redirectors will remain temporarily but may be removed in the future.
-2. Backup and migrate modifications: If you modified `M_OverlayOutline`, back up your project before updating, then migrate your changes to `M_Outline` afterward.
-3. Update character Actors: Move the outline material from `Overlay Material` to `Mooa Outline Material` on character Actors:
-
-![](assets/Pasted%20image%2020250123221154.png)
-
-## License Updates
-
-Clarified and liberalized provisions on redistribution, now allowing public redistribution for non-commercial purposes, click [here](./../Licence.md) to view.
+Optimizations include:
+- Specular Color Ramp UV distribution optimized to make the ramp sampling results more consistent with expectations.  
+- Specular intensity optimized to prevent extreme values and make Bloom results more consistent with PBR Specular.  
+- Internally built-in Specular Color Ramp adds smooth gradients.
