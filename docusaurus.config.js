@@ -194,15 +194,42 @@ const config = {
 
 
       // 图片缩放插件
-      zoom: {
-        selector: '.markdown :not(em) > img',
-        background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(27, 27, 29)'
+      // zoom: {
+      //   selector: '.markdown :not(em) > img',
+      //   background: {
+      //     light: 'rgb(255, 255, 255)',
+      //     dark: 'rgb(27, 27, 29)'
+      //   },
+      //   // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      //   config: {}
+      // },
+      imageViewer: {
+        // 图片选择器，默认为 img
+        imageSelector: 'img',
+        // 页面容器选择器，默认为 .theme-doc-markdown.markdown，只在这个容器里的图片
+        containerSelector: '.theme-doc-markdown.markdown',
+        // viewerjs 配置
+        // see: https://github.com/fengyuanchen/viewerjs/blob/main/README.md
+        options: {
+          toolbar: {
+            zoomIn: 4,
+            zoomOut: 4,
+            oneToOne: 4,
+            reset: 4,
+            prev: 4,
+            play: 0,
+            next: 4,
+            rotateLeft: 4,
+            rotateRight: 4,
+            flipHorizontal: 4,
+            flipVertical: 4,
+          },
+          navbar: true,
+          title: false,
+          fullscreen: false,
         },
-        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-        config: {}
       },
+
 
       // 搜索插件
       algolia: {
@@ -255,7 +282,8 @@ const config = {
   
   plugins: [
     // 图片缩放插件
-    require.resolve('docusaurus-plugin-image-zoom')
+    // require.resolve('docusaurus-plugin-image-zoom')
+    'docusaurus-plugin-image-viewer'
   ],
 };
 
