@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "25aec79e8085716e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -96,13 +109,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/GettingStarted/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline"
             }
           },
           {
@@ -160,7 +172,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1f24e79ae82b94f3",
+  "active": "25aec79e8085716e",
   "lastOpenFiles": [
     "docs/GettingStarted/BuildEnginefromSourceCode.md",
     "docs/GettingStarted/README.md",

@@ -227,6 +227,7 @@ const config = {
           navbar: true,
           title: false,
           fullscreen: false,
+          transition: false,
         },
       },
 
@@ -283,7 +284,7 @@ const config = {
   plugins: [
     // 图片缩放插件
     // require.resolve('docusaurus-plugin-image-zoom')
-    'docusaurus-plugin-image-viewer'
+    require.resolve('docusaurus-plugin-image-viewer')
   ],
 };
 
