@@ -284,7 +284,7 @@ const config = {
   plugins: [
     // 图片缩放插件
     // require.resolve('docusaurus-plugin-image-zoom')
-    require.resolve('docusaurus-plugin-image-viewer')
+    require.resolve('./_custom_plugins/docusaurus-plugin-image-viewer')
   ],
 };
 
