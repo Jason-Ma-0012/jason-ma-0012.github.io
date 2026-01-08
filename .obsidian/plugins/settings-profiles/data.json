@@ -8,7 +8,8 @@
   "uiUpdate": true,
   "uiUpdateInterval": 1000,
   "devices": {
-    "a2550874106d5c2e4c0ad5a76a0959bf71f6e1e01d799a0cfd718ac50fe1c0dc": "C:\\Users\\JasonMa\\AppData\\Local\\ObsidianPlugins\\Data\\Profiles"
+    "a2550874106d5c2e4c0ad5a76a0959bf71f6e1e01d799a0cfd718ac50fe1c0dc": "C:\\Users\\JasonMa\\AppData\\Local\\ObsidianPlugins\\Data\\Profiles",
+    "e562d3b983dcc0e0d05be25f43617ae222832e281bea2e3cdb364482826e5b2f": "C:\\Users\\JasonMa\\AppData\\Local\\ObsidianPlugins\\Data\\Profiles"
   },
   "statusbarInteraction": {
     "click": "auto",
