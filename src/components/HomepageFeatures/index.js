@@ -47,6 +47,13 @@ const DemoList = [
   },
 ];
 
+const EducationPartnerList = [
+  {
+    imagePath: 'img/aixmmc-logo.webp',
+    link: 'https://aixmmc.kr/',
+  },
+];
+
 const CooperationProjectList = [
   {
     title: translate({
@@ -236,6 +243,22 @@ export default function HomepageFeatures() {
         <Demo key={idx} {...props} />
       ))}
       
+      <h1><Translate id='homepage.educationPartners'>
+        教育合作伙伴
+      </Translate></h1>
+
+      <div className="row margin-vert--lg" style={{ alignItems: 'center', justifyContent: 'center' }}>
+        {EducationPartnerList.map((props, idx) => (
+          props.link ? (
+            <a key={idx} href={props.link} target="_blank" rel="noopener noreferrer">
+              <img src={props.imagePath} alt="Partner Logo" style={{ height: '50px', margin: '0 20px' }} />
+            </a>
+          ) : (
+            <img key={idx} src={props.imagePath} alt="Partner Logo" style={{ height: '50px', margin: '0 20px' }} />
+          )
+        ))}
+      </div>
+
       <h1><Translate id='homepage.cooperationProjects'>
         合作项目
       </Translate></h1>

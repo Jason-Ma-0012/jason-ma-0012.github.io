@@ -435,6 +435,9 @@
   "homepage.downloadDemo": {
     "message": "Download the Runnable Demo (TODO)"
   },
+  "homepage.educationPartners": {
+    "message": "Education Partners"
+  },
   "homepage.cooperationProjects": {
     "message": "Cooperation Projects"
   },

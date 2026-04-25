@@ -62,7 +62,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -118,7 +118,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ProjectAndEditorSettings"
+              "title": "ProjectAndEditorSettings 的大纲"
             }
           },
           {
@@ -168,10 +168,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:打开快速切换": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
       "open-vscode:VSCode": false,
       "obsidian-git:Open Git source control": false
     }
