@@ -17,6 +17,14 @@ sidebar_position: 20
 选择要使用的Global Diffuse/Specular Color Ramp Atlas, 用法见[文档](../Tutorial/ControlLightShadowColorTransition).  
 如果需要修改Ramp Atlas或者添加新的Ramp, 请先复制MooaToon内置的Ramp Atlas, 以避免在更新时被覆盖.
 
+#### General Settings
+
+##### Blueprints - Maximum Loop Iteration Count
+
+在使用资产右键菜单的烘焙功能时, 需要逐顶点循环操作, 因此循环数量受到该设置的限制.  
+
+如果需要烘焙的模型顶点数量大于该设置值, 则会产生报错.
+
 #### Rendering
 
 ##### Global Illumination - Dynamic Global Illumination Method

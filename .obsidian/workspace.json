@@ -179,6 +179,9 @@
   "active": "fe8a9e48fbe9be7b",
   "lastOpenFiles": [
     "docs/Reference/ProjectAndEditorSettings.md",
+    "docs/Tutorial/ControlTheShapeOfOutlines.md",
+    "docs/Tutorial/ImportANewCharacter.md",
+    "docs/Tutorial/ControlLightingOfCharactersAndScenes.md",
     "i18n/en/docusaurus-plugin-content-docs/current/Reference/ProjectAndEditorSettings.md",
     "docs/Reference/MeshImportSettings.md",
     "docs/Reference/BuiltinPlugins.md",
@@ -220,9 +223,6 @@
     "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/ControlLightShadowColorTransition.md",
     "docs/Tutorial/AddStylizedHairHighlights.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md",
-    "i18n/en/docusaurus-plugin-content-docs/current/Licence.md",
-    "docs/Licence.md",
-    "docs/GettingStarted/UseWithOtherPlugins.md"
+    "i18n/en/docusaurus-plugin-content-docs/current/Tutorial/AddStylizedHairHighlights.md"
   ]
 }

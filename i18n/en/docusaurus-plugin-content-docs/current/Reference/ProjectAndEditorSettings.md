@@ -17,6 +17,14 @@ The following are Project Settings related to MooaToon:
 Choose the Global Diffuse/Specular Color Ramp Atlas to use. See the [tutorial](../Tutorial/ControlLightShadowColorTransition) for usage details.
 
 If you modify an existing Ramp Atlas or add new ramps, copy the built-in MooaToon Ramp Atlas first to prevent your changes from being overwritten by updates.
+
+#### General Settings
+
+##### Blueprints - Maximum Loop Iteration Count
+
+When using the baking function in the asset right-click menu, vertex-by-vertex loop operations are required, so the number of loops is limited by this setting.  
+
+If the number of vertices in the model to be baked exceeds this setting value, an error will occur.
 #### Rendering
 
 ##### Global Illumination - Dynamic Global Illumination Method
